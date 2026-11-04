@@ -88,7 +88,6 @@ Scheme
 		"FrameSystemButton.Icon"	""
 		"FrameSystemButton.DisabledIcon"	""
 		"FrameTitleBar.Font"	"UiBold" [$WIN32]
-		"FrameTitleBar.Font"	"DefaultLarge" [$WIN32]
 		"FrameTitleBar.TextColor"	"DkText"
 		"FrameTitleBar.BgColor"	"Clear"
 		"FrameTitleBar.DisabledTextColor"	"DkText"

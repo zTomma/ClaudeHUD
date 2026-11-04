@@ -564,6 +564,8 @@ def build_aux(rel, mode):
             seen.add(k)
             base.append([k, explicit[k], None, None])
             continue
+        if any(b[0] == k and b[2] == c for b in base):
+            continue  # Valve's original repeats a few keys with the same condition: keep the first
         tok = _aux_role(k, v, colors_lit, mode)
         base.append([k, tok if tok else v, c, cm])
     for k, tok in explicit.items():
