@@ -365,7 +365,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 778 file .res** — riscritti 20 · generati 3 · migrati 755 · da fare 0.
+**Totale 778 file .res** — riscritti 46 · generati 3 · migrati 729 · da fare 0.
 
 <details><summary><code>resource/</code> — 25 file (generato 3, migrato 22)</summary>
 
@@ -407,7 +407,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 307 file (migrato 288, riscritto 19)</summary>
+<details><summary><code>resource/ui/</code> — 307 file (migrato 262, riscritto 45)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -445,7 +445,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `craftingpanel.res` | scura |
 | [~] | `craftingstatusdialog.res` | scura |
 | [~] | `dashboardpartymember.res` | chiara |
-| [~] | `disguisestatuspanel.res` | scura |
+| [x] | `disguisestatuspanel.res` | scura |
 | [~] | `dynamicrecipepanel.res` | scura |
 | [~] | `enemycountpanel.res` | scura |
 | [~] | `explanationpopup.res` | chiara |
@@ -479,40 +479,40 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudarenavspanel.res` | scura |
 | [~] | `hudarenawinpanel.res` | scura |
 | [~] | `hudbosshealth.res` | scura |
-| [~] | `hudbowcharge.res` | scura |
+| [x] | `hudbowcharge.res` | scura |
 | [~] | `hudcurrencyaccount.res` | scura |
 | [~] | `huddamageaccount.res` | scura |
-| [~] | `huddemomancharge.res` | scura |
-| [~] | `huddemomanpipes.res` | scura |
+| [x] | `huddemomancharge.res` | scura |
+| [x] | `huddemomanpipes.res` | scura |
 | [~] | `hudhealthaccount.res` | scura |
 | [~] | `hudinspectpanel.res` | scura |
 | [~] | `huditemattributetracker.res` | scura |
-| [~] | `huditemeffectmeter.res` | scura |
-| [~] | `huditemeffectmeter_cleaver.res` | scura |
-| [~] | `huditemeffectmeter_demoman.res` | scura |
-| [~] | `huditemeffectmeter_engineer.res` | scura |
-| [~] | `huditemeffectmeter_halloweensouls.res` | scura |
-| [~] | `huditemeffectmeter_heavy.res` | scura |
-| [~] | `huditemeffectmeter_kartcharge.res` | scura |
-| [~] | `huditemeffectmeter_killstreak.res` | scura |
-| [~] | `huditemeffectmeter_organs.res` | scura |
-| [~] | `huditemeffectmeter_particlecannon.res` | scura |
-| [~] | `huditemeffectmeter_pomson.res` | scura |
-| [~] | `huditemeffectmeter_powerupbottle.res` | scura |
-| [~] | `huditemeffectmeter_pyro.res` | scura |
-| [~] | `huditemeffectmeter_raygun.res` | scura |
-| [~] | `huditemeffectmeter_sapper.res` | scura |
-| [~] | `huditemeffectmeter_scout.res` | scura |
-| [~] | `huditemeffectmeter_sniper.res` | scura |
-| [~] | `huditemeffectmeter_sniperfocus.res` | scura |
-| [~] | `huditemeffectmeter_sodapopper.res` | scura |
-| [~] | `huditemeffectmeter_spy.res` | scura |
-| [~] | `huditemeffectmeter_spyknife.res` | scura |
+| [x] | `huditemeffectmeter.res` | scura |
+| [x] | `huditemeffectmeter_cleaver.res` | scura |
+| [x] | `huditemeffectmeter_demoman.res` | scura |
+| [x] | `huditemeffectmeter_engineer.res` | scura |
+| [x] | `huditemeffectmeter_halloweensouls.res` | scura |
+| [x] | `huditemeffectmeter_heavy.res` | scura |
+| [x] | `huditemeffectmeter_kartcharge.res` | scura |
+| [x] | `huditemeffectmeter_killstreak.res` | scura |
+| [x] | `huditemeffectmeter_organs.res` | scura |
+| [x] | `huditemeffectmeter_particlecannon.res` | scura |
+| [x] | `huditemeffectmeter_pomson.res` | scura |
+| [x] | `huditemeffectmeter_powerupbottle.res` | scura |
+| [x] | `huditemeffectmeter_pyro.res` | scura |
+| [x] | `huditemeffectmeter_raygun.res` | scura |
+| [x] | `huditemeffectmeter_sapper.res` | scura |
+| [x] | `huditemeffectmeter_scout.res` | scura |
+| [x] | `huditemeffectmeter_sniper.res` | scura |
+| [x] | `huditemeffectmeter_sniperfocus.res` | scura |
+| [x] | `huditemeffectmeter_sodapopper.res` | scura |
+| [x] | `huditemeffectmeter_spy.res` | scura |
+| [x] | `huditemeffectmeter_spyknife.res` | scura |
 | [~] | `hudkillstreaknotice.res` | scura |
 | [~] | `hudmannvsmachinestatus.res` | scura |
 | [x] | `hudmatchstatus.res` | scura |
 | [~] | `hudmatchsummary.res` | scura |
-| [~] | `hudmediccharge.res` | scura |
+| [x] | `hudmediccharge.res` | scura |
 | [~] | `hudmenutauntselection.res` | scura |
 | [~] | `hudmenutauntselection_sc.res` | scura |
 | [~] | `hudminigame_base.res` | scura |

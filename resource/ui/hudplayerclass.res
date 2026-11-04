@@ -136,7 +136,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CarryingWeapon"
 		"xpos"			"12"
-		"ypos"			"r112"
+		"ypos"			"r108"
 		"zpos"			"100"
 		"wide"			"220"
 		"tall"			"28"

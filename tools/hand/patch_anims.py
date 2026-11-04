@@ -47,6 +47,18 @@ Animate	AmmoInClip		FgColor	"DkText"	Linear 0.0 0.12
 Animate	AmmoNoClip		FgColor	"DkText"	Linear 0.0 0.12
 Animate	HudWeaponLowAmmoImage	Alpha	"0"	Accel 0.0 0.15''')
 
+# --- medic: charge ready = terracotta, steady (pulsing is reserved for danger) -------------
+ev("HudMedicCharged", '''
+Animate	ChargeLabel	FgColor	"DkAccent"	Linear 0.0 0.12
+Animate	ChargeMeter	FgColor	"DkAccent"	Linear 0.0 0.12
+RunEvent HudMedicChargedLoop	0.5''')
+ev("HudMedicChargedLoop", '''RunEvent HudMedicCharged 0.0''')
+ev("HudMedicChargedStop", '''
+StopEvent HudMedicCharged 0.0
+StopEvent HudMedicChargedLoop 0.0
+Animate	ChargeLabel	FgColor	"DkTextMuted"	Linear 0.0 0.12
+Animate	ChargeMeter	FgColor	"DkText"	Linear 0.0 0.12''')
+
 # --- timers (KOTH, overtime), menu arrows --------------------------------------------------
 ev("ActiveTimerBGPulse", '''
 // il timer attivo riceve la sottolineatura terracotta: entra, non lampeggia

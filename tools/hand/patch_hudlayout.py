@@ -30,8 +30,8 @@ SET = {
                        "TeamBlue": "DkBluText", "TeamRed": "DkRedText", "IconColor": "DkText",
                        "LocalPlayerColor": "DkText",
                        "BaseBackgroundColor": lit("DkCard"), "LocalBackgroundColor": lit("DkCardLocal")},
-    # chat: left, above the health block
-    "HudChat": {"xpos": "12", "ypos": "r204", "wide": "320", "tall": "120"},
+    # left column, bottom to top: health block r76-r12, carrying weapon r108, spy disguise r144, chat r272
+    "HudChat": {"xpos": "12", "ypos": "r272", "wide": "320", "tall": "120"},
     # target IDs: below the crosshair, outside the central rectangle
     "CMainTargetID":      {"ypos": "360", "tall": "30"},
     "CSpectatorTargetID": {"ypos": "250", "tall": "30"},
@@ -40,7 +40,7 @@ SET = {
     "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "164", "tall": "64",
                           "blue_active_xpos": "0", "red_active_xpos": "84"},
     # spy disguise text: above the health block
-    "DisguiseStatus": {"xpos": "12", "ypos": "r132", "wide": "300", "tall": "20", "TextFont": "TypeBodyStrong"},
+    "DisguiseStatus": {"xpos": "12", "ypos": "r144", "wide": "220", "tall": "32", "TextFont": "TypeBodyStrong"},
 }
 DROP = re.compile(r"_(minmode|lodef|hidef)$", re.I)
 

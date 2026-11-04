@@ -31,13 +31,18 @@ def find_path(nodes, path):
     return cur
 
 
-def patch(rel, edits, header, add=None, remove_blocks=()):
+def patch(rel, edits, header, add=None, remove_blocks=(), optional=False):
     mode = modes.mode_of(rel)
     nodes = vdf.parse(open(os.path.join(ROOT, "#TF2 Files", rel), encoding="utf-8", errors="replace").read())
     M.migrate_nodes(nodes, mode, M.load_ctx())
-    root = nodes[0][1]
+    root = next(nd[1] for nd in nodes if isinstance(nd[1], list))
     for path, kv in edits.items():
-        body = find_path(root, path)
+        try:
+            body = find_path(root, path)
+        except KeyError:
+            if optional:
+                continue
+            raise
         body[:] = [nd for nd in body if not DROP.search(nd[0]) and not (nd[2] and "X360" in nd[2])
                    and not (isinstance(nd[1], list) and nd[0].lower() in remove_blocks)]
         for nd in body:

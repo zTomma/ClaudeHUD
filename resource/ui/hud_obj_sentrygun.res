@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 7) - stato edificio dell'Engineer: scheda DkCard 116x56,
+// sfondo testurizzato di squadra reso trasparente (iconColor Clear), barra salute dai token BaseSettings.
+// Generato da tools/hand/gen_classmeters.py
 "Resource/UI/hud_obj_sentrygun.res"
 {
 	"BuildingStatusItem"
@@ -29,7 +30,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_background_tall_disabled"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"Clear"
 	}
 	"Icon_Sentry_1"
 	{
@@ -161,7 +162,6 @@
 			"ControlName" 	"CBuildingStatusAlertTray"
 			"fieldName"   	"AlertTray"
 			"xpos"        	"114"
-			"ypos"        	"0"
 			"ypos"        	"0"
 			"zpos"        	"-2"
 			"wide"        	"44"
@@ -401,5 +401,20 @@
 				"brighttext"    	"0"
 			}
 		}
+	}
+	"BuildingCard"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"BuildingCard"
+		"xpos"                	"0"
+		"ypos"                	"2"
+		"zpos"                	"-2"
+		"wide"                	"116"
+		"tall"                	"56"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkCard"
 	}
 }
