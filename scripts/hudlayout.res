@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fasi 3, 4, 7) - posizioni degli elementi HUD.
+// Colori migrati ai token; geometria: DESIGN.md par. 5 (bordo 12, binario inferiore r12, schede alte 36).
+// Generato da tools/hand/patch_hudlayout.py sull'originale Valve.
 "Resource/HudLayout.res"
 {
 	"HudPlayerStatus"
@@ -14,17 +15,13 @@
 	}
 	"HudWeaponAmmo"
 	{
-		"fieldName"    	"HudWeaponAmmo"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r95" [$WIN32]
-		"xpos_minmode" 	"r85" [$WIN32]
-		"ypos"         	"r55" [$WIN32]
-		"ypos_minmode" 	"r36" [$WIN32]
-		"xpos"         	"r131" [$X360]
-		"ypos"         	"r77" [$X360]
-		"wide"         	"94"
-		"tall"         	"45"
+		"fieldName" 	"HudWeaponAmmo"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r100"
+		"ypos"      	"r48"
+		"wide"      	"88"
+		"tall"      	"36"
 	}
 	"HudObjectiveStatus"
 	{
@@ -52,87 +49,64 @@
 	}
 	"HudItemEffectMeter"
 	{
-		"fieldName"    	"HudItemEffectMeter"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r162" [$WIN32]
-		"xpos_minmode" 	"r52" [$WIN32]
-		"ypos"         	"r52" [$WIN32]
-		"ypos_minmode" 	"r50" [$WIN32]
-		"xpos"         	"r194" [$X360]
-		"ypos"         	"r74" [$X360]
-		"wide"         	"100"
-		"tall"         	"50"
-		"MeterFG"      	"DkText"
-		"MeterBG"      	"DkTextMuted"
+		"fieldName" 	"HudItemEffectMeter"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r184"
+		"ypos"      	"r48"
+		"wide"      	"80"
+		"tall"      	"36"
+		"MeterFG"   	"DkText"
+		"MeterBG"   	"DkTextMuted"
 	}
 	"HudMedicCharge"
 	{
-		"fieldName"    	"HudMedicCharge"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r138" [$WIN32]
-		"xpos_minmode" 	"r100" [$WIN32]
-		"ypos"         	"r69" [$WIN32]
-		"ypos_minmode" 	"r34" [$WIN32]
-		"xpos"         	"r174" [$X360]
-		"ypos"         	"r90" [$X360]
-		"wide"         	"200"
-		"tall"         	"100"
+		"fieldName" 	"HudMedicCharge"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r100"
+		"ypos"      	"r88"
+		"wide"      	"88"
+		"tall"      	"36"
 	}
 	"HudDemomanCharge"
 	{
-		"fieldName"    	"HudDemomanCharge"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r80" [$WIN32]
-		"xpos_minmode" 	"r52" [$WIN32]
-		"ypos"         	"r21" [$WIN32]
-		"ypos_minmode" 	"r40" [$WIN32]
-		"xpos"         	"r112" [$X360]
-		"ypos"         	"r45" [$X360]
-		"zpos"         	"1"	// draw in front of ammo
-		"wide"         	"60"
-		"wide_minmode" 	"50"
-		"tall"         	"8"
-		"MeterFG"      	"DkText"
-		"MeterBG"      	"DkTextMuted"
+		"fieldName" 	"HudDemomanCharge"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r100"
+		"ypos"      	"r56"
+		"zpos"      	"1"	// draw in front of ammo
+		"wide"      	"88"
+		"tall"      	"4"
+		"MeterFG"   	"DkText"
+		"MeterBG"   	"DkTextMuted"
 	}
 	"HudBowCharge"
 	{
-		"fieldName"    	"HudBowCharge"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r80" [$WIN32]
-		"xpos_minmode" 	"r52" [$WIN32]
-		"ypos"         	"r21" [$WIN32]
-		"ypos_minmode" 	"r40" [$WIN32]
-		"xpos"         	"r112" [$X360]
-		"ypos"         	"r45" [$X360]
-		"zpos"         	"1"	// draw in front of ammo
-		"wide"         	"60"
-		"wide_minmode" 	"50"
-		"tall"         	"8"
-		"MeterFG"      	"DkText"
-		"MeterBG"      	"DkTextMuted"
+		"fieldName" 	"HudBowCharge"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r100"
+		"ypos"      	"r56"
+		"zpos"      	"1"	// draw in front of ammo
+		"wide"      	"88"
+		"tall"      	"4"
+		"MeterFG"   	"DkText"
+		"MeterBG"   	"DkTextMuted"
 	}
 	"HudFlameRocketCharge"
 	{
-		"fieldName"    	"HudFlameRocketCharge"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r80" [$WIN32]
-		"xpos_minmode" 	"r52" [$WIN32]
-		"ypos"         	"r21" [$WIN32]
-		"ypos_minmode" 	"r40" [$WIN32]
-		"xpos"         	"r112" [$X360]
-		"ypos"         	"r45" [$X360]
-		"zpos"         	"1"	// draw in front of ammo
-		"wide"         	"60"
-		"wide_minmode" 	"50"
-		"tall"         	"8"
-		"MeterFG"      	"DkText"
-		"MeterBG"      	"DkTextMuted"
+		"fieldName" 	"HudFlameRocketCharge"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r100"
+		"ypos"      	"r56"
+		"zpos"      	"1"	// draw in front of ammo
+		"wide"      	"88"
+		"tall"      	"4"
+		"MeterFG"   	"DkText"
+		"MeterBG"   	"DkTextMuted"
 	}
 	"HudBossHealth"
 	{
@@ -180,19 +154,16 @@
 		"PlaySelectSounds"        	"1"
 		"Alpha"                   	"220"
 		"SelectionAlpha"          	"220"
-		"BoxColor"                	"0 0 0 220"
-		"SelectedBoxClor"         	"0 0 0 220"
-		"SelectionNumberFg"       	"200 187 161 255"
+		"BoxColor"                	"39 38 36 229"	// token: DkCardA90
+		"SelectedBoxClor"         	"39 38 36 229"	// token: DkCardA90
+		"SelectionNumberFg"       	"250 249 245 255"	// token: DkText
 		"NumberFont"              	"HudSelectionText"
 	}
 	"CHudAccountPanel"
 	{
 		"fieldName"           	"CHudAccountPanel"
-		"xpos"                	"r162" [$WIN32]
-		"ypos"                	"r152" [$WIN32]
-		"ypos_minmode"        	"r134" [$WIN32]
-		"xpos"                	"r194" [$X360]
-		"ypos"                	"r174" [$X360]
+		"xpos"                	"r184"
+		"ypos"                	"r184"
 		"wide"                	"116"
 		"tall"                	"180"
 		"visible"             	"1"
@@ -202,10 +173,8 @@
 	"CHealthAccountPanel"
 	{
 		"fieldName"           	"CHealthAccountPanel"
-		"xpos"                	"76"
-		"xpos_minmode"        	"61"
-		"ypos"                	"r152"
-		"ypos_minmode"        	"r134"
+		"xpos"                	"12"
+		"ypos"                	"r192"
 		"wide"                	"116"
 		"tall"                	"180"
 		"visible"             	"1"
@@ -228,26 +197,22 @@
 		"fieldName" 	"DisguiseStatus"
 		"visible"   	"1"
 		"enabled"   	"1"
-		"xpos"      	"10" [$WIN32]
-		"ypos"      	"r70" [$WIN32]
-		"xpos"      	"50" [$X360]
-		"ypos"      	"330" [$X360]
-		"wide"      	"500"
-		"tall"      	"200"
-		"TextFont"  	"Default" [$X360]
+		"xpos"      	"12"
+		"ypos"      	"r132"
+		"wide"      	"300"
+		"tall"      	"20"
+		"TextFont"  	"TypeBodyStrong"
 	}
 	"CMainTargetID"
 	{
-		"fieldName"      	"CMainTargetID"
-		"visible"        	"0"
-		"enabled"        	"1"
-		"xpos"           	"c-126"
-		"ypos"           	"285"
-		"wide"           	"252"
-		"tall"           	"35"
-		"tall_minmode"   	"28"
-		"priority"       	"40"
-		"priority_lodef" 	"5"
+		"fieldName" 	"CMainTargetID"
+		"visible"   	"0"
+		"enabled"   	"1"
+		"xpos"      	"c-126"
+		"ypos"      	"360"
+		"wide"      	"252"
+		"tall"      	"30"
+		"priority"  	"40"
 		"if_vr"
 		{
 			"ypos"     	"370"
@@ -256,30 +221,27 @@
 	}
 	"CSpectatorTargetID"
 	{
-		"fieldName"      	"CSpectatorTargetID"
-		"visible"        	"0"
-		"enabled"        	"1"
-		"xpos"           	"c-126"
-		"ypos"           	"250"
-		"wide"           	"252"
-		"tall"           	"35"
-		"tall_minmode"   	"28"
-		"priority"       	"40"
-		"priority_lodef" 	"35"
-		"x_offset"       	"20"
-		"y_offset"       	"20"
+		"fieldName" 	"CSpectatorTargetID"
+		"visible"   	"0"
+		"enabled"   	"1"
+		"xpos"      	"c-126"
+		"ypos"      	"250"
+		"wide"      	"252"
+		"tall"      	"30"
+		"priority"  	"40"
+		"x_offset"  	"20"
+		"y_offset"  	"20"
 	}
 	"CSecondaryTargetID"
 	{
-		"fieldName"    	"CSecondaryTargetID"
-		"visible"      	"0"
-		"enabled"      	"1"
-		"xpos"         	"c-126"
-		"ypos"         	"335"
-		"wide"         	"252"
-		"tall"         	"35"
-		"tall_minmode" 	"28"
-		"priority"     	"35"
+		"fieldName" 	"CSecondaryTargetID"
+		"visible"   	"0"
+		"enabled"   	"1"
+		"xpos"      	"c-126"
+		"ypos"      	"326"
+		"wide"      	"252"
+		"tall"      	"30"
+		"priority"  	"35"
 		"if_vr"
 		{
 			"ypos"     	"330"
@@ -447,27 +409,23 @@
 		"fieldName"            	"HudDeathNotice"
 		"visible"              	"1"
 		"enabled"              	"1"
-		"xpos"                 	"r640" [$WIN32]
-		"ypos"                 	"18" [$WIN32]
-		"xpos"                 	"r672" [$X360]
-		"ypos"                 	"35" [$X360]
+		"xpos"                 	"r640"
+		"ypos"                 	"12"
 		"wide"                 	"628"
 		"tall"                 	"468"
-		"MaxDeathNotices"      	"4"
+		"MaxDeathNotices"      	"5"
 		"IconScale"            	"0.35"
 		"LineHeight"           	"16"
 		"LineSpacing"          	"4"
 		"CornerRadius"         	"3"
-		"RightJustify"         	"1"	// If 1, draw notices from the right
-		"TextFont"             	"Default"
-		"TeamBlue"             	"DkBluFill"
-		"TeamRed"              	"DkRedFill"
+		"RightJustify"         	"1"
+		"TextFont"             	"TypeBodyStrong"
+		"TeamBlue"             	"DkBluText"
+		"TeamRed"              	"DkRedText"
 		"IconColor"            	"DkText"
-		"LocalPlayerColor"     	"LtText"
-		"BaseBackgroundColor"  	"39 38 36 229" [$WIN32]	// token: DkCardA90
-		"LocalBackgroundColor" 	"217 119 87 204" [$WIN32]	// token: DkAccentA80
-		"BaseBackgroundColor"  	"39 38 36 255" [$X360]	// token: DkCard
-		"LocalBackgroundColor" 	"39 38 36 255" [$X360]	// token: DkCard
+		"LocalPlayerColor"     	"DkText"
+		"BaseBackgroundColor"  	"39 38 36 255"	// token: DkCard
+		"LocalBackgroundColor" 	"52 36 30 255"	// token: DkCardLocal
 	}
 	"HudVehicle"
 	{
@@ -876,9 +834,8 @@
 		"fieldName"           	"HudChat"
 		"visible"             	"1"
 		"enabled"             	"1"
-		"xpos"                	"10" [$WIN32]
-		"xpos"                	"42" [$X360]
-		"ypos"                	"275"
+		"xpos"                	"12"
+		"ypos"                	"r204"
 		"wide"                	"320"
 		"tall"                	"120"
 		"PaintBackgroundType" 	"2"
@@ -932,17 +889,13 @@
 	}
 	"HudDemomanPipes"
 	{
-		"fieldName"    	"HudDemomanPipes"
-		"visible"      	"1"
-		"enabled"      	"1"
-		"xpos"         	"r162" [$WIN32]
-		"xpos_minmode" 	"r110" [$WIN32]
-		"ypos"         	"r52" [$WIN32]
-		"ypos_minmode" 	"r30" [$WIN32]
-		"xpos"         	"r194" [$X360]
-		"ypos"         	"r74" [$X360]
-		"wide"         	"100"
-		"tall"         	"50"
+		"fieldName" 	"HudDemomanPipes"
+		"visible"   	"1"
+		"enabled"   	"1"
+		"xpos"      	"r184"
+		"ypos"      	"r48"
+		"wide"      	"80"
+		"tall"      	"36"
 	}
 	"HudTeamGoal"
 	{
@@ -1359,5 +1312,34 @@
 		"keyboardinputenabled" 	"1"
 		"mouseinputenabled"    	"0"
 		"alpha"                	"100"
+	}
+
+	// Mirino ClaudeHUD (spento di default): un punto avorio su un quadrato DkCard, leggibile su
+	// qualsiasi sfondo. Per usarlo: "visible" "1" sui due elementi e "crosshair 0" in console.
+	"ClaudeXhairBack"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ClaudeXhairBack"
+		"xpos"			"c-2"
+		"ypos"			"c-2"
+		"zpos"			"1"
+		"wide"			"4"
+		"tall"			"4"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"39 38 36 255"	// token: DkCard
+	}
+	"ClaudeXhairDot"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ClaudeXhairDot"
+		"xpos"			"c-1"
+		"ypos"			"c-1"
+		"zpos"			"2"
+		"wide"			"2"
+		"tall"			"2"
+		"visible"		"0"
+		"enabled"		"1"
+		"fillcolor"		"250 249 245 255"	// token: DkText
 	}
 }

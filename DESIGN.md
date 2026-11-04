@@ -365,7 +365,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 743 file .res** — riscritti 0 · generati 3 · migrati 740 · da fare 0.
+**Totale 743 file .res** — riscritti 6 · generati 3 · migrati 734 · da fare 0.
 
 <details><summary><code>resource/</code> — 24 file (generato 3, migrato 21)</summary>
 
@@ -406,7 +406,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 295 file (migrato 295)</summary>
+<details><summary><code>resource/ui/</code> — 295 file (migrato 290, riscritto 5)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -464,7 +464,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudachievementfloatingnumber.res` | scura |
 | [~] | `hudachievementtrackeritem.res` | scura |
 | [~] | `hudalert.res` | scura |
-| [~] | `hudammoweapons.res` | scura |
+| [x] | `hudammoweapons.res` | scura |
 | [~] | `hudarenacappointcountdown.res` | scura |
 | [~] | `hudarenaclasslayout.res` | scura |
 | [~] | `hudarenanotification.res` | scura |
@@ -526,8 +526,8 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudpasstimeoffscreenarrow.res` | scura |
 | [~] | `hudpasstimepassnotify.res` | scura |
 | [~] | `hudpasstimeteamscore.res` | scura |
-| [~] | `hudplayerclass.res` | scura |
-| [~] | `hudplayerhealth.res` | scura |
+| [x] | `hudplayerclass.res` | scura |
+| [x] | `hudplayerhealth.res` | scura |
 | [~] | `hudpowerupeffectmeter.res` | scura |
 | [~] | `hudpvewinpanel.res` | scura |
 | [~] | `hudrocketpack.res` | scura |
@@ -651,7 +651,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `spectator.res` | scura |
 | [~] | `spectator_sc.res` | scura |
 | [~] | `spectatorcoach.res` | scura |
-| [~] | `spectatorguihealth.res` | scura |
+| [x] | `spectatorguihealth.res` | scura |
 | [~] | `spectatortournament.res` | scura |
 | [~] | `spectatortournamentguihealth.res` | scura |
 | [~] | `stampdonationadd.res` | scura |
@@ -673,7 +673,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `surveypanel_randomcrit.res` | chiara |
 | [~] | `tankprogressbar.res` | scura |
 | [~] | `tankstatuspanel.res` | scura |
-| [~] | `targetid.res` | scura |
+| [x] | `targetid.res` | scura |
 | [~] | `tauntcallerpanel.res` | scura |
 | [~] | `teammenu.res` | chiara |
 | [~] | `teammenu_sc.res` | chiara |
@@ -1283,11 +1283,11 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>scripts/</code> — 1 file (migrato 1)</summary>
+<details><summary><code>scripts/</code> — 1 file (riscritto 1)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
-| [~] | `hudlayout.res` | scura |
+| [x] | `hudlayout.res` | scura |
 
 </details>
 

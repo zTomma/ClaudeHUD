@@ -55,8 +55,8 @@
 			"activeimage"       	"checkmark"
 			"inactiveimage"     	"checkmark"
 			"scaleImage"        	"1"
-			"activedrawcolor"   	"200 80 60 255"
-			"inactivedrawcolor" 	"150 60 45 255"
+			"activedrawcolor"   	"217 119 87 255"	// token: DkAccent
+			"inactivedrawcolor" 	"217 119 87 255"	// token: DkRedText
 		}
 	}
 	"TitleLabel"

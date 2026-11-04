@@ -18,9 +18,9 @@
 		"bgcolor_override"            	"DkCard"
 		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
 		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
-		"thumbnail_bgcolor"           	"51 47 46 255"
-		"thumbnail_bgcolor_mouseover" 	"156 146 128 255"
-		"thumbnail_bgcolor_selected"  	"176 166 148 255"
+		"thumbnail_bgcolor"           	"39 38 36 255"	// token: DkCard
+		"thumbnail_bgcolor_mouseover" 	"55 54 50 255"	// token: DkChip
+		"thumbnail_bgcolor_selected"  	"55 54 50 255"	// token: DkChip
 		"thumbnails_rows"             	"4"
 		"thumbnails_columns"          	"4"
 		"thumbnails_x"                	"c-300"

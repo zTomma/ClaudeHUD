@@ -319,10 +319,16 @@ def build(report=None):
         pal, a = T.ROLES[role]
         colors.append(color_line(role, T.rgba(role), "%s %s%s" % (pal, T.hexs(T.S[pal]), "" if a == 255 else " @%d%%" % round(a / 2.55))))
     # alpha variants requested by tools/migrate.py (<Token>A<percent>)
-    vfile = os.path.join(HERE, "generated_variants.json")
-    if os.path.exists(vfile):
-        import json
-        for vname in json.load(open(vfile)):
+    import glob as _glob
+    found = set()
+    for pth in _glob.glob(os.path.join(ROOT, "resource", "**", "*.res"), recursive=True) + \
+            _glob.glob(os.path.join(ROOT, "scripts", "**", "*.*"), recursive=True):
+        if os.path.basename(pth) in ("clientscheme.res", "sourcescheme.res", "chatscheme.res"):
+            continue
+        found |= set(m.group(0) for m in re.finditer(r"\b(?:Dk|Lt)[A-Za-z]+A\d0\b|\bUntintedA\d0\b",
+                                                         open(pth, encoding="utf-8", errors="replace").read()))
+    if True:
+        for vname in sorted(found):
             m = re.match(r"^(.*)A(\d0)$", vname)
             if not m or m.group(1) not in T.ROLES:
                 continue

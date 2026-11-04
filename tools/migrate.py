@@ -45,15 +45,22 @@ FG = {"fgcolor", "fgcolor_override", "defaultfgcolor_override", "armedfgcolor_ov
       "disabled_text_color_override", "link_color", "bright_color", "standard_color", "positivecolor", "negativecolor",
       "itemset_color", "highlight_color", "color_red", "color_blue", "selectedcolor", "unselectedcolor", "linecolor",
       "color", "healthdeathwarningcolor", "keyboardfocuscolor_override", "blinkfgcolor_override", "color_outline",
-      "teamblue", "teamred", "localplayercolor", "flashcolor", "button.armedtextcolor", "slidertickcolor"}
+      "teamblue", "teamred", "localplayercolor", "flashcolor", "button.armedtextcolor", "slidertickcolor",
+      "selected_fgcolor_override", "color_ready", "color_notready", "titlecolor", "selectionnumberfg", "messagecolor",
+      "itemcountcolor_noitems", "itemcountcolor", "fgcolor_other", "fgcolor_local", "chat_color_player_name",
+      "chat_color_default", "chat_color_chat_text", "buttontextcolor"}
 BG = {"bgcolor", "bgcolor_override", "defaultbgcolor_override", "armedbgcolor_override", "depressedbgcolor_override",
       "selectedbgcolor_override", "disabledbgcolor_override", "fillcolor", "panel_bgcolor", "panel_bgcolor_mouseover",
       "item_panel_bgcolor", "item_panel_bgcolor_mouseover", "item_panel_bgcolor_selected", "infocus_bgcolor_override",
       "outoffocus_bgcolor_override", "titlebarbgcolor_override", "selectioncolor_override",
       "defaultselectionbg2color_override", "armedbgcolor", "basebackgroundcolor", "localbackgroundcolor",
-      "backgroundoverridecolor", "meterbg"}
+      "backgroundoverridecolor", "meterbg", "item_backdrop_color", "fillcolor_lodef", "thumbnail_bgcolor",
+      "thumbnail_bgcolor_selected", "thumbnail_bgcolor_mouseover", "boxcolor", "selectedboxclor",
+      "color_portrait_bg_red", "color_portrait_bg_red_dead", "color_portrait_bg_blue", "color_portrait_bg_blue_dead",
+      "color_portrait_blend_dead_red", "color_portrait_blend_dead_blue"}
 IMG = {"image_drawcolor", "image_armedcolor", "image_depressedcolor", "image_disabledcolor", "image_selectedcolor",
-       "iconcolor", "drawcolor", "drawcolor_override", "meterfg"}
+       "iconcolor", "drawcolor", "drawcolor_override", "meterfg", "inactivedrawcolor", "activedrawcolor",
+       "color_bar_health_high", "color_bar_health_med", "color_bar_health_low"}
 ALL_COLOR_KEYS = FG | BG | IMG
 
 # reference colours of the default HUD -> semantic role
@@ -376,7 +383,7 @@ def main(dry=False):
             with open(dst, "w", encoding="utf-8", newline="\n") as f:
                 f.write(out)
         done += 1
-    with open(VARIANTS_FILE, "w") as f:
+    if False:  # variants are discovered by build_scheme.py scanning the files
         json.dump(sorted(ctx.variants), f, indent=1)
     print("migrated %d files, skipped %d hand-written; %s; alpha variants: %d; name-ok keys: %d"
           % (done, skipped, dict(ctx.stats), len(ctx.variants), len(ctx.name_ok)))

@@ -30,8 +30,8 @@
 		"class_tall_max"              	"200"
 		"class_distance_min"          	"7"
 		"class_distance_max"          	"100"
-		"itemcountcolor"              	"200 80 60 255"
-		"itemcountcolor_noitems"      	"117 107 94 255"
+		"itemcountcolor"              	"217 119 87 255"	// token: DkAccent
+		"itemcountcolor_noitems"      	"177 173 161 255"	// token: DkTextMuted
 	}
 	"scout"
 	{

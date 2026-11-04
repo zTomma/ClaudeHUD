@@ -258,9 +258,9 @@
 			"wide_lodef"          	"435"
 			"tall"                	"205"
 			"tall_lodef"          	"180"
-			"titlecolor"          	"0 0 0 255"
-			"messagecolor"        	"200 184 151 255"
-			"buttontextcolor"     	"200 184 151 255"
+			"titlecolor"          	"20 20 19 255"	// token: LtText
+			"messagecolor"        	"20 20 19 255"	// token: LtText
+			"buttontextcolor"     	"20 20 19 255"	// token: LtText
 			"footer_tall"         	"50"
 			"button_margin"       	"8"
 			"button_margin_lodef" 	"15"

@@ -19,9 +19,9 @@
 		"log_font_small"              	"HudFontSmallest"
 		"log_font_medium"             	"HudFontSmallest"
 		"log_font_large"              	"HudFontSmallest"
-		"chat_color_default"          	"255 255 255 255"
-		"chat_color_player_name"      	"255 255 0 255"
-		"chat_color_chat_text"        	"255 255 255 255"
+		"chat_color_default"          	"250 249 245 255"	// token: DkText
+		"chat_color_player_name"      	"217 119 87 255"	// token: DkAccent
+		"chat_color_chat_text"        	"250 249 245 255"	// token: DkText
 		"chat_color_party_event"      	"Orange"
 		"collapsed_height"            	"0"
 		"expanded_height"             	"200"

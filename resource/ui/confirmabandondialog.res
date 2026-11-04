@@ -149,6 +149,6 @@
 		"brighttext"                	"0"
 		"wrap"                      	"0"
 		"font"                      	"HudFontSmallest"
-		"selected_fgcolor_override" 	"255 0 0 255"
+		"selected_fgcolor_override" 	"160 90 67 255"	// token: LtAccentText
 	}
 }

@@ -363,7 +363,7 @@
 		"enabled"             	"1"
 		"tabPosition"         	"0"
 		"fillcolor"           	"39 38 36 153"	// token: DkCardA60
-		"fillcolor_lodef"     	"0 0 0 200"
+		"fillcolor_lodef"     	"39 38 36 204"	// token: DkCardA80
 		"PaintBackgroundType" 	"0"
 	}
 	"TopPlayersLabel"

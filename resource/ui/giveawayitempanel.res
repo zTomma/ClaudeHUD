@@ -26,8 +26,8 @@
 		{
 			"wide"          	"240"
 			"tall"          	"22"
-			"fgcolor_local" 	"200 80 60 255"
-			"fgcolor_other" 	"235 226 202 255"
+			"fgcolor_local" 	"217 119 87 255"	// token: DkAccent
+			"fgcolor_other" 	"250 249 245 255"	// token: DkText
 			"name_label"
 			{
 				"ControlName"      	"CExLabel"

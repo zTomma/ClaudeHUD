@@ -25,8 +25,8 @@
 			"wide"           	"50"
 			"tall"           	"33"
 			"zpos"           	"1"
-			"color_ready"    	"0 255 0 220"
-			"color_notready" 	"0 0 0 220"
+			"color_ready"    	"188 210 203 229"	// token: DkPositiveA90
+			"color_notready" 	"20 20 19 229"	// token: DkOnRedA90
 			"playername"
 			{
 				"ControlName"   	"CExLabel"

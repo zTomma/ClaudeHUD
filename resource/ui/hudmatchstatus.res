@@ -352,17 +352,17 @@
 			"wide"                           	"25"
 			"tall"                           	"50"
 			"zpos"                           	"1"
-			"color_portrait_bg_red"          	"119 62 61 255"
-			"color_portrait_bg_blue"         	"62 81 101 255"
-			"color_portrait_bg_red_dead"     	"79 54 52 255"
-			"color_portrait_bg_blue_dead"    	"44 49 51 255"
-			"color_bar_health_high"          	"84 191 58 255"
-			"color_bar_health_med"           	"191 183 58 255"
+			"color_portrait_bg_red"          	"217 119 87 255"	// token: DkAccent
+			"color_portrait_bg_blue"         	"55 54 50 255"	// token: DkChip
+			"color_portrait_bg_red_dead"     	"55 54 50 255"	// token: DkChip
+			"color_portrait_bg_blue_dead"    	"39 38 36 255"	// token: DkCard
+			"color_bar_health_high"          	"188 210 203 255"	// token: DkPositive
+			"color_bar_health_med"           	"217 119 87 255"	// token: DkAccent
 			"percentage_health_med"          	"0.6"
-			"color_bar_health_low"           	"191 58 58 255"
+			"color_bar_health_low"           	"217 119 87 255"	// token: DkRedText
 			"percentage_health_low"          	"0.3"
-			"color_portrait_blend_dead_red"  	"255 255 255 255"
-			"color_portrait_blend_dead_blue" 	"255 255 255 255"
+			"color_portrait_blend_dead_red"  	"217 119 87 255"	// token: DkAccent
+			"color_portrait_blend_dead_blue" 	"217 119 87 255"	// token: DkAccent
 			"playername"
 			{
 				"ControlName" 	"CExLabel"

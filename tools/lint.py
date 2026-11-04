@@ -111,7 +111,8 @@ def lint_res(rel, text, names, known, hand, errors, warnings):
         if isinstance(val, list):
             continue
         k = key.lower()
-        if k in M.ALL_COLOR_KEYS:
+        colorish = k in M.ALL_COLOR_KEYS or (re.search(r"colou?r|clor", k) and not k.startswith("standard_text"))
+        if colorish and (M.is_literal(val) or k in M.ALL_COLOR_KEYS):
             if M.is_literal(val):
                 if not (cm and cm.startswith("token:")):
                     errors.append((rel, "colore letterale non generato da token: %s %r" % (key, val)))

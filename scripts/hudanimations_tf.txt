@@ -1,3 +1,6 @@
+// ClaudeHUD: riscritto a mano (eventi salute/munizioni/obiettivi/classe) + colori migrati ai token.
+// Regola unica, DESIGN.md par. 7: entrata 0.20 Deaccel, uscita 0.15 Accel, stato 0.12 Linear,
+// pericolo = ciclo a 2 Hz. Eventi aggiornati da tools/hand/patch_anims.py
 // sample animation script
 //
 //
@@ -95,9 +98,9 @@ event MenuClose
 	// Hide it
 	Animate HudMenu Alpha 		"0" Linear 0.0 1
 	Animate HudMenu SelectionAlpha 	"0" Linear 0.0 1
-	Animate HudMenu FgColor		"0 0 0 0" Linear 0.0 1
-	Animate HudMenu MenuColor		"0 0 0 0" Linear 0.0 1
-	Animate HudMenu ItemColor		"0 0 0 0" Linear 0.0 1
+	Animate HudMenu FgColor	"Clear"	Linear 0.0 1
+	Animate HudMenu MenuColor	"Clear"	Linear 0.0 1
+	Animate HudMenu ItemColor	"Clear"	Linear 0.0 1
 }
 
 event MenuPulse
@@ -163,20 +166,20 @@ event HintMessageShow
 
 	// flash text
 	Animate HudHintDisplay FgColor	"FgColor" 	Linear 1.5 0.01
-	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 2.0 0.2
+	Animate HudHintDisplay FgColor	"DkAccent"	Linear 2.0 0.2
 	Animate HudHintDisplay FgColor	"FgColor" 	Linear 2.2 0.2
-	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 3.0 0.2
+	Animate HudHintDisplay FgColor	"DkAccent"	Linear 3.0 0.2
 	Animate HudHintDisplay FgColor	"FgColor" 	Linear 3.2 0.2
 
 	// hide the panel after a while	
-	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  10.0 	0.2
+	Animate HudHintDisplay FgColor	"Clear"	Linear  10.0 	0.2
 	Animate HudHintDisplay HintSize	"0"		Deaccel 10.2	0.3
 }
 
 
 event HintMessageHide
 {
-	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  0.0 	0.2
+	Animate HudHintDisplay FgColor	"Clear"	Linear  0.0 	0.2
 	Animate HudHintDisplay HintSize	"0"		Deaccel 0.2	0.3
 }
 
@@ -187,9 +190,9 @@ event KeyHintMessageShow
 
 	// flash text
 	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.0 0.01
-	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 0.5 0.2
+	Animate HudHintKeyDisplay FgColor	"DkAccent"	Linear 0.5 0.2
 	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.7 0.2
-	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 1.5 0.2
+	Animate HudHintKeyDisplay FgColor	"DkAccent"	Linear 1.5 0.2
 	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 1.7 0.2
 
 	// hide the panel after a while	
@@ -206,10 +209,9 @@ event KeyHintMessageHide
 //Health Bonus Pulse
 event HudHealthBonusPulse
 {
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
-
-	RunEvent HudHealthBonusPulseLoop	0.4
+	// overheal: il numero passa a Sage (stato positivo), nessuna pulsazione
+	Animate	PlayerStatusHealthValue	FgColor	"DkPositive"	Linear 0.0 0.12
+	RunEvent HudHealthBonusPulseLoop	0.5
 }
 
 // call to loop HudHealthBonusPulse
@@ -222,6 +224,7 @@ event HudHealthBonusPulseStop
 {
 	StopEvent HudHealthBonusPulse 0.0
 	StopEvent HudHealthBonusPulseLoop 0.0
+	Animate	PlayerStatusHealthValue	FgColor	"DkText"	Linear 0.0 0.12
 }
 
 //===========================================
@@ -229,10 +232,11 @@ event HudHealthBonusPulseStop
 //Health Dying Pulse
 event HudHealthDyingPulse
 {
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
-	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
-	
-	RunEvent HudHealthDyingPulseLoop	0.25
+	// pericolo: numero terracotta fisso + il Segno pulsa a 2 Hz
+	Animate	PlayerStatusHealthValue	FgColor	"DkAccent"	Linear 0.0 0.12
+	Animate	HealthSegno		Alpha	"255"	Linear 0.0 0.12
+	Animate	HealthSegno		Alpha	"72"	Linear 0.25 0.12
+	RunEvent HudHealthDyingPulseLoop	0.5
 }
 
 // call to loop HudHealthDyingPulse
@@ -245,16 +249,20 @@ event HudHealthDyingPulseStop
 {
 	StopEvent HudHealthDyingPulse 0.0
 	StopEvent HudHealthDyingPulseLoop 0.0
+	Animate	PlayerStatusHealthValue	FgColor	"DkText"	Linear 0.0 0.12
+	Animate	HealthSegno		Alpha	"0"	Accel 0.0 0.15
 }
 
 //===========================================
 
 event HudLowAmmoPulse
 {
-	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
-	Animate	HudWeaponLowAmmoImage		Alpha		"0"			Linear 0.125 0.075
-	
-	RunEvent HudLowAmmoPulseLoop	0.25
+	// munizioni basse: numero terracotta + il Segno della scheda munizioni pulsa a 2 Hz
+	Animate	AmmoInClip		FgColor	"DkAccent"	Linear 0.0 0.12
+	Animate	AmmoNoClip		FgColor	"DkAccent"	Linear 0.0 0.12
+	Animate	HudWeaponLowAmmoImage	Alpha	"255"	Linear 0.0 0.12
+	Animate	HudWeaponLowAmmoImage	Alpha	"72"	Linear 0.25 0.12
+	RunEvent HudLowAmmoPulseLoop	0.5
 }
 
 // call to loop HudLowAmmoPulse
@@ -267,6 +275,9 @@ event HudLowAmmoPulseStop
 {
 	StopEvent HudLowAmmoPulse 0.0
 	StopEvent HudLowAmmoPulseLoop 0.0
+	Animate	AmmoInClip		FgColor	"DkText"	Linear 0.0 0.12
+	Animate	AmmoNoClip		FgColor	"DkText"	Linear 0.0 0.12
+	Animate	HudWeaponLowAmmoImage	Alpha	"0"	Accel 0.0 0.15
 }
 
 //===========================================
@@ -290,7 +301,7 @@ event AccountMoneyRemoved
 	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0
 
 	Animate	HudAccount		Ammo2Color "HudIcon_Red" Linear 0.0 0.0001
-	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 3.0
+	Animate HudAccount		Ammo2Color	"Clear"	Accel 0.0 3.0
 }
 
 //activecolor - instantly turn green, fade back to yellow
@@ -300,13 +311,13 @@ event AccountMoneyAdded
 	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0
 
 	Animate HudAccount		Ammo2Color "HudIcon_Green" Accel 0.0 0.0001
-	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 3.0
+	Animate HudAccount		Ammo2Color	"Clear"	Accel 0.0 3.0
 }
 
 event AccountMoneyInvisible
 {
 	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 0.0001
-	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 0.0001
+	Animate HudAccount		Ammo2Color	"Clear"	Accel 0.0 0.0001
 }
 
 //===========================================
@@ -528,13 +539,13 @@ event ActiveTimerBGPulse
 event ActiveTimerHighlight
 {
 	Animate TimePanelValue FgColor	TanLight		Linear 0.1 0.1
-	Animate TimePanelValue FgColor	"142 134 115 255"		Linear 0.3 0.1
+	Animate TimePanelValue FgColor	"DkTextMuted"	Linear 0.3 0.1
 
 	Animate TimePanelValue FgColor	TanLight		Linear 0.5 0.1
-	Animate TimePanelValue FgColor	"142 134 115 255"		Linear 0.7 0.1
+	Animate TimePanelValue FgColor	"DkTextMuted"	Linear 0.7 0.1
 
 	Animate TimePanelValue FgColor	TanLight		Linear 0.9 0.1
-	Animate TimePanelValue FgColor	"142 134 115 255"		Linear 1.1 0.1
+	Animate TimePanelValue FgColor	"DkTextMuted"	Linear 1.1 0.1
 
 	Animate TimePanelValue FgColor	TanLight		Linear 1.3 0.3
 	
@@ -543,7 +554,7 @@ event ActiveTimerHighlight
 event ActiveTimerDim
 {
 	// Slow fade out
-	Animate TimePanelValue FgColor	"142 134 115 255"		Linear 0.0 0.4
+	Animate TimePanelValue FgColor	"DkTextMuted"	Linear 0.0 0.4
 }
 
 //===========================================
@@ -715,19 +726,19 @@ event HasNotificationsBlinkStop
 event AddToCartBlink
 {
 	Animate	CartButton	BgColor	"TanDark"		Linear 0.0 0.01
-	Animate	CartButton	BgColor	"255 150 0 255"	Linear 0.1 0.01
+	Animate	CartButton	BgColor	"DkAccent"	Linear 0.1 0.01
 		
 	Animate	CartButton 	BgColor	"TanDark"		Linear 0.2 0.01
-	Animate	CartButton 	BgColor	"255 150 0 255"	Linear 0.3 0.01
+	Animate	CartButton 	BgColor	"DkAccent"	Linear 0.3 0.01
 	
 	Animate	CartButton 	BgColor	"TanDark"		Linear 0.4 0.01
-	Animate	CartButton 	BgColor	"255 150 0 255"	Linear 0.5 0.01
+	Animate	CartButton 	BgColor	"DkAccent"	Linear 0.5 0.01
 	
 	Animate	CartButton	BgColor	"TanDark"		Linear 0.6 0.01
-	Animate	CartButton	BgColor	"255 150 0 255"	Linear 0.7 0.01
+	Animate	CartButton	BgColor	"DkAccent"	Linear 0.7 0.01
 		
 	Animate	CartButton 	BgColor	"TanDark"		Linear 0.8 0.01
-	Animate	CartButton 	BgColor	"255 150 0 255"	Linear 0.9 0.01
+	Animate	CartButton 	BgColor	"DkAccent"	Linear 0.9 0.01
 	
 	Animate	CartButton 	BgColor	"TanDark"		Linear 1.0 0.01
 }
@@ -858,26 +869,26 @@ event RespecEarnedPulseEndLoss
 
 event RDPositiveScorePulse
 {
-	Animate Score FgColor	"25 255 25 255"		Linear 0.0 0.0
+	Animate Score FgColor	"DkPositive"	Linear 0.0 0.0
 	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
 
 	Animate Score Position	"3 5"		Deaccel 0.0 0.05
 	Animate Score Position	"3 10"		Accel 0.05 0.2
 
-	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
-	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+	Animate ScoreShadow FgColor	"DkOnRedA80"	Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"DkOnRed"	Accel 0.1 0.2
 }
 
 event RDNegativeScorePulse
 {
-	Animate Score FgColor	"255 75 75 255"		Linear 0.0 0.0
+	Animate Score FgColor	"DkAccent"	Linear 0.0 0.0
 	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
 
 	Animate Score Position	"3 5"		Deaccel 0.0 0.05
 	Animate Score Position	"3 10"		Accel 0.05 0.2
 
-	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
-	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
+	Animate ScoreShadow FgColor	"DkOnRedA80"	Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"DkOnRed"	Accel 0.1 0.2
 }
 
 event QuestNotification_Present
@@ -1697,10 +1708,10 @@ event PvPRankModelClicked
 
 event PvPRankLevelUpXPBar
 {
-	Animate ContinuousProgressBar BgColor "100 255 100 255" Linear 0.0 0.1
+	Animate ContinuousProgressBar BgColor	"DkAccent"	Linear 0.0 0.1
 	Animate ContinuousProgressBar BgColor ProgressBackground Linear 0.1 0.3
 
-	Animate LevelLabel FgColor "100 255 100 255"	Linear 0.0 0.1
+	Animate LevelLabel FgColor	"DkText"	Linear 0.0 0.1
 	Animate LevelLabel FgColor TanLight				Linear 4.0 0.3 
 }
 
@@ -1714,10 +1725,10 @@ event PvPRankLevelUpModel
 
 event PvPRankLevelDownXPBar
 {
-	Animate ContinuousProgressBar FgColor "255 100 100 255" Linear 0.0 0.1
+	Animate ContinuousProgressBar FgColor	"DkAccent"	Linear 0.0 0.1
 	Animate ContinuousProgressBar FgColor CreditsGreen Linear 0.1 0.3
 
-	Animate LevelLabel FgColor "255 100 100 255"	Linear 0.0 0.1
+	Animate LevelLabel FgColor	"DkAccent"	Linear 0.0 0.1
 	Animate LevelLabel FgColor TanLight				Linear 4.0 0.3 
 }
 
@@ -1796,13 +1807,13 @@ event CasualCategory_Checkbox_Show
 
 event CasualCategory_Selected
 {
-	Animate Shade BgColor "0 0 0 0" Deaccel 0 0.2
+	Animate Shade BgColor	"Clear"	Deaccel 0 0.2
 	Animate Title		FgColor TanLight Deaccel 0 0.2
 }
 
 event CasualCategory_NotSelected
 {
-	Animate Shade BgColor "0 0 0 200" Deaccel 0 0.2
+	Animate Shade BgColor	"DkCardA80"	Deaccel 0 0.2
 	Animate Title		FgColor TanDark Deaccel 0 0.2
 }
 
@@ -1819,35 +1830,35 @@ event HealthProgressBar_NotSelected
 event MMenu_UpdateButton_StartGlow
 {
 	SetVisible	ViewDetailsGlow	1	0
-	Animate ViewDetailsGlow BgColor "238 103 17 255" Linear 0 0
+	Animate ViewDetailsGlow BgColor	"DkAccent"	Linear 0 0
 	Animate ViewDetailsGlow Alpha 0   Linear 0.0 0.2
 	Animate ViewDetailsGlow Alpha 255 Linear 0.2 0.2
 	Animate ViewDetailsGlow Alpha 0	  Linear 0.4 0.2
 	Animate ViewDetailsGlow Alpha 255 Linear 0.6 0.2
 	Animate ViewDetailsGlow Alpha 0	  Linear 0.8 0.2
 	Animate ViewDetailsGlow Alpha 255 Linear 1.0 0.2
-	Animate ViewDetailsGlow BgColor "178 83 22 255" Linear 1.0 1.0
+	Animate ViewDetailsGlow BgColor	"DkAccent"	Linear 1.0 1.0
 
 	SetVisible	ViewWarButtonGlow	1	0
-	Animate ViewWarButtonGlow BgColor "238 103 17 255" Linear 0 0
+	Animate ViewWarButtonGlow BgColor	"DkAccent"	Linear 0 0
 	Animate ViewWarButtonGlow Alpha 0   Linear 0.0 0.2
 	Animate ViewWarButtonGlow Alpha 255 Linear 0.2 0.2
 	Animate ViewWarButtonGlow Alpha 0	  Linear 0.4 0.2
 	Animate ViewWarButtonGlow Alpha 255 Linear 0.6 0.2
 	Animate ViewWarButtonGlow Alpha 0	  Linear 0.8 0.2
 	Animate ViewWarButtonGlow Alpha 255 Linear 1.0 0.2
-	Animate ViewWarButtonGlow BgColor "178 83 22 255" Linear 1.0 1.0
+	Animate ViewWarButtonGlow BgColor	"DkAccent"	Linear 1.0 1.0
 
 	RunEvent MMenu_UpdateButton_SubtleGlow 5
 }
 
 event MMenu_UpdateButton_SubtleGlow
 {
-	Animate ViewDetailsGlow BgColor "238 103 17 255" Linear 0 0.2
-	Animate ViewDetailsGlow BgColor "178 83 22 255" Linear 0.2 1.0
+	Animate ViewDetailsGlow BgColor	"DkAccent"	Linear 0 0.2
+	Animate ViewDetailsGlow BgColor	"DkAccent"	Linear 0.2 1.0
 
-	Animate ViewWarButtonGlow BgColor "238 103 17 255" Linear 0 0.2
-	Animate ViewWarButtonGlow BgColor "178 83 22 255" Linear 0.2 1.0
+	Animate ViewWarButtonGlow BgColor	"DkAccent"	Linear 0 0.2
+	Animate ViewWarButtonGlow BgColor	"DkAccent"	Linear 0.2 1.0
 
 	RunEvent MMenu_UpdateButton_SubtleGlow 5
 }
@@ -1858,12 +1869,12 @@ event XPSourceShow_Positive
 	Animate SourceLabelGlow Alpha		0				Linear 0 0
 
 	Animate SourceLabel		Alpha		255				Linear 0.1 0.3
-	Animate SourceLabel FgColor		"100 255 100 255"	Linear	0.1 0
+	Animate SourceLabel FgColor	"DkText"	Linear	0.1 0
 	Animate SourceLabel FgColor		CreditsGreen		Linear	0.5 1
 	Animate SourceLabel Alpha		0					Linear 2.9 0.3
 
 	Animate SourceLabelGlow Alpha		255					Linear	0.0 0.1
-	Animate SourceLabelGlow FgColor		"100 255 100 255"	Linear	0.1 0
+	Animate SourceLabelGlow FgColor	"DkText"	Linear	0.1 0
 	Animate SourceLabelGlow FgColor		CreditsGreen		Linear	0.5 1
 	Animate SourceLabelGlow Alpha		200					Linear	0.5 1
 	Animate SourceLabelGlow Alpha		0					Linear 2.9 0.3
@@ -1875,7 +1886,7 @@ event XPSourceShow_Negative
 	Animate SourceLabelGlow Alpha		0				Linear 0 0
 
 	Animate SourceLabel	Alpha		255					Linear	0.1 0.3
-	Animate SourceLabel FgColor		"255 100 100 255"	Linear	0.1 0
+	Animate SourceLabel FgColor	"DkAccent"	Linear	0.1 0
 	Animate SourceLabel FgColor		RedSolid			Linear	0.5 1
 	Animate SourceLabel Alpha		0					Linear	2.9 0.1
 	Animate SourceLabel ypos		-15					Linear 0 0.4
