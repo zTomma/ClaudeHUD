@@ -5,34 +5,46 @@
 {
 	"OptionsButton"
 	{
-		"ControlName" 	"CExImageButton"
-		"fieldName"   	"OptionsButton"
-		"visible"     	"0"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"OptionsButton"
+		"visible"                   	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"LearnMoreButton"
 	{
-		"ControlName"     	"CExImageButton"
-		"fieldName"       	"LearnMoreButton"
-		"xpos"            	"c106"
-		"ypos"            	"385"
-		"zpos"            	"2"
-		"wide"            	"195"
-		"tall"            	"25"
-		"autoResize"      	"0"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"tabPosition"     	"0"
-		"labelText"       	"#TF_MvM_LearnMore"
-		"font"            	"HudFontSmallBold"
-		"textAlignment"   	"center"
-		"dulltext"        	"0"
-		"brighttext"      	"0"
-		"Command"         	"learn_more"
-		"NavUp"           	"PracticeButton"
-		"NavLeft"         	"BackButton"
-		"NavRight"        	"NextButton"
-		"sound_depressed" 	"UI/buttonclick.wav"
-		"sound_released"  	"UI/buttonclickrelease.wav"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"LearnMoreButton"
+		"xpos"                      	"c106"
+		"ypos"                      	"385"
+		"zpos"                      	"2"
+		"wide"                      	"195"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#TF_MvM_LearnMore"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"Command"                   	"learn_more"
+		"NavUp"                     	"PracticeButton"
+		"NavLeft"                   	"BackButton"
+		"NavRight"                  	"NextButton"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PlayNowButton"
 	{
@@ -117,16 +129,17 @@
 		"border"              	"QuickplayBorder"
 		"PlayWithFriendsExplanationTitle"
 		{
-			"ControlName"   	"CExLabel"
-			"fieldName"     	"PlayWithFriendsExplanationTitle"
-			"font"          	"HudFontSmallBold"
-			"labelText"     	"#TF_Matchmaking_PlayWithFriends"
-			"textAlignment" 	"center"
-			"xpos"          	"0"
-			"ypos"          	"0"
-			"zpos"          	"10"
-			"wide"          	"200"
-			"tall"          	"32"
+			"ControlName"      	"CExLabel"
+			"fieldName"        	"PlayWithFriendsExplanationTitle"
+			"font"             	"HudFontSmallBold"
+			"labelText"        	"#TF_Matchmaking_PlayWithFriends"
+			"textAlignment"    	"center"
+			"xpos"             	"0"
+			"ypos"             	"0"
+			"zpos"             	"10"
+			"wide"             	"200"
+			"tall"             	"32"
+			"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"FriendsImage"
 		{
@@ -144,17 +157,18 @@
 		}
 		"PlayWithFriendsExplanationLabel"
 		{
-			"ControlName"   	"CExLabel"
-			"fieldName"     	"PlayWithFriendsExplanationLabel"
-			"font"          	"HudFontSmall"
-			"labelText"     	"#TF_MvM_PlayWithFriendsExplanation"
-			"textAlignment" 	"north-west"
-			"xpos"          	"10"
-			"ypos"          	"130"
-			"zpos"          	"10"
-			"wide"          	"180"
-			"tall"          	"150"
-			"wrap"          	"1"
+			"ControlName"      	"CExLabel"
+			"fieldName"        	"PlayWithFriendsExplanationLabel"
+			"font"             	"HudFontSmall"
+			"labelText"        	"#TF_MvM_PlayWithFriendsExplanation"
+			"textAlignment"    	"north-west"
+			"xpos"             	"10"
+			"ypos"             	"130"
+			"zpos"             	"10"
+			"wide"             	"180"
+			"tall"             	"150"
+			"wrap"             	"1"
+			"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 }

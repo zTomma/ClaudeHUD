@@ -247,36 +247,36 @@
 	}
 	"CycleRankTypeButton"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"CycleRankTypeButton"
-		"xpos"                    	"cs-0.5-44"
-		"ypos"                    	"cs-0.5-134"
-		"wide"                    	"15"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"textinsetx"              	"25"
-		"labelText"               	""
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"command"                 	"open_rank_type_menu"
-		"textAlignment"           	"west"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"vo/null.mp3"
-		"actionsignallevel"       	"1"
-		"proportionaltoparent"    	"1"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"paintbackground"         	"1"
-		"paintborder"             	"0"
-		"image_drawcolor"         	"LtText"
-		"image_armedcolor"        	"Untinted"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"CycleRankTypeButton"
+		"xpos"                      	"cs-0.5-44"
+		"ypos"                      	"cs-0.5-134"
+		"wide"                      	"15"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"textinsetx"                	"25"
+		"labelText"                 	""
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"command"                   	"open_rank_type_menu"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"vo/null.mp3"
+		"actionsignallevel"         	"1"
+		"proportionaltoparent"      	"1"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"paintbackground"           	"1"
+		"paintborder"               	"0"
+		"image_drawcolor"           	"LtText"
+		"image_armedcolor"          	"Untinted"
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"
@@ -294,6 +294,12 @@
 			"mouseinputenabled"    	"0"
 			"keyboardinputenabled" 	"0"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"RankTooltipPanel"
 	{
@@ -483,32 +489,32 @@
 		}
 		"Notifications_ShowButtonPanel_SB"
 		{
-			"ControlName"       	"CExImageButton"
-			"fieldName"         	"Notifications_ShowButtonPanel_SB"
-			"xpos"              	"0"
-			"ypos"              	"0"
-			"zpos"              	"1"
-			"wide"              	"32"
-			"tall"              	"32"
-			"autoResize"        	"0"
-			"pinCorner"         	"3"
-			"visible"           	"1"
-			"enabled"           	"1"
-			"tabPosition"       	"0"
-			"labelText"         	""
-			"font"              	"HudFontSmallestBold"
-			"textAlignment"     	"center"
-			"dulltext"          	"0"
-			"brighttext"        	"0"
-			"default"           	"1"
-			"actionsignallevel" 	"2"
-			"Command"           	"noti_show"
-			"navActivate"       	"<QuickplayButton"
-			"sound_depressed"   	"UI/buttonclick.wav"
-			"sound_released"    	"UI/buttonclickrelease.wav"
-			"paintbackground"   	"0"
-			"image_drawcolor"   	"LtText"
-			"image_armedcolor"  	"Untinted"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"Notifications_ShowButtonPanel_SB"
+			"xpos"                      	"0"
+			"ypos"                      	"0"
+			"zpos"                      	"1"
+			"wide"                      	"32"
+			"tall"                      	"32"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"labelText"                 	""
+			"font"                      	"HudFontSmallestBold"
+			"textAlignment"             	"center"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"default"                   	"1"
+			"actionsignallevel"         	"2"
+			"Command"                   	"noti_show"
+			"navActivate"               	"<QuickplayButton"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"paintbackground"           	"0"
+			"image_drawcolor"           	"LtText"
+			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -523,6 +529,9 @@
 				"image"       	"button_Alert"
 				"scaleImage"  	"1"
 			}
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"WatchStreamButton"
@@ -543,36 +552,36 @@
 		"navLeft"     	"SettingsButton"
 		"SubButton"
 		{
-			"ControlName"             	"CExImageButton"
-			"fieldName"               	"SubButton"
-			"xpos"                    	"0"
-			"ypos"                    	"0"
-			"wide"                    	"f0"
-			"tall"                    	"f0"
-			"autoResize"              	"0"
-			"pinCorner"               	"3"
-			"visible"                 	"1"
-			"enabled"                 	"1"
-			"tabPosition"             	"0"
-			"textinsetx"              	"25"
-			"labelText"               	""
-			"use_proportional_insets" 	"1"
-			"font"                    	"HudFontSmallBold"
-			"command"                 	"watch_stream"
-			"textAlignment"           	"west"
-			"dulltext"                	"0"
-			"brighttext"              	"0"
-			"default"                 	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"vo/null.mp3"
-			"actionsignallevel"       	"2"
-			"proportionaltoparent"    	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"UI/buttonclickrelease.wav"
-			"paintbackground"         	"0"
-			"paintborder"             	"0"
-			"image_drawcolor"         	"LtText"
-			"image_armedcolor"        	"Untinted"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"SubButton"
+			"xpos"                      	"0"
+			"ypos"                      	"0"
+			"wide"                      	"f0"
+			"tall"                      	"f0"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"textinsetx"                	"25"
+			"labelText"                 	""
+			"use_proportional_insets"   	"1"
+			"font"                      	"HudFontSmallBold"
+			"command"                   	"watch_stream"
+			"textAlignment"             	"west"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"default"                   	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"vo/null.mp3"
+			"actionsignallevel"         	"2"
+			"proportionaltoparent"      	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"paintbackground"           	"0"
+			"paintborder"               	"0"
+			"image_drawcolor"           	"LtText"
+			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -590,6 +599,9 @@
 				"mouseinputenabled"    	"0"
 				"keyboardinputenabled" 	"0"
 			}
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"QuestLogButton"
@@ -610,36 +622,36 @@
 		"navLeft"     	"SettingsButton"
 		"SubButton"
 		{
-			"ControlName"             	"CExImageButton"
-			"fieldName"               	"SubButton"
-			"xpos"                    	"0"
-			"ypos"                    	"0"
-			"wide"                    	"f0"
-			"tall"                    	"f0"
-			"autoResize"              	"0"
-			"pinCorner"               	"3"
-			"visible"                 	"1"
-			"enabled"                 	"1"
-			"tabPosition"             	"0"
-			"textinsetx"              	"25"
-			"labelText"               	""
-			"use_proportional_insets" 	"1"
-			"font"                    	"HudFontSmallBold"
-			"command"                 	"questlog"
-			"textAlignment"           	"west"
-			"dulltext"                	"0"
-			"brighttext"              	"0"
-			"default"                 	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"vo/null.mp3"
-			"actionsignallevel"       	"2"
-			"proportionaltoparent"    	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"UI/buttonclickrelease.wav"
-			"paintbackground"         	"0"
-			"paintborder"             	"0"
-			"image_drawcolor"         	"LtText"
-			"image_armedcolor"        	"Untinted"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"SubButton"
+			"xpos"                      	"0"
+			"ypos"                      	"0"
+			"wide"                      	"f0"
+			"tall"                      	"f0"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"textinsetx"                	"25"
+			"labelText"                 	""
+			"use_proportional_insets"   	"1"
+			"font"                      	"HudFontSmallBold"
+			"command"                   	"questlog"
+			"textAlignment"             	"west"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"default"                   	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"vo/null.mp3"
+			"actionsignallevel"         	"2"
+			"proportionaltoparent"      	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"paintbackground"           	"0"
+			"paintborder"               	"0"
+			"image_drawcolor"           	"LtText"
+			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -657,6 +669,9 @@
 				"mouseinputenabled"    	"0"
 				"keyboardinputenabled" 	"0"
 			}
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"MOTD_ShowButtonPanel"
@@ -679,32 +694,32 @@
 		"navToRelay"  	"MOTD_ShowButtonPanel_SB"	// when naving to this it auto navs to this child instead
 		"MOTD_ShowButtonPanel_SB"
 		{
-			"ControlName"       	"CExImageButton"
-			"fieldName"         	"MOTD_ShowButtonPanel_SB"
-			"xpos"              	"0"
-			"ypos"              	"0"
-			"zpos"              	"1"
-			"wide"              	"32"
-			"tall"              	"32"
-			"autoResize"        	"0"
-			"pinCorner"         	"3"
-			"visible"           	"1"
-			"enabled"           	"1"
-			"tabPosition"       	"0"
-			"labelText"         	""
-			"font"              	"HudFontSmallestBold"
-			"textAlignment"     	"center"
-			"dulltext"          	"0"
-			"brighttext"        	"0"
-			"default"           	"1"
-			"actionsignallevel" 	"2"
-			"Command"           	"motd_show"
-			"navActivate"       	"<QuickplayButton"	// after selecting this, nav to this sibling
-			"sound_depressed"   	"UI/buttonclick.wav"
-			"sound_released"    	"UI/buttonclickrelease.wav"
-			"paintbackground"   	"0"
-			"image_drawcolor"   	"LtText"
-			"image_armedcolor"  	"Untinted"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"MOTD_ShowButtonPanel_SB"
+			"xpos"                      	"0"
+			"ypos"                      	"0"
+			"zpos"                      	"1"
+			"wide"                      	"32"
+			"tall"                      	"32"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"labelText"                 	""
+			"font"                      	"HudFontSmallestBold"
+			"textAlignment"             	"center"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"default"                   	"1"
+			"actionsignallevel"         	"2"
+			"Command"                   	"motd_show"
+			"navActivate"               	"<QuickplayButton"	// after selecting this, nav to this sibling
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"paintbackground"           	"0"
+			"image_drawcolor"           	"LtText"
+			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -719,6 +734,9 @@
 				"image"       	"button_MOTD"
 				"scaleImage"  	"1"
 			}
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"MOTD_Panel"
@@ -762,8 +780,8 @@
 				"visible"             	"1"
 				"enabled"             	"1"
 				"PaintBackgroundType" 	"2"
-				"fgcolor_override"    	"LtText"
-				"bgcolor_override"    	"LtPositive"
+				"fgcolor_override"    	"DkText"
+				"bgcolor_override"    	"DkPositiveFill"
 			}
 		}
 		"MOTD_CloseButton"
@@ -793,11 +811,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"motd_hide"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -842,7 +860,7 @@
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
-			"fgcolor"       	"LtText"
+			"fgcolor"       	"DkCard"
 			"wrap"          	"1"
 		}
 		"MOTD_Label"
@@ -860,7 +878,7 @@
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
-			"fgcolor"       	"LtText"
+			"fgcolor"       	"DkCard"
 		}
 		"MOTD_TitleImageBg"
 		{
@@ -912,7 +930,7 @@
 			"wide"                	"280"
 			"tall"                	"115"
 			"PaintBackgroundType" 	"2"
-			"fgcolor"             	"LtText"
+			"fgcolor"             	"DkCard"
 			"MOTD_TextPanel"
 			{
 				"ControlName"         	"EditablePanel"
@@ -938,7 +956,7 @@
 					"pinCorner"     	"0"
 					"visible"       	"1"
 					"enabled"       	"1"
-					"fgcolor"       	"LtText"
+					"fgcolor"       	"DkCard"
 					"wrap"          	"1"
 				}
 			}
@@ -972,10 +990,10 @@
 			"navRight"                  	"MOTD_NextButton"
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
-			"defaultFgColor_override"   	"LtText"
-			"defaultBgColor_override"   	"LtCard"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
+			"defaultFgColor_override"   	"DkText"
+			"defaultBgColor_override"   	"DkCard"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkText"
 		}
 		"MOTD_PrevButton"
 		{
@@ -1004,7 +1022,7 @@
 			"sound_depressed"   	"UI/buttonclick.wav"
 			"sound_released"    	"UI/buttonclickrelease.wav"
 			"paintbackground"   	"0"
-			"image_drawcolor"   	"LtText"
+			"image_drawcolor"   	"DkText"
 			"image_armedcolor"  	"Untinted"
 			"SubImage"
 			{
@@ -1048,7 +1066,7 @@
 			"sound_depressed"   	"UI/buttonclick.wav"
 			"sound_released"    	"UI/buttonclickrelease.wav"
 			"paintbackground"   	"0"
-			"image_drawcolor"   	"LtText"
+			"image_drawcolor"   	"DkText"
 			"image_armedcolor"  	"Untinted"
 			"SubImage"
 			{
@@ -1111,11 +1129,11 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1146,7 +1164,7 @@
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
-			"fgcolor"       	"LtText"
+			"fgcolor"       	"DkCard"
 			"wrap"          	"1"
 		}
 		"Notifications_Scroller"
@@ -1158,7 +1176,7 @@
 			"wide"                	"210"
 			"tall"                	"135"
 			"PaintBackgroundType" 	"2"
-			"fgcolor_override"    	"LtTextMuted"
+			"fgcolor_override"    	"DkTextMuted"
 			"Notifications_Control"
 			{
 				"ControlName" 	"CMainMenuNotificationsControl"
@@ -1342,15 +1360,27 @@
 				}
 				"UpButton"
 				{
-					"ControlName" 	"Button"
-					"FieldName"   	"UpButton"
-					"visible"     	"0"
+					"ControlName"               	"Button"
+					"FieldName"                 	"UpButton"
+					"visible"                   	"0"
+					"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"DownButton"
 				{
-					"ControlName" 	"Button"
-					"FieldName"   	"DownButton"
-					"visible"     	"0"
+					"ControlName"               	"Button"
+					"FieldName"                 	"DownButton"
+					"visible"                   	"0"
+					"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 			}
 		}
@@ -1645,6 +1675,7 @@
 				"labelText"            	"#MMenu_SafeMode_Explanation"
 				"proportionaltoparent" 	"1"
 				"font"                 	"HudFontSmallest"
+				"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 			}
 			"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
@@ -1754,6 +1785,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"CallVoteButton"
@@ -1815,9 +1849,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"MutePlayersButton"
@@ -1879,9 +1913,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"RequestCoachButton"
@@ -1943,6 +1977,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"BackgroundFooter"
@@ -1975,31 +2012,31 @@
 	}
 	"CharacterSetupButton"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"CharacterSetupButton"
-		"xpos"                    	"c-288"
-		"ypos"                    	"rs1-18"
-		"wide"                    	"100"
-		"tall"                    	"26"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"textinsetx"              	"25"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"command"                 	"engine open_charinfo"
-		"labeltext"               	"#MMenu_CharacterSetup"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"proportionaltoparent"    	"1"
-		"paintbackground"         	"1"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"CharacterSetupButton"
+		"xpos"                      	"c-288"
+		"ypos"                      	"rs1-18"
+		"wide"                      	"100"
+		"tall"                      	"26"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"textinsetx"                	"25"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"command"                   	"engine open_charinfo"
+		"labeltext"                 	"#MMenu_CharacterSetup"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"      	"1"
+		"paintbackground"           	"1"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2014,6 +2051,12 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_items"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"StoreHasNewItemsImage"
 	{
@@ -2032,31 +2075,31 @@
 	}
 	"GeneralStoreButton"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"GeneralStoreButton"
-		"xpos"                    	"c-165"
-		"ypos"                    	"rs1-18"
-		"wide"                    	"100"
-		"tall"                    	"26"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"textinsetx"              	"25"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"labeltext"               	"#MMenu_Shop"
-		"command"                 	"engine open_store"
-		"proportionaltoparent"    	"1"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"paintbackground"         	"1"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"GeneralStoreButton"
+		"xpos"                      	"c-165"
+		"ypos"                      	"rs1-18"
+		"wide"                      	"100"
+		"tall"                      	"26"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"textinsetx"                	"25"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"labeltext"                 	"#MMenu_Shop"
+		"command"                   	"engine open_store"
+		"proportionaltoparent"      	"1"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"paintbackground"           	"1"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2071,36 +2114,42 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_store"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SettingsButtonSDK"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"SettingsButtonSDK"
-		"xpos"                    	"c-34+273"
-		"ypos"                    	"437"
-		"zpos"                    	"4"
-		"wide"                    	"25"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"labelText"               	""
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"textinsetx"              	"25"
-		"use_proportional_insets" 	"1"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"Command"                 	"OpenOptionsDialog"
-		"navUp"                   	"TF2SettingsButtonSDK"
-		"navLeft"                 	"TF2SettingsButtonSDK"
-		"navRight"                	"TF2SettingsButtonSDK"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"SettingsButtonSDK"
+		"xpos"                      	"c-34+273"
+		"ypos"                      	"437"
+		"zpos"                      	"4"
+		"wide"                      	"25"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"textinsetx"                	"25"
+		"use_proportional_insets"   	"1"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"OpenOptionsDialog"
+		"navUp"                     	"TF2SettingsButtonSDK"
+		"navLeft"                   	"TF2SettingsButtonSDK"
+		"navRight"                  	"TF2SettingsButtonSDK"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2115,36 +2164,42 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"TF2SettingsButtonSDK"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"TF2SettingsButtonSDK"
-		"xpos"                    	"c-0+273"
-		"ypos"                    	"437"
-		"zpos"                    	"5"
-		"wide"                    	"25"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"labelText"               	""
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"east"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"Command"                 	"opentf2options"
-		"use_proportional_insets" 	"1"
-		"textinsetx"              	"25"
-		"navUp"                   	"SettingsButtonSDK"
-		"navLeft"                 	"SettingsButtonSDK"
-		"navRight"                	"SettingsButtonSDK"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"TF2SettingsButtonSDK"
+		"xpos"                      	"c-0+273"
+		"ypos"                      	"437"
+		"zpos"                      	"5"
+		"wide"                      	"25"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"east"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"opentf2options"
+		"use_proportional_insets"   	"1"
+		"textinsetx"                	"25"
+		"navUp"                     	"SettingsButtonSDK"
+		"navLeft"                   	"SettingsButtonSDK"
+		"navRight"                  	"SettingsButtonSDK"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2160,36 +2215,42 @@
 			"image"       	"glyph_options"
 			"scaleImage"  	"1"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SettingsButton"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"SettingsButton"
-		"xpos"                    	"c-208+273"
-		"ypos"                    	"437"
-		"zpos"                    	"1"
-		"wide"                    	"30"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"1"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"labelText"               	""
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"textinsetx"              	"25"
-		"use_proportional_insets" 	"1"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"Command"                 	"OpenOptionsDialog"
-		"navUp"                   	"Notifications_Panel"
-		"navLeft"                 	"ReportBugButton"
-		"navRight"                	"TF2SettingsButton"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"SettingsButton"
+		"xpos"                      	"c-208+273"
+		"ypos"                      	"437"
+		"zpos"                      	"1"
+		"wide"                      	"30"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"textinsetx"                	"25"
+		"use_proportional_insets"   	"1"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"OpenOptionsDialog"
+		"navUp"                     	"Notifications_Panel"
+		"navLeft"                   	"ReportBugButton"
+		"navRight"                  	"TF2SettingsButton"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2204,6 +2265,12 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"TF2SettingsButton"
 	{
@@ -2248,12 +2315,12 @@
 			"image"       	"glyph_options"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"NewUserForumsButton"
 	{
@@ -2298,12 +2365,12 @@
 			"image"       	"glyph_tutorial"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"AchievementsButton"
 	{
@@ -2347,12 +2414,12 @@
 			"image"       	"glyph_achievements"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CommentaryButton"
 	{
@@ -2396,12 +2463,12 @@
 			"image"       	"glyph_forums"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CoachPlayersButton"
 	{
@@ -2445,12 +2512,12 @@
 			"image"       	"glyph_commentary"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"WorkshopButton"
 	{
@@ -2494,12 +2561,12 @@
 			"image"       	"glyph_steamworkshop"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ReplayButton"
 	{
@@ -2543,40 +2610,40 @@
 			"image"       	"glyph_tv"
 			"scaleImage"  	"1"
 		}
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ReportBugButton"
 	{
-		"ControlName"     	"CExImageButton"
-		"fieldName"       	"ReportBugButton"
-		"xpos"            	"c-14+273"
-		"ypos"            	"437"
-		"zpos"            	"4"
-		"wide"            	"30"
-		"tall"            	"25"
-		"autoResize"      	"0"
-		"pinCorner"       	"3"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"tabPosition"     	"0"
-		"labelText"       	""
-		"font"            	"HudFontSmallBold"
-		"textAlignment"   	"center"
-		"dulltext"        	"0"
-		"brighttext"      	"0"
-		"default"         	"1"
-		"Command"         	"engine bug"
-		"navUp"           	"VRModeButton"
-		"navLeft"         	"CoachPlayersButton"
-		"navRight"        	"SettingsButton"
-		"sound_depressed" 	"UI/buttonclick.wav"
-		"sound_released"  	"UI/buttonclickrelease.wav"
-		"image_drawcolor" 	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"ReportBugButton"
+		"xpos"                      	"c-14+273"
+		"ypos"                      	"437"
+		"zpos"                      	"4"
+		"wide"                      	"30"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"engine bug"
+		"navUp"                     	"VRModeButton"
+		"navLeft"                   	"CoachPlayersButton"
+		"navRight"                  	"SettingsButton"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2591,33 +2658,39 @@
 			"image"       	"glyph_bug"
 			"scaleImage"  	"1"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BackToReplaysButton"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"BackToReplaysButton"
-		"xpos"                    	"c-300"
-		"ypos"                    	"437"
-		"zpos"                    	"1"
-		"wide"                    	"170"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"visible"                 	"0"
-		"enabled"                 	"1"
-		"tabPosition"             	"0"
-		"labelText"               	"#GameUI_GameMenu_ExitReplay"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"textinsetx"              	"35"
-		"use_proportional_insets" 	"1"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"default"                 	"1"
-		"Command"                 	"exitreplayeditor"
-		"sound_depressed"         	"UI/buttonclick.wav"
-		"sound_released"          	"UI/buttonclickrelease.wav"
-		"image_drawcolor"         	"LtText"
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"BackToReplaysButton"
+		"xpos"                      	"c-300"
+		"ypos"                      	"437"
+		"zpos"                      	"1"
+		"wide"                      	"170"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"0"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_GameMenu_ExitReplay"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"textinsetx"                	"35"
+		"use_proportional_insets"   	"1"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"exitreplayeditor"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"image_drawcolor"           	"LtText"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2632,6 +2705,12 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_quit"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"icon_generator"
 	{

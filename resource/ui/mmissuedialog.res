@@ -84,12 +84,12 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"Econ.Button.Border.Default"
 		"border_armed"              	"Econ.Button.Border.Armed"
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: riempimento al posto del bordo texture
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"URLLabel"
 	{

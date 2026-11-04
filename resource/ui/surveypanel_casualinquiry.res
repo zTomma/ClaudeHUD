@@ -72,6 +72,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option0"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer0Label"
 				{
@@ -88,6 +89,7 @@
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
 					"associate"            	"Radio0"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer1"
 				{
@@ -104,6 +106,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option1"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer1Label"
 				{
@@ -119,6 +122,7 @@
 					"labelText"            	"#TF_SurveyQuestion_CasualInquiry_Answer1"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer2"
 				{
@@ -135,6 +139,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option2"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer2Label"
 				{
@@ -151,6 +156,7 @@
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
 					"default"              	"1"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer3"
 				{
@@ -167,6 +173,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option3"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer3Label"
 				{
@@ -182,6 +189,7 @@
 					"labelText"            	"#TF_SurveyQuestion_CasualInquiry_Answer3"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer4"
 				{
@@ -198,6 +206,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option4"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer4Label"
 				{
@@ -213,6 +222,7 @@
 					"labelText"            	"#TF_SurveyQuestion_CasualInquiry_Answer4"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer5"
 				{
@@ -229,6 +239,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option4"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Answer5Label"
 				{
@@ -244,25 +255,32 @@
 					"labelText"            	"#TF_SurveyQuestion_CasualInquiry_Answer5"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"left"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 			}
 			"SubmitButton"
 			{
-				"ControlName"          	"CExButton"
-				"fieldName"            	"SubmitButton"
-				"xpos"                 	"cs-0.5"
-				"ypos"                 	"rs1-10"
-				"zpos"                 	"1"
-				"wide"                 	"130"
-				"tall"                 	"25"
-				"labelText"            	"#AbuseReport_Submit"
-				"font"                 	"HudFontSmallBold"
-				"textAlignment"        	"center"
-				"Command"              	"submit"
-				"sound_depressed"      	"UI/buttonclick.wav"
-				"sound_released"       	"UI/buttonclickrelease.wav"
-				"proportionaltoparent" 	"1"
-				"actionsignallevel"    	"2"
+				"ControlName"               	"CExButton"
+				"fieldName"                 	"SubmitButton"
+				"xpos"                      	"cs-0.5"
+				"ypos"                      	"rs1-10"
+				"zpos"                      	"1"
+				"wide"                      	"130"
+				"tall"                      	"25"
+				"labelText"                 	"#AbuseReport_Submit"
+				"font"                      	"HudFontSmallBold"
+				"textAlignment"             	"center"
+				"Command"                   	"submit"
+				"sound_depressed"           	"UI/buttonclick.wav"
+				"sound_released"            	"UI/buttonclickrelease.wav"
+				"proportionaltoparent"      	"1"
+				"actionsignallevel"         	"2"
+				"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 			}
 		}
 	}

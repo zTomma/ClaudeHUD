@@ -46,20 +46,21 @@
 	}
 	"mapname"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"mapname"
-		"xpos"          	"c-310"
-		"ypos"          	"50"
-		"wide"          	"90"
-		"tall"          	"24"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"visible"       	"0"
-		"enabled"       	"0"
-		"labelText"     	""
-		"textAlignment" 	"west"
-		"dulltext"      	"0"
-		"brighttext"    	"1"
+		"ControlName"      	"Label"
+		"fieldName"        	"mapname"
+		"xpos"             	"c-310"
+		"ypos"             	"50"
+		"wide"             	"90"
+		"tall"             	"24"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"visible"          	"0"
+		"enabled"          	"0"
+		"labelText"        	""
+		"textAlignment"    	"west"
+		"dulltext"         	"0"
+		"brighttext"       	"1"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PrevOptionHintIcon"
 	{
@@ -95,26 +96,32 @@
 	}
 	"teambutton2"
 	{
-		"ControlName"      	"CTFTeamButton"
-		"fieldName"        	"teambutton2"
-		"xpos"             	"c-290"
-		"ypos"             	"101"
-		"zpos"             	"3"
-		"wide"             	"124"
-		"tall"             	"310"
-		"autoResize"       	"0"
-		"pinCorner"        	"2"
-		"visible"          	"1"
-		"enabled"          	"1"
-		"tabPosition"      	"1"
-		"textAlignment"    	"south-west"
-		"dulltext"         	"0"
-		"brighttext"       	"0"
-		"paintborder"      	"0"
-		"command"          	"jointeam spectate"
-		"associated_model" 	"autodoor"
-		"font"             	"MenuMainTitle"
-		"fgcolor"          	"LtText"
+		"ControlName"               	"CTFTeamButton"
+		"fieldName"                 	"teambutton2"
+		"xpos"                      	"c-290"
+		"ypos"                      	"101"
+		"zpos"                      	"3"
+		"wide"                      	"124"
+		"tall"                      	"310"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"1"
+		"textAlignment"             	"south-west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"paintborder"               	"0"
+		"command"                   	"jointeam spectate"
+		"associated_model"          	"autodoor"
+		"font"                      	"MenuMainTitle"
+		"fgcolor"                   	"LtText"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"JoinAutoHintIcon"
 	{
@@ -134,26 +141,32 @@
 	}
 	"teambutton3"
 	{
-		"ControlName"      	"CTFTeamButton"
-		"fieldName"        	"teambutton3"
-		"xpos"             	"c-140"
-		"ypos"             	"232"
-		"zpos"             	"3"
-		"wide"             	"82"
-		"tall"             	"57"
-		"autoResize"       	"0"
-		"pinCorner"        	"2"
-		"visible"          	"1"
-		"enabled"          	"1"
-		"tabPosition"      	"2"
-		"textAlignment"    	"south-west"
-		"dulltext"         	"0"
-		"brighttext"       	"0"
-		"paintborder"      	"0"
-		"command"          	"jointeam spectatearena"
-		"associated_model" 	"spectate"
-		"font"             	"MenuMainTitle"
-		"fgcolor"          	"LtText"
+		"ControlName"               	"CTFTeamButton"
+		"fieldName"                 	"teambutton3"
+		"xpos"                      	"c-140"
+		"ypos"                      	"232"
+		"zpos"                      	"3"
+		"wide"                      	"82"
+		"tall"                      	"57"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"2"
+		"textAlignment"             	"south-west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"paintborder"               	"0"
+		"command"                   	"jointeam spectatearena"
+		"associated_model"          	"spectate"
+		"font"                      	"MenuMainTitle"
+		"fgcolor"                   	"LtText"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"JoinSpectatorsHintIcon"
 	{
@@ -173,27 +186,33 @@
 	}
 	"CancelButton" [$WIN32]
 	{
-		"ControlName"   	"CExButton"
-		"fieldName"     	"CancelButton"
-		"xpos"          	"r190"
-		"xpos_hidef"    	"r200"
-		"ypos"          	"r40"
-		"ypos_lodef"    	"r64"
-		"ypos_hidef"    	"r54"
-		"zpos"          	"6"
-		"wide"          	"150"
-		"tall"          	"30"
-		"autoResize"    	"0"
-		"pinCorner"     	"2"
-		"visible"       	"0"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#TF_Cancel"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"command"       	"cancelmenu"
-		"font"          	"MenuSmallFont"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"CancelButton"
+		"xpos"                      	"r190"
+		"xpos_hidef"                	"r200"
+		"ypos"                      	"r40"
+		"ypos_lodef"                	"r64"
+		"ypos_hidef"                	"r54"
+		"zpos"                      	"6"
+		"wide"                      	"150"
+		"tall"                      	"30"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"0"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#TF_Cancel"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"command"                   	"cancelmenu"
+		"font"                      	"MenuSmallFont"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CancelHintIcon"
 	{

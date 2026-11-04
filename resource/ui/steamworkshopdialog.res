@@ -97,7 +97,7 @@
 			{
 				"ControlName"      	"CExLabel"
 				"fieldName"        	"TitleLabel"
-				"font"             	"TypeHeading"
+				"font"             	"HudFontMediumBold"
 				"labelText"        	"#TF_SteamWorkshop_Title"
 				"textAlignment"    	"center"
 				"xpos"             	"0"
@@ -109,7 +109,7 @@
 				"pinCorner"        	"0"
 				"visible"          	"1"
 				"enabled"          	"1"
-				"fgcolor_override" 	"LtTextMuted"
+				"fgcolor_override" 	"DkTextMuted"
 			}
 			"DescLabel"
 			{
@@ -128,7 +128,7 @@
 				"visible"          	"1"
 				"enabled"          	"1"
 				"wrap"             	"1"
-				"fgcolor_override" 	"LtText"
+				"fgcolor_override" 	"DkOnRed"
 			}
 			"LearnMoreButton"
 			{
@@ -174,7 +174,7 @@
 			{
 				"ControlName"      	"CExLabel"
 				"fieldName"        	"TitleLabel"
-				"font"             	"TypeHeading"
+				"font"             	"HudFontMediumBold"
 				"labelText"        	"#TF_SteamWorkshop_YourItems"
 				"textAlignment"    	"west"
 				"xpos"             	"15"
@@ -186,7 +186,7 @@
 				"pinCorner"        	"0"
 				"visible"          	"1"
 				"enabled"          	"1"
-				"fgcolor_override" 	"LtTextMuted"
+				"fgcolor_override" 	"DkTextMuted"
 			}
 			"SteamWorkshopItem0"
 			{
@@ -317,7 +317,7 @@
 				"pinCorner"        	"0"
 				"visible"          	"1"
 				"enabled"          	"1"
-				"fgcolor_override" 	"LtAccentText"
+				"fgcolor_override" 	"DkAccent"
 			}
 			"NextPageButton"
 			{
@@ -436,8 +436,8 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_Edit"
 				"command"                 	"edit"
-				"image_drawcolor"         	"LtText"
-				"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+				"image_drawcolor"         	"DkText"
+				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -477,8 +477,8 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_View"
 				"command"                 	"view"
-				"image_drawcolor"         	"LtText"
-				"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+				"image_drawcolor"         	"DkText"
+				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -518,8 +518,8 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_Delete"
 				"command"                 	"delete_item"
-				"image_drawcolor"         	"LtText"
-				"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+				"image_drawcolor"         	"DkText"
+				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -621,72 +621,90 @@
 		}
 		"LearnMore2Button"
 		{
-			"ControlName"     	"CExButton"
-			"fieldName"       	"LearnMore2Button"
-			"xpos"            	"235"
-			"ypos"            	"365"
-			"zpos"            	"20"
-			"wide"            	"150"
-			"tall"            	"25"
-			"autoResize"      	"0"
-			"pinCorner"       	"0"
-			"visible"         	"0"
-			"enabled"         	"1"
-			"tabPosition"     	"0"
-			"labelText"       	"#TF_SteamWorkshop_Instructions"
-			"font"            	"HudFontSmallBold"
-			"textAlignment"   	"center"
-			"Command"         	"learn_more"
-			"sound_depressed" 	"UI/buttonclick.wav"
-			"sound_released"  	"UI/buttonclickrelease.wav"
+			"ControlName"               	"CExButton"
+			"fieldName"                 	"LearnMore2Button"
+			"xpos"                      	"235"
+			"ypos"                      	"365"
+			"zpos"                      	"20"
+			"wide"                      	"150"
+			"tall"                      	"25"
+			"autoResize"                	"0"
+			"pinCorner"                 	"0"
+			"visible"                   	"0"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"labelText"                 	"#TF_SteamWorkshop_Instructions"
+			"font"                      	"HudFontSmallBold"
+			"textAlignment"             	"center"
+			"Command"                   	"learn_more"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"ViewLegalAgreementButton"
 		{
-			"ControlName"     	"CExButton"
-			"fieldName"       	"ViewLegalAgreementButton"
-			"xpos"            	"390"
-			"ypos"            	"365"
-			"zpos"            	"20"
-			"wide"            	"200"
-			"tall"            	"25"
-			"autoResize"      	"0"
-			"pinCorner"       	"0"
-			"visible"         	"1"
-			"enabled"         	"1"
-			"tabPosition"     	"0"
-			"labelText"       	"#TF_SteamWorkshop_Legal"
-			"font"            	"HudFontSmallBold"
-			"textAlignment"   	"center"
-			"textinsetx"      	"50"
-			"dulltext"        	"0"
-			"brighttext"      	"0"
-			"Command"         	"view_legal_agreement"
-			"sound_depressed" 	"UI/buttonclick.wav"
-			"sound_released"  	"UI/buttonclickrelease.wav"
+			"ControlName"               	"CExButton"
+			"fieldName"                 	"ViewLegalAgreementButton"
+			"xpos"                      	"390"
+			"ypos"                      	"365"
+			"zpos"                      	"20"
+			"wide"                      	"200"
+			"tall"                      	"25"
+			"autoResize"                	"0"
+			"pinCorner"                 	"0"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"labelText"                 	"#TF_SteamWorkshop_Legal"
+			"font"                      	"HudFontSmallBold"
+			"textAlignment"             	"center"
+			"textinsetx"                	"50"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"Command"                   	"view_legal_agreement"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"CancelButton"
 		{
-			"ControlName"     	"CExButton"
-			"fieldName"       	"CancelButton"
-			"xpos"            	"10"
-			"ypos"            	"365"
-			"zpos"            	"20"
-			"wide"            	"100"
-			"tall"            	"25"
-			"autoResize"      	"0"
-			"pinCorner"       	"0"
-			"visible"         	"1"
-			"enabled"         	"1"
-			"tabPosition"     	"0"
-			"labelText"       	"#TF_Close"
-			"font"            	"HudFontSmallBold"
-			"textAlignment"   	"center"
-			"textinsetx"      	"50"
-			"dulltext"        	"0"
-			"brighttext"      	"0"
-			"Command"         	"cancel"
-			"sound_depressed" 	"UI/buttonclick.wav"
-			"sound_released"  	"UI/buttonclickrelease.wav"
+			"ControlName"               	"CExButton"
+			"fieldName"                 	"CancelButton"
+			"xpos"                      	"10"
+			"ypos"                      	"365"
+			"zpos"                      	"20"
+			"wide"                      	"100"
+			"tall"                      	"25"
+			"autoResize"                	"0"
+			"pinCorner"                 	"0"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"labelText"                 	"#TF_Close"
+			"font"                      	"HudFontSmallBold"
+			"textAlignment"             	"center"
+			"textinsetx"                	"50"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"Command"                   	"cancel"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"bgcolor_override"    	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
 	}

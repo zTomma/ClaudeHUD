@@ -45,6 +45,7 @@
 		"textinsetx"              	"20"
 		"use_proportional_insets" 	"1"
 		"mouseinputenabled"       	"0"
+		"fgcolor_override"        	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"HealthProgressBar"
 	{

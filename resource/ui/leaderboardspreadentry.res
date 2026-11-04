@@ -74,6 +74,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"0"
 			"proportionaltoparent" 	"1"
+			"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"Score"
 		{
@@ -93,6 +94,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"0"
 			"proportionaltoparent" 	"1"
+			"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"ProgressContainer"
 		{

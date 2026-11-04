@@ -54,26 +54,32 @@
 	}
 	"CloseButton"
 	{
-		"ControlName"     	"CExButton"
-		"fieldName"       	"CloseButton"
-		"xpos"            	"110"
-		"ypos"            	"100"
-		"zpos"            	"1"
-		"wide"            	"100"
-		"tall"            	"25"
-		"autoResize"      	"0"
-		"pinCorner"       	"3"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"tabPosition"     	"0"
-		"labelText"       	"#GameUI_Ok"
-		"font"            	"HudFontSmallBold"
-		"textAlignment"   	"center"
-		"dulltext"        	"0"
-		"brighttext"      	"0"
-		"default"         	"1"
-		"Command"         	"close"
-		"sound_depressed" 	"UI/buttonclick.wav"
-		"sound_released"  	"UI/buttonclickrelease.wav"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"CloseButton"
+		"xpos"                      	"110"
+		"ypos"                      	"100"
+		"zpos"                      	"1"
+		"wide"                      	"100"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_Ok"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"default"                   	"1"
+		"Command"                   	"close"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

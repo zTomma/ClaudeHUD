@@ -890,23 +890,26 @@
 	}
 	"CancelButton" [$WIN32]
 	{
-		"ControlName"      	"CExButton"
-		"fieldName"        	"CancelButton"
-		"xpos"             	"c-295"
-		"ypos"             	"r38"
-		"zpos"             	"6"
-		"wide"             	"120"
-		"tall"             	"25"
-		"autoResize"       	"0"
-		"pinCorner"        	"2"
-		"visible"          	"1"
-		"enabled"          	"1"
-		"tabPosition"      	"0"
-		"labelText"        	"#TF_ClassMenu_Cancel_NoKey"
-		"textAlignment"    	"center"
-		"Command"          	"vguicancel"
-		"font"             	"HudFontSmallBold"
-		"fgcolor_override" 	"LtAccentText"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"CancelButton"
+		"xpos"                      	"c-295"
+		"ypos"                      	"r38"
+		"zpos"                      	"6"
+		"wide"                      	"120"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#TF_ClassMenu_Cancel_NoKey"
+		"textAlignment"             	"center"
+		"Command"                   	"vguicancel"
+		"font"                      	"HudFontSmallBold"
+		"fgcolor_override"          	"LtAccentText"
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CancelHintIcon"
 	{
@@ -929,22 +932,28 @@
 	}
 	"EditLoadoutButton" [$WIN32]
 	{
-		"ControlName"   	"CExButton"
-		"fieldName"     	"EditLoadoutButton"
-		"xpos"          	"r180"
-		"ypos"          	"r38"
-		"zpos"          	"6"
-		"wide"          	"165"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"2"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#EditLoadout"
-		"textAlignment" 	"center"
-		"Command"       	"openloadout"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"EditLoadoutButton"
+		"xpos"                      	"r180"
+		"ypos"                      	"r38"
+		"zpos"                      	"6"
+		"wide"                      	"165"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#EditLoadout"
+		"textAlignment"             	"center"
+		"Command"                   	"openloadout"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"EditLoadoutHintIcon"
 	{
@@ -967,22 +976,28 @@
 	}
 	"ResetButton" [$WIN32]
 	{
-		"ControlName"   	"CExButton"
-		"fieldName"     	"ResetButton"
-		"xpos"          	"r470"
-		"ypos"          	"r38"
-		"zpos"          	"6"
-		"wide"          	"110"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"2"
-		"visible"       	"0"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#TF_ClassMenu_Reset"
-		"textAlignment" 	"center"
-		"Command"       	"resetclass"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"ResetButton"
+		"xpos"                      	"r470"
+		"ypos"                      	"r38"
+		"zpos"                      	"6"
+		"wide"                      	"110"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"0"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#TF_ClassMenu_Reset"
+		"textAlignment"             	"center"
+		"Command"                   	"resetclass"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ClassMenuSelect"
 	{
@@ -1667,7 +1682,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -1685,7 +1700,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -1711,11 +1726,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1823,7 +1838,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"ClassHighlightText"
 		{
@@ -1841,7 +1856,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -1867,11 +1882,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

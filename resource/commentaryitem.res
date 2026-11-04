@@ -38,26 +38,28 @@
 	}
 	"MapName"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"MapName"
-		"xpos"          	"216"
-		"ypos"          	"8"
-		"wide"          	"180"
-		"tall"          	"24"
-		"font"          	"UiBold"
-		"textAlignment" 	"north-west"
+		"ControlName"      	"Label"
+		"fieldName"        	"MapName"
+		"xpos"             	"216"
+		"ypos"             	"8"
+		"wide"             	"180"
+		"tall"             	"24"
+		"font"             	"UiBold"
+		"textAlignment"    	"north-west"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Description"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"Description"
-		"xpos"          	"216"
-		"ypos"          	"26"
-		"wide"          	"180"
-		"tall"          	"64"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"textAlignment" 	"north-west"
-		"font"          	"DefaultSmall"
+		"ControlName"      	"Label"
+		"fieldName"        	"Description"
+		"xpos"             	"216"
+		"ypos"             	"26"
+		"wide"             	"180"
+		"tall"             	"64"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"textAlignment"    	"north-west"
+		"font"             	"DefaultSmall"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

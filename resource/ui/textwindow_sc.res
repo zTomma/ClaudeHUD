@@ -80,26 +80,32 @@
 	}
 	"ok"
 	{
-		"ControlName"   	"CExButton"
-		"fieldName"     	"ok"
-		"xpos"          	"r190"
-		"ypos"          	"r40"
-		"zpos"          	"6"
-		"wide"          	"150"
-		"tall"          	"30"
-		"autoResize"    	"0"
-		"pinCorner"     	"2"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#TF_Continue"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"wrap"          	"0"
-		"command"       	"okay"
-		"default"       	"1"
-		"font"          	"MenuSmallFont"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"ok"
+		"xpos"                      	"r190"
+		"ypos"                      	"r40"
+		"zpos"                      	"6"
+		"wide"                      	"150"
+		"tall"                      	"30"
+		"autoResize"                	"0"
+		"pinCorner"                 	"2"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#TF_Continue"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"command"                   	"okay"
+		"default"                   	"1"
+		"font"                      	"MenuSmallFont"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"OkIntroHintIcon"
 	{
@@ -166,9 +172,10 @@
 	}
 	"MessageTitle"
 	{
-		"ControlName" 	"Label"
-		"fieldName"   	"MessageTitle"
-		"visible"     	"0"
-		"enabled"     	"0"
+		"ControlName"      	"Label"
+		"fieldName"        	"MessageTitle"
+		"visible"          	"0"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

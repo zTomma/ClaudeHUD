@@ -365,7 +365,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 743 file .res** — riscritti 14 · generati 3 · migrati 726 · da fare 0.
+**Totale 743 file .res** — riscritti 15 · generati 3 · migrati 725 · da fare 0.
 
 <details><summary><code>resource/</code> — 24 file (generato 3, migrato 21)</summary>
 
@@ -406,7 +406,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 295 file (migrato 282, riscritto 13)</summary>
+<details><summary><code>resource/ui/</code> — 295 file (migrato 281, riscritto 14)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -642,7 +642,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `robotdestructionstatus.res` | scura |
 | [~] | `roundinfo.res` | scura |
 | [~] | `saxxyawards_submitform.res` | chiara |
-| [~] | `scoreboard.res` | chiara |
+| [x] | `scoreboard.res` | chiara |
 | [~] | `selectmosthelpfulfrienddialog.res` | chiara |
 | [~] | `selectplayerdialog.res` | chiara |
 | [~] | `selectplayerdialog_coach.res` | chiara |

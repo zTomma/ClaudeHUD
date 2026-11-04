@@ -42,21 +42,22 @@
 		}
 		"UserName"
 		{
-			"ControlName"   	"CExLabel"
-			"fieldName"     	"UserName"
-			"font"          	"HudFontSmallestBold"
-			"labelText"     	"%username%"
-			"textAlignment" 	"west"
-			"xpos"          	"25"
-			"ypos"          	"2"
-			"zpos"          	"2"
-			"wide"          	"250"
-			"tall"          	"16"
-			"autoResize"    	"0"
-			"pinCorner"     	"0"
-			"visible"       	"1"
-			"enabled"       	"1"
-			"wrap"          	"0"
+			"ControlName"      	"CExLabel"
+			"fieldName"        	"UserName"
+			"font"             	"HudFontSmallestBold"
+			"labelText"        	"%username%"
+			"textAlignment"    	"west"
+			"xpos"             	"25"
+			"ypos"             	"2"
+			"zpos"             	"2"
+			"wide"             	"250"
+			"tall"             	"16"
+			"autoResize"       	"0"
+			"pinCorner"        	"0"
+			"visible"          	"1"
+			"enabled"          	"1"
+			"wrap"             	"0"
+			"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 }

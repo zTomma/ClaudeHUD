@@ -106,6 +106,9 @@
 		"defaultFgColor_override"   	"LtText"
 		"armedFgColor_override"     	"LtText"
 		"depressedFgColor_override" 	"LtText"
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"MatchmakingBanPanel"
 	{

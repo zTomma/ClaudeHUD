@@ -265,10 +265,13 @@ def element_kv(body):
 
 
 def migrate_nodes(nodes, mode, ctx):
-    for path, nd in list(vdf.walk(nodes)):
+    """Recursive: an element that becomes a dark popover (tooltip border) inside a light file switches
+    its whole subtree to dark mode, so its labels get dark-mode tokens."""
+    for nd in nodes:
         key, value = nd[0], nd[1]
         if isinstance(value, list):
-            fix_element(value, mode, ctx)
+            sub_mode = fix_element(value, mode, ctx)
+            migrate_nodes(value, sub_mode, ctx)
             continue
         if key.lower() in ALL_COLOR_KEYS:
             res = convert_color(key, value, mode, ctx)
@@ -282,11 +285,44 @@ def migrate_nodes(nodes, mode, ctx):
                 ctx.stats["font"] += 1
 
 
+LIGHT_TEXT_CONTROLS = {"label", "cexlabel", "cautofittinglabel", "cexrichtext", "richtext", "checkbutton",
+                       "radiobutton"}
+LIGHT_BUTTON_CONTROLS = {"cexbutton", "button", "cexImagebutton".lower(), "imagebutton", "ctfteambutton"}
+
+
+def light_defaults(body, kv, ctx):
+    """On light surfaces, controls without explicit colours would inherit the scheme default (dark
+    semantics: ivory text) and vanish on white cards. Give them explicit light tokens."""
+    ctl = kv.get("controlname", "").lower()
+    note = "ClaudeHUD: colore esplicito in modalita' chiara"
+    if ctl in LIGHT_TEXT_CONTROLS and "fgcolor" not in kv and "fgcolor_override" not in kv:
+        body.append(["fgcolor_override", "LtText", None, note])
+        ctx.stats["light_text"] += 1
+    elif ctl in LIGHT_BUTTON_CONTROLS:
+        if "defaultfgcolor_override" not in kv and "fgcolor_override" not in kv:
+            body.append(["defaultFgColor_override", "LtText", None, note])
+            body.append(["armedFgColor_override", "LtOnButtonHover", None, note])
+            body.append(["depressedFgColor_override", "LtOnButtonHover", None, note])
+            ctx.stats["light_button_fg"] += 1
+        if "defaultbgcolor_override" not in kv and kv.get("paintbackground", "1") != "0":
+            body.append(["defaultBgColor_override", "LtCardAlt", None, note])
+            body.append(["armedBgColor_override", "LtButtonHover", None, note])
+            body.append(["depressedBgColor_override", "LtButtonHover", None, note])
+            ctx.stats["light_button_bg"] += 1
+
+
 def fix_element(body, mode, ctx):
+    """Fix one element in place and return the mode its subtree must use."""
     kv = element_kv(body)
     border = (kv.get("border") or kv.get("border_default") or "").lower()
+    if mode == "light" and BORDER_FILL.get(border, ("", ""))[1].startswith("Dk"):
+        mode = "dark"  # tooltip / popover: always dark (DESIGN.md par. 9)
+        ctx.stats["dark_popover"] += 1
+    if mode == "light" and "controlname" in kv:
+        light_defaults(body, kv, ctx)
+        kv = element_kv(body)
     if not border:
-        return
+        return mode
     ctl = kv.get("controlname", "").lower()
     if "button" in ctl:
         if border in BUTTON_BORDERS or border in BORDER_FILL:
@@ -301,7 +337,7 @@ def fix_element(body, mode, ctx):
                 for k, v in add:
                     body.append([k, v, None, "ClaudeHUD: riempimento al posto del bordo texture"])
                 ctx.stats["button_fill"] += 1
-        return
+        return mode
     fill = BORDER_FILL.get(border)
     if fill and "bgcolor_override" not in kv:
         token = fill[0] if mode == "dark" else fill[1]
@@ -309,6 +345,7 @@ def fix_element(body, mode, ctx):
         if kv.get("paintbackground") == "0":
             vdf.set_value(body, "paintbackground", "1")
         ctx.stats["panel_fill"] += 1
+    return mode
 
 
 def load_ctx():

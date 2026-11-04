@@ -21,148 +21,178 @@
 	}
 	"Cancel"
 	{
-		"ControlName"           	"Button"
-		"fieldName"             	"Cancel"
-		"xpos"                  	"810"
-		"ypos"                  	"603"
-		"wide"                  	"64"
-		"tall"                  	"24"
-		"autoResize"            	"0"
-		"pinCorner"             	"3"
-		"RoundedCorners"        	"15"
-		"pin_corner_to_sibling" 	"0"
-		"pin_to_sibling_corner" 	"0"
-		"visible"               	"1"
-		"enabled"               	"1"
-		"tabPosition"           	"0"
-		"labelText"             	"#GameUI_Cancel"
-		"textAlignment"         	"west"
-		"dulltext"              	"0"
-		"brighttext"            	"0"
-		"wrap"                  	"0"
-		"centerwrap"            	"0"
-		"textinsetx"            	"6"
-		"textinsety"            	"0"
-		"auto_wide_tocontents"  	"0"
-		"Command"               	"Close"
-		"Default"               	"0"
-		"selected"              	"0"
+		"ControlName"               	"Button"
+		"fieldName"                 	"Cancel"
+		"xpos"                      	"810"
+		"ypos"                      	"603"
+		"wide"                      	"64"
+		"tall"                      	"24"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"RoundedCorners"            	"15"
+		"pin_corner_to_sibling"     	"0"
+		"pin_to_sibling_corner"     	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_Cancel"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"centerwrap"                	"0"
+		"textinsetx"                	"6"
+		"textinsety"                	"0"
+		"auto_wide_tocontents"      	"0"
+		"Command"                   	"Close"
+		"Default"                   	"0"
+		"selected"                  	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ok"
 	{
-		"ControlName"           	"Button"
-		"fieldName"             	"OK"
-		"xpos"                  	"740"
-		"ypos"                  	"603"
-		"wide"                  	"64"
-		"tall"                  	"24"
-		"autoResize"            	"0"
-		"pinCorner"             	"3"
-		"RoundedCorners"        	"15"
-		"pin_corner_to_sibling" 	"0"
-		"pin_to_sibling_corner" 	"0"
-		"visible"               	"1"
-		"enabled"               	"1"
-		"tabPosition"           	"0"
-		"labelText"             	"#GameUI_OK"
-		"textAlignment"         	"west"
-		"dulltext"              	"0"
-		"brighttext"            	"0"
-		"wrap"                  	"0"
-		"centerwrap"            	"0"
-		"textinsetx"            	"6"
-		"textinsety"            	"0"
-		"auto_wide_tocontents"  	"0"
-		"Command"               	"Ok"
-		"Default"               	"0"
-		"selected"              	"0"
+		"ControlName"               	"Button"
+		"fieldName"                 	"OK"
+		"xpos"                      	"740"
+		"ypos"                      	"603"
+		"wide"                      	"64"
+		"tall"                      	"24"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"RoundedCorners"            	"15"
+		"pin_corner_to_sibling"     	"0"
+		"pin_to_sibling_corner"     	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_OK"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"centerwrap"                	"0"
+		"textinsetx"                	"6"
+		"textinsety"                	"0"
+		"auto_wide_tocontents"      	"0"
+		"Command"                   	"Ok"
+		"Default"                   	"0"
+		"selected"                  	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Apply"
 	{
-		"ControlName"           	"Button"
-		"fieldName"             	"Apply"
-		"xpos"                  	"880"
-		"ypos"                  	"603"
-		"wide"                  	"64"
-		"tall"                  	"24"
-		"autoResize"            	"0"
-		"pinCorner"             	"3"
-		"RoundedCorners"        	"15"
-		"pin_corner_to_sibling" 	"0"
-		"pin_to_sibling_corner" 	"0"
-		"visible"               	"1"
-		"enabled"               	"1"
-		"tabPosition"           	"0"
-		"labelText"             	"#GameUI_Apply"
-		"textAlignment"         	"west"
-		"dulltext"              	"0"
-		"brighttext"            	"0"
-		"wrap"                  	"0"
-		"centerwrap"            	"0"
-		"textinsetx"            	"6"
-		"textinsety"            	"0"
-		"auto_wide_tocontents"  	"0"
-		"Command"               	"Apply"
-		"Default"               	"0"
-		"selected"              	"0"
+		"ControlName"               	"Button"
+		"fieldName"                 	"Apply"
+		"xpos"                      	"880"
+		"ypos"                      	"603"
+		"wide"                      	"64"
+		"tall"                      	"24"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"RoundedCorners"            	"15"
+		"pin_corner_to_sibling"     	"0"
+		"pin_to_sibling_corner"     	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_Apply"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"centerwrap"                	"0"
+		"textinsetx"                	"6"
+		"textinsety"                	"0"
+		"auto_wide_tocontents"      	"0"
+		"Command"                   	"Apply"
+		"Default"                   	"0"
+		"selected"                  	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Advanced"
 	{
-		"ControlName"           	"Button"
-		"fieldName"             	"Advanced"
-		"xpos"                  	"32"
-		"ypos"                  	"260"
-		"wide"                  	"144"
-		"tall"                  	"24"
-		"autoResize"            	"0"
-		"pinCorner"             	"0"
-		"RoundedCorners"        	"15"
-		"pin_corner_to_sibling" 	"0"
-		"pin_to_sibling_corner" 	"0"
-		"visible"               	"1"
-		"enabled"               	"1"
-		"tabPosition"           	"5"
-		"labelText"             	"#GameUI_AdvancedEllipsis"
-		"textAlignment"         	"west"
-		"dulltext"              	"0"
-		"brighttext"            	"0"
-		"wrap"                  	"0"
-		"centerwrap"            	"0"
-		"textinsetx"            	"6"
-		"textinsety"            	"0"
-		"auto_wide_tocontents"  	"0"
-		"Command"               	"Advanced"
-		"Default"               	"0"
-		"selected"              	"0"
+		"ControlName"               	"Button"
+		"fieldName"                 	"Advanced"
+		"xpos"                      	"32"
+		"ypos"                      	"260"
+		"wide"                      	"144"
+		"tall"                      	"24"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"RoundedCorners"            	"15"
+		"pin_corner_to_sibling"     	"0"
+		"pin_to_sibling_corner"     	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"5"
+		"labelText"                 	"#GameUI_AdvancedEllipsis"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"centerwrap"                	"0"
+		"textinsetx"                	"6"
+		"textinsety"                	"0"
+		"auto_wide_tocontents"      	"0"
+		"Command"                   	"Advanced"
+		"Default"                   	"0"
+		"selected"                  	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ImportSprayImage"
 	{
-		"ControlName"           	"Button"
-		"fieldName"             	"ImportSprayImage"
-		"xpos"                  	"106"
-		"ypos"                  	"198"
-		"wide"                  	"124"
-		"tall"                  	"24"
-		"autoResize"            	"0"
-		"pinCorner"             	"0"
-		"RoundedCorners"        	"15"
-		"pin_corner_to_sibling" 	"0"
-		"pin_to_sibling_corner" 	"0"
-		"visible"               	"1"
-		"enabled"               	"1"
-		"tabPosition"           	"4"
-		"labelText"             	"#GameUI_ImportSprayEllipsis"
-		"textAlignment"         	"west"
-		"dulltext"              	"0"
-		"brighttext"            	"0"
-		"wrap"                  	"0"
-		"centerwrap"            	"0"
-		"textinsetx"            	"6"
-		"textinsety"            	"0"
-		"auto_wide_tocontents"  	"0"
-		"Command"               	"ImportSprayImage"
-		"Default"               	"0"
-		"selected"              	"0"
+		"ControlName"               	"Button"
+		"fieldName"                 	"ImportSprayImage"
+		"xpos"                      	"106"
+		"ypos"                      	"198"
+		"wide"                      	"124"
+		"tall"                      	"24"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"RoundedCorners"            	"15"
+		"pin_corner_to_sibling"     	"0"
+		"pin_to_sibling_corner"     	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"4"
+		"labelText"                 	"#GameUI_ImportSprayEllipsis"
+		"textAlignment"             	"west"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"centerwrap"                	"0"
+		"textinsetx"                	"6"
+		"textinsety"                	"0"
+		"auto_wide_tocontents"      	"0"
+		"Command"                   	"ImportSprayImage"
+		"Default"                   	"0"
+		"selected"                  	"0"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Primary Color Slider"
 	{
@@ -580,6 +610,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SysMenu"
 	{
@@ -624,6 +655,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"topVertLeft"
 	{
@@ -650,6 +682,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"bottomHorizRight"
 	{
@@ -676,6 +709,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"bottomVertRight"
 	{
@@ -702,6 +736,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Colors"
 	{
@@ -728,6 +763,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Label1"
 	{
@@ -754,6 +790,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Label2"
 	{
@@ -781,6 +818,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Label3"
 	{
@@ -808,6 +846,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"AdvCrosshairLabel"
 	{
@@ -834,6 +873,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"RedLabel"
 	{
@@ -861,6 +901,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"GreenLabel"
 	{
@@ -888,6 +929,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BlueLabel"
 	{
@@ -915,6 +957,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ScaleLabel"
 	{
@@ -942,6 +985,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"Divider2"
 	{
@@ -986,6 +1030,7 @@
 		"textinsetx"            	"0"
 		"textinsety"            	"0"
 		"auto_wide_tocontents"  	"0"
+		"fgcolor_override"      	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BuildModeDialog"
 	{

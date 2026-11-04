@@ -59,84 +59,91 @@
 	}
 	"RedTeamButton"
 	{
-		"ControlName"             	"Button"
-		"fieldName"               	"RedTeamButton"
-		"xpos"                    	"c-265"
-		"ypos"                    	"c-218"
-		"wide"                    	"55"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"0"
-		"visible"                 	"0"
-		"enabled"                 	"0"
-		"tabPosition"             	"0"
-		"labelText"               	""
-		"textAlignment"           	"center"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"wrap"                    	"0"
-		"Command"                 	"EditSkin0"
-		"Default"                 	"0"
-		"font"                    	"HudFontSmallBold"
-		"defaultBgColor_override" 	"Clear"
-		"armedBgColor_override"   	"Clear"
+		"ControlName"               	"Button"
+		"fieldName"                 	"RedTeamButton"
+		"xpos"                      	"c-265"
+		"ypos"                      	"c-218"
+		"wide"                      	"55"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"0"
+		"enabled"                   	"0"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"EditSkin0"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BlueTeamButton"
 	{
-		"ControlName"             	"Button"
-		"fieldName"               	"BlueTeamButton"
-		"xpos"                    	"c-205"
-		"ypos"                    	"c-218"
-		"wide"                    	"55"
-		"tall"                    	"25"
-		"autoResize"              	"0"
-		"pinCorner"               	"0"
-		"visible"                 	"0"
-		"enabled"                 	"0"
-		"tabPosition"             	"0"
-		"labelText"               	""
-		"textAlignment"           	"center"
-		"dulltext"                	"0"
-		"brighttext"              	"0"
-		"wrap"                    	"0"
-		"Command"                 	"EditSkin1"
-		"Default"                 	"0"
-		"font"                    	"HudFontSmallBold"
-		"defaultBgColor_override" 	"Clear"
-		"armedBgColor_override"   	"Clear"
+		"ControlName"               	"Button"
+		"fieldName"                 	"BlueTeamButton"
+		"xpos"                      	"c-205"
+		"ypos"                      	"c-218"
+		"wide"                      	"55"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"0"
+		"enabled"                   	"0"
+		"tabPosition"               	"0"
+		"labelText"                 	""
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"EditSkin1"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"TitleLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"TitleLabel"
-		"font"          	"TypeHeading"
-		"textAlignment" 	"east"
-		"labelText"     	""
-		"xpos"          	"c-100"
-		"ypos"          	"10"
-		"zpos"          	"0"
-		"wide"          	"200"
-		"tall"          	"25"
-		"centerwrap"    	"1"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"TitleLabel"
+		"font"             	"TypeHeading"
+		"textAlignment"    	"east"
+		"labelText"        	""
+		"xpos"             	"c-100"
+		"ypos"             	"10"
+		"zpos"             	"0"
+		"wide"             	"200"
+		"tall"             	"25"
+		"centerwrap"       	"1"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BaseTextureBrowse"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"BaseTextureBrowse"
-		"xpos"                    	"c-80"
-		"ypos"                    	"60"
-		"zpos"                    	"1"
-		"wide"                    	"19"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"BrowseMaterial"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"BaseTextureBrowse"
+		"xpos"                      	"c-80"
+		"ypos"                      	"60"
+		"zpos"                      	"1"
+		"wide"                      	"19"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"BrowseMaterial"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -149,53 +156,61 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_workshop_view"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BaseTextureLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"BaseTextureLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Base Texture"
-		"xpos"          	"c-80"
-		"ypos"          	"60"
-		"zpos"          	"0"
-		"wide"          	"80"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"BaseTextureLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Base Texture"
+		"xpos"             	"c-80"
+		"ypos"             	"60"
+		"zpos"             	"0"
+		"wide"             	"80"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BaseTextureFileLabel"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"BaseTextureFileLabel"
-		"xpos"          	"c+5"
-		"ypos"          	"60"
-		"wide"          	"190"
-		"tall"          	"15"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"labelText"     	"#TF_PublishFile_NoFileSelected"
-		"font"          	"ImportToolSmallest"
-		"fillcolor"     	"217 119 87 255"	// token: LtAccent
-		"textAlignment" 	"west"
+		"ControlName"      	"Label"
+		"fieldName"        	"BaseTextureFileLabel"
+		"xpos"             	"c+5"
+		"ypos"             	"60"
+		"wide"             	"190"
+		"tall"             	"15"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"labelText"        	"#TF_PublishFile_NoFileSelected"
+		"font"             	"ImportToolSmallest"
+		"fillcolor"        	"217 119 87 255"	// token: LtAccent
+		"textAlignment"    	"west"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"NormalTextureBrowse"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"NormalTextureBrowse"
-		"xpos"                    	"c-105"
-		"ypos"                    	"77"
-		"zpos"                    	"1"
-		"wide"                    	"19"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"BrowseNormalTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"NormalTextureBrowse"
+		"xpos"                      	"c-105"
+		"ypos"                      	"77"
+		"zpos"                      	"1"
+		"wide"                      	"19"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"BrowseNormalTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -208,25 +223,31 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_workshop_view"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"NormalTextureClear"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"NormalTextureClear"
-		"xpos"                    	"c-84"
-		"ypos"                    	"77"
-		"wide"                    	"15"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"ClearNormalTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"NormalTextureClear"
+		"xpos"                      	"c-84"
+		"ypos"                      	"77"
+		"wide"                      	"15"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"ClearNormalTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -239,47 +260,56 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_close_X"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"NormalTextureLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"NormalTextureLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Shared Normal"
-		"xpos"          	"c-70"
-		"ypos"          	"77"
-		"zpos"          	"0"
-		"wide"          	"70"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"NormalTextureLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Shared Normal"
+		"xpos"             	"c-70"
+		"ypos"             	"77"
+		"zpos"             	"0"
+		"wide"             	"70"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"NormalTextureFileLabel"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"NormalTextureFileLabel"
-		"xpos"          	"c+5"
-		"ypos"          	"77"
-		"wide"          	"190"
-		"tall"          	"15"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"labelText"     	"#TF_PublishFile_Optional"
-		"font"          	"ImportToolSmallest"
-		"fillcolor"     	"217 119 87 255"	// token: LtAccent
-		"textAlignment" 	"west"
+		"ControlName"      	"Label"
+		"fieldName"        	"NormalTextureFileLabel"
+		"xpos"             	"c+5"
+		"ypos"             	"77"
+		"wide"             	"190"
+		"tall"             	"15"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"labelText"        	"#TF_PublishFile_Optional"
+		"font"             	"ImportToolSmallest"
+		"fillcolor"        	"217 119 87 255"	// token: LtAccent
+		"textAlignment"    	"west"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"LightwarpLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"LightwarpLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Lightwarp"
-		"xpos"          	"c-80"
-		"ypos"          	"90"
-		"zpos"          	"0"
-		"wide"          	"80"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"LightwarpLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Lightwarp"
+		"xpos"             	"c-80"
+		"ypos"             	"90"
+		"zpos"             	"0"
+		"wide"             	"80"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"LightwarpComboBox"
 	{
@@ -297,16 +327,17 @@
 	}
 	"BaseMapAlphaPhongMaskLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"BaseMapAlphaPhongMaskLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Base Map Alpha Phong Mask"
-		"xpos"          	"c-125"
-		"ypos"          	"105"
-		"zpos"          	"0"
-		"wide"          	"125"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"BaseMapAlphaPhongMaskLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Base Map Alpha Phong Mask"
+		"xpos"             	"c-125"
+		"ypos"             	"105"
+		"zpos"             	"0"
+		"wide"             	"125"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BaseMapAlphaPhongMaskCheckButton"
 	{
@@ -327,6 +358,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateBaseMapAlphaPhongMask"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -336,22 +368,22 @@
 	}
 	"PhongExponentTextureBrowse"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"PhongExponentTextureBrowse"
-		"xpos"                    	"c-196"
-		"ypos"                    	"125"
-		"zpos"                    	"1"
-		"wide"                    	"19"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"BrowsePhongExponentTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"PhongExponentTextureBrowse"
+		"xpos"                      	"c-196"
+		"ypos"                      	"125"
+		"zpos"                      	"1"
+		"wide"                      	"19"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"BrowsePhongExponentTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -364,25 +396,31 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_workshop_view"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongExponentTextureClear"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"PhongExponentTextureClear"
-		"xpos"                    	"c-175"
-		"ypos"                    	"125"
-		"wide"                    	"15"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"ClearPhongExponentTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"PhongExponentTextureClear"
+		"xpos"                      	"c-175"
+		"ypos"                      	"125"
+		"wide"                      	"15"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"ClearPhongExponentTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -395,47 +433,56 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_close_X"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongExponentTextureLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"PhongExponentTextureLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Shared Phong Exponent / Rim Mask"
-		"xpos"          	"c-170"
-		"ypos"          	"125"
-		"zpos"          	"0"
-		"wide"          	"170"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"PhongExponentTextureLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Shared Phong Exponent / Rim Mask"
+		"xpos"             	"c-170"
+		"ypos"             	"125"
+		"zpos"             	"0"
+		"wide"             	"170"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongExponentTextureFileLabel"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"PhongExponentTextureFileLabel"
-		"xpos"          	"c+5"
-		"ypos"          	"125"
-		"wide"          	"190"
-		"tall"          	"15"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"labelText"     	"#TF_PublishFile_Optional"
-		"font"          	"ImportToolSmallest"
-		"fillcolor"     	"217 119 87 255"	// token: LtAccent
-		"textAlignment" 	"west"
+		"ControlName"      	"Label"
+		"fieldName"        	"PhongExponentTextureFileLabel"
+		"xpos"             	"c+5"
+		"ypos"             	"125"
+		"wide"             	"190"
+		"tall"             	"15"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"labelText"        	"#TF_PublishFile_Optional"
+		"font"             	"ImportToolSmallest"
+		"fillcolor"        	"217 119 87 255"	// token: LtAccent
+		"textAlignment"    	"west"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongExponentLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"PhongExponentLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Phong Exponent"
-		"xpos"          	"c-100"
-		"ypos"          	"145"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"PhongExponentLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Phong Exponent"
+		"xpos"             	"c-100"
+		"ypos"             	"145"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongExponentTextEntry"
 	{
@@ -462,16 +509,17 @@
 	}
 	"PhongBoostLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"PhongBoostLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Phong Boost"
-		"xpos"          	"c-100"
-		"ypos"          	"160"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"PhongBoostLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Phong Boost"
+		"xpos"             	"c-100"
+		"ypos"             	"160"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PhongBoostTextEntry"
 	{
@@ -498,16 +546,17 @@
 	}
 	"RimLightExponentLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"RimLightExponentLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Rim Light Exponent"
-		"xpos"          	"c-100"
-		"ypos"          	"175"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"RimLightExponentLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Rim Light Exponent"
+		"xpos"             	"c-100"
+		"ypos"             	"175"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"RimLightExponentTextEntry"
 	{
@@ -534,16 +583,17 @@
 	}
 	"RimLightBoostLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"RimLightBoostLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Rim Light Boost"
-		"xpos"          	"c-100"
-		"ypos"          	"190"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"RimLightBoostLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Rim Light Boost"
+		"xpos"             	"c-100"
+		"ypos"             	"190"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"RimLightBoostTextEntry"
 	{
@@ -570,17 +620,18 @@
 	}
 	"RimMaskLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"RimMaskLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Rim Mask"
-		"xpos"          	"c-100"
-		"ypos"          	"205"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"RimMaskLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Rim Mask"
+		"xpos"             	"c-100"
+		"ypos"             	"205"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"RimMaskCheckButton"
 	{
@@ -601,6 +652,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateRimMask"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -610,16 +662,17 @@
 	}
 	"HalfLambertLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"HalfLambertLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Half Lambert"
-		"xpos"          	"c-100"
-		"ypos"          	"225"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"HalfLambertLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Half Lambert"
+		"xpos"             	"c-100"
+		"ypos"             	"225"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"HalfLambertCheckButton"
 	{
@@ -640,6 +693,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateHalfLambert"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -649,17 +703,18 @@
 	}
 	"BlendTintByBaseAlphaLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"BlendTintByBaseAlphaLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Blend Tint By Base Alpha"
-		"xpos"          	"c-150"
-		"ypos"          	"245"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"BlendTintByBaseAlphaLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Blend Tint By Base Alpha"
+		"xpos"             	"c-150"
+		"ypos"             	"245"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BlendTintByBaseAlphaCheckButton"
 	{
@@ -680,6 +735,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateBlendTintByBaseAlpha"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -689,17 +745,18 @@
 	}
 	"BlendTintColorOverBaseLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"BlendTintColorOverBaseLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Blend Tint Color Over Base"
-		"xpos"          	"c-150"
-		"ypos"          	"265"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"BlendTintColorOverBaseLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Blend Tint Color Over Base"
+		"xpos"             	"c-150"
+		"ypos"             	"265"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"BlendTintColorOverBaseTextEntry"
 	{
@@ -726,17 +783,18 @@
 	}
 	"ColorTintBaseLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"ColorTintBaseLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Color Tint Base (RGB)"
-		"xpos"          	"c-150"
-		"ypos"          	"280"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"ColorTintBaseLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Color Tint Base (RGB)"
+		"xpos"             	"c-150"
+		"ypos"             	"280"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ColorTintBaseRedTextEntry"
 	{
@@ -809,16 +867,17 @@
 	}
 	"AdditiveLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"AdditiveLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Additive"
-		"xpos"          	"c-100"
-		"ypos"          	"295"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"AdditiveLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Additive"
+		"xpos"             	"c-100"
+		"ypos"             	"295"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"AdditiveCheckButton"
 	{
@@ -839,6 +898,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateAdditive"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -848,16 +908,17 @@
 	}
 	"TranslucentLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"TranslucentLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Translucent"
-		"xpos"          	"c+19"
-		"ypos"          	"295"
-		"zpos"          	"0"
-		"wide"          	"60"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"TranslucentLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Translucent"
+		"xpos"             	"c+19"
+		"ypos"             	"295"
+		"zpos"             	"0"
+		"wide"             	"60"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"TranslucentCheckButton"
 	{
@@ -878,6 +939,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateTranslucent"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -887,17 +949,18 @@
 	}
 	"AlphaTestLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"AlphaTestLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Alpha Test"
-		"xpos"          	"c+96"
-		"ypos"          	"295"
-		"zpos"          	"0"
-		"wide"          	"60"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"AlphaTestLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Alpha Test"
+		"xpos"             	"c+96"
+		"ypos"             	"295"
+		"zpos"             	"0"
+		"wide"             	"60"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"AlphaTestCheckButton"
 	{
@@ -918,6 +981,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateAlphaTest"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -927,16 +991,17 @@
 	}
 	"EnvmapLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"EnvmapLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Cube Map"
-		"xpos"          	"c-100"
-		"ypos"          	"315"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"EnvmapLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Cube Map"
+		"xpos"             	"c-100"
+		"ypos"             	"315"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"EnvmapComboBox"
 	{
@@ -954,17 +1019,18 @@
 	}
 	"EnvmapAlphaMaskLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"EnvmapAlphaMaskLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Cube Map Alpha Mask"
-		"xpos"          	"c-150"
-		"ypos"          	"330"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"EnvmapAlphaMaskLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Cube Map Alpha Mask"
+		"xpos"             	"c-150"
+		"ypos"             	"330"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"EnvmapAlphaMaskComboBox"
 	{
@@ -983,17 +1049,18 @@
 	}
 	"EnvmapTintLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"EnvmapTintLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Cube Map Tint (RGB)"
-		"xpos"          	"c-150"
-		"ypos"          	"345"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"EnvmapTintLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Cube Map Tint (RGB)"
+		"xpos"             	"c-150"
+		"ypos"             	"345"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CubemapTintRedTextEntry"
 	{
@@ -1066,16 +1133,17 @@
 	}
 	"SelfIllumLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"SelfIllumLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Self Illumination"
-		"xpos"          	"c-100"
-		"ypos"          	"360"
-		"zpos"          	"0"
-		"wide"          	"100"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"SelfIllumLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Self Illumination"
+		"xpos"             	"c-100"
+		"ypos"             	"360"
+		"zpos"             	"0"
+		"wide"             	"100"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumCheckButton"
 	{
@@ -1096,6 +1164,7 @@
 		"brighttext"                	"0"
 		"command"                   	"UpdateSelfIllum"
 		"border"                    	"SteamWorkshopBorder"
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
 		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
 		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -1105,22 +1174,22 @@
 	}
 	"SelfIllumTextureBrowse"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"SelfIllumTextureBrowse"
-		"xpos"                    	"c-121"
-		"ypos"                    	"380"
-		"zpos"                    	"1"
-		"wide"                    	"19"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"BrowseSelfIllumTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"SelfIllumTextureBrowse"
+		"xpos"                      	"c-121"
+		"ypos"                      	"380"
+		"zpos"                      	"1"
+		"wide"                      	"19"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"BrowseSelfIllumTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -1133,25 +1202,31 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_workshop_view"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumTextureClear"
 	{
-		"ControlName"             	"CExImageButton"
-		"fieldName"               	"SelfIllumTextureClear"
-		"xpos"                    	"c-100"
-		"ypos"                    	"380"
-		"wide"                    	"15"
-		"tall"                    	"15"
-		"autoResize"              	"0"
-		"pinCorner"               	"3"
-		"textinsetx"              	"15"
-		"use_proportional_insets" 	"1"
-		"font"                    	"HudFontSmallBold"
-		"textAlignment"           	"west"
-		"labelText"               	""
-		"command"                 	"ClearSelfIllumTexture"
-		"image_drawcolor"         	"LtText"
-		"image_disabledcolor"     	"20 20 19 255"	// token: LtText
+		"ControlName"               	"CExImageButton"
+		"fieldName"                 	"SelfIllumTextureClear"
+		"xpos"                      	"c-100"
+		"ypos"                      	"380"
+		"wide"                      	"15"
+		"tall"                      	"15"
+		"autoResize"                	"0"
+		"pinCorner"                 	"3"
+		"textinsetx"                	"15"
+		"use_proportional_insets"   	"1"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"west"
+		"labelText"                 	""
+		"command"                   	"ClearSelfIllumTexture"
+		"image_drawcolor"           	"LtText"
+		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -1164,48 +1239,57 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_close_X"
 		}
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumTextureLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"SelfIllumTextureLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Shared Illum Mask"
-		"xpos"          	"c-85"
-		"ypos"          	"380"
-		"zpos"          	"0"
-		"wide"          	"85"
-		"tall"          	"15"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"SelfIllumTextureLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Shared Illum Mask"
+		"xpos"             	"c-85"
+		"ypos"             	"380"
+		"zpos"             	"0"
+		"wide"             	"85"
+		"tall"             	"15"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumTextureFileLabel"
 	{
-		"ControlName"   	"Label"
-		"fieldName"     	"SelfIllumTextureFileLabel"
-		"xpos"          	"c+5"
-		"ypos"          	"380"
-		"wide"          	"190"
-		"tall"          	"15"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"labelText"     	"#TF_PublishFile_Optional"
-		"font"          	"ImportToolSmallest"
-		"fillcolor"     	"217 119 87 255"	// token: LtAccent
-		"textAlignment" 	"west"
+		"ControlName"      	"Label"
+		"fieldName"        	"SelfIllumTextureFileLabel"
+		"xpos"             	"c+5"
+		"ypos"             	"380"
+		"wide"             	"190"
+		"tall"             	"15"
+		"autoResize"       	"0"
+		"pinCorner"        	"0"
+		"labelText"        	"#TF_PublishFile_Optional"
+		"font"             	"ImportToolSmallest"
+		"fillcolor"        	"217 119 87 255"	// token: LtAccent
+		"textAlignment"    	"west"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumTintLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"SelfIllumTintLabel"
-		"font"          	"ImportToolSmallestBold"
-		"textAlignment" 	"east"
-		"labelText"     	"Self Illumination Tint"
-		"xpos"          	"c-150"
-		"ypos"          	"400"
-		"zpos"          	"0"
-		"wide"          	"150"
-		"tall"          	"15"
-		"enabled"       	"0"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"SelfIllumTintLabel"
+		"font"             	"ImportToolSmallestBold"
+		"textAlignment"    	"east"
+		"labelText"        	"Self Illumination Tint"
+		"xpos"             	"c-150"
+		"ypos"             	"400"
+		"zpos"             	"0"
+		"wide"             	"150"
+		"tall"             	"15"
+		"enabled"          	"0"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"SelfIllumTintRedTextEntry"
 	{
@@ -1278,46 +1362,58 @@
 	}
 	"ButtonDone"
 	{
-		"ControlName"   	"Button"
-		"fieldName"     	"ButtonDone"
-		"xpos"          	"c-175"
-		"ypos"          	"420"
-		"wide"          	"175"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#GameUI_OK"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"wrap"          	"0"
-		"Command"       	"Done"
-		"Default"       	"0"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"Button"
+		"fieldName"                 	"ButtonDone"
+		"xpos"                      	"c-175"
+		"ypos"                      	"420"
+		"wide"                      	"175"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_OK"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"Done"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ButtonClose"
 	{
-		"ControlName"   	"Button"
-		"fieldName"     	"ButtonClose"
-		"xpos"          	"c+5"
-		"ypos"          	"420"
-		"wide"          	"175"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#Cancel"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"wrap"          	"0"
-		"Command"       	"Close"
-		"Default"       	"0"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"Button"
+		"fieldName"                 	"ButtonClose"
+		"xpos"                      	"c+5"
+		"ypos"                      	"420"
+		"wide"                      	"175"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#Cancel"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"Close"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

@@ -20,20 +20,21 @@
 	}
 	"TitleLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"TitleLabel"
-		"font"          	"TypeHeading"
-		"labelText"     	"#ConfirmTitle"
-		"textAlignment" 	"north"
-		"xpos"          	"0"
-		"ypos"          	"15"
-		"zpos"          	"1"
-		"wide"          	"300"
-		"tall"          	"20"
-		"autoResize"    	"1"
-		"pinCorner"     	"0"
-		"visible"       	"1"
-		"enabled"       	"1"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"TitleLabel"
+		"font"             	"TypeHeading"
+		"labelText"        	"#ConfirmTitle"
+		"textAlignment"    	"north"
+		"xpos"             	"0"
+		"ypos"             	"15"
+		"zpos"             	"1"
+		"wide"             	"300"
+		"tall"             	"20"
+		"autoResize"       	"1"
+		"pinCorner"        	"0"
+		"visible"          	"1"
+		"enabled"          	"1"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ExplanationLabel"
 	{
@@ -56,27 +57,33 @@
 	}
 	"CancelButton"
 	{
-		"ControlName"     	"CExButton"
-		"fieldName"       	"CancelButton"
-		"xpos"            	"190"
-		"ypos"            	"185"
-		"zpos"            	"20"
-		"wide"            	"100"
-		"tall"            	"25"
-		"autoResize"      	"0"
-		"pinCorner"       	"0"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"tabPosition"     	"0"
-		"labelText"       	"#Cancel"
-		"font"            	"HudFontSmallBold"
-		"textAlignment"   	"center"
-		"textinsetx"      	"50"
-		"dulltext"        	"0"
-		"brighttext"      	"0"
-		"Command"         	"cancel"
-		"sound_depressed" 	"UI/buttonclick.wav"
-		"sound_released"  	"UI/buttonclickrelease.wav"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"CancelButton"
+		"xpos"                      	"190"
+		"ypos"                      	"185"
+		"zpos"                      	"20"
+		"wide"                      	"100"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#Cancel"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"center"
+		"textinsetx"                	"50"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"Command"                   	"cancel"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"CancelButtonHintIcon"
 	{
@@ -93,28 +100,34 @@
 	}
 	"ConfirmButton"
 	{
-		"ControlName"     	"CExButton"
-		"fieldName"       	"ConfirmButton"
-		"xpos"            	"10"
-		"ypos"            	"185"
-		"zpos"            	"20"
-		"wide"            	"175"
-		"tall"            	"25"
-		"default"         	"1"
-		"autoResize"      	"0"
-		"pinCorner"       	"0"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"tabPosition"     	"0"
-		"labelText"       	"#ConfirmButtonText"
-		"font"            	"HudFontSmallBold"
-		"textAlignment"   	"center"
-		"textinsetx"      	"50"
-		"dulltext"        	"0"
-		"brighttext"      	"0"
-		"Command"         	"confirm"
-		"sound_depressed" 	"UI/buttonclick.wav"
-		"sound_released"  	"UI/buttonclickrelease.wav"
+		"ControlName"               	"CExButton"
+		"fieldName"                 	"ConfirmButton"
+		"xpos"                      	"10"
+		"ypos"                      	"185"
+		"zpos"                      	"20"
+		"wide"                      	"175"
+		"tall"                      	"25"
+		"default"                   	"1"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#ConfirmButtonText"
+		"font"                      	"HudFontSmallBold"
+		"textAlignment"             	"center"
+		"textinsetx"                	"50"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"Command"                   	"confirm"
+		"sound_depressed"           	"UI/buttonclick.wav"
+		"sound_released"            	"UI/buttonclickrelease.wav"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ConfirmButtonHintIcon"
 	{
@@ -150,5 +163,6 @@
 		"wrap"                      	"0"
 		"font"                      	"HudFontSmallest"
 		"selected_fgcolor_override" 	"160 90 67 255"	// token: LtAccentText
+		"fgcolor_override"          	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

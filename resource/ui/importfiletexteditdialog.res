@@ -16,17 +16,18 @@
 	}
 	"TitleLabel"
 	{
-		"ControlName"   	"CExLabel"
-		"fieldName"     	"TitleLabel"
-		"font"          	"TypeHeading"
-		"textAlignment" 	"center"
-		"labelText"     	"#Frame_Untitled"
-		"xpos"          	"10"
-		"ypos"          	"10"
-		"zpos"          	"0"
-		"wide"          	"540"
-		"tall"          	"25"
-		"centerwrap"    	"1"
+		"ControlName"      	"CExLabel"
+		"fieldName"        	"TitleLabel"
+		"font"             	"TypeHeading"
+		"textAlignment"    	"center"
+		"labelText"        	"#Frame_Untitled"
+		"xpos"             	"10"
+		"ypos"             	"10"
+		"zpos"             	"0"
+		"wide"             	"540"
+		"tall"             	"25"
+		"centerwrap"       	"1"
+		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"TextEntry"
 	{
@@ -45,46 +46,58 @@
 	}
 	"ButtonClose"
 	{
-		"ControlName"   	"Button"
-		"fieldName"     	"ButtonClose"
-		"xpos"          	"145"
-		"ypos"          	"325"
-		"wide"          	"150"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#Cancel"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"wrap"          	"0"
-		"Command"       	"Close"
-		"Default"       	"0"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"Button"
+		"fieldName"                 	"ButtonClose"
+		"xpos"                      	"145"
+		"ypos"                      	"325"
+		"wide"                      	"150"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#Cancel"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"Close"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"ButtonDone"
 	{
-		"ControlName"   	"Button"
-		"fieldName"     	"ButtonDone"
-		"xpos"          	"305"
-		"ypos"          	"325"
-		"wide"          	"150"
-		"tall"          	"25"
-		"autoResize"    	"0"
-		"pinCorner"     	"0"
-		"visible"       	"1"
-		"enabled"       	"1"
-		"tabPosition"   	"0"
-		"labelText"     	"#GameUI_OK"
-		"textAlignment" 	"center"
-		"dulltext"      	"0"
-		"brighttext"    	"0"
-		"wrap"          	"0"
-		"Command"       	"Done"
-		"Default"       	"0"
-		"font"          	"HudFontSmallBold"
+		"ControlName"               	"Button"
+		"fieldName"                 	"ButtonDone"
+		"xpos"                      	"305"
+		"ypos"                      	"325"
+		"wide"                      	"150"
+		"tall"                      	"25"
+		"autoResize"                	"0"
+		"pinCorner"                 	"0"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"tabPosition"               	"0"
+		"labelText"                 	"#GameUI_OK"
+		"textAlignment"             	"center"
+		"dulltext"                  	"0"
+		"brighttext"                	"0"
+		"wrap"                      	"0"
+		"Command"                   	"Done"
+		"Default"                   	"0"
+		"font"                      	"HudFontSmallBold"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

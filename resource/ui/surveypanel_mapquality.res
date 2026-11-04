@@ -92,6 +92,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option0"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio0Label"
 				{
@@ -108,6 +109,7 @@
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"center"
 					"associate"            	"Radio0"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio1"
 				{
@@ -124,6 +126,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option1"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio1Label"
 				{
@@ -139,6 +142,7 @@
 					"labelText"            	"#TF_SurveyQuestion_Rating1"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"center"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio2"
 				{
@@ -155,6 +159,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option2"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio2Label"
 				{
@@ -171,6 +176,7 @@
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"center"
 					"default"              	"1"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio3"
 				{
@@ -187,6 +193,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option3"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio3Label"
 				{
@@ -202,6 +209,7 @@
 					"labelText"            	"#TF_SurveyQuestion_Rating3"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"center"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio4"
 				{
@@ -218,6 +226,7 @@
 					"sound_released"       	"UI/buttonclickrelease.wav"
 					"labelText"            	""
 					"Command"              	"option4"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"Radio4Label"
 				{
@@ -233,25 +242,32 @@
 					"labelText"            	"#TF_SurveyQuestion_Rating4"
 					"font"                 	"HudFontSmallest"
 					"textAlignment"        	"center"
+					"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 			}
 			"SubmitButton"
 			{
-				"ControlName"          	"CExButton"
-				"fieldName"            	"SubmitButton"
-				"xpos"                 	"cs-0.5"
-				"ypos"                 	"rs1-10"
-				"zpos"                 	"1"
-				"wide"                 	"130"
-				"tall"                 	"25"
-				"labelText"            	"#AbuseReport_Submit"
-				"font"                 	"HudFontSmallBold"
-				"textAlignment"        	"center"
-				"Command"              	"submit"
-				"sound_depressed"      	"UI/buttonclick.wav"
-				"sound_released"       	"UI/buttonclickrelease.wav"
-				"proportionaltoparent" 	"1"
-				"actionsignallevel"    	"2"
+				"ControlName"               	"CExButton"
+				"fieldName"                 	"SubmitButton"
+				"xpos"                      	"cs-0.5"
+				"ypos"                      	"rs1-10"
+				"zpos"                      	"1"
+				"wide"                      	"130"
+				"tall"                      	"25"
+				"labelText"                 	"#AbuseReport_Submit"
+				"font"                      	"HudFontSmallBold"
+				"textAlignment"             	"center"
+				"Command"                   	"submit"
+				"sound_depressed"           	"UI/buttonclick.wav"
+				"sound_released"            	"UI/buttonclickrelease.wav"
+				"proportionaltoparent"      	"1"
+				"actionsignallevel"         	"2"
+				"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 			}
 		}
 	}

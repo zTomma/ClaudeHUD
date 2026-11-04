@@ -115,6 +115,9 @@
 		"defaultBgColor_override"   	"LtCardAlt"
 		"armedBgColor_override"     	"LtCardAlt"
 		"depressedBgColor_override" 	"LtCardAlt"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"DetailsButton"
 	{
@@ -142,6 +145,9 @@
 		"defaultBgColor_override"   	"LtCardAlt"
 		"armedBgColor_override"     	"LtCardAlt"
 		"depressedBgColor_override" 	"LtCardAlt"
+		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"StageBackground"
 	{

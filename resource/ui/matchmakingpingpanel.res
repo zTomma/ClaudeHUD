@@ -174,6 +174,7 @@
 		"smallcheckimage"        	"1"
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"
+		"fgcolor_override"       	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"DescLabel"
 	{
@@ -207,6 +208,7 @@
 		"textAlignment"        	"west"
 		"font"                 	"HudFontSmallestBold"
 		"mouseinputenabled"    	"0"
+		"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"PingSlider"
 	{
@@ -272,15 +274,27 @@
 				}
 				"UpButton"
 				{
-					"ControlName" 	"Button"
-					"FieldName"   	"UpButton"
-					"visible"     	"0"
+					"ControlName"               	"Button"
+					"FieldName"                 	"UpButton"
+					"visible"                   	"0"
+					"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 				"DownButton"
 				{
-					"ControlName" 	"Button"
-					"FieldName"   	"DownButton"
-					"visible"     	"0"
+					"ControlName"               	"Button"
+					"FieldName"                 	"DownButton"
+					"visible"                   	"0"
+					"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+					"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 				}
 			}
 		}

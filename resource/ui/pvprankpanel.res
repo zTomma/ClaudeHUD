@@ -148,19 +148,22 @@
 		}
 		"MedalButton"
 		{
-			"ControlName"          	"Button"
-			"fieldName"            	"MedalButton"
-			"xpos"                 	"cs-0.5"
-			"ypos"                 	"cs-0.5+2"
-			"zpos"                 	"100"
-			"wide"                 	"o1"
-			"tall"                 	"42"
-			"proportionaltoparent" 	"1"
-			"command"              	"medal_clicked"
-			"actionsignallevel"    	"2"
-			"labeltext"            	""
-			"paintbackground"      	"0"
-			"backgroundenabled"    	"0"
+			"ControlName"               	"Button"
+			"fieldName"                 	"MedalButton"
+			"xpos"                      	"cs-0.5"
+			"ypos"                      	"cs-0.5+2"
+			"zpos"                      	"100"
+			"wide"                      	"o1"
+			"tall"                      	"42"
+			"proportionaltoparent"      	"1"
+			"command"                   	"medal_clicked"
+			"actionsignallevel"         	"2"
+			"labeltext"                 	""
+			"paintbackground"           	"0"
+			"backgroundenabled"         	"0"
+			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"BGPanel"

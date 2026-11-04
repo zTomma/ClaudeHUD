@@ -27,6 +27,7 @@
 		"font"                 	"HudFontSmallest"
 		"textinsetx"           	"10"
 		"mouseinputenabled"    	"0"
+		"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"HealthProgressBar"
 	{

@@ -390,7 +390,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -408,7 +408,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -434,11 +434,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -493,7 +493,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -510,7 +510,7 @@
 			"pinCorner"        	"0"
 			"visible"          	"1"
 			"enabled"          	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -536,11 +536,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -597,7 +597,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -615,7 +615,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -641,11 +641,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -702,7 +702,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -720,7 +720,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -746,11 +746,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -807,7 +807,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -825,7 +825,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -851,11 +851,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -912,7 +912,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -930,7 +930,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -956,11 +956,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkText"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

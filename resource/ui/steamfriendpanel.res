@@ -51,6 +51,7 @@
 		"proportionaltoparent" 	"1"
 		"font"                 	"ControlPointTimer"
 		"mouseinputenabled"    	"0"
+		"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 	"StatusLabel"
 	{

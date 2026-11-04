@@ -57,7 +57,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -76,7 +76,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -103,11 +103,11 @@
 			"Command"                   	"close"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -148,10 +148,10 @@
 			"Command"                   	"nextexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -184,7 +184,7 @@
 			"pinCorner"            	"0"
 			"visible"              	"1"
 			"enabled"              	"1"
-			"fgcolor_override"     	"LtAccentText"
+			"fgcolor_override"     	"DkAccent"
 			"proportionaltoparent" 	"1"
 		}
 		"bgcolor_override"    	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -229,7 +229,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -248,7 +248,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -275,11 +275,11 @@
 			"Command"                   	"close"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -320,10 +320,10 @@
 			"Command"                   	"prevexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -365,10 +365,10 @@
 			"Command"                   	"nextexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -401,7 +401,7 @@
 			"pinCorner"            	"0"
 			"visible"              	"1"
 			"enabled"              	"1"
-			"fgcolor_override"     	"LtAccentText"
+			"fgcolor_override"     	"DkAccent"
 			"proportionaltoparent" 	"1"
 		}
 		"bgcolor_override"    	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -442,7 +442,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -461,7 +461,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -488,11 +488,11 @@
 			"Command"                   	"close"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -533,10 +533,10 @@
 			"Command"                   	"nextexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -578,10 +578,10 @@
 			"Command"                   	"prevexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -614,7 +614,7 @@
 			"pinCorner"            	"0"
 			"visible"              	"1"
 			"enabled"              	"1"
-			"fgcolor_override"     	"LtAccentText"
+			"fgcolor_override"     	"DkAccent"
 			"proportionaltoparent" 	"1"
 		}
 		"bgcolor_override"    	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -654,7 +654,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -673,7 +673,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -700,11 +700,11 @@
 			"Command"                   	"close"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -745,10 +745,10 @@
 			"Command"                   	"prevexplanation"
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkText"
 			"image_armedcolor"          	"Untinted"
 			"SubImage"
 			{
@@ -781,7 +781,7 @@
 			"pinCorner"            	"0"
 			"visible"              	"1"
 			"enabled"              	"1"
-			"fgcolor_override"     	"LtAccentText"
+			"fgcolor_override"     	"DkAccent"
 			"proportionaltoparent" 	"1"
 		}
 		"bgcolor_override"    	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
@@ -812,6 +812,7 @@
 			"wide"                 	"p0.8"
 			"tall"                 	"32"
 			"proportionaltoparent" 	"1"
+			"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 		"FriendsImage"
 		{
@@ -842,6 +843,7 @@
 			"tall"                 	"150"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
+			"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		}
 	}
 	"MedalsHelp"
@@ -881,7 +883,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"TextLabel"
 		{
@@ -899,7 +901,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"LtText"
+			"fgcolor_override" 	"DkOnRed"
 		}
 		"CloseButton"
 		{
@@ -925,11 +927,11 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	"close"
 			"paintbackground"           	"0"
-			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtAccentText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"defaultFgColor_override"   	"DkOnRed"
+			"armedFgColor_override"     	"DkAccent"
+			"depressedFgColor_override" 	"DkOnRed"
+			"image_drawcolor"           	"DkTextMuted"
+			"image_armedcolor"          	"DkAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -961,7 +963,7 @@
 			"pinCorner"        	"0"
 			"visible"          	"1"
 			"enabled"          	"1"
-			"fgcolor_override" 	"LtAccentText"
+			"fgcolor_override" 	"DkAccent"
 		}
 		"bgcolor_override"    	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
