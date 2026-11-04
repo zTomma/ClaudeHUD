@@ -24,14 +24,14 @@ SET = {
     "CHudAccountPanel":     {"xpos": "r184", "ypos": "r184"},
     "CHealthAccountPanel":  {"xpos": "12", "ypos": "r192"},
     # killfeed: top right, 12 from the edges
-    "HudDeathNotice": {"xpos": "r640", "ypos": "12", "wide": "628", "tall": "468",
+    "HudDeathNotice": {"xpos": "r640", "ypos": "12", "wide": "628", "tall": "112",
                        "MaxDeathNotices": "5", "IconScale": "0.35", "LineHeight": "16", "LineSpacing": "4",
                        "CornerRadius": "3", "RightJustify": "1", "TextFont": "TypeBodyStrong",
                        "TeamBlue": "DkBluText", "TeamRed": "DkRedText", "IconColor": "DkText",
                        "LocalPlayerColor": "DkText",
                        "BaseBackgroundColor": lit("DkCard"), "LocalBackgroundColor": lit("DkCardLocal")},
     # left column, bottom to top: health block r76-r12, carrying weapon r108, spy disguise r144, chat r272
-    "HudChat": {"xpos": "12", "ypos": "r272", "wide": "320", "tall": "120"},
+    "HudChat": {"xpos": "12", "ypos": "r272", "wide": "280", "tall": "120"},
     # target IDs: below the crosshair, outside the central rectangle
     "CMainTargetID":      {"ypos": "360", "tall": "30"},
     "CSpectatorTargetID": {"ypos": "250", "tall": "30"},
@@ -40,7 +40,7 @@ SET = {
     "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "164", "tall": "64",
                           "blue_active_xpos": "0", "red_active_xpos": "84"},
     # spy disguise text: above the health block
-    "DisguiseStatus": {"xpos": "12", "ypos": "r144", "wide": "220", "tall": "32", "TextFont": "TypeBodyStrong"},
+    "DisguiseStatus": {"xpos": "12", "ypos": "r144", "wide": "180", "tall": "32", "TextFont": "TypeBodyStrong"},
 }
 DROP = re.compile(r"_(minmode|lodef|hidef)$", re.I)
 

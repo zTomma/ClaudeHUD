@@ -90,13 +90,13 @@ Generato da tools/hand/gen_classmeters.py""")
 # --- spy disguise status ------------------------------------------------------------------------
 patch("resource/ui/disguisestatuspanel.res", {
     ("DisguiseStatusBG",): dict(HIDE_IMG, teambg_1="", teambg_2="", teambg_3=""),
-    ("DisguiseNameLabel",): {"xpos": "36", "ypos": "4", "wide": "160", "tall": "12", "font": "TypeBodyStrong",
+    ("DisguiseNameLabel",): {"xpos": "36", "ypos": "4", "wide": "100", "tall": "12", "font": "TypeBodyStrong",
                              "fgcolor_override": "DkText", "textAlignment": "west"},
-    ("WeaponNameLabel",): {"xpos": "36", "ypos": "16", "wide": "160", "tall": "10", "font": "TypeCaption",
+    ("WeaponNameLabel",): {"xpos": "36", "ypos": "16", "wide": "100", "tall": "10", "font": "TypeCaption",
                            "fgcolor_override": "DkTextMuted", "textAlignment": "west"},
     ("SpectatorGUIHealth",): {"xpos": "6", "ypos": "4", "wide": "22", "tall": "22"},
-    ("itemmodelpanel",): {"xpos": "160", "ypos": "0", "wide": "40", "tall": "30"},
-}, add=[(None, card("DisguiseCard", "200", "30"))], header="""ClaudeHUD: riscritto a mano (fase 7) - stato del travestimento della Spy: scheda DkCard 200x30
+    ("itemmodelpanel",): {"xpos": "136", "ypos": "0", "wide": "40", "tall": "30"},
+}, add=[(None, card("DisguiseCard", "176", "30"))], header="""ClaudeHUD: riscritto a mano (fase 7) - stato del travestimento della Spy: scheda DkCard 200x30
 con chip salute, nome del travestimento e arma. Generato da tools/hand/gen_classmeters.py""")
 print("ok")
 

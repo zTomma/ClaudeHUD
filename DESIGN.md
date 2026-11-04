@@ -51,6 +51,9 @@ e non si imposta da `.res`. Stima: 6–8 px, da verificare in gioco. Per questo 
 raggio**, quello del motore, ovunque.
 *Limite del motore:* su pannelli più piccoli di circa due raggi (meno di 12 unità a 720p) gli angoli si
 sovrappongono. Da qui la regola delle superfici squadrate sotto le 12 unità.
+*Limite del motore (2):* quando il codice ridimensiona da solo uno sfondo che è un `ImagePanel`
+(`TargetIDBG` del target ID si allarga col nome), l'unico riempimento possibile è `fillcolor`, che è
+squadrato. Il target ID è quindi l'unica scheda di combattimento con angoli vivi.
 
 **Il Segno (motivo grafico):** una barra terracotta verticale, larga 2 unità, sul bordo sinistro di
 ciò che è attivo o importante: voce di menu selezionata, riga del giocatore locale, scheda in pericolo.
@@ -280,6 +283,11 @@ Fortress, glifi controller) restano invariati.
   a passi di 4, con la stessa larghezza.
 - Posizioni relative: `c±N` per gli elementi centrati, `rN` per quelli ancorati a destra o in basso,
   in modo da adattarsi a 16:9, 16:10 e 4:3 senza file separati.
+- **Verifica:** `python3 tools/layout_check.py` calcola i rettangoli delle schede principali a 4:3, 16:10,
+  16:9 e 21:9 e segnala elementi fuori schermo, sovrapposti o nel rettangolo centrale.
+- **Colonna sinistra**, dal basso: blocco salute (r76–r12), arma trasportata (r108), stato del
+  travestimento (r144), chat (r272). **Binario destro:** munizioni (r100/r48), metro oggetto (r184/r48),
+  barre di carica sottili (r56), carica Medic (r88).
 
 ---
 
@@ -306,18 +314,22 @@ Le dimensioni seguono la gerarchia: livello 1 = `NumXL` 26, livello 2 = `NumL` 1
 ## 7. Movimento
 
 **Regola unica:** *tutto entra in 0.20 s con curva `Deaccel` ed esce in 0.15 s con `Accel`; i cambi di
-stato di colore durano 0.12 s `Linear`; l'unico movimento ripetuto è il pericolo, un `Pulse` lento
-(frequenza 2) che riporta sempre al colore di base.*
+stato di colore durano 0.12 s `Linear`; l'unico movimento ripetuto è il pericolo, un ciclo a 2 Hz
+(0.5 s) che fa pulsare il Segno e riporta sempre al colore di base.*
 
 | Caso | Durata | Interpolatore |
 |---|---:|---|
 | Comparsa (pannello, notifica, voce) | 0.20 s | `Deaccel` |
 | Scomparsa | 0.15 s | `Accel` |
-| Cambio colore di stato (hover, danno, cura) | 0.12 s | `Linear` |
-| Pericolo (salute bassa, munizioni basse) | ripetuto | `Pulse 2` tra il colore di base e `DkAccent` |
-| Niente | — | rimbalzi, `Flicker`, `Spline` decorativi, movimenti oltre 8 unità |
+| Cambio colore di stato (hover, danno, cura, carica pronta) | 0.12 s | `Linear` |
+| Pericolo (salute sotto il 49%, munizioni basse) | ciclo di 0.5 s | `Linear` 0.12 s verso l'alfa piena e ritorno, sul Segno; il numero resta terracotta fisso |
+| Niente | — | rimbalzi, `Flicker`, `Spline`, `Gain`, `Bias`, lampeggi di stato, movimenti oltre 8 unità |
 
-Le animazioni stanno in `scripts/hudanimations_tf.txt`. Ogni colore animato è un token dello scheme,
+Le animazioni stanno in `scripts/hudanimations_tf.txt`. Gli eventi di salute, munizioni, carica Medic,
+timer, supplementari e frecce dei menu sono riscritti a mano (`tools/hand/patch_anims.py`); negli altri
+eventi del gioco gli interpolatori vietati sono sostituiti in blocco (`Spline`/`Bounce`/`Gain` →
+`Deaccel`, `Flicker` → `Linear`, `Bias` → `Accel`/`Deaccel`). Le loro durate restano quelle di Valve,
+perché molti eventi sono sequenze temporizzate dal codice. Ogni colore animato è un token dello scheme,
 mai un letterale: il lint lo controlla.
 
 ---
@@ -350,9 +362,19 @@ L'assegnazione file per file è codice (`tools/modes.py`) ed è riportata nella 
 | **Scura** (`Dk*`) | Tutta la HUD di gioco: salute, munizioni, armi, target ID, killfeed, chat, obiettivi, timer, notifiche, avvisi CTF e passtime. Spettatore, killcam e freezecam, pannelli di vittoria, statistiche di fine vita, menu rapidi di Engineer e Spy, menu vocali e provocazioni, HUD MvM e stazione potenziamenti. Superfici oggetti: zaino, negozio, crafting, scambi, loadout degli oggetti, quest. |
 | **Chiara** (`Lt*`) | Menu principale e i suoi pannelli, selezione classe, selezione squadra, scoreboard (anche MvM), opzioni e altri dialoghi GameUI (`sourcescheme.res`), server browser, MOTD, info mappa, matchmaking e lobby, gradi e statistiche, dialoghi aperti dai menu. |
 | **Sempre scuro** | Tooltip e popover, anche sopra i menu chiari (come su claude.ai). |
+| **Scuro dentro una pagina chiara** | Le due tabelle giocatori dello scoreboard: il gioco colora le righe per squadra dal codice, con colori pensati per sfondi scuri. Restano schede `DkCard` sulla pagina avorio (eccezione di leggibilità, vedi CLAUDE.md: la leggibilità vince). |
 
 *Perché le superfici oggetti restano scure:* i colori di qualità e rarità sono definiti dal gioco e
 calibrati per sfondi scuri. Su avorio il giallo Unique arriverebbe a 1.5:1.
+
+*Colori espliciti in modalità chiara:* nei file chiari ogni label e ogni bottone senza colore proprio
+riceve un token `Lt*` esplicito (`tools/migrate.py`), perché altrimenti erediterebbe il default dello
+scheme, che è scuro (testo avorio), e sparirebbe su una scheda bianca. Dentro un popover scuro l'intero
+sottoalbero torna in modalità scura.
+
+*Chat:* lo stile delle righe viene da `chatscheme.res` (generato, scuro). Il file di layout dei
+messaggi (`BaseChat.res`) non è nel repository: non lo ricreo per non inventare nomi di elementi
+(CLAUDE.md, regola 2). La posizione della chat è in `hudlayout.res`.
 
 ---
 
@@ -365,7 +387,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 778 file .res** — riscritti 46 · generati 3 · migrati 729 · da fare 0.
+**Totale 778 file .res** — riscritti 53 · generati 3 · migrati 722 · da fare 0.
 
 <details><summary><code>resource/</code> — 25 file (generato 3, migrato 22)</summary>
 
@@ -407,7 +429,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 307 file (migrato 262, riscritto 45)</summary>
+<details><summary><code>resource/ui/</code> — 307 file (migrato 255, riscritto 52)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -458,13 +480,13 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `globalchat.res` | scura |
 | [~] | `globalexplanations.res` | chiara |
 | [~] | `healthiconpanel.res` | scura |
-| [~] | `hud_obj_dispenser.res` | scura |
-| [~] | `hud_obj_sapper.res` | scura |
-| [~] | `hud_obj_sentrygun.res` | scura |
-| [~] | `hud_obj_sentrygun_disp.res` | scura |
-| [~] | `hud_obj_tele.res` | scura |
-| [~] | `hud_obj_tele_entrance.res` | scura |
-| [~] | `hud_obj_tele_exit.res` | scura |
+| [x] | `hud_obj_dispenser.res` | scura |
+| [x] | `hud_obj_sapper.res` | scura |
+| [x] | `hud_obj_sentrygun.res` | scura |
+| [x] | `hud_obj_sentrygun_disp.res` | scura |
+| [x] | `hud_obj_tele.res` | scura |
+| [x] | `hud_obj_tele_entrance.res` | scura |
+| [x] | `hud_obj_tele_exit.res` | scura |
 | [~] | `hudaccountpanel.res` | scura |
 | [~] | `hudachievementfloatingnumber.res` | scura |
 | [~] | `hudachievementtrackeritem.res` | scura |

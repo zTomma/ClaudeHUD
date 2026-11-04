@@ -197,7 +197,7 @@
 		"enabled"   	"1"
 		"xpos"      	"12"
 		"ypos"      	"r144"
-		"wide"      	"220"
+		"wide"      	"180"
 		"tall"      	"32"
 		"TextFont"  	"TypeBodyStrong"
 	}
@@ -410,7 +410,7 @@
 		"xpos"                 	"r640"
 		"ypos"                 	"12"
 		"wide"                 	"628"
-		"tall"                 	"468"
+		"tall"                 	"112"
 		"MaxDeathNotices"      	"5"
 		"IconScale"            	"0.35"
 		"LineHeight"           	"16"
@@ -834,7 +834,7 @@
 		"enabled"             	"1"
 		"xpos"                	"12"
 		"ypos"                	"r272"
-		"wide"                	"320"
+		"wide"                	"280"
 		"tall"                	"120"
 		"PaintBackgroundType" 	"2"
 	}

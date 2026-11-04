@@ -6,12 +6,26 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.dirname(HERE)); import tokens as T
 
-SAMPLE_BIG = "Àè 0123456789"
-SAMPLE = "Àà èéìòù 0123456789 • × – — ← → % / :"
-x0, y, w = "c24", 52, "396"
+from PIL import ImageFont
+FILE_OF = {f[1]: f[0] for f in T.FONT_FILES}
+MAX_W = 284  # units: the card is 300 wide (fits 4:3, see tools/layout_check.py)
+
+def width_units(s, fam, tall):
+    cell = 1.371 if fam.startswith("Source") else 1.300
+    f = ImageFont.truetype(os.path.join(ROOT, "resource", "fonts", FILE_OF[fam]), 1000)
+    return f.getlength(s) / 1000 * (tall / cell)
+
+CANDIDATES = ["Àà èéìòù 0123456789 • × – — ← → %", "Àà èéìòù 0123456789 • × –", "Àè 0123456789", "Àè 0123", "Àè 01"]
+x0, y, w = "c16", 52, "284"
 items = []
 for name, (fw, tall, role) in T.TYPE.items():
-    text = "%s %d  %s" % (name, tall, SAMPLE_BIG if tall >= 18 else SAMPLE)
+    text = None
+    for sample in CANDIDATES:
+        t = "%s %d  %s" % (name, tall, sample)
+        if width_units(t, fw[0], tall) <= MAX_W:
+            text = t
+            break
+    text = text or "%s %d" % (name, tall)
     items.append((name, text, tall))
 
 out = ['''// ClaudeHUD: riscritto a mano (fase 2) - pannello di test dei font (mostrato nel menu principale).
@@ -23,10 +37,10 @@ out = ['''// ClaudeHUD: riscritto a mano (fase 2) - pannello di test dei font (m
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"FontTestCard"
-		"xpos"					"c16"
+		"xpos"					"c8"
 		"ypos"					"64"
 		"zpos"					"20"
-		"wide"					"412"
+		"wide"					"300"
 		"tall"					"%d"
 		"visible"				"1"
 		"enabled"				"1"
@@ -38,10 +52,10 @@ out = ['''// ClaudeHUD: riscritto a mano (fase 2) - pannello di test dei font (m
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"FontTestTitle"
-		"xpos"			"c24"
+		"xpos"			"c16"
 		"ypos"			"66"
 		"zpos"			"21"
-		"wide"			"396"
+		"wide"			"284"
 		"tall"			"12"
 		"visible"		"1"
 		"enabled"		"1"

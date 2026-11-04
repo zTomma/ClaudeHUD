@@ -14,7 +14,8 @@ STEPS = [
 ]
 EXTRA = sorted(f for f in os.listdir(os.path.join(HERE, "hand")) if f.startswith("gen_") and f != "gen_health.py")
 STEPS += [["hand/" + f] for f in EXTRA]
-STEPS += [["build_scheme.py"], ["build_scheme.py", "--aux"], ["check_fonts.py"], ["contrast.py"], ["lint.py"], ["coverage.py"]]
+STEPS += [["build_scheme.py"], ["build_scheme.py", "--aux"], ["check_fonts.py"], ["contrast.py"], ["lint.py"],
+          ["layout_check.py"], ["coverage.py"], ["preview.py"]]
 
 def main():
     for step in STEPS:
