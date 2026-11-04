@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': light (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 6) - barra superiore del matchmaking (menu principale).
+// Striscia bianca, "Trova una partita" e' il bottone primario Ink (hover Terracotta), gli altri bottoni
+// sono secondari Pampas. Generato da tools/hand/gen_mainmenu.py
 "Resource/UI/MatchMakingDashboard.res"
 {
 	"MMDashboard"
@@ -36,17 +37,17 @@
 			"fieldName"            	"Gradient"
 			"xpos"                 	"0"
 			"ypos"                 	"0"
-			"wide"                 	"p0.5"
-			"tall"                 	"f6"
+			"wide"                 	"0"
+			"tall"                 	"0"
 			"zpos"                 	"0"
-			"visible"              	"1"
+			"visible"              	"0"
 			"enabled"              	"1"
 			"rotation"             	"2"
 			"proportionaltoparent" 	"1"
 			"scaleimage"           	"1"
 			"mouseinputenabled"    	"0"
 			"alpha"                	"100"
-			"image"                	"gradient_pure_black"
+			"image"                	""
 		}
 		"BGPanel"
 		{
@@ -61,7 +62,7 @@
 			"PaintBackgroundType"  	"2"
 			"border"               	"ReplayDefaultBorder"
 			"proportionaltoparent" 	"1"
-			"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"LtCard"
 		}
 		"OuterShadow"
 		{
@@ -76,7 +77,7 @@
 			"PaintBackgroundType"  	"2"
 			"border"               	"OuterShadowBorder"
 			"proportionaltoparent" 	"1"
-			"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"ToggleChatButton"
 		{
@@ -105,8 +106,8 @@
 			"roundedcorners"            	"0"
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -122,12 +123,13 @@
 				"proportionaltoparent" 	"1"
 				"image"                	"glyph_chat"
 			}
-			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
+			"paintbackground"           	"0"
 		}
 		"PartySlot0"
 		{
@@ -266,7 +268,7 @@
 				"visible"              	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"OuterShadowBorderThin"
-				"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+				"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 			}
 			"BGPanel"
 			{
@@ -280,7 +282,7 @@
 				"visible"              	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"ReplayDefaultBorder"
-				"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+				"bgcolor_override"     	"LtCardAlt"
 			}
 			"QueueLogoButton"
 			{
@@ -338,7 +340,7 @@
 				"tall"                 	"f0"
 				"visible"              	"1"
 				"enabled"              	"1"
-				"font"                 	"HudFontSmallestBold"
+				"font"                 	"TypeBodyStrong"
 				"fgcolor_override"     	"LtText"
 				"textAlignment"        	"west"
 				"labelText"            	"%queue_state%"
@@ -476,7 +478,7 @@
 				"visible"              	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"OuterShadowBorderThin"
-				"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+				"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 			}
 			"BGPanel"
 			{
@@ -490,7 +492,7 @@
 				"visible"              	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"ReplayDefaultBorder"
-				"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+				"bgcolor_override"     	"LtCardAlt"
 			}
 			"PromptText"
 			{
@@ -529,7 +531,7 @@
 				"visible"                   	"1"
 				"enabled"                   	"1"
 				"tabPosition"               	"0"
-				"font"                      	"HudFontSmallestBold"
+				"font"                      	"TypeBodyStrong"
 				"textAlignment"             	"center"
 				"dulltext"                  	"0"
 				"brighttext"                	"0"
@@ -539,49 +541,54 @@
 				"mouseinputenabled"         	"1"
 				"keyboardinputenabled"      	"0"
 				"actionsignallevel"         	"3"
-				"armedBgColor_override"     	"LtPositive"
-				"defaultBgColor_override"   	"SaleGreen"
+				"armedBgColor_override"     	"LtButtonHover"
+				"defaultBgColor_override"   	"LtButton"
 				"sound_depressed"           	"UI/buttonclick.wav"
 				"sound_released"            	"UI/buttonclickrelease.wav"
-				"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-				"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-				"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+				"defaultFgColor_override"   	"LtOnButton"
+				"armedFgColor_override"     	"LtOnButtonHover"
+				"depressedFgColor_override" 	"LtOnButtonHover"
+				"paintbackground"           	"1"
+				"paintbackgroundtype"       	"2"
+				"border_default"            	"ClCard"
+				"border_armed"              	"ClCard"
+				"depressedBgColor_override" 	"LtButtonHover"
 			}
 		}
 		"QuitButton"
 		{
-			"ControlName"             	"CExImageButton"
-			"fieldName"               	"QuitButton"
-			"xpos"                    	"rs1"
-			"ypos"                    	"0"
-			"zpos"                    	"100"
-			"wide"                    	"30"
-			"tall"                    	"f6"
-			"autoResize"              	"0"
-			"pinCorner"               	"3"
-			"visible"                 	"1"
-			"enabled"                 	"1"
-			"tabPosition"             	"0"
-			"font"                    	"HudFontSmallBold"
-			"textAlignment"           	"west"
-			"textinsetx"              	"0"
-			"dulltext"                	"0"
-			"brighttext"              	"0"
-			"Command"                 	"quit"
-			"proportionaltoparent"    	"1"
-			"labeltext"               	""
-			"mouseinputenabled"       	"1"
-			"keyboardinputenabled"    	"0"
-			"actionsignallevel"       	"2"
-			"RoundedCorners"          	"0"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"UI/buttonclickrelease.wav"
-			"armedBgColor_override"   	"LtAccentA60"
-			"defaultBgColor_override" 	"LtAccentA20"
-			"defaultFgColor_override" 	"LtText"
-			"armedFgColor_override"   	"LtText"
-			"image_drawcolor"         	"LtText"
-			"image_armedcolor"        	"LtText"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"QuitButton"
+			"xpos"                      	"rs1"
+			"ypos"                      	"0"
+			"zpos"                      	"100"
+			"wide"                      	"30"
+			"tall"                      	"f6"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"font"                      	"TypeBodyStrong"
+			"textAlignment"             	"west"
+			"textinsetx"                	"0"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"Command"                   	"quit"
+			"proportionaltoparent"      	"1"
+			"labeltext"                 	""
+			"mouseinputenabled"         	"1"
+			"keyboardinputenabled"      	"0"
+			"actionsignallevel"         	"2"
+			"RoundedCorners"            	"0"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"armedBgColor_override"     	"LtButtonHover"
+			"defaultBgColor_override"   	"LtCardAlt"
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtOnButtonHover"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtOnButtonHover"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -598,45 +605,49 @@
 				"image"                	"glyph_quit"
 				"drawcolor_override"   	"LtText"
 			}
+			"paintbackground"           	"1"
+			"paintbackgroundtype"       	"2"
+			"border_default"            	"ClCard"
+			"border_armed"              	"ClCard"
+			"depressedBgColor_override" 	"LtButtonHover"
+			"depressedFgColor_override" 	"LtOnButtonHover"
 		}
 		"DisconnectButton"
 		{
-			"ControlName"             	"CExImageButton"
-			"fieldName"               	"DisconnectButton"
-			"xpos"                    	"rs1"
-			"ypos"                    	"0"
-			"zpos"                    	"100"
-			"wide"                    	"110"
-			"wide"                    	"110" [!$POSIX]
-			"wide"                    	"115" [$POSIX]
-			"tall"                    	"f6"
-			"autoResize"              	"0"
-			"pinCorner"               	"3"
-			"visible"                 	"1"
-			"enabled"                 	"1"
-			"tabPosition"             	"0"
-			"font"                    	"HudFontSmallBold"
-			"textAlignment"           	"west"
-			"dulltext"                	"0"
-			"brighttext"              	"0"
-			"Command"                 	"quit"
-			"proportionaltoparent"    	"1"
-			"labeltext"               	"#TF_Disconnect"
-			"mouseinputenabled"       	"1"
-			"keyboardinputenabled"    	"0"
-			"actionsignallevel"       	"2"
-			"RoundedCorners"          	"0"
-			"textinsety"              	"2.5"
-			"textinsetx"              	"26"
-			"use_proportional_insets" 	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"UI/buttonclickrelease.wav"
-			"armedBgColor_override"   	"LtAccentA60"
-			"defaultBgColor_override" 	"LtAccentA20"
-			"defaultFgColor_override" 	"LtText"
-			"armedFgColor_override"   	"LtText"
-			"image_drawcolor"         	"LtText"
-			"image_armedcolor"        	"LtText"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"DisconnectButton"
+			"xpos"                      	"rs1"
+			"ypos"                      	"0"
+			"zpos"                      	"100"
+			"wide"                      	"110"
+			"tall"                      	"f6"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"font"                      	"TypeBodyStrong"
+			"textAlignment"             	"west"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"Command"                   	"quit"
+			"proportionaltoparent"      	"1"
+			"labeltext"                 	"#TF_Disconnect"
+			"mouseinputenabled"         	"1"
+			"keyboardinputenabled"      	"0"
+			"actionsignallevel"         	"2"
+			"RoundedCorners"            	"0"
+			"textinsety"                	"2.5"
+			"textinsetx"                	"26"
+			"use_proportional_insets"   	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"armedBgColor_override"     	"LtButtonHover"
+			"defaultBgColor_override"   	"LtCardAlt"
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtOnButtonHover"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtOnButtonHover"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -653,6 +664,12 @@
 				"image"                	"glyph_disconnect"
 				"drawcolor_override"   	"LtText"
 			}
+			"paintbackground"           	"1"
+			"paintbackgroundtype"       	"2"
+			"border_default"            	"ClCard"
+			"border_armed"              	"ClCard"
+			"depressedBgColor_override" 	"LtButtonHover"
+			"depressedFgColor_override" 	"LtOnButtonHover"
 		}
 		"ResumeButton"
 		{
@@ -662,14 +679,13 @@
 			"ypos"                      	"0"
 			"zpos"                      	"100"
 			"wide"                      	"90" [!$POSIX]
-			"wide"                      	"95" [$POSIX]
 			"tall"                      	"f6"
 			"autoResize"                	"0"
 			"pinCorner"                 	"3"
 			"visible"                   	"0"
 			"enabled"                   	"1"
 			"tabPosition"               	"0"
-			"font"                      	"HudFontSmallBold"
+			"font"                      	"TypeBodyStrong"
 			"textAlignment"             	"west"
 			"dulltext"                  	"0"
 			"brighttext"                	"0"
@@ -686,9 +702,9 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"armedFgColor_override"     	"LtOnButtonHover"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtOnButtonHover"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -705,47 +721,51 @@
 				"image"                	"icon_resume"
 				"drawcolor_override"   	"LtText"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"LtCardAlt"
+			"armedBgColor_override"     	"LtButtonHover"
+			"depressedBgColor_override" 	"LtButtonHover"
+			"paintbackground"           	"1"
+			"paintbackgroundtype"       	"2"
+			"border_default"            	"ClCard"
+			"border_armed"              	"ClCard"
+			"depressedFgColor_override" 	"LtOnButtonHover"
 		}
 		"FindAGameButton"
 		{
-			"ControlName"             	"CExImageButton"
-			"fieldName"               	"FindAGameButton"
-			"xpos"                    	"rs1-31"
-			"ypos"                    	"0"
-			"zpos"                    	"100"
-			"wide"                    	"115" [!$POSIX]
-			"wide"                    	"120" [$POSIX]
-			"tall"                    	"f6"
-			"autoResize"              	"0"
-			"pinCorner"               	"3"
-			"visible"                 	"1"
-			"enabled"                 	"1"
-			"tabPosition"             	"0"
-			"font"                    	"HudFontSmallBold"
-			"textAlignment"           	"west"
-			"dulltext"                	"0"
-			"brighttext"              	"0"
-			"Command"                 	"find_game"
-			"proportionaltoparent"    	"1"
-			"labeltext"               	"#MMenu_FindAGame"
-			"mouseinputenabled"       	"1"
-			"keyboardinputenabled"    	"0"
-			"actionsignallevel"       	"2"
-			"roundedcorners"          	"1"
-			"textinsety"              	"2.5"
-			"textinsetx"              	"26"
-			"use_proportional_insets" 	"1"
-			"sound_depressed"         	"UI/buttonclick.wav"
-			"sound_released"          	"UI/buttonclickrelease.wav"
-			"armedBgColor_override"   	"LtPositive"
-			"defaultBgColor_override" 	"LtPositive"
-			"defaultFgColor_override" 	"LtText"
-			"armedFgColor_override"   	"LtText"
-			"image_drawcolor"         	"LtText"
-			"image_armedcolor"        	"LtText"
+			"ControlName"               	"CExImageButton"
+			"fieldName"                 	"FindAGameButton"
+			"xpos"                      	"rs1-31"
+			"ypos"                      	"0"
+			"zpos"                      	"100"
+			"wide"                      	"115" [!$POSIX]
+			"tall"                      	"f6"
+			"autoResize"                	"0"
+			"pinCorner"                 	"3"
+			"visible"                   	"1"
+			"enabled"                   	"1"
+			"tabPosition"               	"0"
+			"font"                      	"TypeBodyStrong"
+			"textAlignment"             	"west"
+			"dulltext"                  	"0"
+			"brighttext"                	"0"
+			"Command"                   	"find_game"
+			"proportionaltoparent"      	"1"
+			"labeltext"                 	"#MMenu_FindAGame"
+			"mouseinputenabled"         	"1"
+			"keyboardinputenabled"      	"0"
+			"actionsignallevel"         	"2"
+			"roundedcorners"            	"1"
+			"textinsety"                	"2.5"
+			"textinsetx"                	"26"
+			"use_proportional_insets"   	"1"
+			"sound_depressed"           	"UI/buttonclick.wav"
+			"sound_released"            	"UI/buttonclickrelease.wav"
+			"armedBgColor_override"     	"LtButtonHover"
+			"defaultBgColor_override"   	"LtButton"
+			"defaultFgColor_override"   	"LtOnButton"
+			"armedFgColor_override"     	"LtOnButtonHover"
+			"image_drawcolor"           	"LtOnButton"
+			"image_armedcolor"          	"LtOnButtonHover"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -762,6 +782,12 @@
 				"image"                	"glyph_multiplayer"
 				"drawcolor_override"   	"LtText"
 			}
+			"paintbackground"           	"1"
+			"paintbackgroundtype"       	"2"
+			"border_default"            	"ClCard"
+			"border_armed"              	"ClCard"
+			"depressedBgColor_override" 	"LtButtonHover"
+			"depressedFgColor_override" 	"LtOnButtonHover"
 		}
 	}
 }

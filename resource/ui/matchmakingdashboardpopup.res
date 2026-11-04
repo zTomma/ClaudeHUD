@@ -34,7 +34,7 @@
 			"proportionaltoparent" 	"1"
 			"pinCorner"            	"2"
 			"autoResize"           	"1"
-			"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"IdleContainer"
 		{

@@ -371,7 +371,7 @@
 						"zpos"                 	"5"
 						"proportionaltoparent" 	"1"
 						"border"               	"InnerShadowBorderThin"
-						"bgcolor_override"     	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+						"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 					}
 				}
 			}
@@ -401,7 +401,7 @@
 					"tall"                 	"f0"
 					"proportionaltoparent" 	"1"
 					"border"               	"InnerShadowBorder"
-					"bgcolor_override"     	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+					"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 				}
 				"GamesLabel"
 				{

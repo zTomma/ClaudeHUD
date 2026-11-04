@@ -258,7 +258,7 @@
 						"zpos"                 	"1000"	// Be on top of everything
 						"border"               	"InnerShadowBorderThin"
 						"mouseinputenabled"    	"0"
-						"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
+						"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 					}
 				}
 				"Background"
@@ -459,7 +459,7 @@
 						"proportionaltoparent" 	"1"
 						"zpos"                 	"1000"	// Be on top of everything
 						"border"               	"InnerShadowBorderThin"
-						"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
+						"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 					}
 				}
 				"Explanation"
@@ -540,7 +540,7 @@
 						"proportionaltoparent" 	"1"
 						"zpos"                 	"1000"	// Be on top of everything
 						"border"               	"InnerShadowBorderThin"
-						"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
+						"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 					}
 				}
 				"Explanation"

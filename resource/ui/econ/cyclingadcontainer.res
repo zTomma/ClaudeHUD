@@ -88,7 +88,7 @@
 		"proportionaltoparent" 	"1"
 		"border"               	"InnerShadowBorder"
 		"mouseinputenabled"    	"0"
-		"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
+		"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
 	"FadeTransition"
 	{

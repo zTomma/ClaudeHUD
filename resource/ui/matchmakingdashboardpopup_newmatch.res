@@ -34,7 +34,7 @@
 			"proportionaltoparent" 	"1"
 			"pinCorner"            	"0"
 			"autoResize"           	"2"
-			"bgcolor_override"     	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"BGPanel"
 		{

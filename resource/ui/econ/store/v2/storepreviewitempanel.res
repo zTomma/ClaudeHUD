@@ -100,7 +100,7 @@
 			"enabled"          	"1"
 			"paintborder"      	"1"
 			"border"           	"StoreInnerShadowBorder"
-			"bgcolor_override" 	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override" 	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"FooterTopPanel"
 		{

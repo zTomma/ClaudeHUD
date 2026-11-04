@@ -365,12 +365,13 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 743 file .res** — riscritti 15 · generati 3 · migrati 725 · da fare 0.
+**Totale 778 file .res** — riscritti 20 · generati 3 · migrati 755 · da fare 0.
 
-<details><summary><code>resource/</code> — 24 file (generato 3, migrato 21)</summary>
+<details><summary><code>resource/</code> — 25 file (generato 3, migrato 22)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
+| [~] | `askconnectpanel.res` | chiara |
 | [x] | `chatscheme.res` | scura |
 | [x] | `clientscheme.res` | scura |
 | [~] | `commentaryexplanationdialog.res` | chiara |
@@ -406,11 +407,13 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 295 file (migrato 281, riscritto 14)</summary>
+<details><summary><code>resource/ui/</code> — 307 file (migrato 288, riscritto 19)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
 | [~] | `abusereportsubmitdialog.res` | chiara |
+| [~] | `achievementgroup.res` | chiara |
+| [~] | `achievementitem.res` | chiara |
 | [~] | `achievementsdialog.res` | chiara |
 | [~] | `annotationspanelcallout.res` | scura |
 | [~] | `badgepanel.res` | chiara |
@@ -423,11 +426,13 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `cheatdetectiondialog.res` | chiara |
 | [~] | `classloadoutpanel.res` | scura |
 | [~] | `classmenu.res` | chiara |
-| [~] | `classselection.res` | chiara |
+| [x] | `classselection.res` | chiara |
 | [~] | `classselection_sc.res` | chiara |
 | [~] | `classtipsitem.res` | chiara |
 | [~] | `classtipslist.res` | chiara |
+| [x] | `claudehud_fonttest.res` | scura |
 | [~] | `coachedbypanel.res` | scura |
+| [~] | `commentarymodelviewer.res` | chiara |
 | [~] | `competitiveaccessinfo.res` | chiara |
 | [~] | `competitivewelcomedialog.res` | chiara |
 | [~] | `comprankpanel.res` | chiara |
@@ -578,7 +583,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `lobbypanel_mvm.res` | chiara |
 | [~] | `mainmenu_saxxyawards.res` | chiara |
 | [~] | `mainmenueventplaylistentry.res` | chiara |
-| [~] | `mainmenuoverride.res` | chiara |
+| [x] | `mainmenuoverride.res` | chiara |
 | [~] | `mainmenuplaylistentry.res` | chiara |
 | [~] | `mapinfomenu.res` | chiara |
 | [~] | `mapinfomenu_sc.res` | chiara |
@@ -586,7 +591,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `matchmakingcasualcriteria.res` | chiara |
 | [~] | `matchmakingcategorymappanel.res` | chiara |
 | [~] | `matchmakingcategorypanel.res` | chiara |
-| [~] | `matchmakingdashboard.res` | chiara |
+| [x] | `matchmakingdashboard.res` | chiara |
 | [~] | `matchmakingdashboardcasualcriteria.res` | chiara |
 | [~] | `matchmakingdashboardcomp.res` | chiara |
 | [~] | `matchmakingdashboardcompaccess.res` | chiara |
@@ -638,6 +643,10 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `pvprankpanel.res` | chiara |
 | [~] | `quickplaybusydialog.res` | chiara |
 | [~] | `quickplaydialog.res` | chiara |
+| [~] | `replayinputpanel.res` | chiara |
+| [~] | `replaymessage.res` | chiara |
+| [~] | `replaymessagedlg.res` | chiara |
+| [~] | `replayrenderoverlay.res` | scura |
 | [~] | `revivedialog.res` | scura |
 | [~] | `robotdestructionstatus.res` | scura |
 | [~] | `roundinfo.res` | scura |
@@ -656,6 +665,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `spectatortournamentguihealth.res` | scura |
 | [~] | `stampdonationadd.res` | scura |
 | [~] | `staticbadgepanel.res` | chiara |
+| [~] | `statitem.res` | chiara |
 | [~] | `statpanel_base.res` | scura |
 | [~] | `statsummary.res` | chiara |
 | [~] | `statsummary_embedded.res` | chiara |
@@ -675,7 +685,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `tankstatuspanel.res` | scura |
 | [x] | `targetid.res` | scura |
 | [~] | `tauntcallerpanel.res` | scura |
-| [~] | `teammenu.res` | chiara |
+| [x] | `teammenu.res` | chiara |
 | [~] | `teammenu_sc.res` | chiara |
 | [~] | `testitembotcontrols.res` | scura |
 | [~] | `testitemdialog.res` | scura |
@@ -705,6 +715,9 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `winpanel.res` | scura |
 | [~] | `xboxdialogs.res` | chiara |
 | [~] | `xpsourcepanel.res` | chiara |
+| [~] | `youtubelogindialog.res` | chiara |
+| [~] | `youtubeuploaddialog.res` | chiara |
+| [~] | `youtubeuploadwaitingdialog.res` | chiara |
 
 </details>
 
@@ -955,7 +968,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/econ/</code> — 67 file (migrato 67)</summary>
+<details><summary><code>resource/ui/econ/</code> — 71 file (migrato 71)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -974,6 +987,8 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `confirmapplystrangifierdialog.res` | scura |
 | [~] | `confirmapplyteamcolorpaintcandialog.res` | scura |
 | [~] | `confirmcustomizetexturedialog.res` | scura |
+| [~] | `confirmdialog.res` | scura |
+| [~] | `confirmdialog_sc.res` | scura |
 | [~] | `confirmdialogabandonnopenalty.res` | scura |
 | [~] | `confirmdialogabandonpenalty.res` | scura |
 | [~] | `confirmdialogabandonsafe.res` | scura |
@@ -1000,6 +1015,8 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `leaderboardpanel.res` | scura |
 | [~] | `lobbyleaderboard.res` | scura |
 | [~] | `manncotrade_commonstatclock.res` | scura |
+| [~] | `messageboxdialog.res` | scura |
+| [~] | `messageboxdialog_sc.res` | scura |
 | [~] | `notificationqueuepanel.res` | scura |
 | [~] | `notificationspresentpanel.res` | scura |
 | [~] | `notificationtoastcontainer.res` | scura |
@@ -1247,6 +1264,37 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
+<details><summary><code>resource/ui/replaybrowser/</code> — 11 file (migrato 11)</summary>
+
+| Stato | File | Modalità |
+|:-:|---|---|
+| [~] | `confirmquitdlg.res` | chiara |
+| [~] | `cutspanel.res` | chiara |
+| [~] | `listthumbnail.res` | chiara |
+| [~] | `mainpanel.res` | chiara |
+| [~] | `playbackpanelslideshow.res` | chiara |
+| [~] | `previewpanel.res` | chiara |
+| [~] | `recordspanel.res` | chiara |
+| [~] | `renderdialog.res` | chiara |
+| [~] | `thumbnailcollection.res` | chiara |
+| [~] | `thumbnailrow.res` | chiara |
+| [~] | `titleeditpanel.res` | chiara |
+
+</details>
+
+<details><summary><code>resource/ui/replayperformanceeditor/</code> — 6 file (migrato 6)</summary>
+
+| Stato | File | Modalità |
+|:-:|---|---|
+| [~] | `camsettings_free.res` | scura |
+| [~] | `main.res` | scura |
+| [~] | `reclight.res` | scura |
+| [~] | `savedlg.res` | scura |
+| [~] | `settings_timescale.res` | scura |
+| [~] | `tip.res` | scura |
+
+</details>
+
 <details><summary><code>resource/ui/training/</code> — 1 file (migrato 1)</summary>
 
 | Stato | File | Modalità |
@@ -1303,6 +1351,14 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `pda_spy_invis_pocket_hm.res` | scura |
 | [~] | `pda_spy_invis_pocket_ttg.res` | scura |
 | [~] | `screen_pda.res` | scura |
+
+</details>
+
+<details><summary><code>servers/</code> — 1 file (migrato 1)</summary>
+
+| Stato | File | Modalità |
+|:-:|---|---|
+| [~] | `quicklistpanel.res` | chiara |
 
 </details>
 

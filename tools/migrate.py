@@ -34,6 +34,36 @@ import tokens as T  # noqa: E402
 import vdf  # noqa: E402
 
 PRISTINE_ROOT = os.path.join(ROOT, "#TF2 Files")
+REF_ROOTS = ["#TF2 Files", "#HL2 Files", "#Platform Files"]   # same priority as the game's search paths
+# Panels the game loads from the hl2/platform VPKs (TF2 does not override them) that still carry
+# default-HUD colours: copied into the HUD tree and migrated like every other file.
+PROMOTE = [
+    "resource/ui/replaybrowser/recordspanel.res", "resource/ui/replaybrowser/renderdialog.res",
+    "resource/ui/replaybrowser/cutspanel.res", "resource/ui/replaybrowser/mainpanel.res",
+    "resource/ui/replaybrowser/titleeditpanel.res", "resource/ui/replaybrowser/previewpanel.res",
+    "resource/ui/replaybrowser/listthumbnail.res", "resource/ui/replaybrowser/thumbnailcollection.res",
+    "resource/ui/replaybrowser/playbackpanelslideshow.res", "resource/ui/replaybrowser/confirmquitdlg.res",
+    "resource/ui/replaybrowser/thumbnailrow.res",
+    "resource/ui/replayperformanceeditor/settings_timescale.res", "resource/ui/replayperformanceeditor/savedlg.res",
+    "resource/ui/replayperformanceeditor/reclight.res", "resource/ui/replayperformanceeditor/camsettings_free.res",
+    "resource/ui/replayperformanceeditor/tip.res", "resource/ui/replayperformanceeditor/main.res",
+    "resource/ui/replayinputpanel.res", "resource/ui/replaymessagedlg.res", "resource/ui/replaymessage.res",
+    "resource/ui/replayrenderoverlay.res", "resource/ui/youtubeuploadwaitingdialog.res",
+    "resource/ui/youtubelogindialog.res", "resource/ui/youtubeuploaddialog.res",
+    "resource/ui/achievementgroup.res", "resource/ui/achievementitem.res", "resource/ui/statitem.res",
+    "resource/ui/commentarymodelviewer.res",
+    "resource/ui/econ/confirmdialog.res", "resource/ui/econ/confirmdialog_sc.res",
+    "resource/ui/econ/messageboxdialog.res", "resource/ui/econ/messageboxdialog_sc.res",
+    "resource/askconnectpanel.res", "servers/quicklistpanel.res",
+]
+
+
+def pristine_path(rel):
+    for r in REF_ROOTS:
+        p = os.path.join(ROOT, r, rel)
+        if os.path.exists(p):
+            return p
+    return None
 HAND_MARK = "ClaudeHUD: riscritto"
 MIGRATED_MARK = "// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py"
 VARIANTS_FILE = os.path.join(HERE, "generated_variants.json")
@@ -47,7 +77,7 @@ FG = {"fgcolor", "fgcolor_override", "defaultfgcolor_override", "armedfgcolor_ov
       "color", "healthdeathwarningcolor", "keyboardfocuscolor_override", "blinkfgcolor_override", "color_outline",
       "teamblue", "teamred", "localplayercolor", "flashcolor", "button.armedtextcolor", "slidertickcolor",
       "selected_fgcolor_override", "color_ready", "color_notready", "titlecolor", "selectionnumberfg", "messagecolor",
-      "itemcountcolor_noitems", "itemcountcolor", "fgcolor_other", "fgcolor_local", "chat_color_player_name",
+      "itemcountcolor_noitems", "itemcountcolor", "fgcolor_other", "fgcolor_local", "chat_color_player_name", "progressbarcolor",
       "chat_color_default", "chat_color_chat_text", "buttontextcolor"}
 BG = {"bgcolor", "bgcolor_override", "defaultbgcolor_override", "armedbgcolor_override", "depressedbgcolor_override",
       "selectedbgcolor_override", "disabledbgcolor_override", "fillcolor", "panel_bgcolor", "panel_bgcolor_mouseover",
@@ -129,14 +159,15 @@ DK_TO_LT = {
 }
 
 # flattened legacy borders -> (dark fill, light fill) for panels that had no bg of their own
+# shadow borders are transparent overlays drawn ABOVE content (zpos): they must never get a fill
 BORDER_FILL = {
     "mainmenubgborder": ("DkCard", "LtCard"), "mainmenubgborderalpha": ("DkCardSoft", "LtCard"),
     "graydialogborder": ("DkCard", "LtCard"), "steamworkshopborder": ("DkCard", "LtCard"),
     "quickplayborder": ("DkCard", "LtCard"), "replaydefaultborder": ("DkCard", "LtCard"),
     "storepreviewtabselected": ("DkChip", "LtCardAlt"), "storepreviewtabunselected": ("DkCard", "LtCard"),
-    "innershadowborder": ("DkChip", "LtCardAlt"), "innershadowborderthin": ("DkChip", "LtCardAlt"),
-    "storeinnershadowborder": ("DkChip", "LtCardAlt"), "outershadowborder": ("DkCard", "LtCard"),
-    "outershadowborderthin": ("DkCard", "LtCard"), "tffatlineborder": ("DkCard", "LtCard"),
+    "innershadowborder": ("Clear", "Clear"), "innershadowborderthin": ("Clear", "Clear"),
+    "storeinnershadowborder": ("Clear", "Clear"), "outershadowborder": ("Clear", "Clear"),
+    "outershadowborderthin": ("Clear", "Clear"), "tffatlineborder": ("DkCard", "LtCard"),
     "tffatlineborderopaque": ("DkCard", "LtCard"), "tfthinlineborder": ("DkCard", "LtCard"),
     "tffatlineborderclearbg": ("Clear", "Clear"), "tffatlineborderredbg": ("DkRedFill", "LtRedFill"),
     "tffatlineborderredbgopaque": ("DkRedFill", "LtRedFill"), "tffatlineborderredbgmoreopaque": ("DkRedFill", "LtRedFill"),
@@ -389,6 +420,9 @@ def targets():
         out.append(rel)
     for p in sorted(glob.glob(os.path.join(ROOT, "scripts", "**", "*.res"), recursive=True)):
         out.append(os.path.relpath(p, ROOT).replace("\\", "/"))
+    for rel in PROMOTE:
+        if rel not in out:
+            out.append(rel)
     return out
 
 
@@ -408,9 +442,10 @@ def main(dry=False):
         if is_hand_written(dst):
             skipped += 1
             continue
-        src = os.path.join(PRISTINE_ROOT, rel)
-        if not os.path.exists(src):
+        src = pristine_path(rel)
+        if not src:
             continue
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
         text = open(src, encoding="utf-8", errors="replace").read()
         nodes = vdf.parse(text)
         migrate_nodes(nodes, modes.mode_of(rel), ctx)

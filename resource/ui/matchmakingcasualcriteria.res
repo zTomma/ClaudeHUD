@@ -239,7 +239,7 @@
 			"border"               	"InnerShadowBorder"
 			"proportionaltoparent" 	"1"
 			"mouseinputenabled"    	"0"
-			"bgcolor_override"     	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"GameModesList"
 		{

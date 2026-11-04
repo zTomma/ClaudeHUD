@@ -44,6 +44,10 @@ LIGHT = [
     "resource/loadingdialog*.res", "resource/muteplayerdialog.res", "resource/newgame*.res",
     "resource/offline_practice.res", "resource/optionssubmultiplayer.res", "resource/playerlistdialog.res",
     "resource/reportplayerdialog.res", "resource/training.res", "resource/sourcescheme.res",
+    # promoted GameUI / replay / achievement dialogs (see tools/migrate.py PROMOTE)
+    "resource/ui/replaybrowser/*.res", "resource/ui/replayinputpanel.res", "resource/ui/replaymessage*.res",
+    "resource/ui/youtube*.res", "resource/ui/achievement*.res", "resource/ui/statitem.res",
+    "resource/ui/commentarymodelviewer.res", "resource/askconnectpanel.res", "servers/*.res",
 ]
 
 REFERENCE_PREFIXES = ("#tf2 files/", "#hl2 files/", "#platform files/", "#map files/")

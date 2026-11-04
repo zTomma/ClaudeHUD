@@ -151,7 +151,7 @@
 			"autoresize"           	"2"
 			"pincorner"            	"3"
 			"border"               	"InnerShadowBorder"
-			"bgcolor_override"     	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"SlidingStatsContainer"
 		{

@@ -66,7 +66,7 @@
 			"enabled"          	"1"
 			"paintborder"      	"1"
 			"border"           	"StoreInnerShadowBorder"
-			"bgcolor_override" 	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override" 	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"ItemNameLabel"
 		{

@@ -1,22 +1,27 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': light (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 6) - menu principale, variante chiara editoriale.
+// Pagina avorio (niente sfondo di mappa ne' illustrazione), titolo tipografico Source Serif Display con
+// il Segno, colonna sinistra allineata a c-282 (grado, evento, amici), bottoni piatti arrotondati,
+// icone di servizio monocromatiche (hover terracotta). Tooltip scuri. Nessun logo.
+// Il pannello di prova font arriva da claudehud_fonttest.res (#base): togliere la riga per spegnerlo.
+// Generato da tools/hand/gen_mainmenu.py
+#base "claudehud_fonttest.res"
 "Resource/UI/MainMenuOverride.res"
 {
 	"MainMenuOverride"
 	{
-		"fieldName"       	"MainMenuOverride"
-		"visible"         	"1"
-		"enabled"         	"1"
-		"xpos"            	"0"
-		"ypos"            	"0"
-		"zpos"            	"0"
-		"wide"            	"f0"
-		"tall"            	"480"
-		"update_url"      	"https://store.steampowered.com/news/?filter=updates&appids=440"
-		"blog_url"        	"https://www.teamfortress.com/"
-		"button_x_offset" 	"-285"
-		"button_y"        	"120"
-		"button_y_delta"  	"5"
+		"fieldName"        	"MainMenuOverride"
+		"visible"          	"1"
+		"enabled"          	"1"
+		"xpos"             	"0"
+		"ypos"             	"0"
+		"zpos"             	"0"
+		"wide"             	"f0"
+		"tall"             	"480"
+		"update_url"       	"https://store.steampowered.com/news/?filter=updates&appids=440"
+		"blog_url"         	"https://www.teamfortress.com/"
+		"button_x_offset"  	"-285"
+		"button_y"         	"120"
+		"button_y_delta"   	"5"
 		"button_kv"
 		{
 			"xpos"    	"0"
@@ -39,21 +44,21 @@
 				"tabPosition"               	"0"
 				"textinsetx"                	"25"
 				"use_proportional_insets"   	"1"
-				"font"                      	"HudFontSmallBold"
+				"font"                      	"TypeBodyL"
 				"textAlignment"             	"west"
 				"dulltext"                  	"0"
 				"brighttext"                	"0"
 				"default"                   	"1"
 				"sound_depressed"           	"UI/buttonclick.wav"
 				"sound_released"            	"UI/buttonclickrelease.wav"
-				"border_default"            	"MainMenuButtonDefault"
-				"border_armed"              	"MainMenuButtonArmed"
+				"border_default"            	"NoBorder"
+				"border_armed"              	"ClMarkLt"
 				"paintbackground"           	"0"
 				"defaultFgColor_override"   	"LtText"
-				"armedFgColor_override"     	"LtText"
-				"depressedFgColor_override" 	"LtText"
+				"armedFgColor_override"     	"LtAccentText"
+				"depressedFgColor_override" 	"LtAccentText"
 				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"LtText"
+				"image_armedcolor"          	"LtAccent"
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -103,6 +108,8 @@
 				"zpos"       	"9"
 			}
 		}
+		"paintbackground"  	"1"
+		"bgcolor_override" 	"LtCanvas"
 	}
 	"mouseoveritempanel"
 	{
@@ -114,7 +121,7 @@
 		"wide"                	"300"
 		"tall"                	"300"
 		"visible"             	"0"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"noitem_textcolor"    	"111 109 101 255"	// token: LtTextMuted
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
@@ -210,11 +217,11 @@
 		"xpos"              	"c-290"
 		"ypos"              	"32"
 		"zpos"              	"1"
-		"wide"              	"256"
-		"tall"              	"64"
-		"visible"           	"1"
+		"wide"              	"0"
+		"tall"              	"0"
+		"visible"           	"0"
 		"enabled"           	"1"
-		"image"             	"../logo/new_tf2_logo"
+		"image"             	""
 		"scaleImage"        	"1"
 		"mouseinputenabled" 	"0"
 	}
@@ -224,9 +231,9 @@
 		"xpos"       	"c-250"
 		"ypos"       	"-80"
 		"zpos"       	"-99"
-		"wide"       	"600"
-		"tall"       	"600"
-		"visible"    	"1"
+		"wide"       	"0"
+		"tall"       	"0"
+		"visible"    	"0"
 		"enabled"    	"1"
 		"scaleImage" 	"1"
 	}
@@ -271,8 +278,6 @@
 		"sound_released"            	"vo/null.mp3"
 		"actionsignallevel"         	"1"
 		"proportionaltoparent"      	"1"
-		"sound_depressed"           	"UI/buttonclick.wav"
-		"sound_released"            	"UI/buttonclickrelease.wav"
 		"paintbackground"           	"1"
 		"paintborder"               	"0"
 		"image_drawcolor"           	"LtText"
@@ -305,8 +310,8 @@
 	{
 		"ControlName"          	"ImagePanel"
 		"fieldName"            	"RankTooltipPanel"
-		"xpos"                 	"c-285"
-		"ypos"                 	"99"
+		"xpos"                 	"c-277"
+		"ypos"                 	"105"
 		"zpos"                 	"-1"
 		"wide"                 	"8"
 		"tall"                 	"8"
@@ -321,8 +326,8 @@
 	{
 		"ControlName"          	"CPvPRankPanel"
 		"fieldName"            	"RankPanel"
-		"xpos"                 	"c-350"
-		"ypos"                 	"72"
+		"xpos"                 	"c-342"
+		"ypos"                 	"78"
 		"zpos"                 	"-52"
 		"wide"                 	"320"
 		"tall"                 	"100"
@@ -337,8 +342,8 @@
 	{
 		"ControlName"             	"Label"
 		"fieldName"               	"NoGCMessage"
-		"xpos"                    	"c-290"
-		"ypos"                    	"94"
+		"xpos"                    	"c-282"
+		"ypos"                    	"100"
 		"zpos"                    	"-99"
 		"wide"                    	"260"
 		"tall"                    	"100"
@@ -348,8 +353,8 @@
 		"wrap"                    	"1"
 		"textinsetx"              	"40"
 		"textinsety"              	"10"
-		"font"                    	"HudFontSmallestBold"
-		"fgcolor_override"        	"LtText"
+		"font"                    	"TypeCaption"
+		"fgcolor_override"        	"LtTextMuted"
 		"labelText"               	"#TF_MM_NoGC_Rank"
 		"textAlignment"           	"north-west"
 		"use_proportional_insets" 	"1"
@@ -358,8 +363,8 @@
 	{
 		"ControlName"          	"ImagePanel"
 		"fieldName"            	"NoGCImage"
-		"xpos"                 	"c-285"
-		"ypos"                 	"107"
+		"xpos"                 	"c-277"
+		"ypos"                 	"113"
 		"zpos"                 	"-99"
 		"wide"                 	"30"
 		"tall"                 	"30"
@@ -373,11 +378,11 @@
 	{
 		"ControlName"          	"EditablePanel"
 		"fieldName"            	"RankBorder"
-		"xpos"                 	"c-290"
-		"ypos"                 	"94"
+		"xpos"                 	"c-282"
+		"ypos"                 	"100"
 		"zpos"                 	"-100"
-		"wide"                 	"260"
-		"tall"                 	"60"
+		"wide"                 	"256"
+		"tall"                 	"56"
 		"visible"              	"1"
 		"PaintBackgroundType"  	"2"
 		"border"               	"MainMenuBGBorder"
@@ -400,7 +405,7 @@
 		{
 			"ControlName"      	"CExLabel"
 			"fieldName"        	"TipSubLabel"
-			"font"             	"HudFontSmall"
+			"font"             	"TypeBody"
 			"labelText"        	"%tipsubtext%"
 			"textAlignment"    	"center"
 			"xpos"             	"20"
@@ -412,14 +417,15 @@
 			"pinCorner"        	"0"
 			"visible"          	"1"
 			"enabled"          	"1"
-			"fgcolor_override" 	"LtTextMuted"
+			"fgcolor_override" 	"DkTextMuted"
 			"wrap"             	"1"
+			"fgcolor"          	"DkTextMuted"
 		}
 		"TipLabel"
 		{
 			"ControlName"          	"CExLabel"
 			"fieldName"            	"TipLabel"
-			"font"                 	"HudFontSmallBold"
+			"font"                 	"TypeBodyStrong"
 			"labelText"            	"%tiptext%"
 			"textAlignment"        	"center"
 			"xpos"                 	"20"
@@ -431,10 +437,11 @@
 			"pinCorner"            	"0"
 			"visible"              	"1"
 			"enabled"              	"1"
-			"fgcolor_override"     	"LtText"
+			"fgcolor_override"     	"DkText"
 			"auto_wide_tocontents" 	"1"
+			"fgcolor"              	"DkText"
 		}
-		"bgcolor_override"    	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
+		"bgcolor_override"    	"DkCard"
 	}
 	"Notifications_ShowButtonPanel"
 	{
@@ -513,8 +520,8 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -529,9 +536,12 @@
 				"image"       	"button_Alert"
 				"scaleImage"  	"1"
 			}
-			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"WatchStreamButton"
@@ -576,12 +586,10 @@
 			"sound_released"            	"vo/null.mp3"
 			"actionsignallevel"         	"2"
 			"proportionaltoparent"      	"1"
-			"sound_depressed"           	"UI/buttonclick.wav"
-			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -599,9 +607,12 @@
 				"mouseinputenabled"    	"0"
 				"keyboardinputenabled" 	"0"
 			}
-			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"QuestLogButton"
@@ -646,12 +657,10 @@
 			"sound_released"            	"vo/null.mp3"
 			"actionsignallevel"         	"2"
 			"proportionaltoparent"      	"1"
-			"sound_depressed"           	"UI/buttonclick.wav"
-			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -669,9 +678,12 @@
 				"mouseinputenabled"    	"0"
 				"keyboardinputenabled" 	"0"
 			}
-			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"MOTD_ShowButtonPanel"
@@ -718,8 +730,8 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -734,9 +746,12 @@
 				"image"       	"button_MOTD"
 				"scaleImage"  	"1"
 			}
-			"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultFgColor_override"   	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"MOTD_Panel"
@@ -1194,8 +1209,8 @@
 	{
 		"ControlName"         	"EditablePanel"
 		"fieldName"           	"VRBGPanel"
-		"xpos"                	"c-290"
-		"ypos"                	"373"
+		"xpos"                	"c-282"
+		"ypos"                	"376"
 		"zpos"                	"-61"
 		"wide"                	"260"
 		"tall"                	"38"
@@ -1208,8 +1223,8 @@
 	{
 		"ControlName"         	"EditablePanel"
 		"fieldname"           	"VRModeButton"
-		"xpos"                	"c-285"
-		"ypos"                	"379"
+		"xpos"                	"c-277"
+		"ypos"                	"382"
 		"zpos"                	"-60"
 		"wide"                	"270"
 		"tall"                	"36"
@@ -1279,18 +1294,18 @@
 	{
 		"ControlName"      	"EditablePanel"
 		"fieldname"        	"FriendsContainer"
-		"xpos"             	"c-290"
-		"ypos"             	"260"
+		"xpos"             	"c-282"
+		"ypos"             	"268"
 		"zpos"             	"5"
-		"wide"             	"260"
-		"tall"             	"150"
+		"wide"             	"256"
+		"tall"             	"148"
 		"visible"          	"1"
 		"border"           	"MainMenuBGBorder"
 		"TitleLabel"
 		{
 			"ControlName"      	"CExLabel"
 			"fieldName"        	"TitleLabel"
-			"font"             	"HudFontSmallBold"
+			"font"             	"TypeHeading"
 			"labelText"        	"#TF_Competitive_Friends"
 			"textAlignment"    	"west"
 			"xpos"             	"12"
@@ -1303,6 +1318,7 @@
 			"enabled"          	"1"
 			"textinsetx"       	"0"
 			"fgcolor_override" 	"LtText"
+			"fgcolor"          	"LtText"
 		}
 		"InnerShadow"
 		{
@@ -1319,7 +1335,7 @@
 			"mouseinputenabled"    	"0"
 			"paintborder"          	"1"
 			"border"               	"InnerShadowBorder"
-			"bgcolor_override"     	"LtCardAlt"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override"     	"Clear"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
 		"SteamFriendsList"
 		{
@@ -1397,7 +1413,7 @@
 			"PaintBackgroundType"  	"0"
 			"proportionaltoparent" 	"1"
 			"mouseinputenabled"    	"0"
-			"bgcolor_override"     	"LtCardAltA40"
+			"bgcolor_override"     	"Clear"
 		}
 		"bgcolor_override" 	"LtCard"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
@@ -1405,8 +1421,8 @@
 	{
 		"ControlName" 	"EditablePanel"
 		"fieldname"   	"EventPromo"
-		"xpos"        	"c-290"
-		"ypos"        	"160"
+		"xpos"        	"c-282"
+		"ypos"        	"164"
 		"zpos"        	"-50"
 		"wide"        	"270"
 		"tall"        	"96"
@@ -1553,8 +1569,8 @@
 	{
 		"ControlName" 	"EditablePanel"
 		"fieldname"   	"SafeMode"
-		"xpos"        	"c-290"
-		"ypos"        	"210"
+		"xpos"        	"c-282"
+		"ypos"        	"214"
 		"zpos"        	"-50"
 		"wide"        	"270"
 		"tall"        	"190"
@@ -1673,7 +1689,6 @@
 				"proportionaltoparent" 	"1"
 				"wrap"                 	"1"
 				"labelText"            	"#MMenu_SafeMode_Explanation"
-				"proportionaltoparent" 	"1"
 				"font"                 	"HudFontSmallest"
 				"fgcolor_override"     	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 			}
@@ -1710,7 +1725,7 @@
 		"visible"                   	"1"
 		"enabled"                   	"1"
 		"tabPosition"               	"0"
-		"font"                      	"HudFontSmallestBold"
+		"font"                      	"TypeBodyStrong"
 		"labelText"                 	"#MMenu_ShowPromoCodes"
 		"textAlignment"             	"center"
 		"dulltext"                  	"0"
@@ -1719,12 +1734,16 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"command"                   	"showpromocodes"
-		"border_default"            	"MainMenuButtonDefault"
-		"border_armed"              	"MainMenuButtonArmed"
-		"paintbackground"           	"0"
+		"border_default"            	"ClCard"
+		"border_armed"              	"ClCard"
+		"paintbackground"           	"1"
 		"defaultFgColor_override"   	"LtText"
-		"armedFgColor_override"     	"LtText"
-		"depressedFgColor_override" 	"LtText"
+		"armedFgColor_override"     	"LtOnButtonHover"
+		"depressedFgColor_override" 	"LtOnButtonHover"
+		"paintbackgroundtype"       	"2"
+		"defaultBgColor_override"   	"LtCardAlt"
+		"armedBgColor_override"     	"LtButtonHover"
+		"depressedBgColor_override" 	"LtButtonHover"
 	}
 	"ReportPlayerButton"
 	{
@@ -1763,12 +1782,12 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"RoundedCorners"            	"5"
-			"paintbackground"           	"1"
+			"paintbackground"           	"0"
 			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1785,9 +1804,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"CallVoteButton"
@@ -1827,12 +1846,12 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"border_default"            	"MainMenuSubButtonBorder"
-			"paintbackground"           	"1"
+			"paintbackground"           	"0"
 			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1849,9 +1868,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"MutePlayersButton"
@@ -1891,12 +1910,12 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"border_default"            	"MainMenuSubButtonBorder"
-			"paintbackground"           	"1"
+			"paintbackground"           	"0"
 			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1913,9 +1932,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"RequestCoachButton"
@@ -1955,12 +1974,12 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"RoundedCorners"            	"10"
-			"paintbackground"           	"1"
+			"paintbackground"           	"0"
 			"defaultFgColor_override"   	"LtText"
-			"armedFgColor_override"     	"LtText"
-			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"armedFgColor_override"     	"LtAccentText"
+			"depressedFgColor_override" 	"LtAccentText"
+			"image_drawcolor"           	"LtTextMuted"
+			"image_armedcolor"          	"LtAccent"
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1977,9 +1996,9 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 			}
-			"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-			"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+			"defaultBgColor_override"   	"Clear"
+			"armedBgColor_override"     	"Clear"
+			"depressedBgColor_override" 	"Clear"
 		}
 	}
 	"BackgroundFooter"
@@ -1989,11 +2008,11 @@
 		"xpos"        	"0"
 		"ypos"        	"420"
 		"zpos"        	"-50"
-		"wide"        	"f0"
-		"tall"        	"60"
-		"visible"     	"1"
+		"wide"        	"0"
+		"tall"        	"0"
+		"visible"     	"0"
 		"enabled"     	"1"
-		"image"       	"loadout_bottom_gradient"
+		"image"       	""
 		"tileImage"   	"1"
 	}
 	"FooterLine"
@@ -2001,20 +2020,21 @@
 		"ControlName" 	"ImagePanel"
 		"fieldName"   	"FooterLine"
 		"xpos"        	"0"
-		"ypos"        	"420"
+		"ypos"        	"424"
 		"zpos"        	"-5-"
 		"wide"        	"f0"
-		"tall"        	"10"
+		"tall"        	"1"
 		"visible"     	"1"
 		"enabled"     	"1"
-		"image"       	"loadout_solid_line"
+		"image"       	""
 		"scaleImage"  	"1"
+		"fillcolor"   	"210 207 199 255"	// token: LtLine
 	}
 	"CharacterSetupButton"
 	{
 		"ControlName"               	"CExImageButton"
 		"fieldName"                 	"CharacterSetupButton"
-		"xpos"                      	"c-288"
+		"xpos"                      	"c-282"
 		"ypos"                      	"rs1-18"
 		"wide"                      	"100"
 		"tall"                      	"26"
@@ -2025,7 +2045,7 @@
 		"tabPosition"               	"0"
 		"textinsetx"                	"25"
 		"use_proportional_insets"   	"1"
-		"font"                      	"HudFontSmallBold"
+		"font"                      	"TypeBodyStrong"
 		"textAlignment"             	"west"
 		"dulltext"                  	"0"
 		"brighttext"                	"0"
@@ -2036,7 +2056,7 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"proportionaltoparent"      	"1"
 		"paintbackground"           	"1"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2051,12 +2071,16 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_items"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtOnButtonHover"
+		"depressedFgColor_override" 	"LtOnButtonHover"
+		"defaultBgColor_override"   	"LtCardAlt"
+		"armedBgColor_override"     	"LtButtonHover"
+		"depressedBgColor_override" 	"LtButtonHover"
+		"paintbackgroundtype"       	"2"
+		"border_default"            	"ClCard"
+		"border_armed"              	"ClCard"
+		"image_armedcolor"          	"LtOnButtonHover"
 	}
 	"StoreHasNewItemsImage"
 	{
@@ -2077,7 +2101,7 @@
 	{
 		"ControlName"               	"CExImageButton"
 		"fieldName"                 	"GeneralStoreButton"
-		"xpos"                      	"c-165"
+		"xpos"                      	"c-178"
 		"ypos"                      	"rs1-18"
 		"wide"                      	"100"
 		"tall"                      	"26"
@@ -2088,7 +2112,7 @@
 		"tabPosition"               	"0"
 		"textinsetx"                	"25"
 		"use_proportional_insets"   	"1"
-		"font"                      	"HudFontSmallBold"
+		"font"                      	"TypeBodyStrong"
 		"textAlignment"             	"west"
 		"dulltext"                  	"0"
 		"brighttext"                	"0"
@@ -2099,7 +2123,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"paintbackground"           	"1"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2114,12 +2138,16 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_store"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtOnButtonHover"
+		"depressedFgColor_override" 	"LtOnButtonHover"
+		"defaultBgColor_override"   	"LtCardAlt"
+		"armedBgColor_override"     	"LtButtonHover"
+		"depressedBgColor_override" 	"LtButtonHover"
+		"paintbackgroundtype"       	"2"
+		"border_default"            	"ClCard"
+		"border_armed"              	"ClCard"
+		"image_armedcolor"          	"LtOnButtonHover"
 	}
 	"SettingsButtonSDK"
 	{
@@ -2149,7 +2177,7 @@
 		"navRight"                  	"TF2SettingsButtonSDK"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2164,12 +2192,14 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"TF2SettingsButtonSDK"
 	{
@@ -2199,7 +2229,7 @@
 		"navRight"                  	"SettingsButtonSDK"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2213,14 +2243,15 @@
 			"enabled"     	"1"
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
-			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"SettingsButton"
 	{
@@ -2250,7 +2281,7 @@
 		"navRight"                  	"TF2SettingsButton"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2265,12 +2296,14 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"TF2SettingsButton"
 	{
@@ -2299,7 +2332,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2313,14 +2346,15 @@
 			"enabled"     	"1"
 			"scaleImage"  	"1"
 			"image"       	"glyph_options"
-			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"NewUserForumsButton"
 	{
@@ -2350,7 +2384,7 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"PaintBackgroundType"       	"0"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2365,12 +2399,14 @@
 			"image"       	"glyph_tutorial"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"AchievementsButton"
 	{
@@ -2399,7 +2435,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2414,12 +2450,14 @@
 			"image"       	"glyph_achievements"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"CommentaryButton"
 	{
@@ -2448,7 +2486,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2463,12 +2501,14 @@
 			"image"       	"glyph_forums"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"CoachPlayersButton"
 	{
@@ -2497,7 +2537,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2512,12 +2552,14 @@
 			"image"       	"glyph_commentary"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"WorkshopButton"
 	{
@@ -2546,7 +2588,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2561,12 +2603,14 @@
 			"image"       	"glyph_steamworkshop"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"ReplayButton"
 	{
@@ -2595,7 +2639,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2610,12 +2654,14 @@
 			"image"       	"glyph_tv"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"ReportBugButton"
 	{
@@ -2643,7 +2689,7 @@
 		"navRight"                  	"SettingsButton"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2658,12 +2704,14 @@
 			"image"       	"glyph_bug"
 			"scaleImage"  	"1"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtAccentText"
+		"depressedFgColor_override" 	"LtAccentText"
+		"defaultBgColor_override"   	"Clear"
+		"armedBgColor_override"     	"Clear"
+		"depressedBgColor_override" 	"Clear"
+		"paintbackground"           	"0"
+		"image_armedcolor"          	"LtAccent"
 	}
 	"BackToReplaysButton"
 	{
@@ -2680,7 +2728,7 @@
 		"enabled"                   	"1"
 		"tabPosition"               	"0"
 		"labelText"                 	"#GameUI_GameMenu_ExitReplay"
-		"font"                      	"HudFontSmallBold"
+		"font"                      	"TypeBodyStrong"
 		"textAlignment"             	"west"
 		"textinsetx"                	"35"
 		"use_proportional_insets"   	"1"
@@ -2690,7 +2738,7 @@
 		"Command"                   	"exitreplayeditor"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"LtTextMuted"
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2705,12 +2753,17 @@
 			"scaleImage"  	"1"
 			"image"       	"glyph_quit"
 		}
-		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"defaultBgColor_override"   	"LtCardAlt"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"armedBgColor_override"     	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
-		"depressedBgColor_override" 	"LtButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
+		"defaultFgColor_override"   	"LtText"
+		"armedFgColor_override"     	"LtOnButtonHover"
+		"depressedFgColor_override" 	"LtOnButtonHover"
+		"defaultBgColor_override"   	"LtCardAlt"
+		"armedBgColor_override"     	"LtButtonHover"
+		"depressedBgColor_override" 	"LtButtonHover"
+		"paintbackground"           	"1"
+		"paintbackgroundtype"       	"2"
+		"border_default"            	"ClCard"
+		"border_armed"              	"ClCard"
+		"image_armedcolor"          	"LtOnButtonHover"
 	}
 	"icon_generator"
 	{
@@ -2737,5 +2790,50 @@
 			"angles_y" 	"130"
 			"angles_z" 	"0"
 		}
+	}
+	"ClaudeCanvas"
+	{
+		"ControlName"       	"EditablePanel"
+		"fieldName"         	"ClaudeCanvas"
+		"xpos"              	"0"
+		"ypos"              	"0"
+		"zpos"              	"-210"
+		"wide"              	"f0"
+		"tall"              	"480"
+		"visible"           	"1"
+		"enabled"           	"1"
+		"mouseinputenabled" 	"0"
+		"paintbackground"   	"1"
+		"bgcolor_override"  	"LtCanvas"
+	}
+	"ClaudeTitleSegno"
+	{
+		"ControlName" 	"ImagePanel"
+		"fieldName"   	"ClaudeTitleSegno"
+		"xpos"        	"c-290"
+		"ypos"        	"52"
+		"zpos"        	"2"
+		"wide"        	"2"
+		"tall"        	"36"
+		"visible"     	"1"
+		"enabled"     	"1"
+		"fillcolor"   	"217 119 87 255"	// token: LtAccent
+	}
+	"ClaudeTitle"
+	{
+		"ControlName"       	"CExLabel"
+		"fieldName"         	"ClaudeTitle"
+		"xpos"              	"c-282"
+		"ypos"              	"48"
+		"zpos"              	"2"
+		"wide"              	"420"
+		"tall"              	"42"
+		"visible"           	"1"
+		"enabled"           	"1"
+		"mouseinputenabled" 	"0"
+		"labelText"         	"Team Fortress 2"
+		"textAlignment"     	"west"
+		"font"              	"TypeDisplay"
+		"fgcolor"           	"LtText"
 	}
 }

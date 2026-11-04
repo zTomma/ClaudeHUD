@@ -52,7 +52,8 @@ def build():
     known = L.corpus()
     files = sorted(os.path.relpath(p, ROOT).replace("\\", "/") for p in
                    glob.glob(os.path.join(ROOT, "resource", "**", "*.res"), recursive=True) +
-                   glob.glob(os.path.join(ROOT, "scripts", "**", "*.res"), recursive=True))
+                   glob.glob(os.path.join(ROOT, "scripts", "**", "*.res"), recursive=True) +
+                   glob.glob(os.path.join(ROOT, "servers", "**", "*.res"), recursive=True))
     rows = defaultdict(list)
     count = Counter()
     for rel in files:

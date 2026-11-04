@@ -82,8 +82,8 @@ def dup_keys(nodes, rel, report):
 
 def pristine_refs(rel):
     """Values referenced in Valve's original copy of the file (to tell inherited problems apart)."""
-    src = os.path.join(PRISTINE, rel)
-    if not os.path.exists(src):
+    src = M.pristine_path(rel)
+    if not src:
         return set()
     try:
         nodes = vdf.parse(open(src, encoding="utf-8", errors="replace").read())
@@ -185,7 +185,8 @@ def main():
     known = corpus()
     errors, warnings = [], []
     files = sorted(glob.glob(os.path.join(ROOT, "resource", "**", "*.res"), recursive=True) +
-                   glob.glob(os.path.join(ROOT, "scripts", "**", "*.res"), recursive=True))
+                   glob.glob(os.path.join(ROOT, "scripts", "**", "*.res"), recursive=True) +
+                   glob.glob(os.path.join(ROOT, "servers", "**", "*.res"), recursive=True))
     hand_count = 0
     for p in files:
         rel = os.path.relpath(p, ROOT).replace("\\", "/")
