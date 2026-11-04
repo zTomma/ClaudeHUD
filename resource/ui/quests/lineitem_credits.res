@@ -1,29 +1,30 @@
+// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
+// modalita': dark (DESIGN.md par. 9)
 "Resource/UI/Quests/LineItem_Credits.res"
-{	
+{
 	"Credits"
 	{
-		"fieldName"		"Credits"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
-		"zpos"			"1"
-		"proportionaltoparent" "1"
+		"fieldName"            	"Credits"
+		"xpos"                 	"0"
+		"ypos"                 	"0"
+		"wide"                 	"f0"
+		"tall"                 	"f0"
+		"zpos"                 	"1"
+		"proportionaltoparent" 	"1"
 	}
-
 	"Label"
 	{
-		"ControlName"	"Label"
-		"fieldName"		"Label"
-		"labeltext"		"%credits%"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
-		"zpos"			"1"
-		"fgcolor_override"		"TanLight"
-		"font"			"ScoreboardMediumSmall"
-		"TextAlignment"		"center"
-		"proportionaltoparent" "1"
+		"ControlName"          	"Label"
+		"fieldName"            	"Label"
+		"labeltext"            	"%credits%"
+		"xpos"                 	"0"
+		"ypos"                 	"0"
+		"wide"                 	"f0"
+		"tall"                 	"f0"
+		"zpos"                 	"1"
+		"fgcolor_override"     	"DkText"
+		"font"                 	"ScoreboardMediumSmall"
+		"TextAlignment"        	"center"
+		"proportionaltoparent" 	"1"
 	}
 }

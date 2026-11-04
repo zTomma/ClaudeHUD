@@ -1,93 +1,81 @@
+// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
+// modalita': light (DESIGN.md par. 9)
 #base "PvPRankPanel.res"
-
 "Resource/UI/PvPRankPanel.res"
 {
 	"ModelContainer"
 	{
 		"RankModel"
 		{
-			if_mini
+			"if_mini"
 			{
-				"xpos"		"cs-0.5-120"
+				"xpos" 	"cs-0.5-120"
 			}
 		}
-
 		"MedalButton"
 		{
-			"ypos"			"cs-0.5-10"
-			"wide"			"75"
-			"tall"			"85"
+			"ypos" 	"cs-0.5-10"
+			"wide" 	"75"
+			"tall" 	"85"
 		}
 	}
-
 	"BGPanel"
 	{
-		if_mini
+		"if_mini"
 		{
-			"wide"			"270"
-			"tall"			"60"
+			"wide" 	"270"
+			"tall" 	"60"
 		}
-
 		"PlacementLabel"
 		{
-			if_mini
+			"if_mini"
 			{
-				"ypos"			"17"
+				"ypos" 	"17"
 			}
 		}
-
 		"DescLine1"
 		{
-			if_mini
+			"if_mini"
 			{
-				"xpos"			"cs-0.5"
-				"ypos"			"35"
-
-				"textAlignment"	"center"
-
+				"xpos"          	"cs-0.5"
+				"ypos"          	"35"
+				"textAlignment" 	"center"
 				"fonts"
 				{
-					"0"		"HudFontSmallBold"
-					"1"		"StorePromotionsTitle"
-					"2"		"FontStorePrice"
+					"0" 	"HudFontSmallBold"
+					"1" 	"StorePromotionsTitle"
+					"2" 	"FontStorePrice"
 				}
 			}
 		}
-
 		"StatsContainer"
 		{
-			"visible"		"1"
-
-			if_mini
+			"visible" 	"1"
+			"if_mini"
 			{
-				"xpos"	"cs-0.5"
-				"ypos"	"25"
+				"xpos" 	"cs-0.5"
+				"ypos" 	"25"
 			}
-
 			"XPBar"
 			{
-				"ypos"	"20"
-				"alpha"	"100"
-
+				"ypos"  	"20"
+				"alpha" 	"100"
 				"CurrentXPLabel"
 				{
-					"visible"		"1"
-
-					if_mini
+					"visible" 	"1"
+					"if_mini"
 					{
-						"xpos"			"cs-0.5"
-						"textAlignment"	"center"
+						"xpos"          	"cs-0.5"
+						"textAlignment" 	"center"
 					}
 				}
-
 				"NextLevelXPLabel"
 				{
-					"visible"		"0"
+					"visible" 	"0"
 				}
-
 				"ProgressBarsContainer"
 				{
-					"visible"		"0"
+					"visible" 	"0"
 				}
 			}
 		}

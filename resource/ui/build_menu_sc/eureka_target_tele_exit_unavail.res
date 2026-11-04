@@ -1,14 +1,14 @@
+// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
+// modalita': dark (DESIGN.md par. 9)
 #base "base_unavailable_teleport_target.res"
-
 "Resource/UI/build_menu/tele_exit_unavailable.res"
 {
 	"ItemNameLabel"
-	{	
-		"labelText"		"#TF_Object_tele_exit_360"
+	{
+		"labelText" 	"#TF_Object_tele_exit_360"
 	}
-	
 	"NumberLabel"
-	{	
-		"actionName"		"menu_right"
+	{
+		"actionName" 	"menu_right"
 	}
-}													
+}
