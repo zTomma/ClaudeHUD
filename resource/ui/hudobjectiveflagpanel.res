@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 4) - CTF: una scheda DkCard 224x44 sul binario inferiore,
+// punteggio BLU (SteelLight) e RED (Terracotta) in NumL, valigette di gioco al centro.
+// Generato da tools/hand/gen_objectives.py
 "Resource/UI/HudObjectiveFlagPanel.res"
 {
 	"ObjectiveStatusFlagPanel"
@@ -23,14 +24,13 @@
 		"ControlName" 	"ImagePanel"
 		"fieldName"   	"LeftSideBG"
 		"xpos"        	"c-140"
-		"ypos"        	"r75" [$WIN32]
-		"ypos"        	"r96" [$X360]
+		"ypos"        	"r75"
 		"zpos"        	"1"
-		"wide"        	"280"
-		"tall"        	"80"
-		"visible"     	"1"
+		"wide"        	"0"
+		"tall"        	"0"
+		"visible"     	"0"
 		"enabled"     	"1"
-		"image"       	"../hud/objectives_flagpanel_bg_left"
+		"image"       	""
 		"scaleImage"  	"1"
 		"if_hybrid"
 		{
@@ -54,14 +54,13 @@
 		"ControlName" 	"ImagePanel"
 		"fieldName"   	"RightSideBG"
 		"xpos"        	"c-140"
-		"ypos"        	"r75" [$WIN32]
-		"ypos"        	"r96" [$X360]
+		"ypos"        	"r75"
 		"zpos"        	"1"
-		"wide"        	"280"
-		"tall"        	"80"
-		"visible"     	"1"
+		"wide"        	"0"
+		"tall"        	"0"
+		"visible"     	"0"
 		"enabled"     	"1"
-		"image"       	"../hud/objectives_flagpanel_bg_right"
+		"image"       	""
 		"scaleImage"  	"1"
 		"if_hybrid"
 		{
@@ -85,14 +84,13 @@
 		"ControlName" 	"ImagePanel"
 		"fieldName"   	"OutlineBG"
 		"xpos"        	"c-140"
-		"ypos"        	"r75" [$WIN32]
-		"ypos"        	"r96" [$X360]
+		"ypos"        	"r75"
 		"zpos"        	"2"
-		"wide"        	"280"
-		"tall"        	"80"
-		"visible"     	"1"
+		"wide"        	"0"
+		"tall"        	"0"
+		"visible"     	"0"
 		"enabled"     	"1"
-		"image"       	"../hud/objectives_flagpanel_bg_outline"
+		"image"       	""
 		"scaleImage"  	"1"
 		"if_hybrid"
 		{
@@ -115,23 +113,17 @@
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"BlueScore"
-		"xpos"          	"c-130"
-		"ypos"          	"r47"
-		"ypos_lodef"    	"r88"
-		"ypos_hidef"    	"r93"
+		"xpos"          	"c-108"
+		"ypos"          	"r56"
 		"zpos"          	"8"
-		"wide"          	"75"
-		"tall"          	"35"
-		"tall_hidef"    	"100"
-		"tall_lodef"    	"75"
+		"wide"          	"36"
+		"tall"          	"44"
 		"visible"       	"1"
 		"enabled"       	"1"
-		"textAlignment" 	"west"
+		"textAlignment" 	"center"
 		"labelText"     	"%bluescore%"
-		"font"          	"HudFontBig"
-		"font_hidef"    	"HudFontGiant"
-		"font_lodef"    	"HudFontGiant"
-		"fgcolor"       	"DkText"
+		"font"          	"NumL"
+		"fgcolor"       	"DkBluText"
 		"if_hybrid"
 		{
 			"visible" 	"0"
@@ -155,21 +147,15 @@
 		"fieldName"     	"BlueScoreShadow"
 		"xpos"          	"c-128"
 		"ypos"          	"r46"
-		"ypos_lodef"    	"r87"
-		"ypos_hidef"    	"r92"
 		"zpos"          	"7"
-		"wide"          	"75"
-		"tall"          	"35"
-		"tall_hidef"    	"100"
-		"tall_lodef"    	"75"
+		"wide"          	"0"
+		"tall"          	"0"
 		"visible"       	"1"
 		"enabled"       	"1"
 		"textAlignment" 	"west"
 		"labelText"     	"%bluescore%"
 		"font"          	"HudFontBig"
-		"font_hidef"    	"HudFontGiant"
-		"font_lodef"    	"HudFontGiant"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"Clear"
 		"if_hybrid"
 		{
 			"visible" 	"0"
@@ -191,23 +177,17 @@
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"RedScore"
-		"xpos"          	"c57"
-		"ypos"          	"r47"
-		"ypos_lodef"    	"r88"
-		"ypos_hidef"    	"r93"
+		"xpos"          	"c72"
+		"ypos"          	"r56"
 		"zpos"          	"8"
-		"wide"          	"75"
-		"tall"          	"35"
-		"tall_hidef"    	"100"
-		"tall_lodef"    	"75"
+		"wide"          	"36"
+		"tall"          	"44"
 		"visible"       	"1"
 		"enabled"       	"1"
-		"textAlignment" 	"east"
+		"textAlignment" 	"center"
 		"labelText"     	"%redscore%"
-		"font"          	"HudFontBig"
-		"font_hidef"    	"HudFontGiant"
-		"font_lodef"    	"HudFontGiant"
-		"fgcolor"       	"DkText"
+		"font"          	"NumL"
+		"fgcolor"       	"DkRedText"
 		"if_hybrid"
 		{
 			"visible" 	"0"
@@ -231,21 +211,15 @@
 		"fieldName"     	"RedScoreShadow"
 		"xpos"          	"c59"
 		"ypos"          	"r46"
-		"ypos_lodef"    	"r87"
-		"ypos_hidef"    	"r92"
 		"zpos"          	"7"
-		"wide"          	"75"
-		"tall"          	"35"
-		"tall_hidef"    	"100"
-		"tall_lodef"    	"75"
+		"wide"          	"0"
+		"tall"          	"0"
 		"visible"       	"1"
 		"enabled"       	"1"
 		"textAlignment" 	"east"
 		"labelText"     	"%redscore%"
 		"font"          	"HudFontBig"
-		"font_hidef"    	"HudFontGiant"
-		"font_lodef"    	"HudFontGiant"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"Clear"
 		"if_hybrid"
 		{
 			"visible" 	"0"
@@ -305,22 +279,19 @@
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"PlayingTo"
-		"xpos"          	"c-70" [$WIN32]
-		"xpos"          	"c-60" [$X360]
-		"ypos"          	"r28" [$WIN32]
-		"ypos"          	"r48" [$X360]
+		"xpos"          	"c-70"
+		"ypos"          	"r72"
 		"zpos"          	"4"
-		"wide"          	"140" [$WIN32]
-		"wide"          	"120" [$X360]
-		"tall"          	"30"
+		"wide"          	"140"
+		"tall"          	"12"
 		"visible"       	"1"
 		"enabled"       	"1"
 		"labelText"     	"#TF_PlayingTo"
 		"textAlignment" 	"center"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
-		"font"          	"HudFontSmall"
-		"fgcolor"       	"DkText"
+		"font"          	"TypeLabel"
+		"fgcolor"       	"DkTextMuted"
 		"if_hybrid"
 		{
 			"visible" 	"0"
@@ -337,24 +308,20 @@
 		{
 			"visible" 	"0"
 		}
+		"allcaps"       	"1"
 	}
 	"PlayingToBG"
 	{
 		"ControlName" 	"CTFImagePanel"
 		"fieldName"   	"PlayingToBG"
-		"xpos"        	"c-75" [$WIN32]
-		"xpos"        	"c-70" [$X360]
-		"ypos"        	"r31" [$WIN32]
-		"ypos"        	"r51" [$X360]
+		"xpos"        	"c-75"
+		"ypos"        	"r31"
 		"zpos"        	"3"
-		"wide"        	"150" [$WIN32]
-		"wide"        	"140" [$X360]
-		"tall"        	"38" [$WIN32]
-		"tall"        	"35" [$X360]
-		"visible"     	"1"
+		"wide"        	"0"
+		"tall"        	"0"
+		"visible"     	"0"
 		"enabled"     	"1"
-		"image"       	"../hud/objectives_flagpanel_bg_playingto"
-		"image_hidef" 	"../hud/objectives_flagpanel_bg_playingto_hidef"
+		"image"       	""
 		"scaleImage"  	"1"
 		"if_hybrid"
 		{
@@ -378,8 +345,7 @@
 		"ControlName" 	"CTFFlagStatus"
 		"fieldName"   	"BlueFlag"
 		"xpos"        	"c-135"
-		"ypos"        	"r95" [$WIN32]
-		"ypos"        	"r116" [$X360]
+		"ypos"        	"r77"
 		"zpos"        	"5"
 		"wide"        	"160"
 		"tall"        	"90"
@@ -412,8 +378,7 @@
 		"ControlName" 	"CTFFlagStatus"
 		"fieldName"   	"RedFlag"
 		"xpos"        	"c-25"
-		"ypos"        	"r95" [$WIN32]
-		"ypos"        	"r116" [$X360]
+		"ypos"        	"r77"
 		"zpos"        	"5"
 		"wide"        	"160"
 		"tall"        	"90"
@@ -506,5 +471,20 @@
 		"enabled"     	"1"
 		"image"       	"../hud/objectives_flagpanel_carried_red"
 		"scaleImage"  	"1"
+	}
+	"FlagScoreCard"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"FlagScoreCard"
+		"xpos"                	"c-112"
+		"ypos"                	"r56"
+		"zpos"                	"-1"
+		"wide"                	"224"
+		"tall"                	"44"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkCard"
 	}
 }

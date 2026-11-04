@@ -1,16 +1,16 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 4) - stato della bandiera: freccia ridotta e centrata sulla
+// valigetta, per stare dentro la scheda CTF. Generato da tools/hand/gen_objectives.py
 "Resource/UI/FlagStatus.res"
 {
 	"Arrow"
 	{
 		"ControlName" 	"CTFArrowPanel"
 		"fieldName"   	"Arrow"
-		"xpos"        	"40"
-		"ypos"        	"0"
+		"xpos"        	"60"
+		"ypos"        	"23"
 		"zpos"        	"1"
-		"wide"        	"80"
-		"tall"        	"80"
+		"wide"        	"40"
+		"tall"        	"40"
 		"visible"     	"1"
 		"enabled"     	"1"
 		"scaleImage"  	"1"

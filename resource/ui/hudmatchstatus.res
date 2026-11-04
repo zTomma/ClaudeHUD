@@ -1,5 +1,7 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 4) - stato della partita: posizione e tipografia del timer
+// (scheda 80x28 in alto al centro, NumL), conto alla rovescia in NumXL, ombre trasparenti.
+// Il resto (squadre, giocatori) resta nel layout originale con i colori migrati ai token.
+// Generato da tools/hand/gen_matchstatus.py
 "Resource/UI/HudMatchStatus.res"
 {
 	"HudMatchStatus"
@@ -58,7 +60,7 @@
 	{
 		"ControlName"          	"CExLabel"
 		"fieldName"            	"CountdownLabel"
-		"font"                 	"HudFontGiant"
+		"font"                 	"NumXL"
 		"xpos"                 	"cs-0.5"
 		"ypos"                 	"cs-0.1"
 		"wide"                 	"40"
@@ -83,11 +85,11 @@
 	{
 		"ControlName"          	"CExLabel"
 		"fieldName"            	"CountdownLabelShadow"
-		"font"                 	"HudFontGiant"
+		"font"                 	"NumXL"
 		"xpos"                 	"cs-0.48"
 		"ypos"                 	"cs-0.08"
-		"wide"                 	"40"
-		"tall"                 	"40"
+		"wide"                 	"0"
+		"tall"                 	"0"
 		"zpos"                 	"4"
 		"autoResize"           	"0"
 		"pinCorner"            	"0"
@@ -96,7 +98,7 @@
 		"wrap"                 	"0"
 		"labelText"            	"%countdown%"
 		"textAlignment"        	"center"
-		"fgcolor"              	"DkCard"
+		"fgcolor"              	"Clear"
 		"proportionaltoparent" 	"1"
 		"if_readymode"
 		{
@@ -210,7 +212,7 @@
 	{
 		"ControlName"          	"CExLabel"
 		"fieldName"            	"RankUpLabel"
-		"font"                 	"HudFontMediumSmallBold"
+		"font"                 	"TypeBodyStrong"
 		"xpos"                 	"cs-0.5"
 		"ypos"                 	"80"
 		"wide"                 	"600"
@@ -232,11 +234,11 @@
 	{
 		"ControlName"          	"CExLabel"
 		"fieldName"            	"RankUpShadowLabel"
-		"font"                 	"HudFontMediumSmallBold"
+		"font"                 	"TypeBodyStrong"
 		"xpos"                 	"cs-0.5+2"
 		"ypos"                 	"80+2"
-		"wide"                 	"600"
-		"tall"                 	"60"
+		"wide"                 	"0"
+		"tall"                 	"0"
 		"zpos"                 	"5"
 		"autoResize"           	"0"
 		"pinCorner"            	"0"
@@ -248,27 +250,20 @@
 		"labelText"            	"%rank_possibility%"
 		"textAlignment"        	"center"
 		"proportionaltoparent" 	"1"
-		"fgcolor"              	"DkCard"
+		"fgcolor"              	"Clear"
 	}
 	"ObjectiveStatusTimePanel"
 	{
 		"ControlName"        	"EditablePanel"
 		"fieldName"          	"ObjectiveStatusTimePanel"
-		"xpos"               	"c-55"
-		"xpos_hidef"         	"c-150"
-		"xpos_lodef"         	"c-150"
-		"ypos"               	"0" [$WIN32]
-		"ypos_minmode"       	"-14" [$WIN32]
-		"ypos"               	"24" [$X360]
+		"xpos"               	"c-40"
+		"ypos"               	"8"
 		"zpos"               	"2"
-		"wide"               	"110"
-		"wide_hidef"         	"300"
-		"wide_lodef"         	"300"
-		"tall"               	"150"
+		"wide"               	"80"
+		"tall"               	"52"
 		"visible"            	"0"
 		"enabled"            	"1"
-		"delta_item_x"       	"22" [$WIN32]
-		"delta_item_x"       	"115" [$X360]
+		"delta_item_x"       	"22"
 		"delta_item_start_y" 	"50"
 		"delta_item_end_y"   	"70"
 		"PositiveColor"      	"188 210 203 255"	// token: DkPositive
@@ -292,23 +287,13 @@
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"TimePanelValue"
-			"font"          	"HudFontMediumSmall"
-			"font_minmode"  	"HudFontSmall"
-			"font_lodef"    	"HudFontMedium"
+			"font"          	"NumL"
 			"fgcolor"       	"DkText"
-			"xpos"          	"23"
-			"xpos_minmode"  	"39"
-			"xpos_hidef"    	"114"
-			"xpos_lodef"    	"114"
-			"ypos"          	"11"
-			"ypos_minmode"  	"6"
-			"ypos_hidef"    	"15"
-			"ypos_lodef"    	"18"
+			"xpos"          	"2"
+			"ypos"          	"0"
 			"zpos"          	"3"
-			"wide"          	"45"
-			"wide_minmode"  	"30"
-			"wide_lodef"    	"50"
-			"tall"          	"31"
+			"wide"          	"60"
+			"tall"          	"28"
 			"visible"       	"1"
 			"enabled"       	"1"
 			"textAlignment" 	"center"

@@ -365,7 +365,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 743 file .res** — riscritti 6 · generati 3 · migrati 734 · da fare 0.
+**Totale 743 file .res** — riscritti 14 · generati 3 · migrati 726 · da fare 0.
 
 <details><summary><code>resource/</code> — 24 file (generato 3, migrato 21)</summary>
 
@@ -406,7 +406,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 295 file (migrato 290, riscritto 5)</summary>
+<details><summary><code>resource/ui/</code> — 295 file (migrato 282, riscritto 13)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -445,7 +445,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `enemycountpanel.res` | scura |
 | [~] | `explanationpopup.res` | chiara |
 | [~] | `flagcalloutpanel.res` | scura |
-| [~] | `flagstatus.res` | scura |
+| [x] | `flagstatus.res` | scura |
 | [~] | `freezepanel_basic.res` | scura |
 | [~] | `freezepanelcallout.res` | scura |
 | [~] | `freezepanelkillerhealth.res` | scura |
@@ -463,7 +463,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudaccountpanel.res` | scura |
 | [~] | `hudachievementfloatingnumber.res` | scura |
 | [~] | `hudachievementtrackeritem.res` | scura |
-| [~] | `hudalert.res` | scura |
+| [x] | `hudalert.res` | scura |
 | [x] | `hudammoweapons.res` | scura |
 | [~] | `hudarenacappointcountdown.res` | scura |
 | [~] | `hudarenaclasslayout.res` | scura |
@@ -505,7 +505,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `huditemeffectmeter_spyknife.res` | scura |
 | [~] | `hudkillstreaknotice.res` | scura |
 | [~] | `hudmannvsmachinestatus.res` | scura |
-| [~] | `hudmatchstatus.res` | scura |
+| [x] | `hudmatchstatus.res` | scura |
 | [~] | `hudmatchsummary.res` | scura |
 | [~] | `hudmediccharge.res` | scura |
 | [~] | `hudmenutauntselection.res` | scura |
@@ -515,12 +515,12 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudminigame_platform.res` | scura |
 | [~] | `hudminigame_soccer.res` | scura |
 | [~] | `hudminigame_soccersuddendeath.res` | scura |
-| [~] | `hudobjectiveflagpanel.res` | scura |
-| [~] | `hudobjectivekothtimepanel.res` | scura |
+| [x] | `hudobjectiveflagpanel.res` | scura |
+| [x] | `hudobjectivekothtimepanel.res` | scura |
 | [~] | `hudobjectiveplayerdestruction.res` | scura |
 | [~] | `hudobjectiverobotdestruction.res` | scura |
 | [~] | `hudobjectivestatus.res` | scura |
-| [~] | `hudobjectivetimepanel.res` | scura |
+| [x] | `hudobjectivetimepanel.res` | scura |
 | [~] | `hudpasstime.res` | scura |
 | [~] | `hudpasstimeballstatus.res` | scura |
 | [~] | `hudpasstimeoffscreenarrow.res` | scura |
@@ -535,7 +535,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudspellselection.res` | scura |
 | [~] | `hudstalemate.res` | scura |
 | [~] | `hudstopwatch.res` | scura |
-| [~] | `hudteamgoal.res` | scura |
+| [x] | `hudteamgoal.res` | scura |
 | [~] | `hudteamgoaltournament.res` | scura |
 | [~] | `hudteamswitch.res` | scura |
 | [~] | `hudtournament.res` | scura |
@@ -628,7 +628,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `mvmwavelosspanel.res` | scura |
 | [~] | `navigationpaneltest.res` | chiara |
 | [~] | `newrecipefounddialog.res` | scura |
-| [~] | `objectivestatusescort.res` | scura |
+| [x] | `objectivestatusescort.res` | scura |
 | [~] | `objectivestatusmultipleescort.res` | scura |
 | [~] | `playerticketstatus.res` | scura |
 | [~] | `publishedfilebrowserdialog.res` | chiara |

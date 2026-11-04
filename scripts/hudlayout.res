@@ -35,17 +35,15 @@
 	}
 	"HudKothTimeStatus"
 	{
-		"fieldName"                	"HudKothTimeStatus"
-		"visible"                  	"1"
-		"enabled"                  	"1"
-		"xpos"                     	"c-100"
-		"ypos"                     	"0"
-		"wide"                     	"200"
-		"tall"                     	"160"
-		"blue_active_xpos"         	"16"
-		"blue_active_xpos_minmode" 	"55"
-		"red_active_xpos"          	"106"
-		"red_active_xpos_minmode"  	"105"
+		"fieldName"        	"HudKothTimeStatus"
+		"visible"          	"1"
+		"enabled"          	"1"
+		"xpos"             	"c-82"
+		"ypos"             	"0"
+		"wide"             	"164"
+		"tall"             	"64"
+		"blue_active_xpos" 	"0"
+		"red_active_xpos"  	"84"
 	}
 	"HudItemEffectMeter"
 	{

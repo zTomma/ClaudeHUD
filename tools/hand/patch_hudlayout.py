@@ -36,6 +36,9 @@ SET = {
     "CMainTargetID":      {"ypos": "360", "tall": "30"},
     "CSpectatorTargetID": {"ypos": "250", "tall": "30"},
     "CSecondaryTargetID": {"ypos": "326", "tall": "30"},
+    # KOTH timers: two 80-wide cards, 4 apart, centred; the code moves ActiveTimerBG under the active one
+    "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "164", "tall": "64",
+                          "blue_active_xpos": "0", "red_active_xpos": "84"},
     # spy disguise text: above the health block
     "DisguiseStatus": {"xpos": "12", "ypos": "r132", "wide": "300", "tall": "20", "TextFont": "TypeBodyStrong"},
 }

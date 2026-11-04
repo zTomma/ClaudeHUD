@@ -73,7 +73,8 @@ def dup_keys(nodes, rel, report):
     for path, nd in [((), ["<root>", nodes, None, None])] + list(vdf.walk(nodes)):
         if not isinstance(nd[1], list):
             continue
-        seen = Counter((k.lower(), c or "") for k, v, c, cm in nd[1] if k != "#base")
+        # repeated *blocks* are a Valve list idiom (e.g. several "animation" blocks); only leaf keys count
+        seen = Counter((k.lower(), c or "") for k, v, c, cm in nd[1] if k != "#base" and not isinstance(v, list))
         for (k, c), n in seen.items():
             if n > 1:
                 report.append((rel, "chiave duplicata %r%s x%d in %s" % (k, (" " + c) if c else "", n, "/".join(path + (nd[0],)))))

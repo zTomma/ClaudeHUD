@@ -47,6 +47,27 @@ Animate	AmmoInClip		FgColor	"DkText"	Linear 0.0 0.12
 Animate	AmmoNoClip		FgColor	"DkText"	Linear 0.0 0.12
 Animate	HudWeaponLowAmmoImage	Alpha	"0"	Accel 0.0 0.15''')
 
+# --- timers (KOTH, overtime), menu arrows --------------------------------------------------
+ev("ActiveTimerBGPulse", '''
+// il timer attivo riceve la sottolineatura terracotta: entra, non lampeggia
+Animate	ActiveTimerBG	Alpha	"255"	Deaccel 0.0 0.2''')
+ev("ActiveTimerHighlight", '''Animate TimePanelValue FgColor	"DkText"	Linear 0.0 0.12''')
+ev("ActiveTimerDim", '''Animate TimePanelValue FgColor	"DkTextMuted"	Linear 0.0 0.12''')
+ev("OvertimeLabelPulseRed", '''
+// supplementari: terracotta fissa, l'urgenza e' gia' nel colore (nessun lampeggio)
+Animate	OvertimeLabel	FgColor	"DkAccent"	Linear 0.0 0.12''')
+ev("SuddenDeathLabelPulseRed", '''Animate	SuddenDeathLabel	FgColor	"DkAccent"	Linear 0.0 0.12''')
+ev("TeamsFullArrowAnimate", '''
+// movimento massimo 4 unita' (DESIGN.md par. 7)
+Animate TeamsFullArrow	Position	"c-118 165"		Linear	0	0
+Animate TeamsFullArrow	Position	"c-118 169"		Deaccel	0	0.2
+Animate TeamsFullArrow	Position	"c-118 165"		Accel	0.4	0.15
+RunEvent TeamsFullArrowAnimateLoop	0.8''')
+ev("TrainingHudBounce", '''
+Animate ObjectiveStatusTraining	Position	"c-160 r187"	Linear 0 0
+Animate ObjectiveStatusTraining	Position	"c-160 r127"	Deaccel 0.0 0.2''')
+
+
 def main():
     text = open(PATH, encoding="utf-8").read()
     for name, block in EVENTS.items():
@@ -54,6 +75,15 @@ def main():
         if not pat.search(text):
             raise SystemExit("event not found: " + name)
         text = pat.sub(lambda m: block, text, count=1)
+    # global normalisation of interpolators (DESIGN.md par. 7: only Linear / Accel / Deaccel / Pulse)
+    body_start = text.index("event ")
+    head, body = text[:body_start], text[body_start:]
+    body = re.sub(r"\bSpline\b", "Deaccel", body)
+    body = re.sub(r"\bBounce\b", "Deaccel", body)
+    body = re.sub(r"\bFlicker\s+[\d.]+", "Linear", body)
+    body = re.sub(r"\bGain\s+[\d.]+", "Deaccel", body)
+    body = re.sub(r"\bBias\s+([\d.]+)", lambda m: "Accel" if float(m.group(1)) < 0.5 else "Deaccel", body)
+    text = head + body
     if "ClaudeHUD: riscritto" not in text[:300]:
         text = text.replace("// ClaudeHUD: animazioni - colori migrati ai token (DESIGN.md par. 7)",
                             "// ClaudeHUD: riscritto a mano (eventi salute/munizioni/obiettivi/classe) + colori migrati ai token.\n"

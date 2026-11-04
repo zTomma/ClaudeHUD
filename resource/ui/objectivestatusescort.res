@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (fase 4) - carrello: binario piatto DkChip (niente texture
+// cart_track), numeri NumXS. Icone del carrello e dei punti restano quelle di gioco (semantica).
+// Generato da tools/hand/gen_objectives.py
 "Resource/UI/ObjectiveStatusEscort.res"
 {
 	"ObjectiveStatusEscort"
@@ -33,7 +34,7 @@
 		"visible"     	"1"
 		"enabled"     	"1"
 		"labelText"   	""
-		"image"       	"../hud/cart_track"
+		"image"       	""
 		"scaleImage"  	"1"
 		"if_multiple_trains"
 		{
@@ -50,6 +51,7 @@
 			"tall_minmode" 	"10"
 			"image"        	"../hud/cart_track_neutral_opaque"
 		}
+		"fillcolor"   	"55 54 50 255"	// token: DkChip
 	}
 	"ProgressBar"
 	{
@@ -184,17 +186,12 @@
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"RecedeTime"
-			"font"          	"HudFontSmallest"
-			"font_minmode"  	"ItemFontAttribSmall"
+			"font"          	"NumXS"
 			"xpos"          	"35"
-			"xpos_minmode"  	"23"
 			"ypos"          	"82"
-			"ypos_minmode"  	"53"
 			"zpos"          	"2"
 			"wide"          	"10"
-			"wide_minmode"  	"7"
 			"tall"          	"10"
-			"tall_minmode"  	"7"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"1"
@@ -218,6 +215,7 @@
 			{
 				"ypos" 	"82"
 			}
+			"fgcolor"       	"DkText"
 		}
 		"EscortItemImage"
 		{
@@ -384,17 +382,12 @@
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"CapNumPlayers"
-			"font"          	"HudFontSmallest"
-			"font_minmode"  	"ItemFontAttribSmall"
+			"font"          	"NumXS"
 			"xpos"          	"39"
-			"xpos_minmode"  	"25"
 			"ypos"          	"82"
-			"ypos_minmode"  	"53"
 			"zpos"          	"4"
 			"wide"          	"30"
-			"wide_minmode"  	"20"
 			"tall"          	"10"
-			"tall_minmode"  	"7"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"0"
@@ -418,6 +411,7 @@
 			{
 				"ypos" 	"82"
 			}
+			"fgcolor"       	"DkText"
 		}
 		"Blocked"
 		{
