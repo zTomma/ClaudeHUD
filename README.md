@@ -7,9 +7,9 @@ diventa una pagina avorio con titoli serif. Le regole complete sono in [DESIGN.m
 > Progetto di fan, non affiliato ad Anthropic né a Valve. Non contiene loghi di Claude o di Anthropic.
 
 ![Anteprima schematica della HUD di gioco](docs/preview_ingame.png)
-![Anteprima schematica del menu principale](docs/preview_menu.png)
+![Render schematico del menu principale](docs/render_menu.png)
 
-*Le immagini sono **anteprime schematiche** generate da `tools/preview.py` con i font veri e la
+*Le immagini sono **anteprime schematiche** generate da `tools/preview.py` e `tools/render_res.py` con i font veri e la
 geometria letta dai file `.res`. Non sono screenshot del gioco: raggi, hinting dei font e contenuti
 reali saranno diversi.*
 
@@ -21,14 +21,21 @@ reali saranno diversi.*
    Le cartelle `#TF2 Files`, `#HL2 Files`, `#Platform Files`, `#Map Files`, `tools/`, `docs/` e
    `licenses/` non servono al gioco: puoi non copiarle. Restano nel repository come riferimento e
    come strumenti.
-3. Avvia il gioco. Al primo avvio nel menu principale compare la **scheda di prova font** (a destra).
+3. Avvia il gioco. Nel menu principale, a destra, c'è la scheda **Personalizza** (vedi sotto).
 
 ### Interruttori
 
 | Cosa | Come |
 |---|---|
-| Spegnere la scheda di prova font | In `resource/ui/mainmenuoverride.res` togli la riga `#base "claudehud_fonttest.res"`. |
+| Accendere la scheda di prova font | In `resource/ui/mainmenuoverride.res` togli `// ` dalla riga `// #base "claudehud_fonttest.res"` (la scheda copre Personalizza finché è accesa). |
 | Mirino ClaudeHUD (un punto avorio su un quadrato scuro) | In `scripts/hudlayout.res` metti `"visible" "1"` su `ClaudeXhairBack` e `ClaudeXhairDot`, poi in console `crosshair 0`. |
+
+### Personalizza
+
+Nel menu principale: mirino (7 stili, 6 colori, 4 taglie, spento), suono del colpo (9 suoni del gioco o
+spento) e dell'uccisione, numeri di danno (acceso, spento, raggruppati o singoli, cure, 6 colori), ping
+come numero, cambio arma rapido, FOV dell'arma, ricarica della HUD. Ogni bottone esegue una variabile di
+console del gioco, salvata in `config.cfg`: l'elenco completo è in DESIGN.md §11.
 
 ## Com'è fatto
 
@@ -63,10 +70,12 @@ controlli si possono lanciare anche da soli:
 |---|---|
 | `tools/lint.py` | sintassi VDF, chiavi duplicate, colori/font/bordi definiti, nessun colore letterale non generato, proprietà e ControlName esistenti nei file Valve, elementi originali conservati |
 | `tools/contrast.py` | tutti i contrasti dichiarati (WCAG), RED/BLU con daltonismo simulato |
+| `tools/context_contrast.py` | ogni testo di ogni file contro lo sfondo su cui è davvero disegnato |
 | `tools/check_fonts.py` | font statici, nome famiglia interno, peso, cifre tabulari, glifi usati |
 | `tools/layout_check.py` | layout a 4:3, 16:10, 16:9, 21:9: fuori schermo, sovrapposizioni, area centrale |
 | `tools/coverage.py` | rigenera la checklist di copertura in DESIGN.md |
 | `tools/preview.py` | rigenera le anteprime schematiche in `docs/` |
+| `tools/render_res.py` | disegna un `.res` (sfondi, testi, bottoni, con i font veri) per controllare il layout: `docs/render_*.png` |
 
 ## Stato e test
 

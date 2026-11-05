@@ -1407,3 +1407,53 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 **Cartelle di riferimento** (non caricate dal gioco: i loro percorsi non coincidono con nessun percorso del gioco): `#TF2 Files/` 754 .res, `#HL2 Files/` 208 .res, `#Platform Files/` 171 .res, `#Map Files/` 21 .res. Restano invariate come sorgente degli originali usata da `tools/migrate.py`.
 
 <!-- COVERAGE:END -->
+
+---
+
+## 11. Variante v2: "taccuino vivace"
+
+Approvata dal proprietario il 5 nov 2026 ("carta bianca", "più crazy, non solo lineare"). Non cambia
+palette, font, ruoli né contrasti: aggiunge **cinque motivi** presi dai riferimenti, tutti generati da
+`tools/hand/gen_v2.py` (elementi `ClaudeV2*`, rimossi e ricreati a ogni build).
+
+| Motivo | Dove | Regola |
+|---|---|---|
+| **Ombra sfalsata** ("adesivo") | dietro ogni scheda di combattimento e ogni scheda dei menu | pannello pieno della stessa forma, spostato di 3 unità (4 nei menu) in basso a destra, z sotto la scheda. In partita: Moss (`DkShadow`). Nei menu: Ink, terracotta, salvia o acciaio, mai due uguali vicine. |
+| **Schede che cambiano stato** | salute, munizioni, carica Medic | lo stato si legge dal colore della scheda intera, non da un'icona: salute sotto il 49% → scheda terracotta, numeri Ink, ombra che pulsa a 2 Hz; overheal → numero e ombra salvia; munizioni basse → terracotta; Über pronta → terracotta. Animazioni in `scripts/hudanimations_tf.txt` (`BgColor` sulle schede). |
+| **Carta a quadretti** | menu principale, selezione classe e squadra, scoreboard | righe di 1 unità ogni 16, `LtGrid` (CloudLine al 59%), sotto tutto. Solo nelle pagine chiare: in partita mai (leggibilità). |
+| **Bande del brand** | fondo dei menu chiari | quattro strisce sovrapposte, come la tavola del riferimento 4: menta (4), verde (2, solo a sinistra), terracotta (10), blush (4, solo a destra). |
+| **Titolo eroe** | menu principale | "Team Fortress 2" in `TypeHero` (Source Serif 4, 46), evidenziatore blush sotto la metà inferiore delle lettere, occhiello in maiuscoletto terracotta, Segno verticale. Retino di punti `•` (Plex) nella scheda Personalizza. |
+
+### Scheda Personalizza (menu principale)
+
+Bottoni piatti (`CExButton`) con `"command" "engine …"`: il menu principale passa i comandi che non
+conosce a GameUI, che li esegue in console (verificato nel sorgente, `tf_hud_mainmenuoverride.cpp`). Ogni
+variabile è stata cercata nel sorgente del client ed è `FCVAR_ARCHIVE`, quindi resta salvata in
+`config.cfg` come se la si cambiasse da console.
+
+| Riga | Variabili |
+|---|---|
+| Mirino: stile, colore, taglia | `cl_crosshair_file crosshair1…7`, `crosshair 0/1`, `cl_crosshair_red/green/blue`, `cl_crosshair_scale 24/32/40/48` |
+| Suono colpo, uccisione | `tf_dingalingaling 0/1`, `tf_dingalingaling_effect 0…8`, `tf_dingalingaling_lasthit 0/1` |
+| Numeri di danno, cure, colore | `hud_combattext`, `hud_combattext_batching` (1 = unisce i numeri vicini), `hud_combattext_healing`, `hud_combattext_red/green/blue` |
+| HUD | `tf_scoreboard_ping_as_text`, `hud_fastswitch`, `viewmodel_fov 54/70/80/90` (in competitivo il gioco lo limita a 54-70), `hud_reloadscheme` |
+
+I campioni colore usano gli RGB dei colori campionati (Avorio, Terracotta, Salvia, Acciaio chiaro, Blush,
+Verde). La scheda sta a z -45…-42: **sotto** i popup del menu (MOTD z 1, notifiche z 10, tooltip degli
+oggetti z 100), sopra tela, quadretti e bande.
+
+### Limiti dichiarati
+
+- Il motore non permette di aprire e chiudere un pannello da un bottone del `.res` senza codice: la
+  scheda Personalizza è sempre visibile (non ho trovato un comando del menu che lo faccia; `testhudanim`
+  è `FCVAR_CHEAT`).
+- Le ombre sono pannelli pieni, non sfocature: il motore non ha ombre morbide.
+
+### Contrasto nel contesto
+
+`tools/context_contrast.py` controlla ogni colore di testo di ogni file contro lo sfondo su cui viene
+davvero disegnato (il proprio, quello dei genitori dipinti, quello di un fratello dipinto che lo contiene;
+un controllo disegnato dal codice sotto il testo rende lo sfondo sconosciuto e il testo non viene
+giudicato). Errore sotto 3:1. La stessa logica corregge gli elementi di Valve durante la migrazione: un
+testo finito su una superficie dello stesso colore diventa il token di testo leggibile per quella
+superficie (il "muted" resta muted se passa 4.5:1).

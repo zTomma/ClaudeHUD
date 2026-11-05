@@ -5,6 +5,29 @@ fermati solo quando la HUD è pronta e fai la pull request"). Le fasi sono quind
 seguito, con un commit per fase, e la pull request fa da punto di approvazione. **Nulla è stato
 provato in gioco.**
 
+## Terzo giro (5 nov 2026, notte): "taccuino vivace" e controllo del contrasto nel contesto
+
+Richiesta: più carattere ("più crazy"), menu di personalizzazione (mirini, indicatori di danno).
+
+**Aggiunto** (DESIGN.md §11):
+- ombre sfalsate "adesivo" dietro tutte le schede (in partita Moss, nei menu Ink/terracotta/salvia);
+- schede che cambiano colore con lo stato: salute bassa (scheda terracotta, ombra che pulsa), overheal
+  (salvia), munizioni basse, Über pronta;
+- carta a quadretti e bande del brand nei menu chiari, titolo eroe con evidenziatore blush;
+- **scheda Personalizza** nel menu principale: mirino (stile, colore, taglia), suono del colpo e
+  dell'uccisione, numeri di danno e cure (con colore), ping, cambio arma rapido, FOV dell'arma, ricarica
+  HUD. Tutte variabili di console verificate nel sorgente e salvate in `config.cfg`.
+
+**Bug trovati e corretti** con due strumenti nuovi (`tools/context_contrast.py`, `tools/render_res.py`):
+1. **Testo invisibile nei popup tutorial** (loadout, zaino, negozio, crafting, selezione classe, MOTD,
+   notifiche): Valve li disegnava su carta chiara con testo scuro; la migrazione li aveva resi scuri ma il
+   testo era rimasto scuro (Ink su Ink2, 1.2:1). Erano 1257 casi; ora 0. La correzione è nella migrazione,
+   quindi vale anche per i file futuri.
+2. **Personalizza copriva MOTD e notifiche**: i due popup del menu avevano z 1 e 10, la scheda 10-12.
+   Ora la scheda sta sotto tutti i popup.
+3. **Bottone dei codici promozionali** sotto la scheda: spostato sotto la barra superiore.
+4. Etichette di squadra (fine partita, stato della partita) avorio su terracotta (2.96:1) → Ink.
+
 ## Secondo giro (5 nov 2026): verifica sul sorgente di TF2 e nuove schermate
 
 Valve ha pubblicato nel 2025 il sorgente del client TF2 (Source SDK 2013). L'ho usato per controllare le
@@ -69,14 +92,16 @@ d'aspetto).
 
 ## Verifiche automatiche (tutte passate all'ultimo build)
 
-`python3 tools/build.py`: lint 0 errori (778 `.res`), 37 contrasti OK, RED/BLU distinguibili con
+`python3 tools/build.py`: lint 0 errori (778 `.res`), contrasti dichiarati OK, contrasto nel contesto
+0 errori (772 file), RED/BLU distinguibili con
 protanopia, deuteranopia e tritanopia (ΔE2000 ≥ 32), font OK (statici, nomi interni, cifre tabulari,
 glifi), layout OK a 4 rapporti d'aspetto. Gli avvisi del lint (~260) sono difetti già presenti negli
 originali Valve (riferimenti a font o colori non definiti), non introdotti da ClaudeHUD.
 
 ## Cosa testare in gioco (in ordine)
 
-1. **Font** (scheda di prova nel menu principale): ogni riga deve avere il proprio font e la propria
+1. **Font** (scheda di prova, spenta di default: in `resource/ui/mainmenuoverride.res` togli `// ` dalla
+   riga `// #base "claudehud_fonttest.res"`): ogni riga deve avere il proprio font e la propria
    dimensione, con accenti `àèéìòù` e simboli `• × – — ← → %` visibili. Se una riga appare in un font
    di sistema, il nome famiglia non è stato riconosciuto: mandami lo screenshot e l'output di console.
 2. **Console all'avvio**: errori su `clientscheme.res`, font mancanti o texture.
@@ -96,6 +121,13 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
 12. Risoluzioni 4:3 e 16:10 se puoi: niente fuori schermo.
 13. **Nuove schermate**: percentuale Über (Medic), scheda metallo (Engineer), numeri di danno con ombra,
     chip del tempo di respawn da morto, killcam con la scheda dell'avversario, pannello di fine round.
+14. **Personalizza** (menu principale): prova almeno un bottone per riga e controlla in console che
+    la variabile cambi (es. `cl_crosshair_scale`). Il colore del mirino vale per i mirini a file
+    (stili 1-7). Riapri il menu: i valori restano.
+15. **Stati delle schede**: scendi sotto il 49% di salute (scheda terracotta, ombra che pulsa), prendi
+    un overheal (numero salvia), svuota il caricatore, carica l'Über.
+16. **Popup tutorial** (zaino o loadout la prima volta, o il "?" nel negozio): testo avorio leggibile.
+17. **MOTD e notifiche** del menu: devono comparire sopra la scheda Personalizza.
 
 ## Cosa potrebbe essere rotto (rischi noti)
 
@@ -116,6 +148,13 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
 - [Certo] **Chat**: cambiano solo posizione e colori. Il file `BaseChat.res` non è nel repository e non
   l'ho inventato.
 - [Certo] **Loadout, zaino, negozio**: layout di Valve con i colori migrati, non ridisegnati a mano.
+
+- [Certo] **Personalizza è sempre visibile**: un bottone del `.res` non può aprire o chiudere un
+  pannello senza codice. Se la trovi ingombrante, si può spostare o ridurre.
+- [Probabile] **Colore del mirino**: `cl_crosshair_red/green/blue` colorano i mirini a file
+  (`cl_crosshair_file`); con il mirino dell'arma di default il colore potrebbe non cambiare.
+- [Ipotesi] **Quadretti e bande** su schermi molto larghi (oltre 21:9): le righe verticali arrivano a
+  1136 unità; oltre resta tela liscia.
 
 ## Domande aperte per il proprietario
 
