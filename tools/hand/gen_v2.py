@@ -21,6 +21,7 @@ from PIL import ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.dirname(HERE))
+import make_crosshairs as XH  # noqa: E402
 import migrate as M  # noqa: E402
 import tokens as T  # noqa: E402
 import vdf  # noqa: E402
@@ -236,6 +237,7 @@ def custom_menu(b):
                    z + 1, wrap=1))
     b.append(line(P + "CustomRule", "c%d" % (X + 12), Y + 42, W - 24, 1, "LtLine", z + 1))
     cx0, lx = X + 68, X + 12              # chips start / row labels
+    PITCH = 19                            # 16-unit chips, 3 units apart
     cw = W - 12 - 68                      # chips area width
     y = Y + 48
     rows = []
@@ -255,10 +257,17 @@ def custom_menu(b):
         for i, (text, cmd) in enumerate(chips):
             b.append(chip("%sChip%s%d" % (P, key, i), "" if swatch else text, "c%d" % (cx0 + i * (w + gap)), y, w, 16,
                           "engine " + cmd, z + 2, swatch=SWATCH_ROLE[text] if swatch else None))
-        y += 20
+        y += PITCH
 
     section("Mirino")
-    row("XStyle", "Stile", [(str(i), "cl_crosshair_file crosshair%d" % i) for i in range(1, 8)] + [("Off", "crosshair 0")])
+    row("XStyle", "Stile", [(str(i), "crosshair 1; cl_crosshair_file crosshair%d" % i) for i in range(1, 8)] +
+        [("Off", "crosshair 0")])
+    # ClaudeHUD's own crosshairs: textures written by tools/make_crosshairs.py
+    mine = []
+    for key, text, _fn in XH.SHAPES:
+        assert os.path.exists(os.path.join(XH.MAT_DIR, "claudehud_%s.vmt" % key)), key
+        mine.append((text, "crosshair 1; cl_crosshair_file claudehud_%s" % key))
+    row("XMine", "ClaudeHUD", mine)
     row("XColor", "Colore", [(n, "crosshair 1; cl_crosshair_red %d; cl_crosshair_green %d; cl_crosshair_blue %d" % RGB[n])
                              for n in RGB], gap=4, swatch=True)
     row("XSize", "Taglia", [("S", "cl_crosshair_scale 24"), ("M", "cl_crosshair_scale 32"),

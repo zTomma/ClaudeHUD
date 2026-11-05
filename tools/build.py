@@ -8,7 +8,7 @@ Order: token migration -> hand-written generators/patches -> schemes (scan alpha
 import os, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 STEPS = [
-    ["migrate.py"],
+    ["migrate.py"], ["make_crosshairs.py"],
     ["hand/migrate_anims.py"], ["hand/patch_anims.py"],
     ["hand/gen_health.py"], ["hand/patch_hudlayout.py"],
 ]

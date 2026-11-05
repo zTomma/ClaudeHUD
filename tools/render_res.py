@@ -117,7 +117,10 @@ def render(rel, out, width=1920, height=1080, background=None):
             y = oy + num(kv.get("ypos", "0"), ph, h)
             zm = re.match(r"-?[\d.]+", kv.get("zpos", "0") or "0")
             z = float(zm.group()) if zm else 0.0
-            if depth == 0 and (name.lower() == self_name or first[0]):
+            basic = kv.get("controlname", "").lower() in ("editablepanel", "imagepanel", "ctfimagepanel", "label",
+                                                          "cexlabel", "button", "cexbutton", "ceximagebutton")
+            whole = kv.get("wide", "") in ("f0", "f1") or kv.get("tall", "") == "480"
+            if depth == 0 and (name.lower() == self_name or (first[0] and (whole or not basic))):
                 z = -1e9  # the panel's own settings block (first block): its background is under every child
                 if "bgcolor_override" not in kv and kv.get("infocus_bgcolor_override"):
                     kv = dict(kv, bgcolor_override=kv["infocus_bgcolor_override"], controlname="editablepanel")

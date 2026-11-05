@@ -16,7 +16,10 @@ Richiesta: più carattere ("più crazy"), menu di personalizzazione (mirini, ind
 - carta a quadretti e bande del brand nei menu chiari, titolo eroe con evidenziatore blush;
 - **scheda Personalizza** nel menu principale: mirino (stile, colore, taglia), suono del colpo e
   dell'uccisione, numeri di danno e cure (con colore), ping, cambio arma rapido, FOV dell'arma, ricarica
-  HUD. Tutte variabili di console verificate nel sorgente e salvate in `config.cfg`.
+  HUD. Tutte variabili di console verificate nel sorgente e salvate in `config.cfg`;
+- **5 mirini ClaudeHUD originali** (punto, anello, croce aperta, angoli da taccuino, tacche), le prime
+  texture della HUD: `.vtf` scritti da `tools/make_crosshairs.py` senza programmi esterni, tinti dal colore
+  scelto in Personalizza. Anteprima: `docs/crosshairs.png`.
 
 **Bug trovati e corretti** con due strumenti nuovi (`tools/context_contrast.py`, `tools/render_res.py`):
 1. **Testo invisibile nei popup tutorial** (loadout, zaino, negozio, crafting, selezione classe, MOTD,
@@ -128,6 +131,10 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
     un overheal (numero salvia), svuota il caricatore, carica l'Über.
 16. **Popup tutorial** (zaino o loadout la prima volta, o il "?" nel negozio): testo avorio leggibile.
 17. **MOTD e notifiche** del menu: devono comparire sopra la scheda Personalizza.
+18. **Mirini ClaudeHUD** (riga "ClaudeHUD" in Personalizza): ognuno deve apparire nitido al centro e
+    prendere il colore scelto. Se vedi una **scacchiera viola/nera**, il gioco non legge il mio `.vtf`:
+    dimmelo, li riconverto (i PNG sono in `tools/crosshairs/`). Errori in console su
+    `vgui/crosshairs/claudehud_*` sono utili.
 
 ## Cosa potrebbe essere rotto (rischi noti)
 
@@ -151,8 +158,10 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
 
 - [Certo] **Personalizza è sempre visibile**: un bottone del `.res` non può aprire o chiudere un
   pannello senza codice. Se la trovi ingombrante, si può spostare o ridurre.
-- [Probabile] **Colore del mirino**: `cl_crosshair_red/green/blue` colorano i mirini a file
-  (`cl_crosshair_file`); con il mirino dell'arma di default il colore potrebbe non cambiare.
+- [Certo] **Colore del mirino** sui mirini a file (stili 1-7 e ClaudeHUD): il codice li disegna con
+  `cl_crosshair_red/green/blue`. [Probabile] Con il mirino di default dell'arma il colore può non cambiare.
+- [Probabile] **Mirini ClaudeHUD**: il formato del `.vtf` segue l'header del SDK e lo script lo rilegge,
+  ma non l'ho potuto aprire nel motore. Rischio: scacchiera viola al posto del mirino.
 - [Ipotesi] **Quadretti e bande** su schermi molto larghi (oltre 21:9): le righe verticali arrivano a
   1136 unità; oltre resta tela liscia.
 

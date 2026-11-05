@@ -17,7 +17,7 @@ reali saranno diversi.*
 
 1. Scarica il repository (Code → Download ZIP) o clonalo.
 2. Copia la cartella in `Steam/steamapps/common/Team Fortress 2/tf/custom/ClaudeHUD/`, in modo che
-   `info.vdf`, `resource/` e `scripts/` siano direttamente dentro `ClaudeHUD/`.
+   `info.vdf`, `materials/`, `resource/` e `scripts/` siano direttamente dentro `ClaudeHUD/`.
    Le cartelle `#TF2 Files`, `#HL2 Files`, `#Platform Files`, `#Map Files`, `tools/`, `docs/` e
    `licenses/` non servono al gioco: puoi non copiarle. Restano nel repository come riferimento e
    come strumenti.
@@ -32,7 +32,8 @@ reali saranno diversi.*
 
 ### Personalizza
 
-Nel menu principale: mirino (7 stili, 6 colori, 4 taglie, spento), suono del colpo (9 suoni del gioco o
+Nel menu principale: mirino (7 stili del gioco e 5 mirini ClaudeHUD originali, 6 colori, 4 taglie,
+spento; anteprima in [docs/crosshairs.png](docs/crosshairs.png)), suono del colpo (9 suoni del gioco o
 spento) e dell'uccisione, numeri di danno (acceso, spento, raggruppati o singoli, cure, 6 colori), ping
 come numero, cambio arma rapido, FOV dell'arma, ricarica della HUD. Ogni bottone esegue una variabile di
 console del gioco, salvata in `config.cfg`: l'elenco completo è in DESIGN.md §11.
@@ -75,6 +76,7 @@ controlli si possono lanciare anche da soli:
 | `tools/layout_check.py` | layout a 4:3, 16:10, 16:9, 21:9: fuori schermo, sovrapposizioni, area centrale |
 | `tools/coverage.py` | rigenera la checklist di copertura in DESIGN.md |
 | `tools/preview.py` | rigenera le anteprime schematiche in `docs/` |
+| `tools/make_crosshairs.py` | genera i mirini ClaudeHUD: `.vtf` scritti direttamente (VTF 7.2, BGRA8888), `.vmt`, PNG sorgente in `tools/crosshairs/` |
 | `tools/render_res.py` | disegna un `.res` (sfondi, testi, bottoni, con i font veri) per controllare il layout: `docs/render_*.png` |
 
 ## Stato e test

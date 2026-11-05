@@ -362,12 +362,15 @@ mai un letterale: il lint lo controlla.
 - Le nuove icone si costruiscono **solo** con primitive geometriche (pannelli pieni, il Segno) e con i
   glifi Plex verificati (§4), su riquadri da 8, 12 o 16 unità, con tratto di 2 unità.
 - Mai icone multicolore, mai contorni, mai ombre.
-- **Texture nuove (.vtf/.vmt):** in questa versione **nessuna**. Ogni forma si ottiene con primitive del
-  motore, così non c'è rischio di texture mancanti (scacchiera viola). Se in futuro servissero (un raggio
-  che scala con la risoluzione, per esempio), la procedura prevista è: PNG 32×32 bianco con alfa →
-  conversione con VTFEdit o `vtfcmd` in RGBA8888 con flag `NoMip`, `NoLOD`, `Clamp S/T` → `.vmt`
-  `UnlitGeneric` con `$translucent 1`, `$vertexcolor 1`, `$vertexalpha 1`, `$ignorez 1` → bordo
-  `scalable_image` con `"color"` dal token.
+- **Texture nuove (.vtf/.vmt):** solo i **5 mirini ClaudeHUD** (v2, §11), opzionali: punto, anello,
+  croce aperta, angoli da taccuino, tacche. Le altre forme restano primitive del motore. Produzione:
+  `tools/make_crosshairs.py` disegna ogni forma bianca con l'alfa (64×64, tratto 2 px, supercampionata)
+  e scrive direttamente il `.vtf` (7.2, BGRA8888, 1 mip, senza miniatura, flag `NoMip`, `NoLOD`,
+  `Clamp S/T`, `EightBitAlpha`; layout dell'header preso da `public/vtf/vtf.h` del SDK) e il `.vmt`
+  `UnlitGeneric` con `$translucent 1`, `$vertexcolor 1`, `$vertexalpha 1`, `$ignorez 1`. I PNG sorgente
+  sono in `tools/crosshairs/`: se il gioco mostrasse la scacchiera viola, basta riconvertirli con VTFEdit
+  con gli stessi parametri. Il gioco li tinge con `cl_crosshair_red/green/blue` (verificato nel sorgente).
+  Nessuna forma radiale: niente che ricordi il logo di Claude.
 - **Logo:** nessuna texture di logo. Il menu principale usa un titolo tipografico.
 
 ---
@@ -1433,7 +1436,7 @@ variabile è stata cercata nel sorgente del client ed è `FCVAR_ARCHIVE`, quindi
 
 | Riga | Variabili |
 |---|---|
-| Mirino: stile, colore, taglia | `cl_crosshair_file crosshair1…7`, `crosshair 0/1`, `cl_crosshair_red/green/blue`, `cl_crosshair_scale 24/32/40/48` |
+| Mirino: stile, colore, taglia | `cl_crosshair_file crosshair1…7` (gioco) o `claudehud_punto/anello/croce/angoli/tacche` (ClaudeHUD, §8), `crosshair 0/1`, `cl_crosshair_red/green/blue`, `cl_crosshair_scale 24/32/40/48` |
 | Suono colpo, uccisione | `tf_dingalingaling 0/1`, `tf_dingalingaling_effect 0…8`, `tf_dingalingaling_lasthit 0/1` |
 | Numeri di danno, cure, colore | `hud_combattext`, `hud_combattext_batching` (1 = unisce i numeri vicini), `hud_combattext_healing`, `hud_combattext_red/green/blue` |
 | HUD | `tf_scoreboard_ping_as_text`, `hud_fastswitch`, `viewmodel_fov 54/70/80/90` (in competitivo il gioco lo limita a 54-70), `hud_reloadscheme` |
