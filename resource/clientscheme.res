@@ -57,6 +57,10 @@ Scheme
 		"LtOnButtonHover"	"20 20 19 255"	// Ink #141413
 		"LtPositive"	"81 155 134 255"	// Green #519B86
 		"LtScrim"	"20 20 19 110"	// Ink #141413 @43%
+		"DkShadow"	"100 115 107 255"	// Moss #64736B
+		"LtGrid"	"210 207 199 150"	// CloudLine #D2CFC7 @59%
+		"LtBlush"	"243 198 181 255"	// Blush #F3C6B5
+		"LtSage"	"188 210 203 255"	// Sage #BCD2CB
 		"Untinted"	"255 255 255 255"	// White #FFFFFF
 		"Clear"	"20 20 19 0"	// Ink #141413 @0%
 		"DkAccentA20"	"217 119 87 51"	// DkAccent @20% (variante generata)
@@ -451,6 +455,16 @@ Scheme
 	}
 	Fonts
 	{
+		"TypeHero"
+		{
+			"1"
+			{
+				"name"	"Source Serif 4 Display Semibold"	// ClaudeHUD: titolo gigante del menu principale (v2)
+				"tall"	"46"
+				"weight"	"600"
+				"antialias"	"1"
+			}
+		}
 		"TypeDisplay"
 		{
 			"1"

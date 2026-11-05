@@ -1,5 +1,6 @@
 // ClaudeHUD: riscritto a mano (fase 7) - contatore bombe adesive: scheda DkCard 80x36, numero NumL.
 // Generato da tools/hand/gen_classmeters.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/HudDemomanPipes.res"
 {
 	"background"
@@ -210,5 +211,21 @@
 		"paintbackground"     	"1"
 		"paintbackgroundtype" 	"2"
 		"bgcolor_override"    	"DkCard"
+	}
+	"ClaudeV2PipesShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2PipesShadow"
+		"xpos"                	"3"
+		"ypos"                	"3"
+		"zpos"                	"-2"
+		"wide"                	"80"
+		"tall"                	"36"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

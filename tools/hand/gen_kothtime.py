@@ -18,8 +18,8 @@ def mark(name, role):
 	"fillcolor"		"%s"	// token: %s
 }''' % (name, name, T.rgba_str(role), role)
 patch("resource/ui/hudobjectivekothtimepanel.res", {
-    ("BlueTimer",): {"xpos": "0", "ypos": "8", "wide": "80", "tall": "52"},
-    ("RedTimer",): {"xpos": "84", "ypos": "8", "wide": "80", "tall": "52"},
+    ("BlueTimer",): {"xpos": "0", "ypos": "8", "wide": "84", "tall": "52"},
+    ("RedTimer",): {"xpos": "84", "ypos": "8", "wide": "84", "tall": "52"},
     ("BlueTimer", "TimePanelValue"): {"xpos": "2", "ypos": "0", "wide": "60", "tall": "28", "font": "NumL",
                                       "fgcolor": "DkText", "textAlignment": "center"},
     ("RedTimer", "TimePanelValue"): {"xpos": "2", "ypos": "0", "wide": "60", "tall": "28", "font": "NumL",

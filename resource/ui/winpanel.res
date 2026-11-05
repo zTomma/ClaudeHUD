@@ -1,6 +1,7 @@
 // ClaudeHUD: riscritto a mano - fine round: scheda neutra DkCard (il vincitore e' nei riquadri punteggio
 // pieni Steel / Terracotta), titolo in Plex SemiBold, classifica con nomi Plex e punteggi NumS,
 // filetti DkLine. Generato da tools/hand/gen_deathscreens.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/winpanel.res"
 {
 	"TeamScoresPanel"
@@ -835,5 +836,21 @@
 		"brighttext"    	"0"
 		"font"          	"NumS"
 		"fgcolor"       	"DkText"
+	}
+	"ClaudeV2WinShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2WinShadow"
+		"xpos"                	"cs-0.5+3"
+		"ypos"                	"73"
+		"zpos"                	"-1"
+		"wide"                	"p0.94"
+		"tall"                	"185"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

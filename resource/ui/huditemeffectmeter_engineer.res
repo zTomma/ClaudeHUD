@@ -1,6 +1,7 @@
 // ClaudeHUD: riscritto a mano (fase 7) - metro dell'oggetto: scheda DkCard 80x36 a sinistra delle
 // munizioni (r184 / r48), micro-etichetta, barra squadrata DkText su DkChip, contatore NumM.
 // Generato da tools/hand/gen_classmeters.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/HudItemEffectMeter_Engineer.res"
 {
 	"HudItemEffectMeter"
@@ -10,8 +11,8 @@
 		"enabled"   	"1"
 		"xpos"      	"r184"
 		"ypos"      	"r48"
-		"wide"      	"80"
-		"tall"      	"36"
+		"wide"      	"84"
+		"tall"      	"40"
 		"MeterFG"   	"250 249 245 255"	// token: DkText
 		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 		"x_offset"  	"84"
@@ -108,5 +109,21 @@
 		"paintbackground"     	"1"
 		"paintbackgroundtype" 	"2"
 		"bgcolor_override"    	"DkCard"
+	}
+	"ClaudeV2MeterShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2MeterShadow"
+		"xpos"                	"3"
+		"ypos"                	"3"
+		"zpos"                	"-2"
+		"wide"                	"80"
+		"tall"                	"36"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

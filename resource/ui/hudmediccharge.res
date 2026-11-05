@@ -2,6 +2,7 @@
 // sopra le munizioni; micro-etichetta, barra squadrata e PERCENTUALE Uber in NumM (%charge%, impostata da
 // tf_hud_mediccharge.cpp). Carica pronta = terracotta fissa su barra, etichetta e numero (HudMedicCharged).
 // Generato da tools/hand/gen_classmeters.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/HudMedicCharge.res"
 {
 	"Background"
@@ -220,5 +221,21 @@
 		"textAlignment" 	"east"
 		"font"          	"NumM"
 		"fgcolor"       	"DkText"
+	}
+	"ClaudeV2MedicShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2MedicShadow"
+		"xpos"                	"3"
+		"ypos"                	"3"
+		"zpos"                	"-2"
+		"wide"                	"88"
+		"tall"                	"36"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

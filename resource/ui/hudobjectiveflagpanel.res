@@ -1,6 +1,7 @@
 // ClaudeHUD: riscritto a mano (fase 4) - CTF: una scheda DkCard 224x44 sul binario inferiore,
 // punteggio BLU (SteelLight) e RED (Terracotta) in NumL, valigette di gioco al centro.
 // Generato da tools/hand/gen_objectives.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/HudObjectiveFlagPanel.res"
 {
 	"ObjectiveStatusFlagPanel"
@@ -486,5 +487,21 @@
 		"paintbackground"     	"1"
 		"paintbackgroundtype" 	"2"
 		"bgcolor_override"    	"DkCard"
+	}
+	"ClaudeV2FlagShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2FlagShadow"
+		"xpos"                	"c-109"
+		"ypos"                	"r53"
+		"zpos"                	"-2"
+		"wide"                	"224"
+		"tall"                	"44"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

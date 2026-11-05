@@ -1,6 +1,7 @@
 // ClaudeHUD: riscritto a mano - killcam: scheda DkCard 256x36 con chip della salute dell'avversario,
 // "Ucciso da" in micro-etichetta e nome in Plex. Il file Valve definisce FreezePanelBase due volte:
 // resta solo il blocco effettivo (il secondo). Generato da tools/hand/gen_deathscreens.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/FreezePanel_Basic.res"
 {
 	"FreezePanel"
@@ -251,6 +252,22 @@
 			"paintbackground"     	"1"
 			"paintbackgroundtype" 	"2"
 			"bgcolor_override"    	"DkCard"
+		}
+		"ClaudeV2KillerShadow"
+		{
+			"ControlName"         	"EditablePanel"
+			"fieldName"           	"ClaudeV2KillerShadow"
+			"xpos"                	"11"
+			"ypos"                	"161"
+			"zpos"                	"-2"
+			"wide"                	"256"
+			"tall"                	"36"
+			"visible"             	"1"
+			"enabled"             	"1"
+			"mouseinputenabled"   	"0"
+			"paintbackground"     	"1"
+			"paintbackgroundtype" 	"2"
+			"bgcolor_override"    	"DkShadow"
 		}
 	}
 	"ScreenshotPanel"

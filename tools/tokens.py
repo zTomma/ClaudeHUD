@@ -161,6 +161,11 @@ ROLES = {
     "LtOnButtonHover": ("Ink", 255),
     "LtPositive":      ("Green", 255),
     "LtScrim":         ("Ink", 110),
+    # ---- v2 "taccuino vivace" (decorative: shadows, grid, stripes, highlighter) ---------------
+    "DkShadow":        ("Moss", 255),    # offset 'sticker' shadow behind combat cards (state colours via animations)
+    "LtGrid":          ("CloudLine", 150),  # grid-paper lines on light pages (ref 2)
+    "LtBlush":         ("Blush", 255),   # highlighter / stripe / swatch
+    "LtSage":          ("Sage", 255),    # stripe / shadow / swatch
     # ---- shared ---------------------------------------------------------------------
     "Untinted":        ("White", 255),   # image tint that leaves game textures untouched
     "Clear":           ("Ink", 0),       # fully transparent
@@ -215,6 +220,10 @@ CONTRACTS = [
     ("LtOnButton", "LtButton", 7.0, "bottone primario"),
     ("LtOnButtonHover", "LtButtonHover", TEXT_MIN, "bottone primario in hover"),
     ("LtPositive", "LtCard", LARGE_MIN, "icone/stati positivi"),
+    # v2
+    ("LtText", "LtBlush", 7.0, "titolo sull'evidenziatore"),
+    ("DkOnRed", "DkAccent", TEXT_MIN, "numeri sulla scheda in pericolo (scheda terracotta)"),
+    ("LtText", "LtSage", 7.0, "testo su campione salvia"),
 ]
 
 # Team pairs that must stay distinguishable (also under colour-vision deficiency).
@@ -249,6 +258,7 @@ SERIF_DISPLAY = ("Source Serif 4 Display Semibold", 600)
 # Type scale (tall in 480-line proportional units; the engine scales by screen height).
 TYPE = {
     # name           (family, weight), tall, role
+    "TypeHero":      (SERIF_DISPLAY, 46, "titolo gigante del menu principale (v2)"),
     "TypeDisplay":   (SERIF_DISPLAY, 34, "titolo menu principale"),
     "TypeTitle":     (SERIF_DISPLAY, 24, "titoli di schermata (classe, team, scoreboard)"),
     "TypeHeading":   (SERIF_SEMI, 16, "titoli di sezione"),

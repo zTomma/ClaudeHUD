@@ -37,6 +37,9 @@ Scheme
 		"LtOnButtonHover"	"20 20 19 255"	// token
 		"LtPositive"	"81 155 134 255"	// token
 		"LtScrim"	"20 20 19 110"	// token
+		"LtGrid"	"210 207 199 150"	// token
+		"LtBlush"	"243 198 181 255"	// token
+		"LtSage"	"188 210 203 255"	// token
 		"Untinted"	"255 255 255 255"	// token
 		"Clear"	"20 20 19 0"	// token
 		// ---- legacy names (used by the game's code) ----

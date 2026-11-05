@@ -37,7 +37,7 @@ out = ['''// ClaudeHUD: riscritto a mano (fase 3) - scheda salute. DESIGN.md par
 		"ypos"						"r76"
 		"zpos"						"2"
 		"wide"						"124"
-		"tall"						"64"
+		"tall"						"68"
 		"visible"					"1"
 		"enabled"					"1"
 		"HealthBonusPosAdj"			"0"

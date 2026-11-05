@@ -2,7 +2,7 @@
 """resource/ui/hudmatchstatus.res: round timer card position + countdown typography."""
 from _patch import patch, lit
 patch("resource/ui/hudmatchstatus.res", {
-    ("ObjectiveStatusTimePanel",): {"xpos": "c-40", "ypos": "8", "wide": "80", "tall": "52"},
+    ("ObjectiveStatusTimePanel",): {"xpos": "c-40", "ypos": "8", "wide": "84", "tall": "52"},
     ("ObjectiveStatusTimePanel", "TimePanelValue"): {"xpos": "2", "ypos": "0", "wide": "60", "tall": "28",
                                                      "font": "NumL", "fgcolor": "DkText", "textAlignment": "center"},
     ("CountdownLabel",): {"font": "NumXL", "fgcolor": "DkText"},

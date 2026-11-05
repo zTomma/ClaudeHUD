@@ -1,6 +1,7 @@
 // ClaudeHUD: riscritto a mano - metallo dell'Engineer: scheda DkCard 88x36 sopra le munizioni (stessa
 // posizione della carica Medic: le due classi non coincidono), icona attenuata, numero NumL.
 // Generato da tools/hand/gen_classmeters.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/HudAccountPanel.res"
 {
 	"CHudAccountPanel"
@@ -79,5 +80,21 @@
 		"paintbackground"     	"1"
 		"paintbackgroundtype" 	"2"
 		"bgcolor_override"    	"DkCard"
+	}
+	"ClaudeV2MetalShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2MetalShadow"
+		"xpos"                	"8"
+		"ypos"                	"106"
+		"zpos"                	"-2"
+		"wide"                	"88"
+		"tall"                	"36"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

@@ -123,14 +123,15 @@ patch("resource/ui/mainmenuoverride.res", E,
 Pagina avorio (niente sfondo di mappa ne' illustrazione), titolo tipografico Source Serif Display con
 il Segno, colonna sinistra allineata a c-282 (grado, evento, amici), bottoni piatti arrotondati,
 icone di servizio monocromatiche (hover terracotta). Tooltip scuri. Nessun logo.
-Il pannello di prova font arriva da claudehud_fonttest.res (#base): togliere la riga per spegnerlo.
+Il pannello di prova font (claudehud_fonttest.res) e' spento: si accende togliendo // dalla riga #base.
 Generato da tools/hand/gen_mainmenu.py""")
 # prepend the #base include for the font test card
 p = os.path.join(ROOT, "resource/ui/mainmenuoverride.res")
 txt = open(p, encoding="utf-8").read()
 lines = txt.split("\n")
 i = next(k for k, l in enumerate(lines) if not l.startswith("//"))
-lines.insert(i, '#base "claudehud_fonttest.res"')
+lines.insert(i, '// Prova font: togli "// " dalla riga seguente (la scheda copre il menu Personalizza)')
+lines.insert(i + 1, '// #base "claudehud_fonttest.res"')
 open(p, "w", encoding="utf-8", newline="\n").write("\n".join(lines))
 
 # ---------------------------------------------------------------- matchmaking top bar

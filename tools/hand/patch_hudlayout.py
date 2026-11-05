@@ -14,13 +14,13 @@ def lit(role):
 
 SET = {
     # bottom rail, right: ammo card; class meters stack above it, item meters to its left
-    "HudWeaponAmmo":        {"xpos": "r100", "ypos": "r48", "wide": "88", "tall": "36"},
-    "HudMedicCharge":       {"xpos": "r100", "ypos": "r88", "wide": "88", "tall": "36"},
+    "HudWeaponAmmo":        {"xpos": "r100", "ypos": "r48", "wide": "92", "tall": "40"},
+    "HudMedicCharge":       {"xpos": "r100", "ypos": "r88", "wide": "92", "tall": "40"},
     "HudDemomanCharge":     {"xpos": "r100", "ypos": "r56", "wide": "88", "tall": "4"},
     "HudBowCharge":         {"xpos": "r100", "ypos": "r56", "wide": "88", "tall": "4"},
     "HudFlameRocketCharge": {"xpos": "r100", "ypos": "r56", "wide": "88", "tall": "4"},
-    "HudItemEffectMeter":   {"xpos": "r184", "ypos": "r48", "wide": "80", "tall": "36"},
-    "HudDemomanPipes":      {"xpos": "r184", "ypos": "r48", "wide": "80", "tall": "36"},
+    "HudItemEffectMeter":   {"xpos": "r184", "ypos": "r48", "wide": "84", "tall": "40"},
+    "HudDemomanPipes":      {"xpos": "r184", "ypos": "r48", "wide": "84", "tall": "40"},
     "CHealthAccountPanel":  {"xpos": "12", "ypos": "r192"},
     # killfeed: top right, 12 from the edges
     "HudDeathNotice": {"xpos": "r640", "ypos": "12", "wide": "628", "tall": "112",
@@ -41,10 +41,10 @@ SET = {
     # engineer metal card above the ammo card (inner card at x5 y103 in hudaccountpanel.res)
     "CHudAccountPanel":   {"xpos": "r105", "ypos": "r191", "wide": "100", "tall": "180"},
     # KOTH timers: two 80-wide cards, 4 apart, centred; the code moves ActiveTimerBG under the active one
-    "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "164", "tall": "64",
+    "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "168", "tall": "64",
                           "blue_active_xpos": "0", "red_active_xpos": "84"},
     # spy disguise text: above the health block
-    "DisguiseStatus": {"xpos": "12", "ypos": "r144", "wide": "180", "tall": "32", "TextFont": "TypeBodyStrong"},
+    "DisguiseStatus": {"xpos": "12", "ypos": "r144", "wide": "180", "tall": "34", "TextFont": "TypeBodyStrong"},
 }
 DROP = re.compile(r"_(minmode|lodef|hidef)$", re.I)
 

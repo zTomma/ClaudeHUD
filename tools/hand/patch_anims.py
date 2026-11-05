@@ -82,6 +82,75 @@ Animate ObjectiveStatusTraining	Position	"c-160 r187"	Linear 0 0
 Animate ObjectiveStatusTraining	Position	"c-160 r127"	Deaccel 0.0 0.2''')
 
 
+# ==========================================================================================
+# v2 "taccuino vivace": the STATE colours the whole card (DESIGN.md par. 11). Later ev() calls
+# replace the v1 definitions above. Danger = terracotta card, ink numbers, ink shadow pulsing at 2 Hz.
+ev("HudHealthBonusPulse", """
+// overheal: numero e ombra in salvia
+Animate	PlayerStatusHealthValue	FgColor	"DkPositive"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	BgColor	"DkPositive"	Linear 0.0 0.12
+RunEvent HudHealthBonusPulseLoop	0.5""")
+ev("HudHealthBonusPulseStop", """
+StopEvent HudHealthBonusPulse 0.0
+StopEvent HudHealthBonusPulseLoop 0.0
+Animate	PlayerStatusHealthValue	FgColor	"DkText"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	BgColor	"DkShadow"	Linear 0.0 0.12""")
+ev("HudHealthDyingPulse", """
+// pericolo: la scheda diventa terracotta, i numeri ink, l'ombra ink pulsa a 2 Hz
+Animate	HealthCard		BgColor	"DkAccent"	Linear 0.0 0.12
+Animate	PlayerStatusHealthValue	FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	PlayerStatusMaxHealthValue	FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	BgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	Alpha	"255"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	Alpha	"90"	Linear 0.25 0.12
+RunEvent HudHealthDyingPulseLoop	0.5""")
+ev("HudHealthDyingPulseStop", """
+StopEvent HudHealthDyingPulse 0.0
+StopEvent HudHealthDyingPulseLoop 0.0
+Animate	HealthCard		BgColor	"DkCard"	Linear 0.0 0.12
+Animate	PlayerStatusHealthValue	FgColor	"DkText"	Linear 0.0 0.12
+Animate	PlayerStatusMaxHealthValue	FgColor	"DkTextMuted"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	BgColor	"DkShadow"	Linear 0.0 0.12
+Animate	ClaudeV2HealthShadow	Alpha	"255"	Linear 0.0 0.12
+Animate	HealthSegno		Alpha	"0"	Linear 0.0 0.12""")
+ev("HudLowAmmoPulse", """
+// munizioni basse: scheda terracotta, numeri ink, ombra ink che pulsa a 2 Hz
+Animate	AmmoCard		BgColor	"DkAccent"	Linear 0.0 0.12
+Animate	AmmoInClip		FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	AmmoNoClip		FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	AmmoInReserve	FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ClaudeV2AmmoShadow	BgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ClaudeV2AmmoShadow	Alpha	"255"	Linear 0.0 0.12
+Animate	ClaudeV2AmmoShadow	Alpha	"90"	Linear 0.25 0.12
+RunEvent HudLowAmmoPulseLoop	0.5""")
+ev("HudLowAmmoPulseStop", """
+StopEvent HudLowAmmoPulse 0.0
+StopEvent HudLowAmmoPulseLoop 0.0
+Animate	AmmoCard		BgColor	"DkCard"	Linear 0.0 0.12
+Animate	AmmoInClip		FgColor	"DkText"	Linear 0.0 0.12
+Animate	AmmoNoClip		FgColor	"DkText"	Linear 0.0 0.12
+Animate	AmmoInReserve	FgColor	"DkTextMuted"	Linear 0.0 0.12
+Animate	ClaudeV2AmmoShadow	BgColor	"DkShadow"	Linear 0.0 0.12
+Animate	ClaudeV2AmmoShadow	Alpha	"255"	Linear 0.0 0.12
+Animate	AmmoSegno		Alpha	"0"	Accel 0.0 0.15""")
+ev("HudMedicCharged", """
+// Uber pronta: scheda terracotta, etichetta/numero/barra ink (fisso: e' un "agisci adesso", non un pericolo)
+Animate	ChargeCard		BgColor	"DkAccent"	Linear 0.0 0.12
+Animate	ChargeLabel		FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ChargePercent	FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ChargeMeter		FgColor	"DkOnRed"	Linear 0.0 0.12
+Animate	ClaudeV2MedicShadow	BgColor	"DkOnRed"	Linear 0.0 0.12
+RunEvent HudMedicChargedLoop	0.5""")
+ev("HudMedicChargedStop", """
+StopEvent HudMedicCharged 0.0
+StopEvent HudMedicChargedLoop 0.0
+Animate	ChargeCard		BgColor	"DkCard"	Linear 0.0 0.12
+Animate	ChargeLabel		FgColor	"DkTextMuted"	Linear 0.0 0.12
+Animate	ChargePercent	FgColor	"DkText"	Linear 0.0 0.12
+Animate	ChargeMeter		FgColor	"DkText"	Linear 0.0 0.12
+Animate	ClaudeV2MedicShadow	BgColor	"DkShadow"	Linear 0.0 0.12""")
+
+
 def main():
     text = open(PATH, encoding="utf-8").read()
     for name, block in EVENTS.items():

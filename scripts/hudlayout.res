@@ -20,8 +20,8 @@
 		"enabled"   	"1"
 		"xpos"      	"r100"
 		"ypos"      	"r48"
-		"wide"      	"88"
-		"tall"      	"36"
+		"wide"      	"92"
+		"tall"      	"40"
 	}
 	"HudObjectiveStatus"
 	{
@@ -40,7 +40,7 @@
 		"enabled"          	"1"
 		"xpos"             	"c-82"
 		"ypos"             	"0"
-		"wide"             	"164"
+		"wide"             	"168"
 		"tall"             	"64"
 		"blue_active_xpos" 	"0"
 		"red_active_xpos"  	"84"
@@ -52,8 +52,8 @@
 		"enabled"   	"1"
 		"xpos"      	"r184"
 		"ypos"      	"r48"
-		"wide"      	"80"
-		"tall"      	"36"
+		"wide"      	"84"
+		"tall"      	"40"
 		"MeterFG"   	"250 249 245 255"	// token: DkText
 		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
@@ -64,8 +64,8 @@
 		"enabled"   	"1"
 		"xpos"      	"r100"
 		"ypos"      	"r88"
-		"wide"      	"88"
-		"tall"      	"36"
+		"wide"      	"92"
+		"tall"      	"40"
 	}
 	"HudDemomanCharge"
 	{
@@ -198,7 +198,7 @@
 		"xpos"      	"12"
 		"ypos"      	"r144"
 		"wide"      	"180"
-		"tall"      	"32"
+		"tall"      	"34"
 		"TextFont"  	"TypeBodyStrong"
 	}
 	"CMainTargetID"
@@ -902,8 +902,8 @@
 		"enabled"   	"1"
 		"xpos"      	"r184"
 		"ypos"      	"r48"
-		"wide"      	"80"
-		"tall"      	"36"
+		"wide"      	"84"
+		"tall"      	"40"
 	}
 	"HudTeamGoal"
 	{

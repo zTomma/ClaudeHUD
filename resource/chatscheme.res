@@ -33,6 +33,7 @@ Scheme
 		"DkOnRed"	"20 20 19 255"	// token
 		"DkOnBlu"	"250 249 245 255"	// token
 		"DkScrim"	"20 20 19 160"	// token
+		"DkShadow"	"100 115 107 255"	// token
 		"Untinted"	"255 255 255 255"	// token
 		"Clear"	"20 20 19 0"	// token
 		// ---- legacy names (used by the game's code) ----

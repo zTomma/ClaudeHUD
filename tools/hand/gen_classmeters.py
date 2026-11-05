@@ -66,7 +66,7 @@ for p in sorted(glob.glob(os.path.join(ROOT, "#TF2 Files", "resource", "ui", "hu
     has_base = open(p, encoding="utf-8", errors="replace").read().lstrip().lower().startswith("#base")
     edits = {
         # x_offset: tf_hud_itemeffectmeter.cpp moves a meter left by x_offset when several are shown
-        ("HudItemEffectMeter",): {"xpos": "r184", "ypos": "r48", "wide": "80", "tall": "36", "x_offset": "84"},
+        ("HudItemEffectMeter",): {"xpos": "r184", "ypos": "r48", "wide": "84", "tall": "40", "x_offset": "84"},
         ("ItemEffectMeterBG",): dict(HIDE_IMG, teambg_2="", teambg_3=""),
         ("ItemEffectMeterLabel",): dict(LABEL, xpos="8", ypos="5", wide="64", tall="10"),
         ("ItemEffectMeter",): dict(BAR, xpos="8", ypos="22", wide="64", tall="6"),

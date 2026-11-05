@@ -1,5 +1,6 @@
 // ClaudeHUD: riscritto a mano (fase 7) - stato del travestimento della Spy: scheda DkCard 200x30
 // con chip salute, nome del travestimento e arma. Generato da tools/hand/gen_classmeters.py
+// ClaudeHUD v2 (taccuino vivace): elementi ClaudeV2* aggiunti da tools/hand/gen_v2.py
 "Resource/UI/ItemModelPanel.res"
 {
 	"itemmodelpanel"
@@ -119,5 +120,21 @@
 		"paintbackground"     	"1"
 		"paintbackgroundtype" 	"2"
 		"bgcolor_override"    	"DkCard"
+	}
+	"ClaudeV2DisguiseShadow"
+	{
+		"ControlName"         	"EditablePanel"
+		"fieldName"           	"ClaudeV2DisguiseShadow"
+		"xpos"                	"3"
+		"ypos"                	"3"
+		"zpos"                	"-2"
+		"wide"                	"176"
+		"tall"                	"30"
+		"visible"             	"1"
+		"enabled"             	"1"
+		"mouseinputenabled"   	"0"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkShadow"
 	}
 }

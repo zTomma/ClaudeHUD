@@ -9,8 +9,8 @@
 		"fieldName" 	"HudItemEffectMeter"
 		"xpos"      	"r184"
 		"ypos"      	"r48"
-		"wide"      	"80"
-		"tall"      	"36"
+		"wide"      	"84"
+		"tall"      	"40"
 		"x_offset"  	"84"
 	}
 }

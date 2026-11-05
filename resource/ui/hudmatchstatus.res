@@ -259,7 +259,7 @@
 		"xpos"               	"c-40"
 		"ypos"               	"8"
 		"zpos"               	"2"
-		"wide"               	"80"
+		"wide"               	"84"
 		"tall"               	"52"
 		"visible"            	"0"
 		"enabled"            	"1"
