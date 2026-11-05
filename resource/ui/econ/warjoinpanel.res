@@ -206,8 +206,8 @@
 					"actionsignallevel"         	"3"
 					"paintbackground"           	"1"
 					"defaultFgColor_override"   	"DkText"
-					"armedFgColor_override"     	"DkText"
-					"depressedFgColor_override" 	"DkText"
+					"armedFgColor_override"     	"LtText"	// ClaudeHUD: contrasto nel contesto
+					"depressedFgColor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 					"proportionaltoparent"      	"1"
 				}
 				"EndDateLabel"
@@ -640,9 +640,9 @@
 							"border_default"            	"MainMenuButtonDefault"
 							"border_armed"              	"MainMenuButtonArmed"
 							"paintbackground"           	"0"
-							"defaultFgColor_override"   	"DkOnRed"
+							"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"armedFgColor_override"     	"DkText"
-							"depressedFgColor_override" 	"DkOnRed"
+							"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 							"image_armedcolor"          	"250 249 245 255"	// token: DkText
 							"proportionaltoparent"      	"1"
@@ -676,9 +676,9 @@
 							"border_default"            	"MainMenuButtonDefault"
 							"border_armed"              	"MainMenuButtonArmed"
 							"paintbackground"           	"0"
-							"defaultFgColor_override"   	"DkOnRed"
+							"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"armedFgColor_override"     	"DkText"
-							"depressedFgColor_override" 	"DkOnRed"
+							"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 							"image_armedcolor"          	"250 249 245 255"	// token: DkText
 							"proportionaltoparent"      	"1"
@@ -780,9 +780,9 @@
 							"border_default"            	"MainMenuButtonDefault"
 							"border_armed"              	"MainMenuButtonArmed"
 							"paintbackground"           	"0"
-							"defaultFgColor_override"   	"DkOnRed"
+							"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"armedFgColor_override"     	"DkText"
-							"depressedFgColor_override" 	"DkOnRed"
+							"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 							"image_armedcolor"          	"250 249 245 255"	// token: DkText
 							"proportionaltoparent"      	"1"
@@ -859,9 +859,9 @@
 							"border_default"            	"MainMenuButtonDefault"
 							"border_armed"              	"MainMenuButtonArmed"
 							"paintbackground"           	"0"
-							"defaultFgColor_override"   	"DkOnRed"
+							"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"armedFgColor_override"     	"DkText"
-							"depressedFgColor_override" 	"DkOnRed"
+							"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 							"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 							"image_armedcolor"          	"250 249 245 255"	// token: DkText
 							"proportionaltoparent"      	"1"
@@ -950,9 +950,9 @@
 						"border_default"            	"MainMenuButtonDefault"
 						"border_armed"              	"MainMenuButtonArmed"
 						"paintbackground"           	"0"
-						"defaultFgColor_override"   	"DkOnRed"
+						"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 						"armedFgColor_override"     	"DkText"
-						"depressedFgColor_override" 	"DkOnRed"
+						"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 						"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 						"image_armedcolor"          	"250 249 245 255"	// token: DkText
 						"proportionaltoparent"      	"1"
@@ -997,9 +997,9 @@
 						"border_default"            	"MainMenuButtonDefault"
 						"border_armed"              	"MainMenuButtonArmed"
 						"paintbackground"           	"0"
-						"defaultFgColor_override"   	"DkOnRed"
+						"defaultFgColor_override"   	"DkText"	// ClaudeHUD: contrasto nel contesto
 						"armedFgColor_override"     	"DkText"
-						"depressedFgColor_override" 	"DkOnRed"
+						"depressedFgColor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 						"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
 						"image_armedcolor"          	"250 249 245 255"	// token: DkText
 						"proportionaltoparent"      	"1"

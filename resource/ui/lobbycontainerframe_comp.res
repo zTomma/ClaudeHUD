@@ -57,7 +57,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -76,7 +76,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -229,7 +229,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -248,7 +248,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -442,7 +442,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -461,7 +461,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -654,7 +654,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -673,7 +673,7 @@
 			"enabled"              	"1"
 			"wrap"                 	"1"
 			"proportionaltoparent" 	"1"
-			"fgcolor_override"     	"DkOnRed"
+			"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -883,7 +883,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -901,7 +901,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{

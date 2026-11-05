@@ -29,6 +29,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import build_scheme as B  # noqa: E402
+import context_contrast as CC  # noqa: E402
 import modes  # noqa: E402
 import tokens as T  # noqa: E402
 import vdf  # noqa: E402
@@ -502,6 +503,7 @@ def main(dry=False):
         text = open(src, encoding="utf-8", errors="replace").read()
         nodes = vdf.parse(text)
         migrate_nodes(nodes, modes.mode_of(rel), ctx)
+        ctx.stats["context_fix"] += CC.fix_nodes(nodes, rel, name_allowed)
         out = MIGRATED_MARK + "\n// modalita': %s (DESIGN.md par. 9)\n" % modes.mode_of(rel) + vdf.dump(nodes) + "\n"
         vdf.parse(out)
         if not dry:

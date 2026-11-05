@@ -733,7 +733,7 @@
 		"pinCorner"        	"0"
 		"visible"          	"0"
 		"enabled"          	"1"
-		"fgcolor_override" 	"DkOnRed"
+		"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"ConfirmDisabledLabel"
 	{

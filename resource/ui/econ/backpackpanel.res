@@ -85,7 +85,7 @@
 				"paintbackground"      	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"StoreNewBorder"
-				"fgcolor"              	"DkOnRed"
+				"fgcolor"              	"DkText"	// ClaudeHUD: contrasto nel contesto
 				"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
 			}
 		}
@@ -137,7 +137,7 @@
 				"paintbackground"      	"1"
 				"proportionaltoparent" 	"1"
 				"border"               	"StoreNewBorder"
-				"fgcolor"              	"DkOnRed"
+				"fgcolor"              	"DkText"	// ClaudeHUD: contrasto nel contesto
 				"bgcolor_override"     	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
 			}
 			"use_item_sounds"     	"1"
@@ -502,7 +502,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -520,7 +520,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -667,7 +667,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -685,7 +685,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -876,7 +876,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -894,7 +894,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1085,7 +1085,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1103,7 +1103,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1293,7 +1293,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1311,7 +1311,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{

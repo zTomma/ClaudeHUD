@@ -224,7 +224,9 @@ SWATCH_ROLE = {"Avorio": "LtCanvas", "Terracotta": "LtAccent", "Salvia": "LtSage
 
 def custom_menu(b):
     X, Y, W, H = 8, 60, 300, 356           # card (centre-relative x)
-    z = 10
+    # below every popup of the main menu (MOTD_Panel z1, Notifications_Panel z10, item tooltip z100) and
+    # above the canvas/grid/stripes (z -200 and lower) and the left column (z -50 and lower)
+    z = -44
     b.append(shadow(P + "CustomShadow", "c%d" % (X + 4), Y + 4, W, H, "LtSage", z - 1))
     b.append(shadow(P + "CustomCard", "c%d" % X, Y, W, H, "LtCard", z))
     b.append(label(P + "CustomKicker", "ClaudeHUD", "c%d" % (X + 12), Y + 8, 120, 8, "TypeLabel", "LtAccentText", z + 1,
@@ -291,13 +293,16 @@ def mainmenu(b):
     tw = text_width_units("Team Fortress 2", "TypeHero")
     setkv(title, font="TypeHero", ypos=44, tall=56, wide=int(tw) + 12, zpos=3)
     setkv(find(b, "ClaudeTitleSegno"), ypos=50, tall=44)
-    b.append(shadow(P + "TitleMark", "c-286", 76, int(tw * 0.92), 18, "LtBlush", 1))
+    b.append(shadow(P + "TitleMark", "c-287", 76, int(tw) + 14, 18, "LtBlush", 1))
     b.append(label(P + "TitleKicker", "ClaudeHUD · edizione taccuino", "c-282", 36, 240, 8, "TypeLabel", "LtAccentText", 3,
                    allcaps=1))
     for name, y in (("RankBorder", 112), ("NoGCMessage", 112), ("NoGCImage", 125), ("RankTooltipPanel", 117),
                     ("EventPromo", 176), ("SafeMode", 226)):
         setkv(find(b, name), ypos=y)
     setkv(find(b, "RankPanel"), ypos=90)
+    # the promo-codes button (shown by the game only when there are codes) sat where the Personalizza card
+    # is now: move it to the free strip under the top bar, left of the notification icons
+    setkv(find(b, "ShowPromoCodesButton"), xpos="c-28", ypos=30, wide=168, tall=22, zpos=5)
     fr = find(b, "FriendsContainer")
     setkv(fr, ypos=276, tall=140)
     b.append(shadow(P + "FriendsShadow", "c-278", 280, 256, 140, "LtAccent", 4))

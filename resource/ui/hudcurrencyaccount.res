@@ -7,7 +7,7 @@
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"Currency"
 		"font"          	"HudFontSmallBold"
-		"fgcolor"       	"DkText"
+		"fgcolor"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 		"xpos"          	"11"
 		"ypos"          	"57"
 		"zpos"          	"3"

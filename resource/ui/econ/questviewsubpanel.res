@@ -48,8 +48,8 @@
 		"armedBgColor_override"     	"DkPositive"
 		"depressedBgColor_override" 	"DkPositive"
 		"defaultFgColor_override"   	"DkText"
-		"armedFgColor_override"     	"DkText"
-		"depressedFgColor_override" 	"DkText"
+		"armedFgColor_override"     	"LtText"	// ClaudeHUD: contrasto nel contesto
+		"depressedFgColor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"BGImage"
 	{

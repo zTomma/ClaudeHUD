@@ -395,8 +395,8 @@
 			"sound_depressed"         	"UI/buttonclick.wav"
 			"sound_released"          	"UI/buttonclickrelease.wav"
 			"paintbackground"         	"0"
-			"armedFgColor_override"   	"DkAccent"
-			"defaultFgColor_override" 	"DkTextMuted"
+			"armedFgColor_override"   	"LtText"	// ClaudeHUD: contrasto nel contesto
+			"defaultFgColor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"bgcolor_override" 	"DkAccent"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
@@ -620,7 +620,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -638,7 +638,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -785,7 +785,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -803,7 +803,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -994,7 +994,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1012,7 +1012,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1203,7 +1203,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1221,7 +1221,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1412,7 +1412,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1430,7 +1430,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1621,7 +1621,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1639,7 +1639,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -1830,7 +1830,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -1848,7 +1848,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -2039,7 +2039,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -2057,7 +2057,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -2248,7 +2248,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -2266,7 +2266,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{
@@ -2456,7 +2456,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"TextLabel"
 		{
@@ -2474,7 +2474,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"wrap"             	"1"
-			"fgcolor_override" 	"DkOnRed"
+			"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"CloseButton"
 		{

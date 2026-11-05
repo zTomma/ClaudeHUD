@@ -404,7 +404,7 @@
 			"enabled"       	"1"
 			"wrap"          	"1"
 			"centerwrap"    	"1"
-			"fgcolor"       	"DkOnRed"
+			"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"PromotionImage_BonusItem"
 		{
@@ -438,7 +438,7 @@
 			"enabled"       	"1"
 			"wrap"          	"1"
 			"centerwrap"    	"1"
-			"fgcolor"       	"DkOnRed"
+			"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"PromotionHat"
 		{
@@ -472,7 +472,7 @@
 			"enabled"       	"1"
 			"wrap"          	"1"
 			"centerwrap"    	"1"
-			"fgcolor"       	"DkOnRed"
+			"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 		"PromotionImage_Hat"
 		{
@@ -506,7 +506,7 @@
 			"enabled"       	"1"
 			"wrap"          	"1"
 			"centerwrap"    	"1"
-			"fgcolor"       	"DkOnRed"
+			"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 		}
 	}
 	"ReloadSchemeButton"

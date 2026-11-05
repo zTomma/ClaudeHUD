@@ -39,7 +39,7 @@
 		"ypos"          	"106"
 		"wide"          	"550"
 		"tall"          	"30"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"WaveFailHeader"
 	{
@@ -76,7 +76,7 @@
 		"ypos"          	"135"
 		"wide"          	"550"
 		"tall"          	"30"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"CollectionContainer"
 	{

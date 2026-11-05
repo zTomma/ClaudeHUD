@@ -697,8 +697,8 @@
 							"sound_depressed"           	"UI/buttonclick.wav"
 							"sound_released"            	"UI/buttonclickrelease.wav"
 							"defaultFgColor_override"   	"DkText"
-							"armedFgColor_override"     	"DkText"
-							"depressedFgColor_override" 	"DkText"
+							"armedFgColor_override"     	"LtText"	// ClaudeHUD: contrasto nel contesto
+							"depressedFgColor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 							"defaultBgColor_override"   	"StoreGreen"
 							"armedBgColor_override"     	"DkPositive"
 							"depressedBgColor_override" 	"DkPositive"

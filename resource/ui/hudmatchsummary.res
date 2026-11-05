@@ -268,7 +268,7 @@
 					"ControlName"   	"CExLabel"
 					"fieldName"     	"BlueTeamScoreDropshadow"
 					"font"          	"MatchSummaryTeamScores"
-					"fgcolor"       	"DkCard"
+					"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 					"labelText"     	"%blueteamscore%"
 					"textAlignment" 	"east"
 					"xpos"          	"6"
@@ -311,7 +311,7 @@
 					"ControlName"   	"CExLabel"
 					"fieldName"     	"BlueTeamWinnerDropshadow"
 					"font"          	"MatchSummaryWinner"
-					"fgcolor"       	"DkCard"
+					"fgcolor"       	"DkText"	// ClaudeHUD: contrasto nel contesto
 					"labelText"     	"%blueteamwinner%"
 					"textAlignment" 	"east"
 					"xpos"          	"6"
@@ -500,24 +500,25 @@
 				}
 				"RedTeamScore"
 				{
-					"ControlName"   	"CExLabel"
-					"fieldName"     	"RedTeamScore"
-					"font"          	"MatchSummaryTeamScores"
-					"labelText"     	"%redteamscore%"
-					"textAlignment" 	"west"
-					"xpos"          	"r5-p.19"
-					"ypos"          	"103"
-					"zpos"          	"4"
-					"wide"          	"p.19"
-					"tall"          	"30"
-					"autoResize"    	"0"
-					"pinCorner"     	"0"
-					"visible"       	"1"
-					"enabled"       	"1"
+					"ControlName"      	"CExLabel"
+					"fieldName"        	"RedTeamScore"
+					"font"             	"MatchSummaryTeamScores"
+					"labelText"        	"%redteamscore%"
+					"textAlignment"    	"west"
+					"xpos"             	"r5-p.19"
+					"ypos"             	"103"
+					"zpos"             	"4"
+					"wide"             	"p.19"
+					"tall"             	"30"
+					"autoResize"       	"0"
+					"pinCorner"        	"0"
+					"visible"          	"1"
+					"enabled"          	"1"
 					"if_large"
 					{
 						"ypos" 	"43"
 					}
+					"fgcolor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 				}
 				"RedTeamScoreDropshadow"
 				{
@@ -543,24 +544,25 @@
 				}
 				"RedTeamWinner"
 				{
-					"ControlName"   	"CExLabel"
-					"fieldName"     	"RedTeamWinner"
-					"font"          	"MatchSummaryWinner"
-					"labelText"     	"%redteamwinner%"
-					"textAlignment" 	"west"
-					"xpos"          	"r5-p.19"
-					"ypos"          	"103"
-					"zpos"          	"4"
-					"wide"          	"p.19"
-					"tall"          	"30"
-					"autoResize"    	"0"
-					"pinCorner"     	"0"
-					"visible"       	"1"
-					"enabled"       	"1"
+					"ControlName"      	"CExLabel"
+					"fieldName"        	"RedTeamWinner"
+					"font"             	"MatchSummaryWinner"
+					"labelText"        	"%redteamwinner%"
+					"textAlignment"    	"west"
+					"xpos"             	"r5-p.19"
+					"ypos"             	"103"
+					"zpos"             	"4"
+					"wide"             	"p.19"
+					"tall"             	"30"
+					"autoResize"       	"0"
+					"pinCorner"        	"0"
+					"visible"          	"1"
+					"enabled"          	"1"
 					"if_large"
 					{
 						"ypos" 	"43"
 					}
+					"fgcolor_override" 	"LtText"	// ClaudeHUD: contrasto nel contesto
 				}
 				"RedTeamWinnerDropshadow"
 				{

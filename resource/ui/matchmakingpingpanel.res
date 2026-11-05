@@ -102,6 +102,7 @@
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"
 		"cvar_name"              	"tf_party_ignore_invites"
+		"fgcolor_override"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"KeepPartyOnSameTeam"
 	{
@@ -120,6 +121,7 @@
 		"enabled"                	"0"
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"
+		"fgcolor_override"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"KeepPartyOnSameTeamLabel"
 	{
@@ -157,6 +159,7 @@
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"
 		"cvar_name"              	"tf_mm_custom_ping_enabled"
+		"fgcolor_override"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"CheckLabel"
 	{

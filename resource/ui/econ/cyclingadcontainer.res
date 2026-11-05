@@ -27,7 +27,7 @@
 		"actionsignallevel"       	"2"
 		"defaultBgColor_override" 	"DkCardA60"
 		"armedBgColor_override"   	"DkAccent"
-		"armedFgColor_override"   	"DkText"
+		"armedFgColor_override"   	"LtText"	// ClaudeHUD: contrasto nel contesto
 		"sound_armed"             	"ui/item_info_mouseover.wav"
 		"sound_depressed"         	"UI/buttonclick.wav"
 		"sound_released"          	"UI/buttonclickrelease.wav"
@@ -57,7 +57,7 @@
 		"actionsignallevel"       	"2"
 		"defaultBgColor_override" 	"DkCardA60"
 		"armedBgColor_override"   	"DkAccent"
-		"armedFgColor_override"   	"DkText"
+		"armedFgColor_override"   	"LtText"	// ClaudeHUD: contrasto nel contesto
 		"sound_armed"             	"ui/item_info_mouseover.wav"
 		"sound_depressed"         	"UI/buttonclick.wav"
 		"sound_released"          	"UI/buttonclickrelease.wav"

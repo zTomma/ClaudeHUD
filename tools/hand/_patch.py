@@ -35,6 +35,7 @@ def patch(rel, edits, header, add=None, remove_blocks=(), optional=False, pre=No
     mode = modes.mode_of(rel)
     nodes = vdf.parse(open(os.path.join(ROOT, "#TF2 Files", rel), encoding="utf-8", errors="replace").read())
     M.migrate_nodes(nodes, mode, M.load_ctx())
+    M.CC.fix_nodes(nodes, rel, M.name_allowed)  # Valve text colours that landed on a same-colour surface
     root = next(nd[1] for nd in nodes if isinstance(nd[1], list))
     if pre:
         pre(root)

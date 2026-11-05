@@ -328,6 +328,7 @@
 		"paintborder"         	"1"
 		"textinsetx"          	"100"
 		"border"              	"LoadoutItemPopupBorder"
+		"fgcolor_override"    	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"ClassUsageImage_Any"
 	{

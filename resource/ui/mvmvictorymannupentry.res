@@ -297,7 +297,7 @@
 			"zpos"                 	"2"
 			"wide"                 	"f0"
 			"tall"                 	"f0"
-			"fgcolor"              	"DkOnRed"
+			"fgcolor"              	"DkText"	// ClaudeHUD: contrasto nel contesto
 			"proportionalToParent" 	"1"
 		}
 		"TourProgressLabel"

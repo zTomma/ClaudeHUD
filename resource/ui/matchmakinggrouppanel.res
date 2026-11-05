@@ -39,5 +39,6 @@
 		"font"                   	"HudFontSmallBold"
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"
+		"fgcolor_override"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 }

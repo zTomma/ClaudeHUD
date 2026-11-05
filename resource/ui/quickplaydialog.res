@@ -95,7 +95,7 @@
 				"pinCorner"        	"0"
 				"visible"          	"1"
 				"enabled"          	"1"
-				"fgcolor_override" 	"LtTextMuted"
+				"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 			}
 			"MoreInfoButton"
 			{
@@ -947,7 +947,7 @@
 				"visible"          	"1"
 				"enabled"          	"1"
 				"wrap"             	"1"
-				"fgcolor_override" 	"DkOnRed"
+				"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 			}
 			"TextLabel"
 			{
@@ -965,7 +965,7 @@
 				"visible"              	"1"
 				"enabled"              	"1"
 				"wrap"                 	"1"
-				"fgcolor_override"     	"DkOnRed"
+				"fgcolor_override"     	"DkText"	// ClaudeHUD: contrasto nel contesto
 				"proportionaltoparent" 	"1"
 			}
 			"CloseButton"

@@ -158,7 +158,7 @@
 			"textAlignment"        	"center"
 			"labelText"            	"%flagvalue%"
 			"font"                 	"HudFontSmallBold"
-			"fgcolor"              	"DkText"
+			"fgcolor"              	"LtText"	// ClaudeHUD: contrasto nel contesto
 			"proportionalToParent" 	"1"
 		}
 		"FlagValueShadow"

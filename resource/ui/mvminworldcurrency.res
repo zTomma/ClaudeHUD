@@ -49,7 +49,7 @@
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"CurrencyGood"
 		"font"          	"HudFontSmallestBold"
-		"fgcolor"       	"DkPositive"
+		"fgcolor"       	"LtText"	// ClaudeHUD: contrasto nel contesto
 		"xpos"          	"9"
 		"ypos"          	"1"
 		"zpos"          	"4"

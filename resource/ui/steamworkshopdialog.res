@@ -128,7 +128,7 @@
 				"visible"          	"1"
 				"enabled"          	"1"
 				"wrap"             	"1"
-				"fgcolor_override" 	"DkOnRed"
+				"fgcolor_override" 	"DkText"	// ClaudeHUD: contrasto nel contesto
 			}
 			"LearnMoreButton"
 			{

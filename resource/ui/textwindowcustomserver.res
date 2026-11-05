@@ -16,6 +16,7 @@
 		"enabled"            	"1"
 		"tabPosition"        	"0"
 		"settitlebarvisible" 	"0"
+		"fgcolor_override"   	"LtText"	// ClaudeHUD: contrasto nel contesto
 	}
 	"TFMessageTitle"
 	{

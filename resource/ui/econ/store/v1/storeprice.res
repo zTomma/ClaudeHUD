@@ -92,7 +92,7 @@
 		"labelText"        	"#Store_Price_New"
 		"paintbackground"  	"1"
 		"border"           	"StoreNewBorder"
-		"fgcolor"          	"DkOnRed"
+		"fgcolor"          	"DkText"	// ClaudeHUD: contrasto nel contesto
 		"bgcolor_override" 	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
 	"Highlighted"
@@ -114,7 +114,7 @@
 		"labelText"        	"#Store_Price_Highlighted"
 		"paintbackground"  	"1"
 		"border"           	"StoreHighlightedBorder"
-		"fgcolor"          	"DkOnRed"
+		"fgcolor"          	"DkText"	// ClaudeHUD: contrasto nel contesto
 		"bgcolor_override" 	"DkChip"	// ClaudeHUD: riempimento al posto del bordo texture
 	}
 	"Sale"
