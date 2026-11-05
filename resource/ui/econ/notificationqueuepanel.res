@@ -1,19 +1,20 @@
+// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
+// modalita': dark (DESIGN.md par. 9)
 "Resource/UI/NotificationQueuePanel.res"
 {
 	"NotificationQueuePanel"
 	{
-		"ControlName"	"CNotificationQueuePanel"
-		"fieldName"		"NotificationQueuePanel"
-		"xpos"			"10"
-		"ypos"			"r315"
-		"zpos"			"100"
-		"wide"			"200"
-		"tall"			"100"
-		"visible"		"1"
-		"enabled"		"1"
-
-		"buffer_between_visible"	"5"
-		"overlap_offset_y"			"35"
-		"overlap_offset_x"			"10"
+		"ControlName"            	"CNotificationQueuePanel"
+		"fieldName"              	"NotificationQueuePanel"
+		"xpos"                   	"10"
+		"ypos"                   	"r315"
+		"zpos"                   	"100"
+		"wide"                   	"200"
+		"tall"                   	"100"
+		"visible"                	"1"
+		"enabled"                	"1"
+		"buffer_between_visible" 	"5"
+		"overlap_offset_y"       	"35"
+		"overlap_offset_x"       	"10"
 	}
 }

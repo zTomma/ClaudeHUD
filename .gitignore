@@ -1,0 +1,4 @@
+# reference screenshots (contain the Claude / Anthropic logos: not redistributed)
+reference/
+__pycache__/
+*.pyc

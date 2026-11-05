@@ -1,150 +1,121 @@
+// ClaudeHUD: riscritto a mano (fase 3) - target ID. DESIGN.md par. 2, 3, 4.
+// Verificato nel sorgente TF2 (tf_hud_target_id.cpp): il codice ridimensiona la RADICE sul contenuto
+// e disegna TargetIDBG con alfa tf_hud_target_id_alpha (100 = 39%). Per questo TargetIDBG e' vuoto e la
+// scheda DkCard arrotondata e opaca e' lo sfondo della radice (scripts/hudlayout.res, CMainTargetID).
+// Il colore di squadra e' sul nome (TeamRed/TeamBlue -> DkRedText/DkBluText, contrasto verificato).
 "Resource/UI/TargetID.res"
 {
 	"TargetIDBG"
 	{
-		"ControlName"		"CTFImagePanel"
+		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TargetIDBG"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"252"
-		"tall"	 		"50"
-		"autoResize"		"0"
+		"tall"			"30"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
-		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
-			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+		"image"			""
+		"scaleImage"	"1"
+		"teambg_1"		""
+		"teambg_2"		""
+		"teambg_3"		""
+		"fillcolor"		"Clear"
 	}
 	"TargetIDBG_Spec_Blue"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"	"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Blue"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"252"
-		"tall"	 		"30"
-		"autoResize"		"0"
+		"zpos"			"-2"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_blu"
-		"image_lodef"	"../hud/color_panel_blu"
-		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
-			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"image"			""
 	}
 	"TargetIDBG_Spec_Red"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"	"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Red"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"252"
-		"tall"	 		"30"
-		"autoResize"		"0"
+		"zpos"			"-2"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_red"
-		"image_lodef"	"../hud/color_panel_red"
-		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
-			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"image"			""
 	}
-	
 	"TargetNameLabel"
-	{	
-		"ControlName"		"Label"
+	{
+		"ControlName"	"Label"
 		"fieldName"		"TargetNameLabel"
-		"font"			"HudFontSmall"
-		"font_minmode"	"TFFontLarge"
-		"xpos"			"8"
-		"xpos_minmode"	"30"
-		"ypos"			"5"
-		"ypos_minmode"	"5"
+		"font"			"TypeBodyStrong"
+		"xpos"			"30"
+		"ypos"			"4"
 		"zpos"			"1"
 		"wide"			"640"
-		"tall"			"24"
-		"autoResize"		"0"
+		"tall"			"12"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetname%"
-		"textAlignment"		"North-West"
+		"textAlignment"	"west"
 		"dulltext"		"0"
-		"brighttext"		"0"
+		"brighttext"	"0"
 	}
 	"TargetDataLabel"
-	{	
-		"ControlName"		"Label"
+	{
+		"ControlName"	"Label"
 		"fieldName"		"TargetDataLabel"
-		"font"			"FontStoreOriginalPrice"
-		"font_minmode"	"DefaultVerySmall"
-		"xpos"			"8"
-		"xpos_minmode"	"30"
-		"ypos"			"17"	[$WIN32]
-		"ypos_minmode"	"12"	[$WIN32]
-		"ypos"			"22"	[$X360]
-		"ypos_hidef"		"25"	[$X360]
+		"font"			"TypeCaption"
+		"xpos"			"30"
+		"ypos"			"16"
 		"zpos"			"1"
 		"wide"			"280"
-		"tall"			"15"
-		"autoResize"		"0"
+		"tall"			"10"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%targetdata%"
-		"textAlignment"		"Left"
+		"textAlignment"	"west"
 		"dulltext"		"0"
-		"brighttext"		"0"
+		"brighttext"	"0"
+		"fgcolor_override"	"DkTextMuted"
 	}
 	"SpectatorGUIHealth"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
-		"xpos"			"3"
-		"xpos_minmode"	"0"
-		"ypos"			"2"
-		"ypos_minmode"	"0"
-		"wide"			"32"
-		"tall"			"32"
+		"xpos"			"4"
+		"ypos"			"4"
+		"wide"			"22"
+		"tall"			"22"
 		"visible"		"0"
-		"enabled"		"0"	
-		"HealthBonusPosAdj"	"10"
+		"enabled"		"0"
+		"HealthBonusPosAdj"	"0"
 		"HealthDeathWarning"	"0.49"
-		"TFFont"		"HudFontSmall"
-		"HealthDeathWarningColor"	"HUDDeathWarning"
-		"TextColor"		"HudOffWhite"
-	}	
-	
+		"TFFont"		"NumS"
+		"HealthDeathWarningColor"	"217 119 87 255"	// token: DkAccent
+		"TextColor"		"250 249 245 255"	// token: DkText
+	}
 	"AmmoIcon"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"AmmoIcon"
 		"xpos"			"40"
-		"xpos_minmode"	"38"
-		"ypos"			"20"
-		"ypos_minmode"	"16"
+		"ypos"			"18"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"
@@ -152,16 +123,14 @@
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_class_heavy"
 		"scaleImage"	"1"
+		"drawcolor"		"DkTextMuted"
 	}
-	
 	"KillStreakIcon"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"KillStreakIcon"
-		"xpos"			"10"
-		"xpos_minmode"	"30"
-		"ypos"			"20"
-		"ypos_minmode"	"16"
+		"xpos"			"30"
+		"ypos"			"18"
 		"zpos"			"12"
 		"wide"			"8"
 		"tall"			"8"
@@ -169,11 +138,11 @@
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_streak"
 		"scaleImage"	"1"
+		"drawcolor"		"DkAccent"
 	}
-	
 	"MoveableSubPanel"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"MoveableSubPanel"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -181,8 +150,8 @@
 		"wide"			"32"
 		"tall"			"36"
 		"visible"		"1"
-		"enabled"		"1"	
-		
+		"enabled"		"1"
+
 		"MoveableIconBG"
 		{
 			"ControlName"	"CIconPanel"
@@ -195,10 +164,9 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"icon"			"obj_status_alert_background_tall_nocolor"
-			"iconColor"		"HudBlack"
+			"iconColor"		"55 54 50 255"	// token: DkChip
 			"scaleImage"	"1"
 		}
-		
 		"MoveableIcon"
 		{
 			"ControlName"	"CIconPanel"
@@ -211,7 +179,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"icon"			"obj_status_sentrygun_1"
-			"drawcolor"		"ProgressOffWhite"
+			"drawcolor"		"250 249 245 255"	// token: DkText
 			"scaleImage"	"1"
 		}
 		"MoveableSymbolIcon"
@@ -226,46 +194,43 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/eng_sel_item_movable"
-			"drawcolor"		"ProgressOffWhite"
+			"drawcolor"		"DkText"
 			"scaleImage"	"1"
 		}
-
 		"MoveableKeyLabel"
-		{	
-			"ControlName"		"Label"
+		{
+			"ControlName"	"Label"
 			"fieldName"		"MoveableKeyLabel"
-			"font"			"TFFontMedium"
-			"font_minmode"	"DefaultVerySmall"
+			"font"			"TypeCaption"
 			"xpos"			"0"
 			"ypos"			"22"
 			"zpos"			"1"
 			"wide"			"640"
 			"tall"			"24"
-			"autoResize"		"0"
+			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%movekey%"
-			"textAlignment"		"North"
+			"textAlignment"	"North"
 			"dulltext"		"0"
-			"brighttext"		"0"
-		}	
+			"brighttext"	"0"
+			"fgcolor_override"	"DkTextMuted"
+		}
 	}
 	"AvatarImage"
 	{
 		"ControlName"	"CAvatarImagePanel"
 		"fieldName"		"AvatarImage"
 		"xpos"			"6"
-		"xpos_minmode"	"6"
-		"ypos"			"6"	[$WIN32]
-		"ypos"			"0"	[$X360]
+		"ypos"			"6"
 		"zpos"			"99"
 		"wide"			"11"
 		"tall"			"11"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			""
-		"scaleImage"	"1"	
-		"color_outline"	"52 48 45 255"
-	}	
+		"scaleImage"	"1"
+		"color_outline"	"39 38 36 255"	// token: DkCard
+	}
 }

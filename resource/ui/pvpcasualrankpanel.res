@@ -1,5 +1,6 @@
+// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
+// modalita': light (DESIGN.md par. 9)
 #base "PvPRankPanel.res"
-
 "Resource/UI/PvPRankPanel.res"
 {
 	"ModelContainer"
@@ -8,12 +9,8 @@
 		{
 			"model"
 			{
-			//	"origin_x"		"60"
-			//	"origin_z"		"6"
-
 				"if_mini"
 				{
-			//		"origin_z"		"2"
 				}
 			}
 		}
