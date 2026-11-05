@@ -69,8 +69,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -146,8 +146,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -203,8 +203,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -259,8 +259,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -334,8 +334,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -389,8 +389,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -443,8 +443,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -519,8 +519,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -575,8 +575,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -631,8 +631,8 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"sound_armed"               	"UI/buttonrollover.wav"
 		"paintbackground"           	"0"
-		"image_drawcolor"           	"UntintedA70"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 		"stayselectedonclick"       	"1"
 		"selectonhover"             	"1"
@@ -805,7 +805,7 @@
 		"font"          	"HudFontMediumSmallSecondary"
 		"font_lodef"    	"HudFontMediumSmallSecondary"
 		"fgcolor"       	"LtAccentText"
-		"fgcolor_lodef" 	"LtAccentText"
+		"fgcolor_lodef" 	"160 90 67 255"	// token: LtAccentText
 	}
 	"ShadedBar"
 	{
@@ -837,7 +837,7 @@
 		"buttonoffsety"    	"20"
 		"center"           	"0"
 		"fonttext"         	"MatchmakingDialogMenuLarge"
-		"fgcolor"          	"LtText"
+		"fgcolor"          	"20 20 19 255"	// token: LtText
 		"button"
 		{
 			"name" 	"cancel"
@@ -1447,8 +1447,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1603,8 +1603,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkText"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

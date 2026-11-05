@@ -218,10 +218,10 @@
 		"fgcolor_override"                  	"LtText"
 		"bgcolor_override"                  	"LtCardAlt"
 		"disabledFgColor_override"          	"LtText"
-		"disabledBgColor_override"          	"255 255 255 255"	// token: LtCard
-		"selectionColor_override"           	"255 255 255 255"	// token: LtCard
-		"selectionTextColor_override"       	"20 20 19 255"	// token: LtText
-		"defaultSelectionBG2Color_override" 	"255 255 255 255"	// token: LtCard
+		"disabledBgColor_override"          	"LtCard"
+		"selectionColor_override"           	"LtCard"
+		"selectionTextColor_override"       	"LtText"
+		"defaultSelectionBG2Color_override" 	"LtCard"
 	}
 	"PlayersLabel"
 	{

@@ -15,7 +15,7 @@
 		"visible"      	"1"
 		"enabled"      	"1"
 		"TFFont"       	"HudFontSmall"
-		"TextColor"    	"DkText"
+		"TextColor"    	"250 249 245 255"	// token: DkText
 		"autoResize"   	"1"
 	}
 	"SpectatorGUIHealth"
@@ -31,7 +31,7 @@
 		"visible"      	"1"
 		"enabled"      	"1"
 		"TFFont"       	"HudFontSmall"
-		"TextColor"    	"DkText"
+		"TextColor"    	"250 249 245 255"	// token: DkText
 		"autoResize"   	"1"
 	}
 }

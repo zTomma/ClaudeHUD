@@ -264,7 +264,12 @@ TYPE = {
     "NumM":          (SANS_SEMI, 13, "riserva, metallo, contatori"),
     "NumS":          (SANS_SEMI, 10, "numeri piccoli in card"),
     "NumXS":         (SANS_MED, 8, "micro-numeri"),
+    "NumDamage":     (SANS_SEMI, 13, "numeri di danno/cura/metallo che fluttuano sul mondo (con ombra)"),
+    "NumDamageBig":  (SANS_SEMI, 18, "colpi critici e numeri grandi sul mondo (con ombra)"),
 }
+# Engine font flags per type token. Numbers that float over the 3D world have no card behind them:
+# a drop shadow is the only way to keep them legible on any background (legibility beats aesthetics).
+TYPE_FLAGS = {"NumDamage": {"dropshadow": "1"}, "NumDamageBig": {"dropshadow": "1"}}
 
 # --------------------------------------------------------------------------------------
 # 6. Grid

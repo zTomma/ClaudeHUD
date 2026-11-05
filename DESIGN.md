@@ -45,15 +45,15 @@ salto tonale (scheda su gioco, chip dentro la scheda; scheda bianca su tela avor
 | Filetto | Pannello alto 1 unità (`DkLine` / `LtLine`), oppure i bordi `ClRuleDk` / `ClRuleLt` | Solo come divisore interno a una scheda. |
 | Contorno | Bordi `ClInputDk` / `ClInputLt` / `ClInputFocus` | **Solo campi di input** (testo, combo, checkbox). |
 
-**Raggio:** il motore ne disegna uno solo. `paintbackgroundtype "2"` usa le texture d'angolo
-`vgui/hud/800corner1…4` a dimensione fissa in pixel, quindi il raggio **non scala con la risoluzione**
-e non si imposta da `.res`. Stima: 6–8 px, da verificare in gioco. Per questo la HUD usa **un solo
-raggio**, quello del motore, ovunque.
-*Limite del motore:* su pannelli più piccoli di circa due raggi (meno di 12 unità a 720p) gli angoli si
-sovrappongono. Da qui la regola delle superfici squadrate sotto le 12 unità.
-*Limite del motore (2):* quando il codice ridimensiona da solo uno sfondo che è un `ImagePanel`
-(`TargetIDBG` del target ID si allarga col nome), l'unico riempimento possibile è `fillcolor`, che è
-squadrato. Il target ID è quindi l'unica scheda di combattimento con angoli vivi.
+**Raggio (verificato nel sorgente TF2, `Panel::GetCornerTextureSize`):** il motore ne disegna uno solo.
+Per i pannelli proporzionali (tutta la HUD) vale `max(scala(8 unità) / 2, 8 px)`: **4 unità proporzionali**,
+cioè 9 px a 1080p, 12 px a 1440p e il minimo di 8 px a 720p. Scala con la risoluzione e non si imposta da
+`.res`. La HUD usa **un solo raggio**, quello del motore, ovunque.
+*Limite del motore:* su pannelli più piccoli di due raggi (8 unità) gli angoli si sovrappongono. Da qui la
+regola delle superfici squadrate sotto le 12 unità, con un margine di sicurezza.
+*Target ID (verificato):* il codice ridimensiona la radice sul contenuto e disegna lo sfondo `TargetIDBG`
+con l'alfa di `tf_hud_target_id_alpha` (100, cioè 39%). La scheda opaca arrotondata è quindi lo sfondo della
+radice (`hudlayout.res`, `CMainTargetID`), e `TargetIDBG` resta vuoto.
 
 **Il Segno (motivo grafico):** una barra terracotta verticale, larga 2 unità, sul bordo sinistro di
 ciò che è attivo o importante: voce di menu selezionata, riga del giocatore locale, scheda in pericolo.
@@ -148,6 +148,21 @@ chiamano `<Token>A<percentuale>` (per esempio `DkCardA50`) e sono generate su ri
    restano invariati. Per questo le superfici oggetti sono scure (§9).
 6. Le schede di combattimento sono opache. Le superfici traslucide (`DkCardSoft`: chat, overlay) sono
    verificate contro lo sfondo di gioco peggiore, bianco e nero.
+
+### Nomi di colore: dove il motore li accetta (verificato nel sorgente TF2)
+
+Nei `.res` un colore si può scrivere come nome dello scheme solo dove il codice lo risolve:
+
+- tutte le chiavi `*_override` registrate da Panel, Button, Label, Frame e TextEntry
+  (`REGISTER_COLOR_AS_OVERRIDABLE`);
+- `fillcolor` e `drawcolor` degli `ImagePanel`;
+- `fgcolor` di CExLabel, CExButton e CExRichText;
+- le variabili colore degli elementi HUD (`CPanelAnimationVar`, per esempio quelle del killfeed).
+
+Le `image_*color` dei bottoni con icona (`CExImageButton`) leggono **solo** RGBA: un nome viene ignorato
+in silenzio, e anche alcuni file di Valve hanno questo errore. Ovunque il nome non sia garantito,
+`tools/migrate.py` scrive l'RGBA generato dal token, con il commento `// token: X`. Il lint segnala ogni
+nome messo dove il motore non lo accetta.
 
 ### Contrasti verificati (`python3 tools/contrast.py --markdown`)
 
@@ -249,6 +264,11 @@ Glifi **assenti** in Plex, quindi vietati nelle etichette: `▲ ▼ ● ○ ◆ 
 | `NumM` | IBM Plex Sans SmBld | 600 | 13 | riserva, metallo, contatori |
 | `NumS` | IBM Plex Sans SmBld | 600 | 10 | numeri piccoli in card |
 | `NumXS` | IBM Plex Sans Medm | 500 | 8 | micro-numeri |
+| `NumDamage` | IBM Plex Sans SmBld | 600 | 13 | numeri di danno, cura e metallo sul mondo (con ombra) |
+| `NumDamageBig` | IBM Plex Sans SmBld | 600 | 18 | critici e numeri grandi sul mondo (con ombra) |
+
+*Ombra:* i numeri che fluttuano sul mondo 3D non hanno una scheda dietro, quindi sono l'unico testo della
+HUD con `dropshadow`. È l'unico caso in cui la leggibilità richiede di rinunciare alla grammatica piatta.
 
 I 150 font **legacy** che il codice del gioco chiede per nome (`HudFontSmall`, `TargetID`…) restano
 definiti e sono rimappati automaticamente: famiglia TF2 → Plex SemiBold, TF2 Secondary → Plex Regular,
@@ -387,7 +407,7 @@ Fase per fase vedi `PROGRESS.md`.
 
 Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, stile interamente migrato ai token · `[ ]` da fare.
 
-**Totale 778 file .res** — riscritti 53 · generati 3 · migrati 722 · da fare 0.
+**Totale 778 file .res** — riscritti 61 · generati 3 · migrati 714 · da fare 0.
 
 <details><summary><code>resource/</code> — 25 file (generato 3, migrato 22)</summary>
 
@@ -429,7 +449,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 
 </details>
 
-<details><summary><code>resource/ui/</code> — 307 file (migrato 255, riscritto 52)</summary>
+<details><summary><code>resource/ui/</code> — 307 file (migrato 247, riscritto 60)</summary>
 
 | Stato | File | Modalità |
 |:-:|---|---|
@@ -473,9 +493,9 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `explanationpopup.res` | chiara |
 | [~] | `flagcalloutpanel.res` | scura |
 | [x] | `flagstatus.res` | scura |
-| [~] | `freezepanel_basic.res` | scura |
+| [x] | `freezepanel_basic.res` | scura |
 | [~] | `freezepanelcallout.res` | scura |
-| [~] | `freezepanelkillerhealth.res` | scura |
+| [x] | `freezepanelkillerhealth.res` | scura |
 | [~] | `giveawayitempanel.res` | scura |
 | [~] | `globalchat.res` | scura |
 | [~] | `globalexplanations.res` | chiara |
@@ -487,7 +507,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [x] | `hud_obj_tele.res` | scura |
 | [x] | `hud_obj_tele_entrance.res` | scura |
 | [x] | `hud_obj_tele_exit.res` | scura |
-| [~] | `hudaccountpanel.res` | scura |
+| [x] | `hudaccountpanel.res` | scura |
 | [~] | `hudachievementfloatingnumber.res` | scura |
 | [~] | `hudachievementtrackeritem.res` | scura |
 | [x] | `hudalert.res` | scura |
@@ -503,10 +523,10 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudbosshealth.res` | scura |
 | [x] | `hudbowcharge.res` | scura |
 | [~] | `hudcurrencyaccount.res` | scura |
-| [~] | `huddamageaccount.res` | scura |
+| [x] | `huddamageaccount.res` | scura |
 | [x] | `huddemomancharge.res` | scura |
 | [x] | `huddemomanpipes.res` | scura |
-| [~] | `hudhealthaccount.res` | scura |
+| [x] | `hudhealthaccount.res` | scura |
 | [~] | `hudinspectpanel.res` | scura |
 | [~] | `huditemattributetracker.res` | scura |
 | [x] | `huditemeffectmeter.res` | scura |
@@ -571,7 +591,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `hudtrainingmsg.res` | scura |
 | [~] | `hudupgradepanel.res` | scura |
 | [~] | `hudwarcount.res` | scura |
-| [~] | `hudweaponselection.res` | scura |
+| [x] | `hudweaponselection.res` | scura |
 | [~] | `importfiledialog.res` | chiara |
 | [~] | `importfiletexteditdialog.res` | chiara |
 | [~] | `importmaterialeditdialog.res` | chiara |
@@ -679,7 +699,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `selectplayerdialog_coach.res` | chiara |
 | [~] | `selectplayerdialog_duel.res` | chiara |
 | [~] | `servernotconnectedtosteam.res` | chiara |
-| [~] | `spectator.res` | scura |
+| [x] | `spectator.res` | scura |
 | [~] | `spectator_sc.res` | scura |
 | [~] | `spectatorcoach.res` | scura |
 | [x] | `spectatorguihealth.res` | scura |
@@ -734,7 +754,7 @@ Legenda: `[x]` riscritto a mano o generato dai token · `[~]` layout originale, 
 | [~] | `waitingforplayerspanel.res` | scura |
 | [~] | `wavecompletesummarypanel.res` | scura |
 | [~] | `wavestatuspanel.res` | scura |
-| [~] | `winpanel.res` | scura |
+| [x] | `winpanel.res` | scura |
 | [~] | `xboxdialogs.res` | chiara |
 | [~] | `xpsourcepanel.res` | chiara |
 | [~] | `youtubelogindialog.res` | chiara |

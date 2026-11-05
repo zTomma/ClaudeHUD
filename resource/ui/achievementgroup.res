@@ -50,7 +50,7 @@
 		"zpos"        	"2"
 		"wide"        	"170"
 		"tall"        	"12"
-		"fillcolor"   	"255 255 255 255"	// token: LtCard
+		"fillcolor"   	"LtCard"
 		"visible"     	"1"
 		"enabled"     	"1"
 	}

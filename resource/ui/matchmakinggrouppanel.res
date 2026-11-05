@@ -35,7 +35,7 @@
 		"proportionaltoparent"   	"1"
 		"labeltext"              	""
 		"smallcheckimage"        	"1"
-		"fgcolor"                	"LtText"
+		"fgcolor"                	"20 20 19 255"	// token: LtText
 		"font"                   	"HudFontSmallBold"
 		"sound_depressed"        	"UI/buttonclickrelease.wav"
 		"button_activation_type" 	"1"

@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg"
-		"iconColor"   	"DkTextMuted"
+		"iconColor"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"ItemNameLabel"
 	{
@@ -51,7 +51,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"BuildingIcon"
 	{
@@ -66,7 +66,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_sentry_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"MetalIcon"
 	{
@@ -81,7 +81,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_metal"
-		"iconColor"   	"DkCard"
+		"iconColor"   	"39 38 36 255"	// token: DkCard
 	}
 	"CostLabel"
 	{

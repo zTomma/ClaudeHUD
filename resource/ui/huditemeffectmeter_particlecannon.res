@@ -12,8 +12,9 @@
 		"ypos"      	"r48"
 		"wide"      	"80"
 		"tall"      	"36"
-		"MeterFG"   	"DkText"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"250 249 245 255"	// token: DkText
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
+		"x_offset"  	"84"
 	}
 	"ItemEffectMeterBG"
 	{

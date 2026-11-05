@@ -436,7 +436,7 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_Edit"
 				"command"                 	"edit"
-				"image_drawcolor"         	"DkText"
+				"image_drawcolor"         	"250 249 245 255"	// token: DkText
 				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{
@@ -477,7 +477,7 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_View"
 				"command"                 	"view"
-				"image_drawcolor"         	"DkText"
+				"image_drawcolor"         	"250 249 245 255"	// token: DkText
 				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{
@@ -518,7 +518,7 @@
 				"sound_released"          	"UI/buttonclickrelease.wav"
 				"labelText"               	"#TF_SteamWorkshop_Delete"
 				"command"                 	"delete_item"
-				"image_drawcolor"         	"DkText"
+				"image_drawcolor"         	"250 249 245 255"	// token: DkText
 				"image_disabledcolor"     	"20 20 19 255"	// token: DkOnRed
 				"SubImage"
 				{

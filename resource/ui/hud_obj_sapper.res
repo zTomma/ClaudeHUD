@@ -30,7 +30,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_background_red"
-		"iconColor"   	"Clear"
+		"iconColor"   	"20 20 19 0"	// token: Clear
 	}
 	"Icon"
 	{
@@ -44,7 +44,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_sapper"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"NotBuiltPanel"
 	{
@@ -166,7 +166,7 @@
 				"enabled"     	"1"
 				"scaleImage"  	"1"
 				"icon"        	"obj_status_sentrygun_1"
-				"iconColor"   	"Untinted"
+				"iconColor"   	"255 255 255 255"	// token: Untinted
 			}
 			"TargetHealth"
 			{

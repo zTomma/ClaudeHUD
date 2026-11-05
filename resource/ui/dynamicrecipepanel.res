@@ -19,8 +19,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"item_ypos"                   	"50"
 		"output_item_ypos"            	"255"
 		"item_crafting_offcenter_x"   	"0"
@@ -302,7 +302,7 @@
 			"enabled"       	"1"
 			"dulltext"      	"0"
 			"brighttext"    	"0"
-			"fgcolor"       	"DkText"
+			"fgcolor"       	"250 249 245 255"	// token: DkText
 		}
 		"BackpackItems"
 		{
@@ -445,7 +445,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}

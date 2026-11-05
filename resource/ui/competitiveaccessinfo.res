@@ -158,8 +158,8 @@
 				"paintbackground"           	"1"
 				"defaultBgColor_override"   	"LtCardAltA30"
 				"armedBgColor_override"     	"Clear"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"Untinted"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 				"SubImage"
 				{
 					"ControlName"          	"ImagePanel"
@@ -193,7 +193,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"checkmark"
-				"drawcolor_override"   	"LtPositive"
+				"drawcolor_override"   	"81 155 134 255"	// token: LtPositive
 			}
 			"AndLabel1"
 			{
@@ -236,8 +236,8 @@
 				"paintbackground"           	"1"
 				"defaultBgColor_override"   	"LtCardAltA30"
 				"armedBgColor_override"     	"Clear"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"Untinted"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 				"SubImage"
 				{
 					"ControlName"          	"ImagePanel"
@@ -271,7 +271,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"checkmark"
-				"drawcolor_override"   	"LtPositive"
+				"drawcolor_override"   	"81 155 134 255"	// token: LtPositive
 			}
 			"AndLabel2"
 			{
@@ -331,8 +331,8 @@
 				"paintbackground"           	"1"
 				"defaultBgColor_override"   	"LtCardAltA30"
 				"armedBgColor_override"     	"Clear"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"Untinted"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 				"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 				"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 				"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -351,7 +351,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"checkmark"
-				"drawcolor_override"   	"LtPositive"
+				"drawcolor_override"   	"81 155 134 255"	// token: LtPositive
 			}
 		}
 		"Option2Label"

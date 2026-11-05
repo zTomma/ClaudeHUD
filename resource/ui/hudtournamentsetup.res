@@ -94,7 +94,7 @@
 		"pinCorner"   	"0"
 		"visible"     	"1"
 		"enabled"     	"1"
-		"fillcolor"   	"39 38 36 255"	// token: DkCard
+		"fillcolor"   	"DkCard"
 		"scaleImage"  	"1"
 	}
 	"TournamentNotReadyButton"

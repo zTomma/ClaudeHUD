@@ -67,7 +67,7 @@
 		"image"          	"backpack_jewel_modify_target_b_g"
 		"tileImage"      	"0"
 		"tileVertically" 	"0"
-		"drawcolor"      	"DkPositive"
+		"drawcolor"      	"188 210 203 255"	// token: DkPositive
 	}
 	"tool_modelpanel"
 	{
@@ -129,7 +129,7 @@
 		"image"          	"backpack_jewel_modify_target_b_g"
 		"tileImage"      	"0"
 		"tileVertically" 	"0"
-		"drawcolor"      	"DkBluText"
+		"drawcolor"      	"128 165 189 255"	// token: DkBluText
 	}
 	"subject_modelpanel"
 	{

@@ -60,7 +60,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_demolish"
-		"iconColor"   	"DkPositive"
+		"iconColor"   	"188 210 203 255"	// token: DkPositive
 	}
 	"TitleLabel"
 	{

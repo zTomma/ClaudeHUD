@@ -19,8 +19,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"modelpanels_spacing"         	"40"
 		"modelpanels_width"           	"500"
 		"modelpanels_height"          	"260"
@@ -259,8 +259,8 @@
 		"defaultBgColor_override"   	"DkChip"
 		"armedBgColor_override"     	"DkAccent"
 		"depressedBgColor_override" 	"DkChip"
-		"image_drawcolor"           	"DkText"
-		"image_armedcolor"          	"DkText"
+		"image_drawcolor"           	"250 249 245 255"	// token: DkText
+		"image_armedcolor"          	"250 249 245 255"	// token: DkText
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"

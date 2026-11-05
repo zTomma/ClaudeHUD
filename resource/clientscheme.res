@@ -601,6 +601,28 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+		"NumDamage"
+		{
+			"1"
+			{
+				"name"	"IBM Plex Sans SmBld"	// ClaudeHUD: numeri di danno/cura/metallo che fluttuano sul mondo (con ombra)
+				"tall"	"13"
+				"weight"	"600"
+				"antialias"	"1"
+				"dropshadow"	"1"
+			}
+		}
+		"NumDamageBig"
+		{
+			"1"
+			{
+				"name"	"IBM Plex Sans SmBld"	// ClaudeHUD: colpi critici e numeri grandi sul mondo (con ombra)
+				"tall"	"18"
+				"weight"	"600"
+				"antialias"	"1"
+				"dropshadow"	"1"
+			}
+		}
 		"Default"
 		{
 			"1"

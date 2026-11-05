@@ -1,8 +1,8 @@
 // ClaudeHUD: riscritto a mano (fase 3) - scheda munizioni. DESIGN.md par. 2, 4, 5, 6.
 // Scheda DkCard 88x36 (posizione in scripts/hudlayout.res, HudWeaponAmmo: r100 / r48).
 // Caricatore NumXL avorio allineato a destra, riserva NumM attenuata sulla stessa linea di base.
-// HudWeaponLowAmmoImage e' riusata come il Segno: il codice la mostra a munizioni basse
-// e le animazioni la fanno pulsare (HudLowAmmoPulse).
+// HudWeaponLowAmmoImage resta vuota: il codice (tf_hud_ammostatus.cpp) la ingrandisce fino a 5 px per
+// lato quando i colpi calano. Il Segno e' AmmoSegno, animato da HudLowAmmoPulse.
 // Le ombre dei numeri restano (il codice le mostra) ma sono trasparenti e a dimensione zero.
 "Resource/UI/HudAmmoWeapons.res"
 {
@@ -50,7 +50,20 @@
 		"enabled"		"1"
 		"image"			""
 		"scaleImage"	"1"
-		"fillcolor"		"217 119 87 255"	// token: DkAccent
+	}
+	"AmmoSegno"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"AmmoSegno"
+		"xpos"			"0"
+		"ypos"			"4"
+		"zpos"			"6"
+		"wide"			"2"
+		"tall"			"28"
+		"visible"		"1"
+		"enabled"		"1"
+		"alpha"			"0"
+		"fillcolor"		"DkAccent"
 	}
 	"AmmoInClip"
 	{

@@ -34,7 +34,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"DestroyIcon"
 	{
@@ -49,7 +49,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_demolish"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildingIcon"
 	{
@@ -64,7 +64,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_tele_exit"
-		"iconColor"   	"UntintedA50"
+		"iconColor"   	"255 255 255 127"	// token: UntintedA50
 	}
 	"MetalIcon"
 	{
@@ -79,7 +79,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_metal"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"CostLabel"
 	{

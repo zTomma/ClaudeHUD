@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"Divider"
 	{
@@ -26,7 +26,7 @@
 		"zpos"        	"1"
 		"wide"        	"456"
 		"tall"        	"2"
-		"fillcolor"   	"217 119 87 255"	// token: DkAccent
+		"fillcolor"   	"DkAccent"
 	}
 	"IcoReelIcon"
 	{
@@ -41,7 +41,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_taunt_menu_icon"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"TitleLabel"
 	{

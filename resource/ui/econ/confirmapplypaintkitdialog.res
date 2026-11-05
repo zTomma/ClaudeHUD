@@ -89,13 +89,13 @@
 			"default"
 			{
 				"name"      	"directional"
-				"color"     	"DkOnRed"
+				"color"     	"20 20 19 255"	// token: DkOnRed
 				"direction" 	"0 0 -1"
 			}
 			"spot light"
 			{
 				"name"             	"spot"
-				"color"            	"DkOnRed"
+				"color"            	"20 20 19 255"	// token: DkOnRed
 				"attenuation"      	"4.5 0 0"
 				"origin"           	"0 0 100"
 				"direction"        	"1 0 -0.5"
@@ -107,7 +107,7 @@
 			"point light"
 			{
 				"name"        	"point"
-				"color"       	"DkOnRed"
+				"color"       	"20 20 19 255"	// token: DkOnRed
 				"attenuation" 	"15 0 0"
 				"origin"      	"15 -50 -200"
 				"maxDistance" 	"1000"

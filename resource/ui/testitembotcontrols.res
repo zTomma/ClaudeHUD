@@ -74,10 +74,10 @@
 		"fgcolor_override"                  	"DkText"
 		"bgcolor_override"                  	"Clear"
 		"disabledFgColor_override"          	"Clear"
-		"disabledBgColor_override"          	"20 20 19 0"	// token: Clear
-		"selectionColor_override"           	"20 20 19 0"	// token: Clear
-		"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-		"defaultSelectionBG2Color_override" 	"217 119 87 255"	// token: DkAccent
+		"disabledBgColor_override"          	"Clear"
+		"selectionColor_override"           	"Clear"
+		"selectionTextColor_override"       	"DkText"
+		"defaultSelectionBG2Color_override" 	"DkAccent"
 	}
 	"BotForceFireCheckBox"
 	{

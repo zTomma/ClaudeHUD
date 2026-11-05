@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildIcon"
 	{
@@ -30,7 +30,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildIconShadow"
 	{
@@ -45,7 +45,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"TitleLabel"
 	{

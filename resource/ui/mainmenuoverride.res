@@ -57,8 +57,8 @@
 				"defaultFgColor_override"   	"LtText"
 				"armedFgColor_override"     	"LtAccentText"
 				"depressedFgColor_override" 	"LtAccentText"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"LtAccent"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -145,7 +145,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"LtTextMuted"
+			"fgcolor"       	"111 109 101 255"	// token: LtTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -280,8 +280,8 @@
 		"proportionaltoparent"      	"1"
 		"paintbackground"           	"1"
 		"paintborder"               	"0"
-		"image_drawcolor"           	"LtText"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"
@@ -520,8 +520,8 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -588,8 +588,8 @@
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -659,8 +659,8 @@
 			"proportionaltoparent"      	"1"
 			"paintbackground"           	"0"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -730,8 +730,8 @@
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"paintbackground"           	"0"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -829,8 +829,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkText"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -945,7 +945,7 @@
 			"wide"                	"280"
 			"tall"                	"115"
 			"PaintBackgroundType" 	"2"
-			"fgcolor"             	"DkCard"
+			"fgcolor"             	"39 38 36 255"	// token: DkCard
 			"MOTD_TextPanel"
 			{
 				"ControlName"         	"EditablePanel"
@@ -1037,8 +1037,8 @@
 			"sound_depressed"   	"UI/buttonclick.wav"
 			"sound_released"    	"UI/buttonclickrelease.wav"
 			"paintbackground"   	"0"
-			"image_drawcolor"   	"DkText"
-			"image_armedcolor"  	"Untinted"
+			"image_drawcolor"   	"250 249 245 255"	// token: DkText
+			"image_armedcolor"  	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1081,8 +1081,8 @@
 			"sound_depressed"   	"UI/buttonclick.wav"
 			"sound_released"    	"UI/buttonclickrelease.wav"
 			"paintbackground"   	"0"
-			"image_drawcolor"   	"DkText"
-			"image_armedcolor"  	"Untinted"
+			"image_drawcolor"   	"250 249 245 255"	// token: DkText
+			"image_armedcolor"  	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1147,8 +1147,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkText"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1262,8 +1262,8 @@
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtText"
 			"depressedFgColor_override" 	"LtText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtText"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1786,8 +1786,8 @@
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtAccentText"
 			"depressedFgColor_override" 	"LtAccentText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1850,8 +1850,8 @@
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtAccentText"
 			"depressedFgColor_override" 	"LtAccentText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1914,8 +1914,8 @@
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtAccentText"
 			"depressedFgColor_override" 	"LtAccentText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -1978,8 +1978,8 @@
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtAccentText"
 			"depressedFgColor_override" 	"LtAccentText"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"proportionaltoparent"      	"1"
 			"SubImage"
 			{
@@ -2056,7 +2056,7 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"proportionaltoparent"      	"1"
 		"paintbackground"           	"1"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2080,7 +2080,7 @@
 		"paintbackgroundtype"       	"2"
 		"border_default"            	"ClCard"
 		"border_armed"              	"ClCard"
-		"image_armedcolor"          	"LtOnButtonHover"
+		"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 	}
 	"StoreHasNewItemsImage"
 	{
@@ -2123,7 +2123,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"paintbackground"           	"1"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2147,7 +2147,7 @@
 		"paintbackgroundtype"       	"2"
 		"border_default"            	"ClCard"
 		"border_armed"              	"ClCard"
-		"image_armedcolor"          	"LtOnButtonHover"
+		"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 	}
 	"SettingsButtonSDK"
 	{
@@ -2177,7 +2177,7 @@
 		"navRight"                  	"TF2SettingsButtonSDK"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2199,7 +2199,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"TF2SettingsButtonSDK"
 	{
@@ -2229,7 +2229,7 @@
 		"navRight"                  	"SettingsButtonSDK"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2251,7 +2251,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"SettingsButton"
 	{
@@ -2281,7 +2281,7 @@
 		"navRight"                  	"TF2SettingsButton"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2303,7 +2303,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"TF2SettingsButton"
 	{
@@ -2332,7 +2332,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2354,7 +2354,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"NewUserForumsButton"
 	{
@@ -2384,7 +2384,7 @@
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"PaintBackgroundType"       	"0"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2406,7 +2406,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"AchievementsButton"
 	{
@@ -2435,7 +2435,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2457,7 +2457,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"CommentaryButton"
 	{
@@ -2486,7 +2486,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2508,7 +2508,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"CoachPlayersButton"
 	{
@@ -2537,7 +2537,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2559,7 +2559,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"WorkshopButton"
 	{
@@ -2588,7 +2588,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2610,7 +2610,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"ReplayButton"
 	{
@@ -2639,7 +2639,7 @@
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
 		"border_default"            	"MainMenuSubButtonBorder"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2661,7 +2661,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"ReportBugButton"
 	{
@@ -2689,7 +2689,7 @@
 		"navRight"                  	"SettingsButton"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2711,7 +2711,7 @@
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
 		"paintbackground"           	"0"
-		"image_armedcolor"          	"LtAccent"
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 	}
 	"BackToReplaysButton"
 	{
@@ -2738,7 +2738,7 @@
 		"Command"                   	"exitreplayeditor"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtTextMuted"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -2763,7 +2763,7 @@
 		"paintbackgroundtype"       	"2"
 		"border_default"            	"ClCard"
 		"border_armed"              	"ClCard"
-		"image_armedcolor"          	"LtOnButtonHover"
+		"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 	}
 	"icon_generator"
 	{

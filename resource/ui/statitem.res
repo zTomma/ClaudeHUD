@@ -43,7 +43,7 @@
 		"tall"             	"20"
 		"font"             	"AchievementItemTitle"
 		"textAlignment"    	"west"
-		"textColor"        	"LtText"
+		"textColor"        	"20 20 19 255"	// token: LtText
 		"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 	}
 }

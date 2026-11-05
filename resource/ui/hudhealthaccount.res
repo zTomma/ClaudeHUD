@@ -1,5 +1,5 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (verificato nel sorgente) - numeri di cura (+salute) sopra la scheda salute.
+// Generato da tools/hand/gen_classmeters.py
 "Resource/UI/HudHealthAccount.res"
 {
 	"CHealthAccountPanel"
@@ -8,9 +8,9 @@
 		"delta_item_x"       	"13"
 		"delta_item_start_y" 	"50"
 		"delta_item_end_y"   	"0"
-		"PositiveColor"      	"188 210 203 255"	// token: DkPositive
-		"NegativeColor"      	"217 119 87 255"	// token: DkAccent
+		"PositiveColor"      	"DkPositive"
+		"NegativeColor"      	"DkAccent"
 		"delta_lifetime"     	"1.5"
-		"delta_item_font"    	"HudFontMedium"
+		"delta_item_font"    	"NumDamage"
 	}
 }

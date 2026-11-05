@@ -91,7 +91,7 @@
 		"associated_model"          	"bluedoor"
 		"hover"                     	"2.0"
 		"font"                      	"NumS"
-		"fgcolor"                   	"LtOnBlu"
+		"fgcolor"                   	"250 249 245 255"	// token: LtOnBlu
 		"defaultFgColor_override"   	"LtOnBlu"
 		"armedFgColor_override"     	"LtOnBlu"
 		"depressedFgColor_override" 	"LtOnBlu"
@@ -129,7 +129,7 @@
 		"associated_model"          	"reddoor"
 		"hover"                     	"2.0"
 		"font"                      	"NumS"
-		"fgcolor"                   	"LtOnRed"
+		"fgcolor"                   	"20 20 19 255"	// token: LtOnRed
 		"defaultFgColor_override"   	"LtOnRed"
 		"armedFgColor_override"     	"LtOnRed"
 		"depressedFgColor_override" 	"LtOnRed"
@@ -165,7 +165,7 @@
 		"command"                   	"jointeam auto"
 		"associated_model"          	"autodoor"
 		"font"                      	"NumS"
-		"fgcolor"                   	"LtTextMuted"
+		"fgcolor"                   	"111 109 101 255"	// token: LtTextMuted
 		"defaultFgColor_override"   	"LtTextMuted"
 		"armedFgColor_override"     	"LtTextMuted"
 		"depressedFgColor_override" 	"LtTextMuted"
@@ -201,7 +201,7 @@
 		"command"                   	"jointeam spectate"
 		"associated_model"          	"spectate"
 		"font"                      	"NumS"
-		"fgcolor"                   	"LtTextMuted"
+		"fgcolor"                   	"111 109 101 255"	// token: LtTextMuted
 		"defaultFgColor_override"   	"LtTextMuted"
 		"armedFgColor_override"     	"LtTextMuted"
 		"depressedFgColor_override" 	"LtTextMuted"
@@ -624,7 +624,7 @@
 		"buttonoffsety"    	"20"
 		"center"           	"0"
 		"fonttext"         	"MatchmakingDialogMenuLarge"
-		"fgcolor"          	"LtText"
+		"fgcolor"          	"20 20 19 255"	// token: LtText
 		"button"
 		{
 			"name" 	"cancel"

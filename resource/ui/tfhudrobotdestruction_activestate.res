@@ -40,7 +40,7 @@
 			"scaleimage"           	"1"
 			"visible"              	"1"
 			"Image"                	"../sprites/obj_icons/icon_obj_white"
-			"fgcolor"              	"Clear"
+			"fgcolor"              	"20 20 19 0"	// token: Clear
 			"proportionalToParent" 	"1"
 		}
 		"RobotImage"

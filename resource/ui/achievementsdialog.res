@@ -95,7 +95,7 @@
 		"ypos"        	"136"
 		"wide"        	"600"
 		"tall"        	"268"
-		"fillcolor"   	"255 255 255 255"	// token: LtCard
+		"fillcolor"   	"LtCard"
 		"zpos"        	"-3"
 		"visible"     	"1"
 		"enabled"     	"1"
@@ -110,7 +110,7 @@
 		"ypos"        	"67"
 		"wide"        	"584"
 		"tall"        	"16"
-		"fillcolor"   	"255 255 255 255"	// token: LtCard
+		"fillcolor"   	"LtCard"
 		"zpos"        	"-2"
 		"visible"     	"0"
 		"enabled"     	"1"
@@ -123,7 +123,7 @@
 		"ypos"        	"67"
 		"wide"        	"0"
 		"tall"        	"16"
-		"fillcolor"   	"217 119 87 255"	// token: LtAccent
+		"fillcolor"   	"LtAccent"
 		"zpos"        	"-1"
 		"visible"     	"0"
 		"enabled"     	"1"
@@ -170,7 +170,7 @@
 		"ypos"        	"42"
 		"wide"        	"600"
 		"tall"        	"50"
-		"fillcolor"   	"255 255 255 255"	// token: LtCard
+		"fillcolor"   	"LtCard"
 		"zpos"        	"-3"
 		"visible"     	"1"
 		"enabled"     	"1"

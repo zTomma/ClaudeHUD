@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"Divider"
 	{
@@ -26,7 +26,7 @@
 		"zpos"        	"1"
 		"wide"        	"436"
 		"tall"        	"2"
-		"fillcolor"   	"217 119 87 255"	// token: DkAccent
+		"fillcolor"   	"DkAccent"
 	}
 	"BuildIcon"
 	{
@@ -41,7 +41,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildIconShadow"
 	{
@@ -56,7 +56,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"TitleLabel"
 	{

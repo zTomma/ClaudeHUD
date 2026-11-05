@@ -87,10 +87,10 @@
 		"fgcolor_override"                  	"DkTextMuted"
 		"bgcolor_override"                  	"Clear"
 		"disabledFgColor_override"          	"Clear"
-		"disabledBgColor_override"          	"20 20 19 0"	// token: Clear
-		"selectionColor_override"           	"20 20 19 0"	// token: Clear
-		"selectionTextColor_override"       	"177 173 161 255"	// token: DkTextMuted
-		"defaultSelectionBG2Color_override" 	"217 119 87 255"	// token: DkAccent
+		"disabledBgColor_override"          	"Clear"
+		"selectionColor_override"           	"Clear"
+		"selectionTextColor_override"       	"DkTextMuted"
+		"defaultSelectionBG2Color_override" 	"DkAccent"
 	}
 	"CancelButton"
 	{

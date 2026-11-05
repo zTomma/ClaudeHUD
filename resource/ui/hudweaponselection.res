@@ -1,12 +1,13 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (verificato nel sorgente) - selezione armi: il codice cambia il bordo di squadra
+// dei riquadri; con i bordi piatti di ClaudeHUD il riquadro ha il proprio riempimento DkCard.
+// Generato da tools/hand/gen_classmeters.py
 "Resource/UI/HudWeaponSelection.res"
 {
 	"modelpanel0"
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel0"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"
@@ -22,7 +23,7 @@
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel1"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"
@@ -38,7 +39,7 @@
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel2"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"
@@ -54,7 +55,7 @@
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel3"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"
@@ -70,7 +71,7 @@
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel4"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"
@@ -86,7 +87,7 @@
 	{
 		"ControlName"         	"CItemModelPanel"
 		"fieldName"           	"modelpanel5"
-		"bgcolor_override"    	"Clear"
+		"bgcolor_override"    	"DkCard"
 		"PaintBackgroundType" 	"2"
 		"paintborder"         	"1"
 		"name_only"           	"1"

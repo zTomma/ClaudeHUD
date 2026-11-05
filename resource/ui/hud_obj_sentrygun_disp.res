@@ -30,7 +30,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_background_disabled"
-		"iconColor"   	"Clear"
+		"iconColor"   	"20 20 19 0"	// token: Clear
 	}
 	"Icon_Sentry_1"
 	{
@@ -44,7 +44,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_sentrygun_1"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"NotBuiltPanel"
 	{
@@ -96,7 +96,7 @@
 			"enabled"     	"0"
 			"scaleImage"  	"1"
 			"icon"        	""
-			"iconColor"   	"Untinted"
+			"iconColor"   	"255 255 255 255"	// token: Untinted
 		}
 		"AlertTray"
 		{
@@ -124,7 +124,7 @@
 			"enabled"     	"0"
 			"scaleImage"  	"1"
 			"icon"        	"obj_status_icon_wrench"
-			"iconColor"   	"Untinted"
+			"iconColor"   	"255 255 255 255"	// token: Untinted
 		}
 		"SapperIcon"
 		{
@@ -139,7 +139,7 @@
 			"enabled"     	"0"
 			"scaleImage"  	"1"
 			"icon"        	"obj_status_icon_sapper"
-			"iconColor"   	"Untinted"
+			"iconColor"   	"255 255 255 255"	// token: Untinted
 		}
 		"Health"
 		{

@@ -190,8 +190,8 @@
 					"armedFgColor_override"    	"LtAccentText"
 					"selectedFgColor_override" 	"LtText"
 					"image_selectedcolor"      	"255 255 255 255"	// token: Untinted
-					"image_armedcolor"         	"Clear"
-					"image_drawcolor"          	"Clear"
+					"image_armedcolor"         	"20 20 19 0"	// token: Clear
+					"image_drawcolor"          	"20 20 19 0"	// token: Clear
 					"command"                  	"sort0"
 					"actionsignallevel"        	"4"
 					"sound_depressed"          	"UI/buttonclick.wav"
@@ -218,8 +218,8 @@
 					"armedFgColor_override"    	"LtAccentText"
 					"selectedFgColor_override" 	"LtText"
 					"image_selectedcolor"      	"255 255 255 255"	// token: Untinted
-					"image_armedcolor"         	"Clear"
-					"image_drawcolor"          	"Clear"
+					"image_armedcolor"         	"20 20 19 0"	// token: Clear
+					"image_drawcolor"          	"20 20 19 0"	// token: Clear
 					"command"                  	"sort1"
 					"actionsignallevel"        	"4"
 					"sound_depressed"          	"UI/buttonclick.wav"
@@ -246,8 +246,8 @@
 					"armedFgColor_override"    	"LtAccentText"
 					"selectedFgColor_override" 	"LtText"
 					"image_selectedcolor"      	"255 255 255 255"	// token: Untinted
-					"image_armedcolor"         	"Clear"
-					"image_drawcolor"          	"Clear"
+					"image_armedcolor"         	"20 20 19 0"	// token: Clear
+					"image_drawcolor"          	"20 20 19 0"	// token: Clear
 					"command"                  	"sort2"
 					"actionsignallevel"        	"4"
 					"sound_depressed"          	"UI/buttonclick.wav"
@@ -272,8 +272,8 @@
 					"armedFgColor_override"    	"LtAccentText"
 					"selectedFgColor_override" 	"LtText"
 					"image_selectedcolor"      	"255 255 255 255"	// token: Untinted
-					"image_armedcolor"         	"Clear"
-					"image_drawcolor"          	"Clear"
+					"image_armedcolor"         	"20 20 19 0"	// token: Clear
+					"image_drawcolor"          	"20 20 19 0"	// token: Clear
 					"command"                  	"sort3"
 					"actionsignallevel"        	"4"
 					"sound_depressed"          	"UI/buttonclick.wav"

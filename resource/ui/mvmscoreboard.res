@@ -96,7 +96,7 @@
 		"tabPosition" 	"0"
 		"autoresize"  	"3"
 		"linespacing" 	"22"
-		"textcolor"   	"LtText"
+		"textcolor"   	"20 20 19 255"	// token: LtText
 	}
 	"CreditStatsContainer"
 	{

@@ -142,7 +142,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"BrowseMaterial"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -209,7 +209,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"BrowseNormalTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -246,7 +246,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"ClearNormalTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -382,7 +382,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"BrowsePhongExponentTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -419,7 +419,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"ClearPhongExponentTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -1188,7 +1188,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"BrowseSelfIllumTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{
@@ -1225,7 +1225,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	""
 		"command"                   	"ClearSelfIllumTexture"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{

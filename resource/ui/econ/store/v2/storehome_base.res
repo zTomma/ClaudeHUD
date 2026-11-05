@@ -18,8 +18,8 @@
 		"settitlebarvisible"                	"0"
 		"PaintBackgroundType"               	"0"
 		"bgcolor_override"                  	"DkCard"
-		"infocus_bgcolor_override"          	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override"       	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"          	"DkCard"
+		"outoffocus_bgcolor_override"       	"DkCard"
 		"item_controls_xoffset"             	"2"
 		"item_controls_yoffset"             	"2"
 		"max_cart_model_panels"             	"8"
@@ -170,7 +170,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -283,7 +283,7 @@
 			"textAlignment"            	"center"
 			"scaleImage"               	"1"
 			"font"                     	"HudFontSmallestBold"
-			"fgcolor"                  	"DkTextMuted"
+			"fgcolor"                  	"177 173 161 255"	// token: DkTextMuted
 			"defaultBgColor_override"  	"DkCard"
 			"defaultFgColor_override"  	"DkTextMuted"
 			"armedBgColor_override"    	"DkCard"

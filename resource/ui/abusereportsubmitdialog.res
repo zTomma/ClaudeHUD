@@ -83,10 +83,10 @@
 		"editable"                          	"0"
 		"font"                              	"HudFontSmall"
 		"bgcolor_override"                  	"LtCardAlt"
-		"disabledBgColor_override"          	"244 243 238 255"	// token: LtCardAlt
-		"selectionColor_override"           	"244 243 238 255"	// token: LtCardAlt
-		"selectionTextColor_override"       	"20 20 19 255"	// token: LtText
-		"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+		"disabledBgColor_override"          	"LtCardAlt"
+		"selectionColor_override"           	"LtCardAlt"
+		"selectionTextColor_override"       	"LtText"
+		"defaultSelectionBG2Color_override" 	"Clear"
 	}
 	"AbuseContentLabel"
 	{
@@ -114,10 +114,10 @@
 		"editable"                          	"0"
 		"font"                              	"HudFontSmall"
 		"bgcolor_override"                  	"LtCardAlt"
-		"disabledBgColor_override"          	"244 243 238 255"	// token: LtCardAlt
-		"selectionColor_override"           	"244 243 238 255"	// token: LtCardAlt
-		"selectionTextColor_override"       	"20 20 19 255"	// token: LtText
-		"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+		"disabledBgColor_override"          	"LtCardAlt"
+		"selectionColor_override"           	"LtCardAlt"
+		"selectionTextColor_override"       	"LtText"
+		"defaultSelectionBG2Color_override" 	"Clear"
 	}
 	"AbuseTypeLabel"
 	{
@@ -145,10 +145,10 @@
 		"editable"                          	"0"
 		"font"                              	"HudFontSmall"
 		"bgcolor_override"                  	"LtCardAlt"
-		"disabledBgColor_override"          	"244 243 238 255"	// token: LtCardAlt
-		"selectionColor_override"           	"244 243 238 255"	// token: LtCardAlt
-		"selectionTextColor_override"       	"20 20 19 255"	// token: LtText
-		"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+		"disabledBgColor_override"          	"LtCardAlt"
+		"selectionColor_override"           	"LtCardAlt"
+		"selectionTextColor_override"       	"LtText"
+		"defaultSelectionBG2Color_override" 	"Clear"
 	}
 	"ScreenShotBitmap"
 	{

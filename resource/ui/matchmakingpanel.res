@@ -130,10 +130,10 @@
 				"fgcolor_override"                  	"LtText"
 				"bgcolor_override"                  	"Clear"
 				"disabledFgColor_override"          	"LtText"
-				"disabledBgColor_override"          	"20 20 19 0"	// token: Clear
-				"selectionColor_override"           	"20 20 19 0"	// token: Clear
-				"selectionTextColor_override"       	"20 20 19 255"	// token: LtText
-				"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+				"disabledBgColor_override"          	"Clear"
+				"selectionColor_override"           	"Clear"
+				"selectionTextColor_override"       	"LtText"
+				"defaultSelectionBG2Color_override" 	"Clear"
 			}
 			"SearchButton"
 			{

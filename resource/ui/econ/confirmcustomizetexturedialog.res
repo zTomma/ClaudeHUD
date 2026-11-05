@@ -43,7 +43,7 @@
 			"tall"          	"60"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -76,7 +76,7 @@
 		"image"          	"backpack_jewel_modify_target_b_g"
 		"tileImage"      	"0"
 		"tileVertically" 	"0"
-		"drawcolor"      	"DkPositive"
+		"drawcolor"      	"188 210 203 255"	// token: DkPositive
 	}
 	"tool_modelpanel"
 	{
@@ -149,7 +149,7 @@
 		"image"          	"backpack_jewel_modify_target_b_g"
 		"tileImage"      	"0"
 		"tileVertically" 	"0"
-		"drawcolor"      	"DkBluText"
+		"drawcolor"      	"128 165 189 255"	// token: DkBluText
 	}
 	"subject_modelpanel"
 	{
@@ -323,10 +323,10 @@
 				"editable"                          	"0"
 				"font"                              	"HudFontSmall"
 				"bgcolor_override"                  	"DkCard"
-				"disabledBgColor_override"          	"39 38 36 255"	// token: DkCard
-				"selectionColor_override"           	"39 38 36 255"	// token: DkCard
-				"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-				"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+				"disabledBgColor_override"          	"DkCard"
+				"selectionColor_override"           	"DkCard"
+				"selectionTextColor_override"       	"DkText"
+				"defaultSelectionBG2Color_override" 	"Clear"
 			}
 			"bgcolor_override" 	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture
 		}
@@ -423,10 +423,10 @@
 				"font"                              	"HudFontSmall"
 				"visible"                           	"0"
 				"bgcolor_override"                  	"DkCard"
-				"disabledBgColor_override"          	"39 38 36 255"	// token: DkCard
-				"selectionColor_override"           	"39 38 36 255"	// token: DkCard
-				"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-				"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+				"disabledBgColor_override"          	"DkCard"
+				"selectionColor_override"           	"DkCard"
+				"selectionTextColor_override"       	"DkText"
+				"defaultSelectionBG2Color_override" 	"Clear"
 			}
 			"PainterlyOptions"
 			{
@@ -540,10 +540,10 @@
 					"editable"                          	"0"
 					"font"                              	"HudFontSmall"
 					"bgcolor_override"                  	"DkCard"
-					"disabledBgColor_override"          	"39 38 36 255"	// token: DkCard
-					"selectionColor_override"           	"39 38 36 255"	// token: DkCard
-					"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-					"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+					"disabledBgColor_override"          	"DkCard"
+					"selectionColor_override"           	"DkCard"
+					"selectionTextColor_override"       	"DkText"
+					"defaultSelectionBG2Color_override" 	"Clear"
 				}
 			}
 			"bgcolor_override" 	"DkCard"	// ClaudeHUD: riempimento al posto del bordo texture

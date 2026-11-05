@@ -134,8 +134,8 @@
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"Command"          	"zoom_toggle"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"DkTextMutedA80"
-		"image_armedcolor" 	"DkText"
+		"image_drawcolor"  	"177 173 161 204"	// token: DkTextMutedA80
+		"image_armedcolor" 	"250 249 245 255"	// token: DkText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -182,7 +182,7 @@
 			"labelText"                 	""
 			"textAlignment"             	"south-west"
 			"scaleImage"                	"1"
-			"fgcolor"                   	"DkTextMuted"
+			"fgcolor"                   	"177 173 161 255"	// token: DkTextMuted
 			"defaultFgColor_override"   	"DkTextMuted"
 			"armedFgColor_override"     	"DkTextMuted"
 			"depressedFgColor_override" 	"DkTextMuted"
@@ -193,8 +193,8 @@
 			"paintbackgroundtype"       	"0"
 			"defaultBgColor_Override"   	"DkCard"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"UntintedA30"
-			"image_armedcolor"          	"UntintedA50"
+			"image_drawcolor"           	"255 255 255 76"	// token: UntintedA30
+			"image_armedcolor"          	"255 255 255 127"	// token: UntintedA50
 			"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 			"stayselectedonclick"       	"1"
 			"keyboardinputenabled"      	"0"
@@ -262,8 +262,8 @@
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"Command"          	"close"	// Intentionally using "closex" instead of "close" for stats
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"DkTextMutedA80"
-		"image_armedcolor" 	"DkText"
+		"image_drawcolor"  	"177 173 161 204"	// token: DkTextMutedA80
+		"image_armedcolor" 	"250 249 245 255"	// token: DkText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"

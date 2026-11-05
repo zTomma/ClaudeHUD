@@ -18,15 +18,15 @@
 		"settitlebarvisible"               	"1"
 		"PaintBackgroundType"              	"0"
 		"bgcolor_override"                 	"Clear"
-		"infocus_bgcolor_override"         	"20 20 19 0"	// token: Clear
-		"outoffocus_bgcolor_override"      	"20 20 19 0"	// token: Clear
+		"infocus_bgcolor_override"         	"Clear"
+		"outoffocus_bgcolor_override"      	"Clear"
 		"title"                            	"#StoreTitle"
 		"title_font"                       	"HudFontMediumBold"
 		"titletextinsetX"                  	"40"
 		"titletextinsetY"                  	"0"
-		"titlebarfgcolor_override"         	"250 249 245 255"	// token: DkText
-		"titlebardisabledfgcolor_override" 	"250 249 245 255"	// token: DkText
-		"titlebarbgcolor_override"         	"39 38 36 255"	// token: DkCard
+		"titlebarfgcolor_override"         	"DkText"
+		"titlebardisabledfgcolor_override" 	"DkText"
+		"titlebarbgcolor_override"         	"DkCard"
 		"clientinsetx_override"            	"0"
 		"sheetinset_bottom"                	"40"
 	}

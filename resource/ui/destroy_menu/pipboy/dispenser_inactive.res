@@ -35,7 +35,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"NotBuiltLabel"
 	{
@@ -89,7 +89,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_key_blank"
-		"iconColor"   	"DkPositiveA50"
+		"iconColor"   	"188 210 203 127"	// token: DkPositiveA50
 	}
 	"NumberLabel"
 	{

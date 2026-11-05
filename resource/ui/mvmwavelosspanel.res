@@ -483,7 +483,7 @@
 		"default"         	"1"
 		"sound_depressed" 	"UI/buttonclick.wav"
 		"sound_released"  	"UI/buttonclickrelease.wav"
-		"image_drawcolor" 	"DkText"
+		"image_drawcolor" 	"250 249 245 255"	// token: DkText
 		"Command"         	"vote_restart"
 	}
 	"ContinueButton"
@@ -507,7 +507,7 @@
 		"default"         	"1"
 		"sound_depressed" 	"UI/buttonclick.wav"
 		"sound_released"  	"UI/buttonclickrelease.wav"
-		"image_drawcolor" 	"DkText"
+		"image_drawcolor" 	"250 249 245 255"	// token: DkText
 		"Command"         	"continue"
 	}
 }

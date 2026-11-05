@@ -17,8 +17,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"item_xpos_offcenter_a"       	"-310"
 		"item_xpos_offcenter_b"       	"165"
 		"item_ypos"                   	"60"
@@ -233,7 +233,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -354,8 +354,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkText"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -561,8 +561,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkText"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

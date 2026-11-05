@@ -68,7 +68,7 @@
 		"ypos"        	"19"
 		"wide"        	"100"
 		"tall"        	"6"
-		"fillcolor"   	"217 119 87 51"	// token: DkAccentA20
+		"fillcolor"   	"DkAccentA20"
 		"zpos"        	"4"
 		"visible"     	"1"
 		"enabled"     	"1"
@@ -81,7 +81,7 @@
 		"ypos"        	"19"
 		"wide"        	"0"
 		"tall"        	"6"
-		"fillcolor"   	"217 119 87 255"	// token: DkAccent
+		"fillcolor"   	"DkAccent"
 		"zpos"        	"5"
 		"visible"     	"1"
 		"enabled"     	"1"

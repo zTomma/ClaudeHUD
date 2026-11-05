@@ -44,9 +44,15 @@ def scheme_names():
     return colors, base, fonts, borders
 
 
+# Keys not used in any Valve .res but verified in the TF2 client source (Source SDK 2013, 2025 release):
+SOURCE_VERIFIED_KEYS = {
+    "killstreakbackgroundcolor",   # hud_basedeathnotice.h: CPanelAnimationVar(Color, m_clrKillStreakBg, ...)
+}
+
+
 def corpus():
     """Keys, ControlNames and pristine element names from Valve's original files."""
-    keys, controls = set(), set()
+    keys, controls = set(SOURCE_VERIFIED_KEYS), set()
     for root in ("#TF2 Files", "#HL2 Files", "#Platform Files"):
         for p in glob.glob(os.path.join(ROOT, root, "**", "*.res"), recursive=True):
             try:
@@ -107,10 +113,17 @@ def lint_res(rel, text, names, known, hand, errors, warnings):
     errors = _Sink()
     (dup_keys(nodes, rel, errors if hand else warnings))
     keys, controls = known
-    for path, nd in vdf.walk(nodes):
+    ctl_of = {}
+    def _walk(ns, ctl=""):
+        for nd in ns:
+            if isinstance(nd[1], list):
+                yield from _walk(nd[1], M.block_ctl(nd[1]))
+            else:
+                yield ctl, nd
+    for ctl, nd in _walk(nodes):
         key, val, cond, cm = nd
-        if isinstance(val, list):
-            continue
+        if M.is_token_name(val) and not M.name_allowed(key, ctl) and (key.lower() in M.ALL_COLOR_KEYS or key.lower().endswith("color")):
+            errors.append((rel, "nome di colore in una chiave che accetta solo RGBA (verificato nel sorgente): %s %r in %s" % (key, val, ctl or "elemento HUD")))
         k = key.lower()
         colorish = k in M.ALL_COLOR_KEYS or (re.search(r"colou?r|clor", k) and not k.startswith("standard_text"))
         if colorish and (M.is_literal(val) or k in M.ALL_COLOR_KEYS):

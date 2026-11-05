@@ -35,7 +35,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -60,7 +60,7 @@
 		"default"         	"1"
 		"sound_depressed" 	"UI/buttonclick.wav"
 		"sound_released"  	"UI/buttonclickrelease.wav"
-		"image_drawcolor" 	"DkText"
+		"image_drawcolor" 	"250 249 245 255"	// token: DkText
 		"Command"         	"done"
 	}
 	"ParticlePanel"

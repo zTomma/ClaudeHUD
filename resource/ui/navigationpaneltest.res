@@ -31,7 +31,7 @@
 			"labelText"                 	""
 			"textAlignment"             	"south-west"
 			"scaleImage"                	"1"
-			"fgcolor"                   	"LtTextMuted"
+			"fgcolor"                   	"111 109 101 255"	// token: LtTextMuted
 			"defaultFgColor_override"   	"LtTextMuted"
 			"armedFgColor_override"     	"LtTextMuted"
 			"depressedFgColor_override" 	"LtTextMuted"
@@ -40,8 +40,8 @@
 			"sound_armed"               	"UI/buttonrollover.wav"
 			"paintbackground"           	"0"
 			"paintborder"               	"0"
-			"image_drawcolor"           	"UntintedA70"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"255 255 255 178"	// token: UntintedA70
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"image_selectedcolor"       	"255 255 255 255"	// token: Untinted
 			"stayselectedonclick"       	"1"
 			"keyboardinputenabled"      	"0"

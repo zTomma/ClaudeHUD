@@ -77,8 +77,8 @@
 				"actionsignallevel"         	"2"
 				"paintbackground"           	"0"
 				"image_default"             	"glyph_collapse"
-				"image_drawcolor"           	"LtText"
-				"image_armedcolor"          	"LtAccent"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
+				"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 				"SubImage"
 				{
 					"ControlName"          	"ImagePanel"
@@ -125,8 +125,8 @@
 				"actionsignallevel"         	"2"
 				"paintbackground"           	"0"
 				"image_default"             	"glyph_expand"
-				"image_drawcolor"           	"LtText"
-				"image_armedcolor"          	"LtAccent"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
+				"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 				"SubImage"
 				{
 					"ControlName"          	"ImagePanel"

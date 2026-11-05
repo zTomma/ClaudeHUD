@@ -42,8 +42,8 @@
 		"defaultFgColor_override"    	"DkOnRed"
 		"armedFgColor_override"      	"DkOnRed"
 		"depressedFgColor_override"  	"DkOnRed"
-		"image_drawcolor"            	"DkText"
-		"image_armedcolor"           	"DkText"
+		"image_drawcolor"            	"250 249 245 255"	// token: DkText
+		"image_armedcolor"           	"250 249 245 255"	// token: DkText
 		"send_panel_enter_and_exits" 	"1"
 		"Command"                    	"addtocart"
 		"SubImage"

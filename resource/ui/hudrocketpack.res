@@ -95,7 +95,7 @@
 		"textAlignment" 	"Left"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
-		"fgcolor"       	"DkText"
+		"fgcolor"       	"250 249 245 255"	// token: DkText
 	}
 	"ItemEffectMeter2"
 	{
@@ -116,6 +116,6 @@
 		"textAlignment" 	"Left"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
-		"fgcolor"       	"DkText"
+		"fgcolor"       	"250 249 245 255"	// token: DkText
 	}
 }

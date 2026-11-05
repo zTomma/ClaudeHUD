@@ -174,7 +174,7 @@
 		"buttonoffsety_lodef"    	"18"
 		"fonttext"               	"MatchmakingDialogMenuLarge"
 		"fonttext_lodef"         	"MatchmakingDialogMenuSmall"
-		"fgcolor"                	"DkText"
+		"fgcolor"                	"250 249 245 255"	// token: DkText
 		"button"
 		{
 			"name" 	"continue"

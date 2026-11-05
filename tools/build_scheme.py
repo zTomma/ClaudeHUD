@@ -373,7 +373,7 @@ def build(report=None):
     # ---------------- Fonts
     fonts = []
     for name, (fw, tall, role) in T.TYPE.items():
-        fonts.append([name, font_block(fw[0], fw[1], tall, comment="ClaudeHUD: " + role), None, None])
+        fonts.append([name, font_block(fw[0], fw[1], tall, getattr(T, "TYPE_FLAGS", {}).get(name), comment="ClaudeHUD: " + role), None, None])
     for name, body, cond, _ in sections["Fonts"][1]:
         if not isinstance(body, list):
             continue

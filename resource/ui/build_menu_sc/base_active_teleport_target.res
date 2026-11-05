@@ -35,7 +35,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"BuildingIcon"
 	{
@@ -50,7 +50,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_sentry_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"ModeLabel"
 	{

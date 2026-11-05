@@ -34,7 +34,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkTextMutedA50"
+		"iconColor"   	"177 173 161 127"	// token: DkTextMutedA50
 	}
 	"NotBuiltLabel"
 	{
@@ -68,7 +68,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_key_blank"
-		"iconColor"   	"UntintedA50"
+		"iconColor"   	"255 255 255 127"	// token: UntintedA50
 	}
 	"NumberLabel"
 	{

@@ -16,7 +16,7 @@
 		"enabled"					"1"
 		"HealthBonusPosAdj"			"0"
 		"HealthDeathWarning"		"0.49"
-		"HealthDeathWarningColor"	"DkAccent"
+		"HealthDeathWarningColor"	"217 119 87 255"	// token: DkAccent
 	}
 	"HealthCard"
 	{

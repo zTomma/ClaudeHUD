@@ -18,8 +18,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"player_ypos"                 	"200"
 		"player_xoffset"              	"10"
 		"playerlist_panel_kvs"

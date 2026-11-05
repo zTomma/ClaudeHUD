@@ -278,8 +278,8 @@
 			"delta_item_x"       	"35"
 			"delta_item_start_y" 	"12"
 			"delta_item_end_y"   	"50"
-			"PositiveColor"      	"188 210 203 255"	// token: DkPositive
-			"NegativeColor"      	"217 119 87 255"	// token: DkAccent
+			"PositiveColor"      	"DkPositive"
+			"NegativeColor"      	"DkAccent"
 			"delta_lifetime"     	"1.5"
 			"delta_item_font"    	"HudFontMediumSmall"
 		}
@@ -446,8 +446,8 @@
 				"HealthBonusPosAdj"       	"10"
 				"HealthDeathWarning"      	"0.49"
 				"TFFont"                  	"HudFontSmallest"
-				"HealthDeathWarningColor" 	"DkAccent"
-				"TextColor"               	"DkText"
+				"HealthDeathWarningColor" 	"217 119 87 255"	// token: DkAccent
+				"TextColor"               	"250 249 245 255"	// token: DkText
 			}
 			"ReadyBG"
 			{

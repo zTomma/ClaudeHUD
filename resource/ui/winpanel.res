@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano - fine round: scheda neutra DkCard (il vincitore e' nei riquadri punteggio
+// pieni Steel / Terracotta), titolo in Plex SemiBold, classifica con nomi Plex e punteggi NumS,
+// filetti DkLine. Generato da tools/hand/gen_deathscreens.py
 "Resource/UI/winpanel.res"
 {
 	"TeamScoresPanel"
@@ -24,7 +25,7 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"border"           	"TFFatLineBorderBlueBGMoreOpaque"
-			"bgcolor_override" 	"DkBluFill"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override" 	"DkBluFill"
 		}
 		"RedScoreBG"
 		{
@@ -39,13 +40,13 @@
 			"visible"          	"1"
 			"enabled"          	"1"
 			"border"           	"TFFatLineBorderRedBGMoreOpaque"
-			"bgcolor_override" 	"DkRedFill"	// ClaudeHUD: riempimento al posto del bordo texture
+			"bgcolor_override" 	"DkRedFill"
 		}
 		"BlueTeamLabel"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"BlueTeamLabel"
-			"font"          	"ScoreboardTeamName"
+			"font"          	"TypeLabel"
 			"labelText"     	"%blueteamname%"
 			"textAlignment" 	"west"
 			"xpos"          	"56"
@@ -53,19 +54,18 @@
 			"zpos"          	"10"
 			"wide"          	"100"
 			"tall"          	"20"
-			"tall_lodef"    	"24"
-			"tall_hidef"    	"24"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
-			"fgcolor"       	"DkText"
+			"fgcolor"       	"DkOnBlu"
+			"allcaps"       	"1"
 		}
 		"BlueTeamScore"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"BlueTeamScore"
-			"font"          	"ScoreboardTeamScore"
+			"font"          	"NumXL"
 			"labelText"     	"%blueteamscore%"
 			"textAlignment" 	"east"
 			"xpos"          	"80"
@@ -73,31 +73,28 @@
 			"zpos"          	"3"
 			"wide"          	"100"
 			"tall"          	"50"
-			"tall_lodef"    	"80"
-			"tall_hidef"    	"75"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
+			"fgcolor"       	"DkOnBlu"
 		}
 		"BlueTeamScoreDropshadow"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"BlueTeamScoreDropshadow"
 			"font"          	"ScoreboardTeamScore"
-			"fgcolor"       	"DkCard"
+			"fgcolor"       	"Clear"
 			"labelText"     	"%blueteamscore%"
 			"textAlignment" 	"east"
 			"xpos"          	"81"
 			"ypos"          	"1"
 			"zpos"          	"3"
-			"wide"          	"100"
-			"tall"          	"50"
-			"tall_lodef"    	"80"
-			"tall_hidef"    	"75"
+			"wide"          	"0"
+			"tall"          	"0"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
-			"visible"       	"1"
+			"visible"       	"0"
 			"enabled"       	"1"
 		}
 		"BlueLeaderAvatar"
@@ -126,13 +123,13 @@
 			"tall"                	"44"
 			"visible"             	"1"
 			"PaintBackgroundType" 	"2"
-			"bgcolor_override"    	"DkChip"
+			"bgcolor_override"    	"DkCard"
 		}
 		"RedTeamLabel"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"RedTeamLabel"
-			"font"          	"ScoreboardTeamName"
+			"font"          	"TypeLabel"
 			"labelText"     	"%redteamname%"
 			"textAlignment" 	"east"
 			"xpos"          	"224"
@@ -140,19 +137,18 @@
 			"zpos"          	"10"
 			"wide"          	"100"
 			"tall"          	"20"
-			"tall_lodef"    	"24"
-			"tall_hidef"    	"24"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
-			"fgcolor"       	"DkText"
+			"fgcolor"       	"DkOnRed"
+			"allcaps"       	"1"
 		}
 		"RedTeamScore"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"RedTeamScore"
-			"font"          	"ScoreboardTeamScore"
+			"font"          	"NumXL"
 			"labelText"     	"%redteamscore%"
 			"textAlignment" 	"west"
 			"xpos"          	"202"
@@ -160,31 +156,28 @@
 			"zpos"          	"3"
 			"wide"          	"100"
 			"tall"          	"50"
-			"tall_lodef"    	"80"
-			"tall_hidef"    	"75"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
 			"visible"       	"1"
 			"enabled"       	"1"
+			"fgcolor"       	"DkOnRed"
 		}
 		"RedTeamScoreDropshadow"
 		{
 			"ControlName"   	"CExLabel"
 			"fieldName"     	"RedTeamScoreDropshadow"
 			"font"          	"ScoreboardTeamScore"
-			"fgcolor"       	"DkCard"
+			"fgcolor"       	"Clear"
 			"labelText"     	"%redteamscore%"
 			"textAlignment" 	"west"
 			"xpos"          	"203"
 			"ypos"          	"1"
 			"zpos"          	"3"
-			"wide"          	"100"
-			"tall"          	"50"
-			"tall_lodef"    	"80"
-			"tall_hidef"    	"75"
+			"wide"          	"0"
+			"tall"          	"0"
 			"autoResize"    	"0"
 			"pinCorner"     	"0"
-			"visible"       	"1"
+			"visible"       	"0"
 			"enabled"       	"1"
 		}
 		"RedLeaderAvatar"
@@ -213,7 +206,7 @@
 			"tall"                	"44"
 			"visible"             	"1"
 			"PaintBackgroundType" 	"2"
-			"bgcolor_override"    	"DkChip"
+			"bgcolor_override"    	"DkCard"
 		}
 	}
 	"WinPanelBGBorder"
@@ -230,13 +223,13 @@
 		"scaleImage"           	"1"
 		"border"               	"TFFatLineBorderBlueBG"
 		"proportionaltoparent" 	"1"
-		"bgcolor_override"     	"DkBluFill"	// ClaudeHUD: riempimento al posto del bordo texture
+		"bgcolor_override"     	"DkCard"
 	}
 	"WinningTeamLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"WinningTeamLabel"
-		"font"          	"ScoreboardTeamName"
+		"font"          	"NumL"
 		"xpos"          	"15"
 		"ypos"          	"72"
 		"zpos"          	"1"
@@ -250,21 +243,22 @@
 		"textAlignment" 	"Center"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"fgcolor"       	"DkText"
 	}
 	"WinningTeamLabelDropshadow"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"WinningTeamLabelDropshadow"
 		"font"          	"ScoreboardTeamName"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"Clear"
 		"xpos"          	"16"
 		"ypos"          	"73"
 		"zpos"          	"1"
-		"wide"          	"268"
-		"tall"          	"24"
+		"wide"          	"0"
+		"tall"          	"0"
 		"autoResize"    	"0"
 		"pinCorner"     	"0"
-		"visible"       	"1"
+		"visible"       	"0"
 		"enabled"       	"1"
 		"labelText"     	"%WinningTeamLabel%"
 		"textAlignment" 	"Center"
@@ -275,7 +269,7 @@
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"AdvancingTeamLabel"
-		"font"          	"ScoreboardMedium"
+		"font"          	"TypeBodyStrong"
 		"xpos"          	"15"
 		"ypos"          	"72"
 		"zpos"          	"1"
@@ -289,21 +283,22 @@
 		"textAlignment" 	"Center"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"fgcolor"       	"DkText"
 	}
 	"AdvancingTeamLabelDropshadow"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"AdvancingTeamLabelDropshadow"
 		"font"          	"ScoreboardMedium"
-		"fgcolor"       	"DkCard"
+		"fgcolor"       	"Clear"
 		"xpos"          	"16"
 		"ypos"          	"73"
 		"zpos"          	"1"
-		"wide"          	"268"
-		"tall"          	"24"
+		"wide"          	"0"
+		"tall"          	"0"
 		"autoResize"    	"0"
 		"pinCorner"     	"0"
-		"visible"       	"1"
+		"visible"       	"0"
 		"enabled"       	"1"
 		"labelText"     	"%AdvancingTeamLabel%"
 		"textAlignment" 	"Center"
@@ -314,7 +309,7 @@
 	{
 		"ControlName" 	"CExLabel"
 		"fieldName"   	"WinReasonLabel"
-		"font"        	"ScoreboardVerySmall"
+		"font"        	"TypeCaption"
 		"xpos"        	"15"
 		"ypos"        	"89"
 		"zpos"        	"1"
@@ -328,12 +323,13 @@
 		"dulltext"    	"0"
 		"brighttext"  	"0"
 		"centerwrap"  	"1"
+		"fgcolor"     	"DkTextMuted"
 	}
 	"DetailsLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"DetailsLabel"
-		"font"          	"ScoreboardVerySmall"
+		"font"          	"TypeCaption"
 		"xpos"          	"15"
 		"ypos"          	"101"
 		"zpos"          	"1"
@@ -347,6 +343,7 @@
 		"textAlignment" 	"Center"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"ShadedBar"
 	{
@@ -355,22 +352,21 @@
 		"xpos"                	"15"
 		"ypos"                	"116"
 		"zpos"                	"2"
-		"wide"                	"268"
-		"tall"                	"125"
+		"wide"                	"0"
+		"tall"                	"0"
 		"autoResize"          	"0"
 		"pinCorner"           	"0"
-		"visible"             	"1"
+		"visible"             	"0"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"39 38 36 153"	// token: DkCardA60
-		"fillcolor_lodef"     	"39 38 36 204"	// token: DkCardA80
+		"fillcolor"           	"DkCardA60"
 		"PaintBackgroundType" 	"0"
 	}
 	"TopPlayersLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"TopPlayerLabel"
-		"font"          	"ScoreboardVerySmall"
+		"font"          	"TypeLabel"
 		"xpos"          	"18"
 		"ypos"          	"114"
 		"zpos"          	"3"
@@ -384,12 +380,14 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"allcaps"       	"1"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"PointsThisRoundLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"PointsThisRoundLabel"
-		"font"          	"ScoreboardVerySmall"
+		"font"          	"TypeLabel"
 		"xpos"          	"139"
 		"ypos"          	"114"
 		"zpos"          	"3"
@@ -403,6 +401,8 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"allcaps"       	"1"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"HorizontalLine"
 	{
@@ -418,7 +418,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"217 119 87 255"	// token: DkAccent
+		"fillcolor"           	"DkLine"
 		"PaintBackgroundType" 	"0"
 	}
 	"Player1Badge"
@@ -467,6 +467,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeBody"
+		"fgcolor"       	"DkText"
 	}
 	"Player1Class"
 	{
@@ -485,6 +487,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeCaption"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"Player1Score"
 	{
@@ -503,6 +507,8 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"NumS"
+		"fgcolor"       	"DkText"
 	}
 	"Player2Badge"
 	{
@@ -550,6 +556,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeBody"
+		"fgcolor"       	"DkText"
 	}
 	"Player2Class"
 	{
@@ -568,6 +576,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeCaption"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"Player2Score"
 	{
@@ -586,6 +596,8 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"NumS"
+		"fgcolor"       	"DkText"
 	}
 	"Player3Badge"
 	{
@@ -633,6 +645,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeBody"
+		"fgcolor"       	"DkText"
 	}
 	"Player3Class"
 	{
@@ -651,6 +665,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeCaption"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"Player3Score"
 	{
@@ -669,12 +685,14 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"NumS"
+		"fgcolor"       	"DkText"
 	}
 	"KillStreakLeaderLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"KillStreakLeaderLabel"
-		"font"          	"ScoreboardVerySmall"
+		"font"          	"TypeLabel"
 		"xpos"          	"18"
 		"ypos"          	"195"
 		"zpos"          	"3"
@@ -688,12 +706,14 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"allcaps"       	"1"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"KillStreakMaxCountLabel"
 	{
 		"ControlName"   	"CExLabel"
 		"fieldName"     	"KillStreakMaxCountLabel"
-		"font"          	"ScoreboardVerySmall"
+		"font"          	"TypeLabel"
 		"xpos"          	"139"
 		"ypos"          	"195"
 		"zpos"          	"3"
@@ -707,6 +727,8 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"allcaps"       	"1"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"HorizontalLine2"
 	{
@@ -722,7 +744,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"217 119 87 255"	// token: DkAccent
+		"fillcolor"           	"DkLine"
 		"PaintBackgroundType" 	"0"
 	}
 	"KillStreakPlayer1Badge"
@@ -771,6 +793,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeBody"
+		"fgcolor"       	"DkText"
 	}
 	"KillStreakPlayer1Class"
 	{
@@ -789,6 +813,8 @@
 		"textAlignment" 	"west"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"TypeCaption"
+		"fgcolor"       	"DkTextMuted"
 	}
 	"KillStreakPlayer1Score"
 	{
@@ -807,5 +833,7 @@
 		"textAlignment" 	"east"
 		"dulltext"      	"0"
 		"brighttext"    	"0"
+		"font"          	"NumS"
+		"fgcolor"       	"DkText"
 	}
 }

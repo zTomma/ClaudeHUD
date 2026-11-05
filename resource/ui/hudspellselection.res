@@ -60,7 +60,7 @@
 		"enabled"      	"1"
 		"scaleImage"   	"1"
 		"image"        	"../signs/death_wheel_whammy"
-		"fgcolor"      	"DkTextMuted"
+		"fgcolor"      	"177 173 161 255"	// token: DkTextMuted
 	}
 	"ActionText"
 	{

@@ -16,8 +16,8 @@
 		"mouseinputenabled"            	"0"
 		"proportionaltoparent"         	"1"
 		"PaintBackgroundType"          	"2"
-		"enabled_text_color_override"  	"DkCard"
-		"disabled_text_color_override" 	"DkCard"
+		"enabled_text_color_override"  	"39 38 36 255"	// token: DkCard
+		"disabled_text_color_override" 	"39 38 36 255"	// token: DkCard
 		"normal_token"                 	"#QuestObjective_Required"
 		"advanced_token"               	"#QuestObjective_Optional"
 	}

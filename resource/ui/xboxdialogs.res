@@ -54,7 +54,7 @@
 			"pinCorner"   	"0"
 			"visible"     	"1"
 			"enabled"     	"1"
-			"fillcolor"   	"244 243 238 127"	// token: LtCardAltA50
+			"fillcolor"   	"LtCardAltA50"
 		}
 		"OptionsBackgroundRight"
 		{
@@ -71,7 +71,7 @@
 			"pinCorner"   	"0"
 			"visible"     	"1"
 			"enabled"     	"1"
-			"fillcolor"   	"244 243 238 127"	// token: LtCardAltA50
+			"fillcolor"   	"LtCardAltA50"
 		}
 		"OptionsSelectionLeft"
 		{
@@ -234,7 +234,7 @@
 			"tall_lodef"          	"60"
 			"buttonoffsety_hidef" 	"20"
 			"buttonoffsety_lodef" 	"5"
-			"bgcolor"             	"LtCard"
+			"bgcolor"             	"255 255 255 255"	// token: LtCard
 			"paintbackground"     	"1"
 		}
 	}
@@ -249,7 +249,7 @@
 			"tall_lodef"          	"60"
 			"buttonoffsety_hidef" 	"20"
 			"buttonoffsety_lodef" 	"5"
-			"bgcolor"             	"LtCard"
+			"bgcolor"             	"255 255 255 255"	// token: LtCard
 			"paintbackground"     	"1"
 		}
 	}
@@ -306,7 +306,7 @@
 			"wrap"             	"1"
 			"visible"          	"1"
 			"textAlignment"    	"center"
-			"textcolor"        	"LtText"
+			"textcolor"        	"20 20 19 255"	// token: LtText
 			"dulltext"         	"0"
 			"brighttext"       	"0"
 			"fgcolor_override" 	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -512,8 +512,8 @@
 			"ypos"        	"6"
 			"wide"        	"32"
 			"tall"        	"32"
-			"bgcolor"     	"LtCardAlt"
-			"fgcolor"     	"LtText"
+			"bgcolor"     	"244 243 238 255"	// token: LtCardAlt
+			"fgcolor"     	"20 20 19 255"	// token: LtText
 			"scaleImage"  	"1"
 			"visible"     	"0"
 		}
@@ -550,8 +550,8 @@
 			"ypos"        	"6"
 			"wide"        	"32"
 			"tall"        	"32"
-			"bgcolor"     	"LtCardAlt"
-			"fgcolor"     	"LtText"
+			"bgcolor"     	"244 243 238 255"	// token: LtCardAlt
+			"fgcolor"     	"20 20 19 255"	// token: LtText
 			"scaleImage"  	"1"
 			"image"       	"hud/icon_locked"
 		}
@@ -566,8 +566,8 @@
 			"tall"        	"32"
 			"wide_lodef"  	"24"
 			"tall_lodef"  	"24"
-			"bgcolor"     	"LtCardAlt"
-			"fgcolor"     	"LtText"
+			"bgcolor"     	"244 243 238 255"	// token: LtCardAlt
+			"fgcolor"     	"20 20 19 255"	// token: LtText
 			"scaleImage"  	"1"
 			"visible"     	"0"
 			"image"       	"hud/icon_check"
@@ -580,7 +580,7 @@
 			"ypos"        	"7"
 			"wide"        	"128"
 			"tall"        	"15"
-			"fillcolor"   	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"   	"LtCardAltA30"
 			"zpos"        	"10"
 			"visible"     	"0"
 			"enabled"     	"1"
@@ -593,7 +593,7 @@
 			"ypos"        	"7"
 			"wide"        	"0"
 			"tall"        	"15"
-			"fillcolor"   	"217 119 87 255"	// token: LtButtonHover
+			"fillcolor"   	"LtButtonHover"
 			"zpos"        	"20"
 			"visible"     	"0"
 			"enabled"     	"1"
@@ -636,8 +636,8 @@
 		"MatchmakingFooterPanel"
 		{
 			"ControlName"            	"FooterPanel"
-			"fgcolor"                	"LtText"
-			"bgcolor"                	"LtCard"
+			"fgcolor"                	"20 20 19 255"	// token: LtText
+			"bgcolor"                	"255 255 255 255"	// token: LtCard
 			"paintbackground"        	"1"
 			"tall"                   	"100"
 			"tall_lodef"             	"60"
@@ -2492,7 +2492,7 @@
 			"Columns"
 			{
 				"HeaderFont"    	"MatchmakingDialogMenuBrowserHostname"
-				"HeaderFgColor" 	"LtText"
+				"HeaderFgColor" 	"20 20 19 255"	// token: LtText
 				"Column"
 				{
 					"header"     	"#TF_HostName"
@@ -2504,7 +2504,7 @@
 					"wide_lodef" 	"202"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2516,7 +2516,7 @@
 					"align"      	"5"	// east
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2528,7 +2528,7 @@
 					"align"      	"5"	// east
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2540,7 +2540,7 @@
 					"wide_lodef"   	"25"
 					"align"        	"4"	// center
 					"font"         	"GameUIButtonsSmall"
-					"fgcolor"      	"LtText"
+					"fgcolor"      	"20 20 19 255"	// token: LtText
 				}
 			}
 		}
@@ -2688,7 +2688,7 @@
 			"Columns"
 			{
 				"HeaderFont"    	"MatchmakingDialogMenuBrowserHostname"
-				"HeaderFgColor" 	"LtText"
+				"HeaderFgColor" 	"20 20 19 255"	// token: LtText
 				"Column"
 				{
 					"header"     	"#TF_HostName"
@@ -2700,7 +2700,7 @@
 					"wide_lodef" 	"215"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2712,7 +2712,7 @@
 					"align"      	"5"	// east
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2724,7 +2724,7 @@
 					"align"      	"5"	// east
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuBrowserHostname"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 			}
 		}
@@ -2783,7 +2783,7 @@
 			"Columns"
 			{
 				"HeaderFont"    	"RankingDialogHeaders"
-				"HeaderFgColor" 	"LtText"
+				"HeaderFgColor" 	"20 20 19 255"	// token: LtText
 				"Column"
 				{
 					"header"     	"#TF_Rank"
@@ -2795,7 +2795,7 @@
 					"locked"     	"1"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2808,7 +2808,7 @@
 					"locked"     	"1"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -2821,7 +2821,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 			}
 		}
@@ -2991,7 +2991,7 @@
 			"Columns"
 			{
 				"HeaderFont"    	"RankingDialogHeaders"
-				"HeaderFgColor" 	"LtText"
+				"HeaderFgColor" 	"20 20 19 255"	// token: LtText
 				"Column"
 				{
 					"header"     	"#TF_Rank"
@@ -3003,7 +3003,7 @@
 					"locked"     	"1"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3016,7 +3016,7 @@
 					"locked"     	"1"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3029,7 +3029,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3042,7 +3042,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3055,7 +3055,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3068,7 +3068,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3081,7 +3081,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3094,7 +3094,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3107,7 +3107,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3120,7 +3120,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3133,7 +3133,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3146,7 +3146,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3159,7 +3159,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3172,7 +3172,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3185,7 +3185,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3198,7 +3198,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 				"Column"
 				{
@@ -3211,7 +3211,7 @@
 					"locked"     	"0"
 					"font"       	"MatchmakingDialogMenuLarge"
 					"font_lodef" 	"MatchmakingDialogMenuSmall"
-					"fgcolor"    	"LtTextMuted"
+					"fgcolor"    	"111 109 101 255"	// token: LtTextMuted
 				}
 			}
 		}
@@ -3508,7 +3508,7 @@
 			"pinCorner"   	"0"
 			"visible"     	"0"
 			"enabled"     	"1"
-			"fillcolor"   	"244 243 238 127"	// token: LtCardAltA50
+			"fillcolor"   	"LtCardAltA50"
 		}
 		"BonusSelectionLabel"
 		{
@@ -3742,7 +3742,7 @@
 			"pinCorner"        	"0"
 			"visible"          	"1"
 			"enabled"          	"1"
-			"fillcolor"        	"20 20 19 0"	// token: Clear
+			"fillcolor"        	"Clear"
 		}
 		"ChallengeNextMedal"
 		{
@@ -3881,7 +3881,7 @@
 			"enabled"         	"1"
 			"tabPosition"     	"0"
 			"paintbackground" 	"1"
-			"bgcolor"         	"LtCard"
+			"bgcolor"         	"255 255 255 255"	// token: LtCard
 		}
 		"LoadingLabel"
 		{

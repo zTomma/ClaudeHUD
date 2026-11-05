@@ -260,8 +260,8 @@ event HudLowAmmoPulse
 	// munizioni basse: numero terracotta + il Segno della scheda munizioni pulsa a 2 Hz
 	Animate	AmmoInClip		FgColor	"DkAccent"	Linear 0.0 0.12
 	Animate	AmmoNoClip		FgColor	"DkAccent"	Linear 0.0 0.12
-	Animate	HudWeaponLowAmmoImage	Alpha	"255"	Linear 0.0 0.12
-	Animate	HudWeaponLowAmmoImage	Alpha	"72"	Linear 0.25 0.12
+	Animate	AmmoSegno	Alpha	"255"	Linear 0.0 0.12
+	Animate	AmmoSegno	Alpha	"72"	Linear 0.25 0.12
 	RunEvent HudLowAmmoPulseLoop	0.5
 }
 
@@ -277,7 +277,7 @@ event HudLowAmmoPulseStop
 	StopEvent HudLowAmmoPulseLoop 0.0
 	Animate	AmmoInClip		FgColor	"DkText"	Linear 0.0 0.12
 	Animate	AmmoNoClip		FgColor	"DkText"	Linear 0.0 0.12
-	Animate	HudWeaponLowAmmoImage	Alpha	"0"	Accel 0.0 0.15
+	Animate	AmmoSegno	Alpha	"0"	Accel 0.0 0.15
 }
 
 //===========================================
@@ -437,6 +437,7 @@ event HudMedicCharged
 {
 	Animate	ChargeLabel	FgColor	"DkAccent"	Linear 0.0 0.12
 	Animate	ChargeMeter	FgColor	"DkAccent"	Linear 0.0 0.12
+	Animate	ChargePercent	FgColor	"DkAccent"	Linear 0.0 0.12
 	RunEvent HudMedicChargedLoop	0.5
 }
 
@@ -452,6 +453,7 @@ event HudMedicChargedStop
 	StopEvent HudMedicChargedLoop 0.0
 	Animate	ChargeLabel	FgColor	"DkTextMuted"	Linear 0.0 0.12
 	Animate	ChargeMeter	FgColor	"DkText"	Linear 0.0 0.12
+	Animate	ChargePercent	FgColor	"DkText"	Linear 0.0 0.12
 }
 
 //====================================

@@ -11,5 +11,6 @@
 		"ypos"      	"r48"
 		"wide"      	"80"
 		"tall"      	"36"
+		"x_offset"  	"84"
 	}
 }

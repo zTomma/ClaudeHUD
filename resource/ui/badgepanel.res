@@ -41,7 +41,7 @@
 			"default"
 			{
 				"name"      	"directional"
-				"color"     	"LtText"
+				"color"     	"20 20 19 255"	// token: LtText
 				"direction" 	"1 0 -1"
 			}
 		}

@@ -262,7 +262,7 @@
 		"buttonoffsety_lodef"    	"18"
 		"fonttext"               	"MatchmakingDialogMenuLarge"
 		"fonttext_lodef"         	"MatchmakingDialogMenuSmall"
-		"fgcolor"                	"LtText"
+		"fgcolor"                	"20 20 19 255"	// token: LtText
 		"button"
 		{
 			"name" 	"intro"

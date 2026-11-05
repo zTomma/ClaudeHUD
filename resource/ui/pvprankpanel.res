@@ -93,7 +93,7 @@
 				"default"
 				{
 					"name"      	"directional"
-					"color"     	"LtText"
+					"color"     	"20 20 19 255"	// token: LtText
 					"direction" 	"0.60 0.65 0.2"
 				}
 			}

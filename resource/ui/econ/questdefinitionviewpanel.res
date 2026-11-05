@@ -31,8 +31,8 @@
 		"defaultFgColor_override"   	"Clear"
 		"armedFgColor_override"     	"DkAccent"
 		"depressedFgColor_override" 	"DkOnRed"
-		"image_drawcolor"           	"Clear"
-		"image_armedcolor"          	"DkAccent"
+		"image_drawcolor"           	"20 20 19 0"	// token: Clear
+		"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -77,8 +77,8 @@
 		"defaultFgColor_override"   	"DkOnRed"
 		"armedFgColor_override"     	"DkText"
 		"depressedFgColor_override" 	"DkOnRed"
-		"image_drawcolor"           	"DkTextMuted"
-		"image_armedcolor"          	"DkAccent"
+		"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+		"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"

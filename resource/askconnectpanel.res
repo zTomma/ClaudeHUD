@@ -15,7 +15,7 @@
 		"pinCorner"          	"0"
 		"visible"            	"0"
 		"enabled"            	"1"
-		"BgColor"            	"LtCardAltA80"
+		"BgColor"            	"244 243 238 204"	// token: LtCardAltA80
 		"tabPosition"        	"0"
 		"paintborder"        	"1"
 		"settitlebarvisible" 	"0"

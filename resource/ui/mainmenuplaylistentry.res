@@ -211,8 +211,8 @@
 		"defaultBgColor_override"   	"Clear"
 		"armedBgColor_override"     	"Clear"
 		"depressedBgColor_override" 	"Clear"
-		"image_drawcolor"           	"LtText"
-		"image_armedcolor"          	"LtTextMuted"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
+		"image_armedcolor"          	"111 109 101 255"	// token: LtTextMuted
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"

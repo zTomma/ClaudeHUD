@@ -105,8 +105,8 @@
 			"HealthBonusPosAdj"       	"10"
 			"HealthDeathWarning"      	"0.49"
 			"TFFont"                  	"HudFontSmallest"
-			"HealthDeathWarningColor" 	"DkAccent"
-			"TextColor"               	"DkText"
+			"HealthDeathWarningColor" 	"217 119 87 255"	// token: DkAccent
+			"TextColor"               	"250 249 245 255"	// token: DkText
 			"autoResize"              	"1"
 		}
 	}

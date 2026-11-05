@@ -34,7 +34,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkTextMutedA50"
+		"iconColor"   	"177 173 161 127"	// token: DkTextMutedA50
 	}
 	"CantBuildReason"
 	{
@@ -67,7 +67,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_metal"
-		"iconColor"   	"DkRedFill"
+		"iconColor"   	"217 119 87 255"	// token: DkRedFill
 	}
 	"CostLabel"
 	{

@@ -31,11 +31,13 @@ def find_path(nodes, path):
     return cur
 
 
-def patch(rel, edits, header, add=None, remove_blocks=(), optional=False):
+def patch(rel, edits, header, add=None, remove_blocks=(), optional=False, pre=None):
     mode = modes.mode_of(rel)
     nodes = vdf.parse(open(os.path.join(ROOT, "#TF2 Files", rel), encoding="utf-8", errors="replace").read())
     M.migrate_nodes(nodes, mode, M.load_ctx())
     root = next(nd[1] for nd in nodes if isinstance(nd[1], list))
+    if pre:
+        pre(root)
     for path, kv in edits.items():
         try:
             body = find_path(root, path)
@@ -72,6 +74,7 @@ def patch(rel, edits, header, add=None, remove_blocks=(), optional=False):
     for parent, block_text in (add or []):
         target = find_path(root, parent) if parent else root
         target.extend(vdf.parse(block_text))
+    M.sanitize(nodes)
     out = "".join("// " + l + "\n" for l in header.strip().split("\n")) + vdf.dump(nodes) + "\n"
     assert "ClaudeHUD: riscritto" in out[:400]
     vdf.parse(out)

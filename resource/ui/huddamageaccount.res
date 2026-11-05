@@ -1,5 +1,6 @@
-// ClaudeHUD: migrato ai token (layout originale) - generato da tools/migrate.py
-// modalita': dark (DESIGN.md par. 9)
+// ClaudeHUD: riscritto a mano (verificato nel sorgente) - numeri di danno sul mondo: Plex SemiBold
+// con ombra (NumDamage / NumDamageBig), danno in terracotta, positivi in salvia.
+// Generato da tools/hand/gen_classmeters.py
 "Resource/UI/HudDamageAccount.res"
 {
 	"CDamageAccountPanel"
@@ -8,10 +9,10 @@
 		"text_x"              	"0"
 		"text_y"              	"0"
 		"delta_item_end_y"    	"0"
-		"PositiveColor"       	"188 210 203 255"	// token: DkPositive
-		"NegativeColor"       	"217 119 87 255"	// token: DkAccent
+		"PositiveColor"       	"DkPositive"
+		"NegativeColor"       	"DkAccent"
 		"delta_lifetime"      	"1.5"
-		"delta_item_font"     	"HudFontSmall"
-		"delta_item_font_big" 	"HudFontMedium"
+		"delta_item_font"     	"NumDamage"
+		"delta_item_font_big" 	"NumDamageBig"
 	}
 }

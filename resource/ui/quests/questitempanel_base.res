@@ -558,7 +558,7 @@
 						"enabled"              	"1"
 						"wrap"                 	"1"
 						"proportionaltoparent" 	"1"
-						"fgcolor"              	"DkAccent"
+						"fgcolor"              	"217 119 87 255"	// token: DkAccent
 						"fgcolor_override"     	"DkAccent"
 					}
 					"LoanersBGImage"
@@ -769,7 +769,7 @@
 						"wrap"                 	"1"
 						"proportionaltoparent" 	"1"
 						"allcaps"              	"1"
-						"fgcolor"              	"DkRedFill"
+						"fgcolor"              	"217 119 87 255"	// token: DkRedFill
 						"fgcolor_override"     	"DkRedFill"
 					}
 					"QuestObjectiveExplanation"
@@ -791,7 +791,7 @@
 						"wrap"                 	"1"
 						"proportionaltoparent" 	"1"
 						"allcaps"              	"1"
-						"fgcolor"              	"DkCard"
+						"fgcolor"              	"39 38 36 255"	// token: DkCard
 						"fgcolor_override"     	"DkCard"
 					}
 					"QuestFlavorText"
@@ -812,7 +812,7 @@
 						"enabled"              	"1"
 						"wrap"                 	"1"
 						"proportionaltoparent" 	"1"
-						"fgcolor"              	"DkCard"
+						"fgcolor"              	"39 38 36 255"	// token: DkCard
 						"fgcolor_override"     	"DkCard"
 					}
 				}
@@ -947,7 +947,7 @@
 							"visible"              	"1"
 							"enabled"              	"1"
 							"proportionaltoparent" 	"1"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}
@@ -1003,7 +1003,7 @@
 							"visible"              	"1"
 							"enabled"              	"1"
 							"proportionaltoparent" 	"1"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}
@@ -1064,7 +1064,7 @@
 							"proportionaltoparent" 	"1"
 							"mouseinputenabled"    	"0"
 							"keyboardinputenabled" 	"0"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}

@@ -35,7 +35,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"DestroyIcon"
 	{
@@ -50,7 +50,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_demolish"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildingIcon"
 	{
@@ -65,7 +65,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"obj_status_sentrygun_1"
-		"iconColor"   	"UntintedA50"
+		"iconColor"   	"255 255 255 127"	// token: UntintedA50
 	}
 	"NumberBg"
 	{
@@ -80,7 +80,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_key_blank"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"NumberLabel"
 	{

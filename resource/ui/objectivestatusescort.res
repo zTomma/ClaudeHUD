@@ -486,7 +486,7 @@
 				"enabled"      	"1"
 				"scaleImage"   	"1"
 				"icon"         	"cappoint_progressbar_teardrop"
-				"iconColor"    	"Untinted"
+				"iconColor"    	"255 255 255 255"	// token: Untinted
 				"if_multiple_trains"
 				{
 					"xpos" 	"0"
@@ -542,7 +542,7 @@
 				"enabled"      	"1"
 				"scaleImage"   	"1"
 				"icon"         	"cappoint_progressbar_blocked"
-				"iconColor"    	"Untinted"
+				"iconColor"    	"255 255 255 255"	// token: Untinted
 				"if_multiple_trains"
 				{
 					"xpos" 	"2"

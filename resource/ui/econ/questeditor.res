@@ -49,7 +49,7 @@
 			"proportionaltoparent"    	"1"
 			"sound_depressed"         	"UI/buttonclick.wav"
 			"sound_released"          	"UI/buttonclickrelease.wav"
-			"image_drawcolor"         	"DkText"
+			"image_drawcolor"         	"250 249 245 255"	// token: DkText
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"

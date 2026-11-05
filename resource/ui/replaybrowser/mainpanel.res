@@ -19,15 +19,15 @@
 		"settitlebarvisible"               	"1"
 		"PaintBackgroundType"              	"0"
 		"bgcolor_override"                 	"Clear"
-		"infocus_bgcolor_override"         	"20 20 19 0"	// token: Clear
-		"outoffocus_bgcolor_override"      	"20 20 19 0"	// token: Clear
+		"infocus_bgcolor_override"         	"Clear"
+		"outoffocus_bgcolor_override"      	"Clear"
 		"title"                            	"#Replay_Replay"
 		"title_font"                       	"HudFontMediumBold"
 		"titletextinsetX"                  	"40"
 		"titletextinsetY"                  	"15"
-		"titlebarfgcolor_override"         	"20 20 19 255"	// token: LtText
-		"titlebardisabledfgcolor_override" 	"20 20 19 255"	// token: LtText
-		"titlebarbgcolor_override"         	"255 255 255 255"	// token: LtCard
+		"titlebarfgcolor_override"         	"LtText"
+		"titlebardisabledfgcolor_override" 	"LtText"
+		"titlebarbgcolor_override"         	"LtCard"
 		"clientinsetx_override"            	"0"
 		"sheetinset_bottom"                	"40"
 	}

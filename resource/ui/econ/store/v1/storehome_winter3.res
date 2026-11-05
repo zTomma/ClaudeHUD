@@ -18,8 +18,8 @@
 		"settitlebarvisible"           	"0"
 		"PaintBackgroundType"          	"0"
 		"bgcolor_override"             	"DkCard"
-		"infocus_bgcolor_override"     	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override"  	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"     	"DkCard"
+		"outoffocus_bgcolor_override"  	"DkCard"
 		"item_ypos"                    	"60"
 		"item_mod_wide"                	"40"
 		"item_panels"                  	"16"
@@ -109,7 +109,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -315,7 +315,7 @@
 			"enabled"                    	"1"
 			"wrap"                       	"1"
 			"text"                       	"#Store_IntroText_Winter3"
-			"fgcolor"                    	"DkOnRed"
+			"fgcolor"                    	"20 20 19 255"	// token: DkOnRed
 			"image_up_arrow"             	"scroll_up_off"
 			"image_up_arrow_mouseover"   	"scroll_up_on"
 			"image_down_arrow"           	"scroll_down_off"

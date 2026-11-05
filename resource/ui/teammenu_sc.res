@@ -120,7 +120,7 @@
 		"associated_model"          	"bluedoor"
 		"hover"                     	"2.0"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -168,7 +168,7 @@
 		"associated_model"          	"reddoor"
 		"hover"                     	"2.0"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -214,7 +214,7 @@
 		"command"                   	"jointeam auto"
 		"associated_model"          	"autodoor"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -260,7 +260,7 @@
 		"command"                   	"jointeam spectate"
 		"associated_model"          	"spectate"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara

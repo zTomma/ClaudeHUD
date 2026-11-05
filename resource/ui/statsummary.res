@@ -467,7 +467,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG1B"
@@ -488,7 +488,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar1A"
@@ -509,7 +509,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar1B"
@@ -530,7 +530,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel1A"
@@ -619,7 +619,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG2B"
@@ -640,7 +640,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar2A"
@@ -661,7 +661,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar2B"
@@ -682,7 +682,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel2A"
@@ -771,7 +771,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG3B"
@@ -792,7 +792,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar3A"
@@ -813,7 +813,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar3B"
@@ -834,7 +834,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel3A"
@@ -923,7 +923,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG4B"
@@ -944,7 +944,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar4A"
@@ -965,7 +965,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar4B"
@@ -986,7 +986,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel4A"
@@ -1075,7 +1075,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG5B"
@@ -1096,7 +1096,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar5A"
@@ -1117,7 +1117,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtButtonHover
+			"fillcolor"           	"LtButtonHover"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar5B"
@@ -1138,7 +1138,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtButtonHover
+			"fillcolor"           	"LtButtonHover"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel5A"
@@ -1227,7 +1227,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG6B"
@@ -1248,7 +1248,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar6A"
@@ -1269,7 +1269,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar6B"
@@ -1290,7 +1290,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel6A"
@@ -1379,7 +1379,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG7B"
@@ -1400,7 +1400,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar7A"
@@ -1421,7 +1421,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar7B"
@@ -1442,7 +1442,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 255"	// token: LtCardAlt
+			"fillcolor"           	"LtCardAlt"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel7A"
@@ -1531,7 +1531,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG8B"
@@ -1552,7 +1552,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar8A"
@@ -1573,7 +1573,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar8B"
@@ -1594,7 +1594,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel8A"
@@ -1683,7 +1683,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarBG9B"
@@ -1704,7 +1704,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar9A"
@@ -1725,7 +1725,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBar9B"
@@ -1746,7 +1746,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"217 119 87 255"	// token: LtAccent
+			"fillcolor"           	"LtAccent"
 			"PaintBackgroundType" 	"0"
 		}
 		"ClassBarLabel9A"
@@ -1882,7 +1882,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"244 243 238 76"	// token: LtCardAltA30
+			"fillcolor"           	"LtCardAltA30"
 			"PaintBackgroundType" 	"0"
 		}
 		"RecordsLabel"
@@ -2781,7 +2781,7 @@
 	{
 		"ControlName"            	"CTFFooter"
 		"fieldName"              	"Footer"
-		"bgcolor"                	"LtCard"
+		"bgcolor"                	"255 255 255 255"	// token: LtCard
 		"paintbackground"        	"1"
 		"tall"                   	"100"
 		"tall_lodef"             	"60"
@@ -2796,7 +2796,7 @@
 		"textadjust"             	"3"
 		"textadjust_lodef"       	"0"
 		"zpos"                   	"6"
-		"fgcolor"                	"LtText"
+		"fgcolor"                	"20 20 19 255"	// token: LtText
 		"button"
 		{
 			"name" 	"back"

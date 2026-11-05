@@ -1,7 +1,8 @@
 // ClaudeHUD: riscritto a mano (fase 3) - target ID. DESIGN.md par. 2, 3, 4.
-// Il codice ridimensiona TargetIDBG sulla lunghezza del nome: essendo un ImagePanel, il suo
-// riempimento e' squadrato (limite del motore, vedi DESIGN.md par. 2). Il colore di squadra
-// e' sul nome (TeamRed/TeamBlue -> DkRedText/DkBluText, contrasto verificato su DkCard).
+// Verificato nel sorgente TF2 (tf_hud_target_id.cpp): il codice ridimensiona la RADICE sul contenuto
+// e disegna TargetIDBG con alfa tf_hud_target_id_alpha (100 = 39%). Per questo TargetIDBG e' vuoto e la
+// scheda DkCard arrotondata e opaca e' lo sfondo della radice (scripts/hudlayout.res, CMainTargetID).
+// Il colore di squadra e' sul nome (TeamRed/TeamBlue -> DkRedText/DkBluText, contrasto verificato).
 "Resource/UI/TargetID.res"
 {
 	"TargetIDBG"
@@ -22,7 +23,7 @@
 		"teambg_1"		""
 		"teambg_2"		""
 		"teambg_3"		""
-		"fillcolor"		"39 38 36 255"	// token: DkCard
+		"fillcolor"		"Clear"
 	}
 	"TargetIDBG_Spec_Blue"
 	{
@@ -106,8 +107,8 @@
 		"HealthBonusPosAdj"	"0"
 		"HealthDeathWarning"	"0.49"
 		"TFFont"		"NumS"
-		"HealthDeathWarningColor"	"DkAccent"
-		"TextColor"		"DkText"
+		"HealthDeathWarningColor"	"217 119 87 255"	// token: DkAccent
+		"TextColor"		"250 249 245 255"	// token: DkText
 	}
 	"AmmoIcon"
 	{
@@ -163,7 +164,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"icon"			"obj_status_alert_background_tall_nocolor"
-			"iconColor"		"DkChip"
+			"iconColor"		"55 54 50 255"	// token: DkChip
 			"scaleImage"	"1"
 		}
 		"MoveableIcon"
@@ -178,7 +179,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"icon"			"obj_status_sentrygun_1"
-			"drawcolor"		"DkText"
+			"drawcolor"		"250 249 245 255"	// token: DkText
 			"scaleImage"	"1"
 		}
 		"MoveableSymbolIcon"

@@ -782,7 +782,7 @@
 			"Command"                   	"ToggleShowOptions"
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
-			"image_drawcolor"           	"LtText"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -996,8 +996,8 @@
 				"defaultFgColor_override"   	"DkOnRed"
 				"armedFgColor_override"     	"DkText"
 				"depressedFgColor_override" 	"DkOnRed"
-				"image_drawcolor"           	"DkTextMuted"
-				"image_armedcolor"          	"DkAccent"
+				"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+				"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"

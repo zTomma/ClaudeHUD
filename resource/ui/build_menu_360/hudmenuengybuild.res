@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildIcon"
 	{
@@ -30,7 +30,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"BuildIconShadow"
 	{
@@ -45,7 +45,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_build"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"TitleLabel"
 	{
@@ -231,7 +231,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg_outline"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"BuildHintIcon"
 	{
@@ -401,7 +401,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"39 38 36 178"	// token: DkCardA70
+		"fillcolor"           	"DkCardA70"
 		"PaintBackgroundType" 	"0"
 	}
 }

@@ -63,7 +63,7 @@
 			"ArmedArrowColor"  	"BrightBaseText"	// color of arrow when mouse is over button
 			"ArmedBgColor"     	"DimBaseText"	// bg color of button when mouse is over button
 		}
-		"Button.ArmedTextColor"      	"DkAccentSoftA50"
+		"Button.ArmedTextColor"      	"217 119 87 127"	// token: DkAccentSoftA50
 		"Button.ArmedBgColor"        	"Green"
 		"Slider"
 		{
@@ -261,7 +261,7 @@
 			{
 				"1"
 				{
-					"color"  	"DkCardSoft"
+					"color"  	"39 38 36 232"	// token: DkCardSoft
 					"offset" 	"0 1"
 				}
 			}
@@ -269,7 +269,7 @@
 			{
 				"1"
 				{
-					"color"  	"DkCardSoft"
+					"color"  	"39 38 36 232"	// token: DkCardSoft
 					"offset" 	"1 0"
 				}
 			}
@@ -277,7 +277,7 @@
 			{
 				"1"
 				{
-					"color"  	"DkCardSoft"
+					"color"  	"39 38 36 232"	// token: DkCardSoft
 					"offset" 	"0 0"
 				}
 			}
@@ -285,7 +285,7 @@
 			{
 				"1"
 				{
-					"color"  	"DkCardSoft"
+					"color"  	"39 38 36 232"	// token: DkCardSoft
 					"offset" 	"0 0"
 				}
 			}

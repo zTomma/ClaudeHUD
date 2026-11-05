@@ -22,8 +22,8 @@
 		"button_settings"
 		{
 			"paintbackground"     	"1"
-			"image_drawcolor"     	"Untinted"
-			"image_armedcolor"    	"Untinted"
+			"image_drawcolor"     	"255 255 255 255"	// token: Untinted
+			"image_armedcolor"    	"255 255 255 255"	// token: Untinted
 			"image_selectedcolor" 	"255 255 255 255"	// token: Untinted
 			"sound_depressed"     	"UI/buttonclick.wav"
 			"sound_released"      	"UI/buttonclickrelease.wav"

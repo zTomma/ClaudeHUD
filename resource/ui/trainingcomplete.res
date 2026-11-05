@@ -131,7 +131,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"255 255 255 255"	// token: LtCard
+			"fillcolor"           	"LtCard"
 			"PaintBackgroundType" 	"0"
 		}
 		"TopBar"
@@ -152,7 +152,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"255 255 255 255"	// token: LtCard
+			"fillcolor"           	"LtCard"
 			"PaintBackgroundType" 	"0"
 		}
 	}

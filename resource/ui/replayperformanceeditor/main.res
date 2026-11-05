@@ -125,8 +125,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_TimeScaleButton"
 		"SubImage"
 		{
@@ -159,8 +159,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_FirstPersonButton"
 		"SubImage"
 		{
@@ -193,8 +193,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_ThirdPersonButton"
 		"SubImage"
 		{
@@ -228,8 +228,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_FreeCamButton"
 		"SubImage"
 		{
@@ -316,8 +316,8 @@
 		"sound_depressed"     	"UI/buttonclick.wav"
 		"sound_released"      	"UI/buttonclickrelease.wav"
 		"paintbackground"     	"0"
-		"image_drawcolor"     	"UntintedA70"
-		"image_armedcolor"    	"Untinted"
+		"image_drawcolor"     	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"    	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor" 	"177 173 161 255"	// token: DkTextMuted
 		"tipname"             	"#Replay_EditorButtonTip_InButton"
 		"SubImage"
@@ -352,8 +352,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_RwHardButton"
 		"SubImage"
 		{
@@ -387,8 +387,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_RwButton"
 		"SubImage"
 		{
@@ -422,8 +422,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_PlayButton"
 		"SubImage"
 		{
@@ -456,8 +456,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_FfButton"
 		"SubImage"
 		{
@@ -491,8 +491,8 @@
 		"sound_depressed"  	"UI/buttonclick.wav"
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"UntintedA70"
-		"image_armedcolor" 	"Untinted"
+		"image_drawcolor"  	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor" 	"255 255 255 255"	// token: Untinted
 		"tipname"          	"#Replay_EditorButtonTip_FfHardButton"
 		"SubImage"
 		{
@@ -526,8 +526,8 @@
 		"sound_depressed"     	"UI/buttonclick.wav"
 		"sound_released"      	"UI/buttonclickrelease.wav"
 		"paintbackground"     	"0"
-		"image_drawcolor"     	"UntintedA70"
-		"image_armedcolor"    	"Untinted"
+		"image_drawcolor"     	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"    	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor" 	"177 173 161 255"	// token: DkTextMuted
 		"tipname"             	"#Replay_EditorButtonTip_OutButton"
 		"SubImage"
@@ -567,8 +567,8 @@
 		"sound_depressed"     	"UI/buttonclick.wav"
 		"sound_released"      	"UI/buttonclickrelease.wav"
 		"paintbackground"     	"0"
-		"image_drawcolor"     	"UntintedA70"
-		"image_armedcolor"    	"Untinted"
+		"image_drawcolor"     	"255 255 255 178"	// token: UntintedA70
+		"image_armedcolor"    	"255 255 255 255"	// token: Untinted
 		"image_selectedcolor" 	"177 173 161 255"	// token: DkTextMuted
 		"SubImage"
 		{

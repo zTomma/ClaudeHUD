@@ -17,8 +17,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"item_xpos_offcenter_a"       	"-310"
 		"item_xpos_offcenter_b"       	"165"
 		"item_ypos"                   	"60"
@@ -192,7 +192,7 @@
 		"image"          	"backpack_jewel_modify_target_b_g"
 		"tileImage"      	"0"
 		"tileVertically" 	"0"
-		"drawcolor"      	"DkPositive"
+		"drawcolor"      	"188 210 203 255"	// token: DkPositive
 	}
 	"ShowRarityComboBox"
 	{
@@ -218,10 +218,10 @@
 		"fgcolor_override"                  	"DkText"
 		"bgcolor_override"                  	"Clear"
 		"disabledFgColor_override"          	"DkText"
-		"disabledBgColor_override"          	"20 20 19 0"	// token: Clear
-		"selectionColor_override"           	"20 20 19 0"	// token: Clear
-		"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-		"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+		"disabledBgColor_override"          	"Clear"
+		"selectionColor_override"           	"Clear"
+		"selectionTextColor_override"       	"DkText"
+		"defaultSelectionBG2Color_override" 	"Clear"
 	}
 	"ShowBaseItemsCheckbox"
 	{
@@ -304,10 +304,10 @@
 		"fgcolor_override"                  	"DkText"
 		"bgcolor_override"                  	"Clear"
 		"disabledFgColor_override"          	"DkText"
-		"disabledBgColor_override"          	"20 20 19 0"	// token: Clear
-		"selectionColor_override"           	"20 20 19 0"	// token: Clear
-		"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-		"defaultSelectionBG2Color_override" 	"20 20 19 0"	// token: Clear
+		"disabledBgColor_override"          	"Clear"
+		"selectionColor_override"           	"Clear"
+		"selectionTextColor_override"       	"DkText"
+		"defaultSelectionBG2Color_override" 	"Clear"
 	}
 	"mouseoveritempanel"
 	{
@@ -341,7 +341,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}
@@ -549,8 +549,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -611,8 +611,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -714,8 +714,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -758,8 +758,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -820,8 +820,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -923,8 +923,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -967,8 +967,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1011,8 +1011,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1132,8 +1132,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1176,8 +1176,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1220,8 +1220,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1340,8 +1340,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkTextMuted"
-			"image_armedcolor"          	"DkAccent"
+			"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -1384,8 +1384,8 @@
 			"defaultFgColor_override"   	"DkOnRed"
 			"armedFgColor_override"     	"DkAccent"
 			"depressedFgColor_override" 	"DkOnRed"
-			"image_drawcolor"           	"DkText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"250 249 245 255"	// token: DkText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

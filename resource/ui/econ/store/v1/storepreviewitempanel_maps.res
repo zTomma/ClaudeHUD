@@ -128,7 +128,7 @@
 		"pinCorner"                  	"0"
 		"visible"                    	"1"
 		"enabled"                    	"1"
-		"fgcolor"                    	"DkText"
+		"fgcolor"                    	"250 249 245 255"	// token: DkText
 		"wrap"                       	"1"
 		"highlight_color"            	"177 173 161 255"	// token: DkTextMuted
 		"itemset_color"              	"217 119 87 255"	// token: DkAccent

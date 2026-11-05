@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"dispenser_meter_bg_red"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"MeterArrow"
 	{
@@ -31,7 +31,7 @@
 		"end_degrees"          	"85"
 		"approach_speed"       	"80"	// degrees per second
 		"image"                	"dispenser_meter_arrow"
-		"iconColor"            	"Untinted"
+		"iconColor"            	"255 255 255 255"	// token: Untinted
 		"rot_origin_x_percent" 	"0.5"
 		"rot_origin_y_percent" 	"0.90625"
 		"rotating_x"           	"215"

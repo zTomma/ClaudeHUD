@@ -13,7 +13,7 @@
 		"tall"             	"50"
 		"visible"          	"1"
 		"enabled"          	"1"
-		"fgcolor"          	"DkOnRed"
+		"fgcolor"          	"20 20 19 255"	// token: DkOnRed
 		"fgcolor_override" 	"DkOnRed"
 	}
 	"AvatarBGPanel"
@@ -72,7 +72,7 @@
 		"fgcolor_override" 	"DkOnRed"
 		"if_high_priority"
 		{
-			"fgcolor"          	"DkAccent"
+			"fgcolor"          	"217 119 87 255"	// token: DkAccent
 			"fgcolor_override" 	"DkAccent"
 			"font"             	"StorePromotionsTitle"
 		}

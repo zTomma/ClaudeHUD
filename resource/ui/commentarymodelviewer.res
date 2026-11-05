@@ -18,8 +18,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"2"
 		"bgcolor_override"            	"LtCardAlt"
-		"infocus_bgcolor_override"    	"244 243 238 255"	// token: LtCardAlt
-		"outoffocus_bgcolor_override" 	"244 243 238 255"	// token: LtCardAlt
+		"infocus_bgcolor_override"    	"LtCardAlt"
+		"outoffocus_bgcolor_override" 	"LtCardAlt"
 	}
 	"modelpanel"
 	{

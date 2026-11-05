@@ -517,8 +517,8 @@
 		"sound_released"   	"UI/buttonclickrelease.wav"
 		"Command"          	"close"
 		"paintbackground"  	"0"
-		"image_drawcolor"  	"DkTextMuted"
-		"image_armedcolor" 	"DkText"
+		"image_drawcolor"  	"177 173 161 255"	// token: DkTextMuted
+		"image_armedcolor" 	"250 249 245 255"	// token: DkText
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"

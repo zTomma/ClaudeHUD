@@ -36,7 +36,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg"
-		"iconColor"   	"DkOnRed"
+		"iconColor"   	"20 20 19 255"	// token: DkOnRed
 	}
 	"BuildingIcon"
 	{
@@ -51,7 +51,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_sentry_build"
-		"iconColor"   	"DkPositive"
+		"iconColor"   	"188 210 203 255"	// token: DkPositive
 	}
 	"ModeLabel"
 	{
@@ -84,7 +84,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_key_blank"
-		"iconColor"   	"DkPositive"
+		"iconColor"   	"188 210 203 255"	// token: DkPositive
 	}
 	"NumberLabel"
 	{

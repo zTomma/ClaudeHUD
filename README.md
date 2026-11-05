@@ -39,11 +39,14 @@ reali saranno diversi.*
   (titoli dei menu), TTF statici dalle release ufficiali, non modificati. Vedi [LICENSES.md](LICENSES.md).
 - **Due modalità:** scura in partita e sulle superfici con gli oggetti del gioco, chiara nei menu dove
   si naviga e si legge (DESIGN.md §9).
-- **Pannelli riscritti a mano** (53): salute, munizioni, classe, target ID, layout HUD, timer, KOTH,
+- **Pannelli riscritti a mano** (61): salute, munizioni, classe, target ID, layout HUD, timer, KOTH,
   CTF, carrello, obiettivi e avvisi, scoreboard, selezione classe e squadra, menu principale, barra del
-  matchmaking, carica Medic, metri degli oggetti, bombe adesive, cariche, travestimento, edifici
-  dell'Engineer. Generatori in `tools/hand/`.
-- **Tutti gli altri pannelli** (oltre 700) mantengono il layout di Valve ma ogni colore, font e bordo
+  matchmaking, carica Medic (con percentuale Über), metri degli oggetti, bombe adesive, cariche,
+  travestimento, edifici e metallo dell'Engineer, numeri di danno e cura, selezione armi, attesa del
+  respawn, killcam, fine round. Generatori in `tools/hand/`.
+- **Verificato sul codice:** dove una proprietà del motore era incerta, l'ho controllata sul sorgente del
+  client TF2 pubblicato da Valve nel 2025 (Source SDK 2013). Le verifiche sono in DESIGN.md e PROGRESS.md.
+- **Tutti gli altri pannelli** (714) mantengono il layout di Valve ma ogni colore, font e bordo
   passa dai token (`tools/migrate.py`, che legge sempre gli originali intatti in `#TF2 Files`).
   La checklist file per file è in DESIGN.md §10.
 

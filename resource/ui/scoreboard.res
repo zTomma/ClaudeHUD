@@ -510,7 +510,7 @@
 		"autoresize"       	"3"
 		"linespacing"      	"18"
 		"linegap"          	"5"
-		"fgcolor"          	"LtBluTextA50"
+		"fgcolor"          	"16 88 137 127"	// token: LtBluTextA50
 		"if_mvm"
 		{
 			"visible" 	"0"
@@ -533,7 +533,7 @@
 		"autoresize"       	"3"
 		"linespacing"      	"18"
 		"linegap"          	"5"
-		"fgcolor"          	"LtAccentTextA50"
+		"fgcolor"          	"160 90 67 127"	// token: LtAccentTextA50
 		"if_mvm"
 		{
 			"visible" 	"0"
@@ -554,7 +554,7 @@
 		"visible"             	"0"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"244 243 238 153"	// token: LtCardAltA60
+		"fillcolor"           	"LtCardAltA60"
 		"PaintBackgroundType" 	"0"
 		"if_mvm"
 		{
@@ -621,7 +621,7 @@
 		"visible"             	"0"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"244 243 238 153"	// token: LtCardAltA60
+		"fillcolor"           	"LtCardAltA60"
 		"PaintBackgroundType" 	"0"
 		"if_mvm"
 		{
@@ -1744,7 +1744,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"244 243 238 153"	// token: LtCardAltA60
+		"fillcolor"           	"LtCardAltA60"
 		"PaintBackgroundType" 	"0"
 	}
 	"ButtonLegend" [$X360]

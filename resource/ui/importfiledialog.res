@@ -380,7 +380,7 @@
 			"textAlignment"             	"west"
 			"labelText"                 	""
 			"command"                   	"ClearIcon"
-			"image_drawcolor"           	"LtText"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
 			"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
@@ -418,7 +418,7 @@
 			"textAlignment"             	"west"
 			"labelText"                 	""
 			"command"                   	"BrowseIcon"
-			"image_drawcolor"           	"LtText"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
 			"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
@@ -1099,7 +1099,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"ClearLOD0"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1136,7 +1136,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"BrowseLOD0"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1231,7 +1231,7 @@
 				"enabled"                   	"0"
 				"labelText"                 	""
 				"command"                   	"ClearLOD1"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1269,7 +1269,7 @@
 				"enabled"                   	"0"
 				"labelText"                 	""
 				"command"                   	"BrowseLOD1"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1366,7 +1366,7 @@
 				"enabled"                   	"0"
 				"labelText"                 	""
 				"command"                   	"ClearLOD2"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1404,7 +1404,7 @@
 				"enabled"                   	"0"
 				"labelText"                 	""
 				"command"                   	"BrowseLOD2"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1601,7 +1601,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"EditMaterial0"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1677,7 +1677,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"EditMaterial1"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1754,7 +1754,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"EditMaterial2"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1830,7 +1830,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"EditMaterial3"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -1992,7 +1992,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"ClearAnimationSource"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -2029,7 +2029,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"BrowseAnimationSource"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -2122,7 +2122,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"ClearAnimationVCD"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -2159,7 +2159,7 @@
 				"textAlignment"             	"west"
 				"labelText"                 	""
 				"command"                   	"BrowseAnimationVCD"
-				"image_drawcolor"           	"LtText"
+				"image_drawcolor"           	"20 20 19 255"	// token: LtText
 				"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 				"SubImage"
 				{
@@ -2322,7 +2322,7 @@
 		"textAlignment"             	"west"
 		"labelText"                 	"#TF_ImportFile_Browse"
 		"command"                   	"Load"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"image_disabledcolor"       	"20 20 19 255"	// token: LtText
 		"SubImage"
 		{

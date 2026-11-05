@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"Divider"
 	{
@@ -26,7 +26,7 @@
 		"zpos"        	"0"
 		"wide"        	"436"
 		"tall"        	"2"
-		"fillcolor"   	"217 119 87 255"	// token: DkAccent
+		"fillcolor"   	"DkAccent"
 	}
 	"DestroyIcon"
 	{
@@ -41,7 +41,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_demolish"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"TitleLabelDropshadow"
 	{

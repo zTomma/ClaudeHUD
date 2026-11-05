@@ -21,7 +21,6 @@ SET = {
     "HudFlameRocketCharge": {"xpos": "r100", "ypos": "r56", "wide": "88", "tall": "4"},
     "HudItemEffectMeter":   {"xpos": "r184", "ypos": "r48", "wide": "80", "tall": "36"},
     "HudDemomanPipes":      {"xpos": "r184", "ypos": "r48", "wide": "80", "tall": "36"},
-    "CHudAccountPanel":     {"xpos": "r184", "ypos": "r184"},
     "CHealthAccountPanel":  {"xpos": "12", "ypos": "r192"},
     # killfeed: top right, 12 from the edges
     "HudDeathNotice": {"xpos": "r640", "ypos": "12", "wide": "628", "tall": "112",
@@ -29,13 +28,18 @@ SET = {
                        "CornerRadius": "3", "RightJustify": "1", "TextFont": "TypeBodyStrong",
                        "TeamBlue": "DkBluText", "TeamRed": "DkRedText", "IconColor": "DkText",
                        "LocalPlayerColor": "DkText",
-                       "BaseBackgroundColor": lit("DkCard"), "LocalBackgroundColor": lit("DkCardLocal")},
+                       "BaseBackgroundColor": "DkCard", "LocalBackgroundColor": "DkCardLocal",
+                       "KillStreakBackgroundColor": "DkChip"},
     # left column, bottom to top: health block r76-r12, carrying weapon r108, spy disguise r144, chat r272
     "HudChat": {"xpos": "12", "ypos": "r272", "wide": "280", "tall": "120"},
     # target IDs: below the crosshair, outside the central rectangle
-    "CMainTargetID":      {"ypos": "360", "tall": "30"},
-    "CSpectatorTargetID": {"ypos": "250", "tall": "30"},
-    "CSecondaryTargetID": {"ypos": "326", "tall": "30"},
+    # the code resizes the ROOT to the content (SetSize) and draws TargetIDBG at tf_hud_target_id_alpha
+    # (default 100 = 39%): the opaque rounded card is therefore the root's own background
+    "CMainTargetID":      {"ypos": "360", "tall": "30", "paintbackground": "1", "paintbackgroundtype": "2", "bgcolor_override": "DkCard"},
+    "CSpectatorTargetID": {"ypos": "250", "tall": "30", "paintbackground": "1", "paintbackgroundtype": "2", "bgcolor_override": "DkCard"},
+    "CSecondaryTargetID": {"ypos": "326", "tall": "30", "paintbackground": "1", "paintbackgroundtype": "2", "bgcolor_override": "DkCard"},
+    # engineer metal card above the ammo card (inner card at x5 y103 in hudaccountpanel.res)
+    "CHudAccountPanel":   {"xpos": "r105", "ypos": "r191", "wide": "100", "tall": "180"},
     # KOTH timers: two 80-wide cards, 4 apart, centred; the code moves ActiveTimerBG under the active one
     "HudKothTimeStatus": {"xpos": "c-82", "ypos": "0", "wide": "164", "tall": "64",
                           "blue_active_xpos": "0", "red_active_xpos": "84"},

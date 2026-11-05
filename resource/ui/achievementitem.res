@@ -65,7 +65,7 @@
 		"ypos"        	"42"
 		"wide"        	"350"
 		"tall"        	"12"
-		"fillcolor"   	"255 255 255 255"	// token: LtCard
+		"fillcolor"   	"LtCard"
 		"zpos"        	"-1"
 		"visible"     	"0"
 		"enabled"     	"1"

@@ -106,8 +106,8 @@
 			"roundedcorners"            	"0"
 			"sound_depressed"           	"UI/buttonclick.wav"
 			"sound_released"            	"UI/buttonclickrelease.wav"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtAccent"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -391,8 +391,8 @@
 				"defaultFgColor_override"   	"LtText"
 				"armedFgColor_override"     	"LtText"
 				"depressedFgColor_override" 	"LtText"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"LtAccent"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -437,8 +437,8 @@
 				"defaultFgColor_override"   	"LtText"
 				"armedFgColor_override"     	"LtText"
 				"depressedFgColor_override" 	"LtText"
-				"image_drawcolor"           	"LtTextMuted"
-				"image_armedcolor"          	"LtAccent"
+				"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+				"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 				"SubImage"
 				{
 					"ControlName" 	"ImagePanel"
@@ -587,8 +587,8 @@
 			"defaultBgColor_override"   	"LtCardAlt"
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtOnButtonHover"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtOnButtonHover"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -603,7 +603,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"glyph_quit"
-				"drawcolor_override"   	"LtText"
+				"drawcolor_override"   	"20 20 19 255"	// token: LtText
 			}
 			"paintbackground"           	"1"
 			"paintbackgroundtype"       	"2"
@@ -646,8 +646,8 @@
 			"defaultBgColor_override"   	"LtCardAlt"
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtOnButtonHover"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtOnButtonHover"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -662,7 +662,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"glyph_disconnect"
-				"drawcolor_override"   	"LtText"
+				"drawcolor_override"   	"20 20 19 255"	// token: LtText
 			}
 			"paintbackground"           	"1"
 			"paintbackgroundtype"       	"2"
@@ -703,8 +703,8 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"defaultFgColor_override"   	"LtText"
 			"armedFgColor_override"     	"LtOnButtonHover"
-			"image_drawcolor"           	"LtTextMuted"
-			"image_armedcolor"          	"LtOnButtonHover"
+			"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+			"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -719,7 +719,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"icon_resume"
-				"drawcolor_override"   	"LtText"
+				"drawcolor_override"   	"20 20 19 255"	// token: LtText
 			}
 			"defaultBgColor_override"   	"LtCardAlt"
 			"armedBgColor_override"     	"LtButtonHover"
@@ -764,8 +764,8 @@
 			"defaultBgColor_override"   	"LtButton"
 			"defaultFgColor_override"   	"LtOnButton"
 			"armedFgColor_override"     	"LtOnButtonHover"
-			"image_drawcolor"           	"LtOnButton"
-			"image_armedcolor"          	"LtOnButtonHover"
+			"image_drawcolor"           	"250 249 245 255"	// token: LtOnButton
+			"image_armedcolor"          	"20 20 19 255"	// token: LtOnButtonHover
 			"SubImage"
 			{
 				"ControlName"          	"ImagePanel"
@@ -780,7 +780,7 @@
 				"scaleImage"           	"1"
 				"proportionaltoparent" 	"1"
 				"image"                	"glyph_multiplayer"
-				"drawcolor_override"   	"LtText"
+				"drawcolor_override"   	"20 20 19 255"	// token: LtText
 			}
 			"paintbackground"           	"1"
 			"paintbackgroundtype"       	"2"

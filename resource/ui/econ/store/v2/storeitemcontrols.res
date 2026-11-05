@@ -41,8 +41,8 @@
 		"defaultBgColor_override"   	"DkPositiveFill"
 		"ArmedBgColor_override"     	"DkPositiveFill"
 		"depressedBgColor_override" 	"DkPositiveFill"
-		"image_drawcolor"           	"DkTextMuted"
-		"image_armedcolor"          	"DkAccent"
+		"image_drawcolor"           	"177 173 161 255"	// token: DkTextMuted
+		"image_armedcolor"          	"217 119 87 255"	// token: DkAccent
 		"image_depressedcolor"      	"217 119 87 255"	// token: DkAccent
 		"SubImage"
 		{

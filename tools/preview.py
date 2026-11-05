@@ -84,8 +84,9 @@ def ingame():
     mc = els["Carica Medic"]
     card(d, mc)
     text(d, (mc[0] + 8, mc[1] + 5), "ÜBERCARICA", "TypeLabel", "DkTextMuted")
-    d.rectangle(px([mc[0] + 8, mc[1] + 22, 72, 6]), fill=col("DkChip"))
-    d.rectangle(px([mc[0] + 8, mc[1] + 22, 72 * 0.64, 6]), fill=col("DkText"))
+    d.rectangle(px([mc[0] + 8, mc[1] + 26, 42, 4]), fill=col("DkChip"))
+    d.rectangle(px([mc[0] + 8, mc[1] + 26, 42 * 0.64, 4]), fill=col("DkText"))
+    text(d, (mc[0] + 82, mc[1] + 25), "64", "NumM", "DkText", "rm")
     # item meter
     im = els["Metro oggetto"]
     card(d, im)
@@ -112,7 +113,7 @@ def ingame():
         text(d, (x + w_units - 6, y + 8), b, "TypeBodyStrong", cb, "rm")
     # target ID
     t = els["Target ID"]
-    d.rectangle(px([t[0] + 70, t[1], 112, 30]), fill=col("DkCard"))
+    card(d, [t[0] + 70, t[1], 112, 30])
     card(d, [t[0] + 74, t[1] + 4, 22, 22], "DkChip", radius=6)
     text(d, (t[0] + 85, t[1] + 15), "175", "NumS", "DkText", "mm")
     text(d, (t[0] + 100, t[1] + 4), "Heavy", "TypeBodyStrong", "DkBluText")

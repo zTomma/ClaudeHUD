@@ -110,8 +110,8 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"Command"                   	""
 			"paintbackground"           	"0"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"Untinted"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
+			"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

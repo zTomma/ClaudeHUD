@@ -78,7 +78,8 @@ FG = {"fgcolor", "fgcolor_override", "defaultfgcolor_override", "armedfgcolor_ov
       "teamblue", "teamred", "localplayercolor", "flashcolor", "button.armedtextcolor", "slidertickcolor",
       "selected_fgcolor_override", "color_ready", "color_notready", "titlecolor", "selectionnumberfg", "messagecolor",
       "itemcountcolor_noitems", "itemcountcolor", "fgcolor_other", "fgcolor_local", "chat_color_player_name", "progressbarcolor",
-      "chat_color_default", "chat_color_chat_text", "buttontextcolor"}
+      "chat_color_default", "chat_color_chat_text", "buttontextcolor", "purpletext", "greentext", "eventcolor",
+      "redrobotscorecolor", "bluerobotscorecolor"}
 BG = {"bgcolor", "bgcolor_override", "defaultbgcolor_override", "armedbgcolor_override", "depressedbgcolor_override",
       "selectedbgcolor_override", "disabledbgcolor_override", "fillcolor", "panel_bgcolor", "panel_bgcolor_mouseover",
       "item_panel_bgcolor", "item_panel_bgcolor_mouseover", "item_panel_bgcolor_selected", "infocus_bgcolor_override",
@@ -87,7 +88,7 @@ BG = {"bgcolor", "bgcolor_override", "defaultbgcolor_override", "armedbgcolor_ov
       "backgroundoverridecolor", "meterbg", "item_backdrop_color", "fillcolor_lodef", "thumbnail_bgcolor",
       "thumbnail_bgcolor_selected", "thumbnail_bgcolor_mouseover", "boxcolor", "selectedboxclor",
       "color_portrait_bg_red", "color_portrait_bg_red_dead", "color_portrait_bg_blue", "color_portrait_bg_blue_dead",
-      "color_portrait_blend_dead_red", "color_portrait_blend_dead_blue"}
+      "color_portrait_blend_dead_red", "color_portrait_blend_dead_blue", "killstreakbackgroundcolor"}
 IMG = {"image_drawcolor", "image_armedcolor", "image_depressedcolor", "image_disabledcolor", "image_selectedcolor",
        "iconcolor", "drawcolor", "drawcolor_override", "meterfg", "inactivedrawcolor", "activedrawcolor",
        "color_bar_health_high", "color_bar_health_med", "color_bar_health_low"}
@@ -193,6 +194,47 @@ BUTTON_BORDERS = {"mainmenubuttondefault", "mainmenuminibuttondefault", "mainmen
 LIGHT_TITLE_FONTS = {}  # filled in main(): legacy display font -> serif type token on light surfaces
 
 
+# ---------------------------------------------------------------------------------------------
+# Which colour keys resolve SCHEME NAMES - verified in the TF2 client source (Source SDK 2013, 2025):
+#   Panel/Button/Label/Frame/TextEntry  REGISTER_COLOR_AS_OVERRIDABLE  -> *_override keys below
+#   ImagePanel::ApplySettings           fillcolor, drawcolor (sscanf, else scheme GetColor)
+#   CExLabel/CExButton/CExRichText      fgcolor (SetColorStr -> scheme GetColor)
+#   CPanelAnimationVar(Color)           HUD element vars (killfeed, damage numbers...) -> scheme GetColor
+#   CExImageButton                      image_*color: sscanf ONLY -> a name is silently ignored
+# Everything not listed gets the token's RGBA literal (+ "// token: X"), which every parser accepts.
+VERIFIED_NAME_KEYS = {
+    "fgcolor_override", "bgcolor_override", "defaultfgcolor_override", "defaultbgcolor_override",
+    "armedfgcolor_override", "armedbgcolor_override", "depressedfgcolor_override", "depressedbgcolor_override",
+    "selectedfgcolor_override", "selectedbgcolor_override", "keyboardfocuscolor_override", "blinkfgcolor_override",
+    "disabledfgcolor2_override", "infocus_bgcolor_override", "outoffocus_bgcolor_override",
+    "titlebarbgcolor_override", "titlebardisabledbgcolor_override", "titlebarfgcolor_override",
+    "titlebardisabledfgcolor_override", "disabledfgcolor_override", "disabledbgcolor_override",
+    "selectioncolor_override", "selectiontextcolor_override", "defaultselectionbg2color_override"}
+IMAGEPANEL_CTLS = {"imagepanel", "ctfimagepanel"}
+EXLABEL_CTLS = {"cexlabel", "cexbutton", "ceximagebutton", "cexrichtext"}
+ANIMVAR_KEYS = {"teamblue", "teamred", "purpletext", "greentext", "localplayercolor", "iconcolor",
+                "basebackgroundcolor", "localbackgroundcolor", "killstreakbackgroundcolor", "positivecolor",
+                "negativecolor", "eventcolor", "redrobotscorecolor", "bluerobotscorecolor"}
+
+
+def name_allowed(key, ctl):
+    k, c = key.lower(), (ctl or "").lower()
+    if k in VERIFIED_NAME_KEYS:
+        return True
+    if k in ("fillcolor", "drawcolor") and c in IMAGEPANEL_CTLS:
+        return True
+    if k == "fgcolor" and c in EXLABEL_CTLS:
+        return True
+    if k in ANIMVAR_KEYS and c == "":
+        return True  # HUD element blocks in hudlayout.res (no ControlName): CPanelAnimationVar colours
+    return False
+
+
+def is_token_name(v):
+    v = v.strip()
+    return v in T.ROLES or bool(re.match(r"^((Dk|Lt)[A-Za-z]+|Untinted)A\d0$", v))
+
+
 def nearest_role(rgb):
     best, role = 1e9, None
     for ref, r in OLD_REFS:
@@ -253,7 +295,7 @@ def variant_rgba(name):
     return T.rgba(name)
 
 
-def convert_color(key, value, mode, ctx):
+def convert_color(key, value, mode, ctx, ctl=""):
     """Return (new_value, comment) or None to keep."""
     k = key.lower()
     cat = "fg" if k in FG else "bg" if k in BG else "img"
@@ -274,8 +316,11 @@ def convert_color(key, value, mode, ctx):
             token, alpha = target, rgba[3]
         elif lname in ctx.base and ctx.base[lname] in T.ROLES:
             token, alpha = ctx.base[lname], T.ROLES[ctx.base[lname]][1]
-        elif name in T.ROLES or re.match(r"^(Dk|Lt)\w+A\d0$", name):
-            return None  # already a token
+        elif is_token_name(name):
+            if name_allowed(key, ctl):
+                return None  # already a token, and this key resolves names
+            r, g, b, a = variant_rgba(name)
+            return "%d %d %d %d" % (r, g, b, a), "token: %s" % name
         else:
             return None  # unknown name (e.g. game-specific) - leave untouched, lint will report
         if mode == "light" and token.startswith("Dk"):
@@ -285,7 +330,7 @@ def convert_color(key, value, mode, ctx):
             alpha = min(alpha, 255)
         ctx.stats["name"] += 1
     final = with_alpha(token, alpha, ctx)
-    if k in ctx.name_ok:
+    if name_allowed(key, ctl):
         return final, None
     r, g, b, a = variant_rgba(final)
     return "%d %d %d %d" % (r, g, b, a), "token: %s" % final
@@ -295,17 +340,25 @@ def element_kv(body):
     return {k.lower(): v for k, v, c, cm in body if not isinstance(v, list)}
 
 
-def migrate_nodes(nodes, mode, ctx):
+def block_ctl(body):
+    for k, v, c, cm in body:
+        if not isinstance(v, list) and k.lower() == "controlname":
+            return v
+    return ""
+
+
+def migrate_nodes(nodes, mode, ctx, ctl=""):
     """Recursive: an element that becomes a dark popover (tooltip border) inside a light file switches
-    its whole subtree to dark mode, so its labels get dark-mode tokens."""
+    its whole subtree to dark mode, so its labels get dark-mode tokens. ctl = ControlName of the block
+    the leaves belong to (decides whether a colour key may hold a scheme name)."""
     for nd in nodes:
         key, value = nd[0], nd[1]
         if isinstance(value, list):
             sub_mode = fix_element(value, mode, ctx)
-            migrate_nodes(value, sub_mode, ctx)
+            migrate_nodes(value, sub_mode, ctx, block_ctl(value))
             continue
         if key.lower() in ALL_COLOR_KEYS:
-            res = convert_color(key, value, mode, ctx)
+            res = convert_color(key, value, mode, ctx, ctl)
             if res:
                 nd[1], cm = res
                 nd[3] = cm
@@ -463,3 +516,15 @@ def main(dry=False):
 
 if __name__ == "__main__":
     main("--dry" in sys.argv)
+
+
+def sanitize(nodes, ctx=None, ctl=""):
+    """Post-pass for hand edits: any token NAME in a key that does not resolve names -> RGBA literal."""
+    for nd in nodes:
+        if isinstance(nd[1], list):
+            sanitize(nd[1], ctx, block_ctl(nd[1]))
+        elif (nd[0].lower() in ALL_COLOR_KEYS or nd[0].lower().endswith("color")) and is_token_name(nd[1]) \
+                and not name_allowed(nd[0], ctl):
+            r, g, b, a = variant_rgba(nd[1].strip())
+            nd[3] = "token: %s" % nd[1].strip()
+            nd[1] = "%d %d %d %d" % (r, g, b, a)

@@ -25,7 +25,7 @@
 		"tall"          	"32"
 		"visible"       	"1"
 		"enabled"       	"1"
-		"fgcolor"       	"DkText"
+		"fgcolor"       	"250 249 245 255"	// token: DkText
 		"font"          	"ScoreboardMediumSmall"	// AchievementTracker_Name
 		"textAlignment" 	"north-west"
 	}

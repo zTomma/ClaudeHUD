@@ -15,7 +15,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_bg"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"TitleLabel"
 	{
@@ -71,7 +71,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"39 38 36 153"	// token: DkCardA60
+		"fillcolor"           	"DkCardA60"
 		"PaintBackgroundType" 	"0"
 	}
 	"active_selection_bg"
@@ -96,7 +96,7 @@
 			"enabled"     	"1"
 			"scaleImage"  	"1"
 			"icon"        	"hud_menu_item_bg_outline"
-			"iconColor"   	"DkText"
+			"iconColor"   	"250 249 245 255"	// token: DkText
 		}
 	}
 	"class_item_red_1"
@@ -425,7 +425,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"39 38 36 178"	// token: DkCardA70
+		"fillcolor"           	"DkCardA70"
 		"PaintBackgroundType" 	"0"
 	}
 }

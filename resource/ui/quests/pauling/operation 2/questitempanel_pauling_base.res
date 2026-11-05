@@ -187,7 +187,7 @@
 							"visible"              	"1"
 							"enabled"              	"1"
 							"proportionaltoparent" 	"1"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}
@@ -243,7 +243,7 @@
 							"visible"              	"1"
 							"enabled"              	"1"
 							"proportionaltoparent" 	"1"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}
@@ -304,7 +304,7 @@
 							"proportionaltoparent" 	"1"
 							"mouseinputenabled"    	"0"
 							"keyboardinputenabled" 	"0"
-							"fgcolor"              	"DkCard"
+							"fgcolor"              	"39 38 36 255"	// token: DkCard
 							"fgcolor_override"     	"DkCard"
 						}
 					}

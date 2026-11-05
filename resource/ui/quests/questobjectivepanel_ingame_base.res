@@ -14,8 +14,8 @@
 		"visible"                      	"1"
 		"enabled"                      	"1"
 		"PaintBackgroundType"          	"2"
-		"enabled_text_color_override"  	"DkText"
-		"disabled_text_color_override" 	"DkTextMuted"
+		"enabled_text_color_override"  	"250 249 245 255"	// token: DkText
+		"disabled_text_color_override" 	"177 173 161 255"	// token: DkTextMuted
 		"normal_token"                 	"#QuestObjective_Required"
 		"advanced_token"               	"#QuestObjective_Optional"
 	}

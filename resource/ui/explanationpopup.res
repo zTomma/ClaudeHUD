@@ -70,8 +70,8 @@
 		"defaultFgColor_override"   	"LtText"
 		"armedFgColor_override"     	"LtAccentText"
 		"depressedFgColor_override" 	"LtText"
-		"image_drawcolor"           	"LtTextMuted"
-		"image_armedcolor"          	"LtAccent"
+		"image_drawcolor"           	"111 109 101 255"	// token: LtTextMuted
+		"image_armedcolor"          	"217 119 87 255"	// token: LtAccent
 		"SubImage"
 		{
 			"ControlName"          	"ImagePanel"
@@ -115,8 +115,8 @@
 		"defaultFgColor_override"   	"LtText"
 		"armedFgColor_override"     	"LtAccentText"
 		"depressedFgColor_override" 	"LtText"
-		"image_drawcolor"           	"LtText"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"
@@ -160,8 +160,8 @@
 		"defaultFgColor_override"   	"LtText"
 		"armedFgColor_override"     	"LtAccentText"
 		"depressedFgColor_override" 	"LtText"
-		"image_drawcolor"           	"LtText"
-		"image_armedcolor"          	"Untinted"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
+		"image_armedcolor"          	"255 255 255 255"	// token: Untinted
 		"SubImage"
 		{
 			"ControlName" 	"ImagePanel"

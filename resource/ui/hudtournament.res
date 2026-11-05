@@ -225,8 +225,8 @@
 				"HealthBonusPosAdj"       	"10"
 				"HealthDeathWarning"      	"0.49"
 				"TFFont"                  	"HudFontSmallest"
-				"HealthDeathWarningColor" 	"DkAccent"
-				"TextColor"               	"DkText"
+				"HealthDeathWarningColor" 	"217 119 87 255"	// token: DkAccent
+				"TextColor"               	"250 249 245 255"	// token: DkText
 				"if_competitive"
 				{
 					"wide"                 	"p0.64"
@@ -790,7 +790,7 @@
 			"wide"    	"190"
 			"tall"    	"20"
 			"visible" 	"1"
-			"fgcolor" 	"DkCard"
+			"fgcolor" 	"39 38 36 255"	// token: DkCard
 		}
 		"if_competitive"
 		{
@@ -800,7 +800,7 @@
 			"wide"    	"190"
 			"tall"    	"20"
 			"visible" 	"1"
-			"fgcolor" 	"DkCard"
+			"fgcolor" 	"39 38 36 255"	// token: DkCard
 		}
 		"if_readymode"
 		{
@@ -810,7 +810,7 @@
 			"wide"    	"190"
 			"tall"    	"20"
 			"visible" 	"1"
-			"fgcolor" 	"DkCard"
+			"fgcolor" 	"39 38 36 255"	// token: DkCard
 		}
 	}
 	"TournamentReadyHintIcon"
@@ -903,7 +903,7 @@
 		{
 			"xpos"    	"cs-0.5"
 			"ypos"    	"cs-0.1"
-			"fgcolor" 	"DkText"
+			"fgcolor" 	"250 249 245 255"	// token: DkText
 			"font"    	"HudFontGiant"
 		}
 		"if_readymode"

@@ -72,8 +72,8 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"actionsignallevel"         	"2"
 			"proportionaltoparent"      	"1"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
+			"image_armedcolor"          	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"
@@ -120,8 +120,8 @@
 			"sound_released"            	"UI/buttonclickrelease.wav"
 			"actionsignallevel"         	"2"
 			"proportionaltoparent"      	"1"
-			"image_drawcolor"           	"LtText"
-			"image_armedcolor"          	"LtText"
+			"image_drawcolor"           	"20 20 19 255"	// token: LtText
+			"image_armedcolor"          	"20 20 19 255"	// token: LtText
 			"SubImage"
 			{
 				"ControlName" 	"ImagePanel"

@@ -27,7 +27,7 @@
 		"pinCorner"   	"0"
 		"visible"     	"1"
 		"enabled"     	"1"
-		"fillcolor"   	"217 119 87 255"	// token: LtButtonHover
+		"fillcolor"   	"LtButtonHover"
 	}
 	"ChapterLabel"
 	{

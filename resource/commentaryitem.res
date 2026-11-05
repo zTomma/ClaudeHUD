@@ -23,7 +23,7 @@
 		"ypos"        	"8"
 		"wide"        	"196"
 		"tall"        	"116"
-		"fillcolor"   	"244 243 238 255"	// token: LtCardAlt
+		"fillcolor"   	"LtCardAlt"
 		"zpos"        	"-1"
 	}
 	"CommentaryMapScreenshot"

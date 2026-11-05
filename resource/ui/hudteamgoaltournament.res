@@ -105,7 +105,7 @@
 			"visible"             	"1"
 			"enabled"             	"1"
 			"tabPosition"         	"0"
-			"fillcolor"           	"55 54 50 127"	// token: DkChipA50
+			"fillcolor"           	"DkChipA50"
 			"PaintBackgroundType" 	"0"
 		}
 		"HudStopWatchObjectiveText2"

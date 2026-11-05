@@ -54,8 +54,8 @@
 		"ypos"      	"r48"
 		"wide"      	"80"
 		"tall"      	"36"
-		"MeterFG"   	"DkText"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"250 249 245 255"	// token: DkText
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"HudMedicCharge"
 	{
@@ -77,8 +77,8 @@
 		"zpos"      	"1"	// draw in front of ammo
 		"wide"      	"88"
 		"tall"      	"4"
-		"MeterFG"   	"DkText"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"250 249 245 255"	// token: DkText
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"HudBowCharge"
 	{
@@ -90,8 +90,8 @@
 		"zpos"      	"1"	// draw in front of ammo
 		"wide"      	"88"
 		"tall"      	"4"
-		"MeterFG"   	"DkText"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"250 249 245 255"	// token: DkText
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"HudFlameRocketCharge"
 	{
@@ -103,8 +103,8 @@
 		"zpos"      	"1"	// draw in front of ammo
 		"wide"      	"88"
 		"tall"      	"4"
-		"MeterFG"   	"DkText"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"250 249 245 255"	// token: DkText
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"HudBossHealth"
 	{
@@ -116,8 +116,8 @@
 		"zpos"      	"0"	// draw in front of ammo
 		"wide"      	"200"
 		"tall"      	"50"
-		"MeterFG"   	"DkAccentSoftA50"
-		"MeterBG"   	"DkTextMuted"
+		"MeterFG"   	"217 119 87 127"	// token: DkAccentSoftA50
+		"MeterBG"   	"177 173 161 255"	// token: DkTextMuted
 	}
 	"HudWeaponSelection"
 	{
@@ -147,7 +147,7 @@
 		"TextYPos"                	"70" [$WIN32]
 		"TextYPos"                	"65" [$X360]
 		"ErrorYPos"               	"48"
-		"TextColor"               	"DkText"
+		"TextColor"               	"250 249 245 255"	// token: DkText
 		"MaxSlots"                	"6"
 		"PlaySelectSounds"        	"1"
 		"Alpha"                   	"220"
@@ -160,9 +160,9 @@
 	"CHudAccountPanel"
 	{
 		"fieldName"           	"CHudAccountPanel"
-		"xpos"                	"r184"
-		"ypos"                	"r184"
-		"wide"                	"116"
+		"xpos"                	"r105"
+		"ypos"                	"r191"
+		"wide"                	"100"
 		"tall"                	"180"
 		"visible"             	"1"
 		"enabled"             	"1"
@@ -203,48 +203,57 @@
 	}
 	"CMainTargetID"
 	{
-		"fieldName" 	"CMainTargetID"
-		"visible"   	"0"
-		"enabled"   	"1"
-		"xpos"      	"c-126"
-		"ypos"      	"360"
-		"wide"      	"252"
-		"tall"      	"30"
-		"priority"  	"40"
+		"fieldName"           	"CMainTargetID"
+		"visible"             	"0"
+		"enabled"             	"1"
+		"xpos"                	"c-126"
+		"ypos"                	"360"
+		"wide"                	"252"
+		"tall"                	"30"
+		"priority"            	"40"
 		"if_vr"
 		{
 			"ypos"     	"370"
 			"x_offset" 	"20"
 		}
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkCard"
 	}
 	"CSpectatorTargetID"
 	{
-		"fieldName" 	"CSpectatorTargetID"
-		"visible"   	"0"
-		"enabled"   	"1"
-		"xpos"      	"c-126"
-		"ypos"      	"250"
-		"wide"      	"252"
-		"tall"      	"30"
-		"priority"  	"40"
-		"x_offset"  	"20"
-		"y_offset"  	"20"
+		"fieldName"           	"CSpectatorTargetID"
+		"visible"             	"0"
+		"enabled"             	"1"
+		"xpos"                	"c-126"
+		"ypos"                	"250"
+		"wide"                	"252"
+		"tall"                	"30"
+		"priority"            	"40"
+		"x_offset"            	"20"
+		"y_offset"            	"20"
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkCard"
 	}
 	"CSecondaryTargetID"
 	{
-		"fieldName" 	"CSecondaryTargetID"
-		"visible"   	"0"
-		"enabled"   	"1"
-		"xpos"      	"c-126"
-		"ypos"      	"326"
-		"wide"      	"252"
-		"tall"      	"30"
-		"priority"  	"35"
+		"fieldName"           	"CSecondaryTargetID"
+		"visible"             	"0"
+		"enabled"             	"1"
+		"xpos"                	"c-126"
+		"ypos"                	"326"
+		"wide"                	"252"
+		"tall"                	"30"
+		"priority"            	"35"
 		"if_vr"
 		{
 			"ypos"     	"330"
 			"x_offset" 	"20"
 		}
+		"paintbackground"     	"1"
+		"paintbackgroundtype" 	"2"
+		"bgcolor_override"    	"DkCard"
 	}
 	"BuildingStatus_Spy"
 	{
@@ -322,7 +331,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"PaintBackgroundType" 	"2"
-		"FlashColor"          	"DkAccent"
+		"FlashColor"          	"217 119 87 255"	// token: DkAccent
 		"icon_xpos"           	"0"
 		"icon_ypos"           	"2"
 		"digit_xpos"          	"34"
@@ -351,7 +360,7 @@
 		"tall"                	"20"
 		"text_xpos"           	"8"
 		"text_ypos"           	"6"
-		"TextColor"           	"DkAccentA90"
+		"TextColor"           	"217 119 87 229"	// token: DkAccentA90
 		"PaintBackgroundType" 	"2"
 	}
 	"HudDamageIndicator"
@@ -404,26 +413,27 @@
 	}
 	"HudDeathNotice"
 	{
-		"fieldName"            	"HudDeathNotice"
-		"visible"              	"1"
-		"enabled"              	"1"
-		"xpos"                 	"r640"
-		"ypos"                 	"12"
-		"wide"                 	"628"
-		"tall"                 	"112"
-		"MaxDeathNotices"      	"5"
-		"IconScale"            	"0.35"
-		"LineHeight"           	"16"
-		"LineSpacing"          	"4"
-		"CornerRadius"         	"3"
-		"RightJustify"         	"1"
-		"TextFont"             	"TypeBodyStrong"
-		"TeamBlue"             	"DkBluText"
-		"TeamRed"              	"DkRedText"
-		"IconColor"            	"DkText"
-		"LocalPlayerColor"     	"DkText"
-		"BaseBackgroundColor"  	"39 38 36 255"	// token: DkCard
-		"LocalBackgroundColor" 	"52 36 30 255"	// token: DkCardLocal
+		"fieldName"                 	"HudDeathNotice"
+		"visible"                   	"1"
+		"enabled"                   	"1"
+		"xpos"                      	"r640"
+		"ypos"                      	"12"
+		"wide"                      	"628"
+		"tall"                      	"112"
+		"MaxDeathNotices"           	"5"
+		"IconScale"                 	"0.35"
+		"LineHeight"                	"16"
+		"LineSpacing"               	"4"
+		"CornerRadius"              	"3"
+		"RightJustify"              	"1"
+		"TextFont"                  	"TypeBodyStrong"
+		"TeamBlue"                  	"DkBluText"
+		"TeamRed"                   	"DkRedText"
+		"IconColor"                 	"DkText"
+		"LocalPlayerColor"          	"DkText"
+		"BaseBackgroundColor"       	"DkCard"
+		"LocalBackgroundColor"      	"DkCardLocal"
+		"KillStreakBackgroundColor" 	"DkChip"
 	}
 	"HudVehicle"
 	{
@@ -678,7 +688,7 @@
 		"text_ypos"           	"8"
 		"text_xgap"           	"8"
 		"text_ygap"           	"8"
-		"TextColor"           	"DkAccentA90"
+		"TextColor"           	"217 119 87 229"	// token: DkAccentA90
 		"PaintBackgroundType" 	"2"
 	}
 	"overview"

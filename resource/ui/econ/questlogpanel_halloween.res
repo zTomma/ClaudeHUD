@@ -23,7 +23,7 @@
 		{
 			"font"      	"HudFontSmallBold"
 			"labelText" 	"#QuestLog_Title_Halloween"
-			"fgcolor"   	"DkText"
+			"fgcolor"   	"250 249 245 255"	// token: DkText
 		}
 		"QuestList"
 		{

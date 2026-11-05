@@ -16,8 +16,8 @@
 		"settitlebarvisible"          	"0"
 		"PaintBackgroundType"         	"0"
 		"bgcolor_override"            	"DkCard"
-		"infocus_bgcolor_override"    	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override" 	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"    	"DkCard"
+		"outoffocus_bgcolor_override" 	"DkCard"
 		"thumbnail_bgcolor"           	"39 38 36 255"	// token: DkCard
 		"thumbnail_bgcolor_mouseover" 	"55 54 50 255"	// token: DkChip
 		"thumbnail_bgcolor_selected"  	"55 54 50 255"	// token: DkChip
@@ -129,10 +129,10 @@
 		"fgcolor_override"                  	"DkText"
 		"bgcolor_override"                  	"DkCard"
 		"disabledFgColor_override"          	"DkText"
-		"disabledBgColor_override"          	"39 38 36 255"	// token: DkCard
-		"selectionColor_override"           	"39 38 36 255"	// token: DkCard
-		"selectionTextColor_override"       	"250 249 245 255"	// token: DkText
-		"defaultSelectionBG2Color_override" 	"39 38 36 255"	// token: DkCard
+		"disabledBgColor_override"          	"DkCard"
+		"selectionColor_override"           	"DkCard"
+		"selectionTextColor_override"       	"DkText"
+		"defaultSelectionBG2Color_override" 	"DkCard"
 	}
 	"DataPanel"
 	{
@@ -162,7 +162,7 @@
 			"pinCorner"                  	"0"
 			"visible"                    	"1"
 			"enabled"                    	"1"
-			"fgcolor"                    	"DkText"
+			"fgcolor"                    	"250 249 245 255"	// token: DkText
 			"wrap"                       	"1"
 			"highlight_color"            	"177 173 161 255"	// token: DkTextMuted
 			"itemset_color"              	"217 119 87 255"	// token: DkAccent

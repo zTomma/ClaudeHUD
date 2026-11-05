@@ -135,7 +135,7 @@
 			"ypos"        	"50"
 			"wide"        	"130"
 			"tall"        	"1"
-			"fillcolor"   	"55 54 50 255"	// token: DkChip
+			"fillcolor"   	"DkChip"
 			"zpos"        	"0"
 		}
 		"LabelOption1"
@@ -165,7 +165,7 @@
 			"wide"        	"130"
 			"tall"        	"16"
 			"zpos"        	"1"
-			"fillcolor"   	"16 88 137 178"	// token: DkBluFillA70
+			"fillcolor"   	"DkBluFillA70"
 			"visible"     	"1"
 		}
 		"Option1CountLabel"
@@ -213,7 +213,7 @@
 			"wide"        	"130"
 			"tall"        	"16"
 			"zpos"        	"1"
-			"fillcolor"   	"16 88 137 178"	// token: DkBluFillA70
+			"fillcolor"   	"DkBluFillA70"
 			"visible"     	"1"
 		}
 		"Option2CountLabel"
@@ -261,7 +261,7 @@
 			"wide"        	"130"
 			"tall"        	"16"
 			"zpos"        	"1"
-			"fillcolor"   	"16 88 137 178"	// token: DkBluFillA70
+			"fillcolor"   	"DkBluFillA70"
 			"visible"     	"0"
 		}
 		"LabelOption4"
@@ -291,7 +291,7 @@
 			"wide"        	"130"
 			"tall"        	"16"
 			"zpos"        	"1"
-			"fillcolor"   	"16 88 137 178"	// token: DkBluFillA70
+			"fillcolor"   	"DkBluFillA70"
 			"visible"     	"0"
 		}
 		"LabelOption5"
@@ -321,7 +321,7 @@
 			"wide"        	"130"
 			"tall"        	"16"
 			"zpos"        	"1"
-			"fillcolor"   	"16 88 137 178"	// token: DkBluFillA70
+			"fillcolor"   	"DkBluFillA70"
 			"visible"     	"0"
 		}
 		"Divider2"
@@ -332,7 +332,7 @@
 			"ypos"        	"100"
 			"wide"        	"130"
 			"tall"        	"1"
-			"fillcolor"   	"55 54 50 255"	// token: DkChip
+			"fillcolor"   	"DkChip"
 			"zpos"        	"0"
 		}
 		"VoteCountLabel"
@@ -609,10 +609,10 @@
 			"fgcolor_override"                  	"DkTextMuted"
 			"bgcolor_override"                  	"DkAccent"
 			"disabledFgColor_override"          	"DkTextMuted"
-			"disabledBgColor_override"          	"217 119 87 255"	// token: DkAccent
-			"selectionColor_override"           	"217 119 87 255"	// token: DkAccent
-			"selectionTextColor_override"       	"177 173 161 255"	// token: DkTextMuted
-			"defaultSelectionBG2Color_override" 	"217 119 87 255"	// token: DkAccent
+			"disabledBgColor_override"          	"DkAccent"
+			"selectionColor_override"           	"DkAccent"
+			"selectionTextColor_override"       	"DkTextMuted"
+			"defaultSelectionBG2Color_override" 	"DkAccent"
 		}
 		"CallVoteButton"
 		{

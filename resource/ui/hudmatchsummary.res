@@ -128,7 +128,7 @@
 		"visible"              	"0"
 		"enabled"              	"1"
 		"keyboardinputenabled" 	"0"
-		"linecolor"            	"DkRedFill"
+		"linecolor"            	"217 119 87 255"	// token: DkRedFill
 		"team_colors"          	"1"
 	}
 	"MainStatsContainer"

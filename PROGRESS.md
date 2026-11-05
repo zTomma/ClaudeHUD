@@ -5,6 +5,43 @@ fermati solo quando la HUD è pronta e fai la pull request"). Le fasi sono quind
 seguito, con un commit per fase, e la pull request fa da punto di approvazione. **Nulla è stato
 provato in gioco.**
 
+## Secondo giro (5 nov 2026): verifica sul sorgente di TF2 e nuove schermate
+
+Valve ha pubblicato nel 2025 il sorgente del client TF2 (Source SDK 2013). L'ho usato per controllare le
+ipotesi che nel primo giro erano solo "probabili". **Quattro erano sbagliate e avrebbero prodotto bug
+visibili in gioco.** Tutte sono corrette:
+
+1. **Icone invisibili nei menu chiari.** `image_drawcolor` e `image_armedcolor` di `CExImageButton`
+   leggono solo RGBA (`econ_controls.cpp`): i nomi dello scheme vengono ignorati e l'icona resta bianca su
+   avorio. Ora la migrazione usa i nomi solo dove il codice li risolve (tabella in DESIGN.md §3), e il lint
+   blocca gli altri casi.
+2. **Target ID trasparente.** Lo sfondo `TargetIDBG` viene disegnato con `tf_hud_target_id_alpha`
+   (100, cioè 39%). Ora la scheda opaca è lo sfondo della radice, che il codice ridimensiona sul contenuto, e
+   così è anche arrotondata.
+3. **Segno delle munizioni gonfiato.** Il codice ingrandisce `HudWeaponLowAmmoImage` fino a 5 px per lato
+   quando i colpi calano: il Segno sarebbe diventato un blocco. Ora è un elemento separato (`AmmoSegno`).
+4. **Riquadri della selezione armi senza fondo.** Il codice cambia i bordi di squadra dei riquadri, che in
+   ClaudeHUD sono piatti: ora i riquadri hanno il proprio riempimento.
+
+Altre verifiche: il raggio degli angoli **scala** con la risoluzione (4 unità, 9 px a 1080p; DESIGN.md §2
+corretto). Le righe dello scoreboard sono colorate dal codice con costanti fisse, quindi le tabelle scure
+erano la scelta giusta. Il bottone squadra deriva da `CExButton`, quindi le schede piatte funzionano. Menu
+classe, squadra e principale non disattivano il proprio sfondo.
+
+**Aggiunte** (8 pannelli riscritti in più, 61 in totale):
+- percentuale Über nella scheda del Medic (`%charge%`, impostata dal codice);
+- metallo dell'Engineer come scheda sopra le munizioni;
+- numeri di danno, cura e metallo sul mondo in Plex con ombra (nuovi token `NumDamage`, `NumDamageBig`);
+- offset corretto quando sono visibili più metri degli oggetti (`x_offset`);
+- killfeed: colori con nomi verificati e fondo delle serie di uccisioni;
+- attesa del respawn: chip centrata con il tempo e fascia inferiore calma;
+- killcam: scheda dell'avversario con chip della salute; il file Valve aveva `FreezePanelBase` duplicato,
+  resta solo il blocco effettivo;
+- fine round: scheda neutra, punteggi nei colori pieni di squadra, classifica in Plex.
+
+Tutti i controlli automatici sono passati di nuovo (lint 0 errori, contrasti, font, layout a 4 rapporti
+d'aspetto).
+
 ## Fasi
 
 | Fase | Stato | Contenuto |
@@ -22,8 +59,8 @@ provato in gioco.**
 ## File toccati
 
 - **Generati dai token:** `resource/clientscheme.res`, `resource/sourcescheme.res`, `resource/chatscheme.res`.
-- **Riscritti a mano (53):** vedi la checklist in DESIGN.md §10 (stato `[x]`) e i generatori in `tools/hand/`.
-- **Migrati ai token, layout originale (722):** tutti gli altri `.res` di `resource/`, `scripts/`, `servers/`.
+- **Riscritti a mano (61):** vedi la checklist in DESIGN.md §10 (stato `[x]`) e i generatori in `tools/hand/`.
+- **Migrati ai token, layout originale (714):** tutti gli altri `.res` di `resource/`, `scripts/`, `servers/`.
 - **Animazioni:** `scripts/hudanimations_tf.txt` (19 eventi riscritti, interpolatori normalizzati, colori → token).
 - **Nuovi:** `resource/fonts/` (6 TTF), `licenses/`, `LICENSES.md`, `tools/`, `docs/`, `resource/ui/claudehud_fonttest.res`.
 - **Rimossi da `scripts/`:** 185 voci non legate alla HUD (suoni, soundscape, script armi e classi,
@@ -48,7 +85,8 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
 4. **In partita**: scheda salute (numero; sotto il 49% diventa terracotta e il Segno pulsa), overheal
    (numero verde salvia), munizioni (caricatore e riserva sulla stessa linea di base; munizioni basse),
    travestimento della Spy, carica Medic (terracotta quando è pronta), metri degli oggetti, cariche.
-5. **Target ID**: scheda scura con nome colorato per squadra e chip della salute.
+5. **Target ID**: scheda scura **arrotondata e opaca** (prima era trasparente al 39%) con nome colorato per
+   squadra e chip della salute.
 6. **Killfeed**: righe scure, la tua riga marrone caldo, nomi RED/BLU leggibili.
 7. **Timer di round e KOTH**: schede in alto al centro, chip di stato (preparazione, supplementari).
 8. **CTF e carrello**: scheda punteggi in basso al centro, binario piatto del carrello.
@@ -56,18 +94,22 @@ originali Valve (riferimenti a font o colori non definiti), non introdotti da Cl
 10. **Selezione classe e squadra**: tela avorio, bottoni, schede squadra (in hover compare il Segno).
 11. **Opzioni (GameUI)**: tutto chiaro, testo Ink leggibile, campi di input.
 12. Risoluzioni 4:3 e 16:10 se puoi: niente fuori schermo.
+13. **Nuove schermate**: percentuale Über (Medic), scheda metallo (Engineer), numeri di danno con ombra,
+    chip del tempo di respawn da morto, killcam con la scheda dell'avversario, pannello di fine round.
 
 ## Cosa potrebbe essere rotto (rischi noti)
 
-- [Probabile] **Raggio degli angoli**: dipende dalle texture `vgui/hud/800corner*` del motore. Può
-  sembrare piccolo ad alta risoluzione.
+- [Certo] **Raggio degli angoli**: 4 unità proporzionali (verificato nel sorgente). Se il raggio non scala
+  in gioco, segnalamelo.
 - [Probabile] **Pannelli il cui stato è forzato dal codice**: se il codice riaccende un elemento che ho
   nascosto (croce della salute, sfondi di squadra), riappare a dimensione zero, cioè invisibile. Se
   invece compare qualcosa della HUD di default, dimmi quale elemento.
 - [Probabile] **Etichette in modalità chiara**: sono 656 quelle a cui ho dato un colore Ink esplicito.
   Dove una di queste sta sopra un'immagine scura del gioco potrebbe perdere contrasto.
-- [Ipotesi] **Righe dello scoreboard**: i colori di squadra delle righe vengono dal codice. Per questo
-  le tabelle sono scure; se il gioco usa colori diversi da quelli previsti, segnalamelo.
+- [Certo] **Righe dello scoreboard**: colorate dal codice con `COLOR_RED` e `COLOR_BLUE`, da cui le
+  tabelle scure.
+- [Ipotesi] **Percentuale Über con la Vaccinator**: il codice aggiorna `%charge%` solo per le mediguns a
+  carica singola. Con la Vaccinator il numero può restare fermo: controlla.
 - [Ipotesi] **Selezione squadra**: ho nascosto le porte 3D e reso le quattro schede bottoni piatti. Se
   le schede non rispondono al click, il problema è lì.
 - [Ipotesi] **Killfeed in 4:3**: le righe molto lunghe possono arrivare fino al timer di round.

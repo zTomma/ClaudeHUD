@@ -21,6 +21,6 @@
 		"labelText"     	"%capturetime%"
 		"textAlignment" 	"center"
 		"fgcolor"       	"DkText"
-		"bgcolor"       	"DkAccent"
+		"bgcolor"       	"217 119 87 255"	// token: DkAccent
 	}
 }

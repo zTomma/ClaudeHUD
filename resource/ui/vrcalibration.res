@@ -272,7 +272,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"adjust_less_lots"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -302,7 +302,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"adjust_less"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -332,7 +332,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"adjust_more"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -362,7 +362,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"adjust_more_lots"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -392,7 +392,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"adjust_next"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -422,7 +422,7 @@
 		"default"                   	"1"
 		"sound_depressed"           	"UI/buttonclick.wav"
 		"sound_released"            	"UI/buttonclickrelease.wav"
-		"image_drawcolor"           	"LtText"
+		"image_drawcolor"           	"20 20 19 255"	// token: LtText
 		"Command"                   	"close"
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara

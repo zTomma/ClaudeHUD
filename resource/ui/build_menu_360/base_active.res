@@ -34,7 +34,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_item_bg"
-		"iconColor"   	"DkText"
+		"iconColor"   	"250 249 245 255"	// token: DkText
 	}
 	"BuildingIcon"
 	{
@@ -49,7 +49,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"hud_menu_sentry_build"
-		"iconColor"   	"Untinted"
+		"iconColor"   	"255 255 255 255"	// token: Untinted
 	}
 	"MetalIcon"
 	{
@@ -64,7 +64,7 @@
 		"enabled"     	"1"
 		"scaleImage"  	"1"
 		"icon"        	"ico_metal"
-		"iconColor"   	"DkCard"
+		"iconColor"   	"39 38 36 255"	// token: DkCard
 	}
 	"CostLabel"
 	{

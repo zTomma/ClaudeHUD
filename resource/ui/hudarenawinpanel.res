@@ -341,7 +341,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"39 38 36 153"	// token: DkCardA60
+		"fillcolor"           	"DkCardA60"
 		"fillcolor_lodef"     	"39 38 36 204"	// token: DkCardA80
 		"PaintBackgroundType" 	"0"
 	}
@@ -454,7 +454,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"217 119 87 255"	// token: DkAccent
+		"fillcolor"           	"DkAccent"
 		"PaintBackgroundType" 	"0"
 	}
 	"ArenaWinPanelWinnersPanel"

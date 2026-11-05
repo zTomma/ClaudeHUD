@@ -42,7 +42,7 @@ out = ['''// ClaudeHUD: riscritto a mano (fase 3) - scheda salute. DESIGN.md par
 		"enabled"					"1"
 		"HealthBonusPosAdj"			"0"
 		"HealthDeathWarning"		"0.49"
-		"HealthDeathWarningColor"	"DkAccent"
+		"HealthDeathWarningColor"	%(accent)s
 	}
 	"HealthCard"
 	{

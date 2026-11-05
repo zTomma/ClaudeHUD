@@ -115,7 +115,7 @@
 		"command"                   	"jointeam spectate"
 		"associated_model"          	"autodoor"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -160,7 +160,7 @@
 		"command"                   	"jointeam spectatearena"
 		"associated_model"          	"spectate"
 		"font"                      	"MenuMainTitle"
-		"fgcolor"                   	"LtText"
+		"fgcolor"                   	"20 20 19 255"	// token: LtText
 		"defaultFgColor_override"   	"LtText"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"armedFgColor_override"     	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
 		"depressedFgColor_override" 	"LtOnButtonHover"	// ClaudeHUD: colore esplicito in modalita' chiara
@@ -331,7 +331,7 @@
 		"visible"             	"1"
 		"enabled"             	"1"
 		"tabPosition"         	"0"
-		"fillcolor"           	"244 243 238 178"	// token: LtCardAltA70
+		"fillcolor"           	"LtCardAltA70"
 		"PaintBackgroundType" 	"0"
 	}
 	"autodoor"

@@ -18,8 +18,8 @@
 		"settitlebarvisible"            	"0"
 		"PaintBackgroundType"           	"0"
 		"bgcolor_override"              	"DkCard"
-		"infocus_bgcolor_override"      	"39 38 36 255"	// token: DkCard
-		"outoffocus_bgcolor_override"   	"39 38 36 255"	// token: DkCard
+		"infocus_bgcolor_override"      	"DkCard"
+		"outoffocus_bgcolor_override"   	"DkCard"
 		"item_xpos_offcenter_a"         	"-310"
 		"item_xpos_offcenter_b"         	"165"
 		"item_ypos"                     	"100"
@@ -552,7 +552,7 @@
 			"enabled"       	"1"
 			"labelText"     	"%attriblist%"
 			"textAlignment" 	"center"
-			"fgcolor"       	"DkTextMuted"
+			"fgcolor"       	"177 173 161 255"	// token: DkTextMuted
 			"centerwrap"    	"1"
 		}
 	}

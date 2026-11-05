@@ -75,6 +75,8 @@ def elements(W):
                         ("HudChat", "Chat"), ("DisguiseStatus", "Stato travestimento"),
                         ("HudKothTimeStatus", "Timer KOTH")):
         out[label] = rect(block(hl, name), W)
+    ap = rect(block(hl, "CHudAccountPanel"), W)
+    out["Metallo Engineer"] = [round(ap[0] + 5, 1), round(ap[1] + 103, 1), 88.0, 36.0]
     dn = block(hl, "HudDeathNotice")
     # effective drawn area: notices are right-justified, MaxDeathNotices lines from the top
     lines = int(dn.get("maxdeathnotices", "5"))
@@ -101,6 +103,9 @@ def overlap(a, b):
 # pairs that are allowed to overlap (mutually exclusive or deliberately stacked)
 ALLOWED = {
     frozenset(("Carica Medic", "Barra carica")),          # medic vs demo: never the same class
+    frozenset(("Carica Medic", "Metallo Engineer")),      # medic vs engineer: never the same class
+    frozenset(("Metallo Engineer", "Barra carica")),
+    frozenset(("Killfeed (area)", "Metallo Engineer")),
     frozenset(("Metro oggetto", "Barra carica")),
     frozenset(("Killfeed (area)", "Timer KOTH")),          # killfeed area is the full right column box; entries are right-aligned
     frozenset(("Killfeed (area)", "Timer di round")),

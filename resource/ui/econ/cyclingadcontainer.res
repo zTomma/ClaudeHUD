@@ -18,7 +18,7 @@
 		"tabPosition"             	"0"
 		"labelText"               	"<"
 		"bgcolor_override"        	"DkCardA90"
-		"fgcolor"                 	"DkText"
+		"fgcolor"                 	"250 249 245 255"	// token: DkText
 		"font"                    	"DefaultVerySmall"
 		"textAlignment"           	"center"
 		"proportionaltoparent"    	"1"
@@ -48,7 +48,7 @@
 		"tabPosition"             	"0"
 		"labelText"               	">"
 		"bgcolor_override"        	"DkCardA90"
-		"fgcolor"                 	"DkText"
+		"fgcolor"                 	"250 249 245 255"	// token: DkText
 		"font"                    	"DefaultVerySmall"
 		"textAlignment"           	"center"
 		"proportionaltoparent"    	"1"
